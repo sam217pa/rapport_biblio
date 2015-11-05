@@ -1,0 +1,47 @@
+#+title: Rapport Bibliographique
+#+latex_class: rapport
+#+todo: TODO ->>- -REV | SENT DONE
+#+latex_header: \usepackage{csquotes}
+# #+latex_header: \usepackage[backend=bibtex]{biblatex}
+# #+latex_header: \addbibresource{references.bib}
+#+latex_header: \usepackage{natbib}
+#+latex_header: 
+#+options: todo: 
+
+* TODO Introduction
+* TODO Qu'est-ce que la conversion génique ? [0%]
+
+La conversion génique est un mécanisme qui intervient au cours de la réparation
+de l'ADN. Lors d'une cassure double brin, la lésion est réparée par
+recombinaison homologue. Les mésappariemments induits peuvent être corrigés,
+donnant lieu à une transmission d'allèle non-mendélienne. 
+
+** ->>- La recombinaison homologue
+
+*** Quoi et où ?
+La recombinaison homologue est un mécanisme ubiquitaire. Son fonctionnement est
+très conservé à la fois chez les eucaryotes et chez les procaryotes. C'est le
+mécanisme essentiel de réparation de l'ADN. Il corrige les cassures double-brins
+et les erreurs de fourches de réplications\cite{lusetti_bacterial_2002}.  
+
+*** Brassage génétique
+C'est un processus de brassage génétique clé\cite{webster_direct_2012}. Chez les
+eucaryotes, la la méiose implique une étape de recombinaison, sous contrôle
+génétique strict. Chez les procaryotes, c'est le moteur des transferts
+horizontaux de gènes\cite{didelot_impact_2010}.
+
+*** Moteur de la sélection
+La recombinaison rend la Sélection plus efficace. En l'absence de recombinaison,
+les locus sous sélection interfèrent entre eux. Ce sont les interférences de
+Hill et Robertson \cite{hill_effect_1966}. 
+
+** TODO La conversion génique
+** TODO La conversion génique biaisée vers GC
+* TODO Comment ça marche ?
+* TODO Quelles en sont les conséquences ?
+* TODO Quelles hypothèses pour l'expliquer ?
+* TODO Conclusion
+
+\bibliographystyle{asm.bst}
+# \printbibliography
+\bibliography{references}
