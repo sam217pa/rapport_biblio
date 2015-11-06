@@ -5,7 +5,7 @@
 #+latex_header: \usepackage[authoryear, round]{natbib}
 #+latex_header: \bibliographystyle{asm}
 #+latex_header: \setcitestyle{authoryear, open={(}, close={)}}
-#+options: toc: nil
+#+OPTIONS: toc:nil
 
 * TODO Introduction
 * TODO Qu'est-ce que la conversion génique ? [0%]
@@ -26,7 +26,7 @@ et les erreurs de fourches de réplications \cite{lusetti_bacterial_2002}.
 
 *** Brassage génétique
 C'est un processus de brassage génétique clé \cite{webster_direct_2012}. Chez les
-eucaryotes, la la méiose implique une étape de recombinaison, sous contrôle
+eucaryotes, la méiose implique une étape de recombinaison, sous contrôle
 génétique strict. Chez les procaryotes, c'est le moteur des transferts
 horizontaux de gènes \cite{didelot_impact_2010}.
 
