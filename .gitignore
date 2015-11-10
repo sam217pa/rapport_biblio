@@ -1,1 +1,12 @@
 seq_novembre/
+*.aux
+*.bbl
+*.blg
+*.docx
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+/magritte.jpg
+/auto/rapport.el
+/auto/rapport2.el

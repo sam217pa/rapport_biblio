@@ -5,7 +5,7 @@
 #+latex_header: \usepackage[authoryear, round]{natbib}
 #+latex_header: \bibliographystyle{asm}
 #+latex_header: \setcitestyle{authoryear, open={(}, close={)}}
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil todo:nil
 
 * TODO Introduction
 * TODO Qu'est-ce que la conversion génique ? [0%]
@@ -22,7 +22,6 @@ La recombinaison homologue est un mécanisme ubiquitaire. Son fonctionnement est
 très conservé à la fois chez les eucaryotes et chez les procaryotes. C'est le
 mécanisme essentiel de réparation de l'ADN. Il corrige les cassures double-brins
 et les erreurs de fourches de réplications \cite{lusetti_bacterial_2002}. 
-
 
 *** Brassage génétique
 C'est un processus de brassage génétique clé \cite{webster_direct_2012}. Chez les
