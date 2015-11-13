@@ -10,3 +10,9 @@ seq_novembre/
 /magritte.jpg
 /auto/rapport.el
 /auto/rapport2.el
+/rapport.nlo
+/rapport.tdo
+/rapport.toc
+/*.el
+*.el
+/biblio/

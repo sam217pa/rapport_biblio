@@ -1,0 +1,35 @@
+%%
+%% references
+%%
+\usepackage{csquotes}
+\usepackage[super]{natbib}
+\bibliographystyle{asm}
+
+%% todo
+\usepackage[french]{todonotes}
+
+%%
+%% acronymes
+%%
+\usepackage[french]{acro}
+% probably a good idea for the nomenclature entries:
+\acsetup{first-style=short}
+
+% class `abbrev': abbreviations:
+\DeclareAcronym{gbgc}{
+  short = gBGC ,
+  long  = GC--biased gene conversion : conversion génique biaisée vers GC ,
+  class = abbrev
+}
+\DeclareAcronym{dsb}{
+  short = DSB ,
+  long  = Double strand break : cassures doubles brins ,
+  class = abbrev
+}
+
+%%
+%% table of content
+%%
+\setcounter{tocdepth}{2}
+%% pas de titre
+\deftocheading{toc}{}%
