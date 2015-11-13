@@ -3,6 +3,7 @@
 #+todo: TODO ->>- -REV | SENT DONE
 #+latex_header: \input{header.tex}
 #+OPTIONS: toc:nil todo:nil title:nil
+# \bibliography{references}
 
 \input{frontmatter.tex}
 
@@ -20,36 +21,56 @@ génétique et impliquent une étape obligatoire de recombinaison. Chez les
 procaryotes, cette matrice peut être acquise par transfert horizontal. La
 recombinaison est le moyen principal de transfert de gène entre les bactéries.
 
-Au voisinage de la région lésée --- puis réparée --- , des échanges
+\newthought{Au voisinage} de la région lésée --- puis réparée --- , des échanges
 d'information génétique de petite échelle existent. Ils sont dûs à la correction
 des erreurs d'appariement dans l'hétéroduplex. Ce sont des événements de
 /conversion génique/. Ils donnent lieu à des transmissions non-mendéliennes
 d'allèles : l'information génétique est transmise d'un brin vers l'autre, de
 façon unidirectionnelle. Cette conversion est /biaisée/ dès lors que l'un des
 allèles a une plus forte probabilité de transmission, à l'échelle de la
-population. De nombreuses observations existent chez les eucaryotes ---
-notamment chez la Levure et l'Homme --- , qui montrent que la conversion est
-biaisée vers G ou C. Les allèles G ou C sont plus souvent transmis que les
-allèles A ou T. Ce biais de conversion génique en faveur de GC --- \ac{gbgc} ---
-a un impact fort sur l'évolution des génomes : il conditionne la structuration
-en contenu GC des génomes ; il peut interférer avec la sélection naturelle ; et,
-d'un point de vue pratique, il peut brouiller les tests de sélection naturelle.
+population. Chez les eucaryotes, de nombreuses observations existent, qui
+montrent que la conversion est biaisée /vers G ou C/. Les allèles G ou C sont
+plus souvent transmis que les allèles A ou T. Ce biais de conversion génique en
+faveur de GC --- \ac{gbgc} --- a un impact fort sur l'évolution des génomes : il
+conditionne la /structuration/ en contenu GC des génomes ; il peut /interférer/
+avec la sélection naturelle ; et, d'un point de vue pratique, il peut /brouiller
+les tests/ de sélection naturelle.
+
 Dans les régions fortement recombinantes, le contenu en GC est anormalement
-élevé, lorsque le biais est observé. Le biais peut permettre de fixer des
-mutations délétères, si celles-ci sont portées par les allèles G ou C du gène.
+élevé, lorsque le biais est observé. Il existe un débat dans la communauté
+scientifique entre les partisans des hypothèses adaptatives, et ceux des
+hypothèses neutres. Les premiers pensent que le contenu en GC est un trait
+sélectionné : il contribue en soi à la valeur adaptative de l'individu. Les
+seconds avancent que le contenu en GC est déterminé par des processus neutres de
+dérive génétique et de mutation.
+
+Le biais peut également permettre de fixer des mutations délétères, si celles-ci sont
+portées par les allèles G ou C du gène. Il contrecarre l'action de la sélection
+naturelle. 
+
 Enfin, l'action du biais laisse des traces génomiques équivalentes à celles de
 la sélection naturelle : les tests classiques de détection confondent l'action
 de la sélection avec celle du \ac{gbgc}.
 
-Récemment, l'hypothèse du biais vers GC s'est étendue aux procaryotes. Des
-observations montrent que les régions fortement recombinantes ont un contenu en
-GC significativement plus élevé. L'extension de cette hypothèse aux procaryotes
-pourrait permettre d'expliquer l'évolution du contenu en GC des populations
-bactériennes. Nous verrons donc, dans une première partie, ce qu'est la
-conversion génique biaisée ; dans une deuxième, les mécanismes qui la
-sous-tendent ; dans une troisième, ses conséquences évolutives ; et dans une
-dernière, les hypothèses permettant d'expliquer son existence.
- 
+#+BEGIN_LaTeX
+\addfig{%
+  \centering
+  \missingfigure
+  \caption{\textbf{Succession des étapes de recombinaison homologue}}
+  \label{recomb}
+}
+#+END_LaTeX
+
+\newthought{Récemment,} l'hypothèse du biais vers GC s'est étendue aux
+procaryotes. Des observations montrent que les régions fortement recombinantes
+ont un contenu en GC significativement plus élevé. L'extension de cette
+hypothèse aux procaryotes représente une avancée majeure : elle pourrait
+permettre d'expliquer l'évolution du contenu en GC des populations bactériennes.
+
+Nous verrons donc, dans une première partie, ce qu'est la conversion génique
+biaisée ; dans une deuxième, les mécanismes qui la sous-tendent ; dans une
+troisième, ses conséquences évolutives ; et dans une dernière, les hypothèses
+permettant d'expliquer son existence.
 
 * TODO Qu'est-ce que la conversion génique ? 
 
@@ -58,33 +79,67 @@ de l'ADN. Lors d'une cassure double brin --- \ac{dsb} --- , la lésion est répa
 recombinaison homologue. Les mésappariemments induits peuvent être corrigés,
 donnant lieu à une transmission d'allèle non-mendélienne \cite{chen_mechanism_2008}. 
 
-** ->>- La recombinaison homologue
+** ->>- Recombinaison homologue
 
-La recombinaison homologue est un mécanisme ubiquitaire. Son fonctionnement est
-très conservé à la fois chez les eucaryotes et chez les procaryotes. C'est le
-mécanisme essentiel de /réparation/ de l'ADN. Il corrige les cassures
-double-brins et les erreurs de fourches de réplications
-\cite{lusetti_bacterial_2002}.
+La réplication de l'ADN est une étape clé du cycle cellulaire. Elle implique la
+formation de fourches de réplications. Les lésions subies par l'ADN en cours de
+réplication empêchent le déplacement de ces fourches, et notamment les cassures
+double brins. Ces \ac{dsb} sont extrêmement cytotoxiques : ils causent l'arrêt
+de la réplication, la perte de chromosomes, sont mutagènes et conduisent à la
+mort cellulaire\cite{watson_molecular_2014}. La bonne conduite de la réplication
+nécessite de réparer ces cassures, de façon non-mutagène. La recombinaison
+homologue est le moyen préférentiel de réparation \cite{lusetti_bacterial_2002}.
+Compte tenu de son importance dans le cycle cellulaire, les mécanismes qui la
+sous-tendent sont ubiquitaires et extrêmement conservés, des phages aux
+mammifères \cite{cromie_recombination_2001}.
 
-C'est la fonction principale et /première/ de la machinerie de recombinaison
-homologue. Cependant, les mécanismes en jeu sont le lieu d'un brassage
-génétique, aussi bien lors de la méiose eucaryote que lors des transferts de
-gène procaryotes\cite{redfield_bacteria_2001}.  
+La recombinaison se déroule en plusieurs étapes. Après la formation des
+\ac{dsb}, les extrémités $5'$ de la lésion subissent une /résection/, délétion
+locale d'une section d'ADN. Les brins aux extrémités $3'$ /envahissent/ les
+brins complémentaires de la molécule intacte, et forment un hétéroduplex. Des
+mésappariemments peuvent exister entre les brins de l'hétéroduplex : deux brins
+homologues ne sont pas systématiquement complémentaires. L'intégrité de
+l'hétéroduplex est maintenue par deux structures appelées /jonctions de
+Holliday/. Ces structures mobiles permettent de rechercher la région
+complémentaire présentant une homologie suffisante pour déclencher l'échange de
+brins. Cet échange est catalysé par les nucléo-protéines de type
+RecA \cite{lusetti_bacterial_2002}. 
 
-\newthought{Ce brassage génétique} permet le ré-arrangement des combinaisons
-d'allèles entre eux dans le pool génique. 
+#+BEGIN_LaTeX
+\begin{quote}
+{\em 
+  La réparation des cassures est la fonction principale et \emph{première} de la
+  machinerie de recombinaison homologue. Cependant, les mécanismes en jeu sont le
+  lieu d'un brassage génétique, aussi bien lors de la méiose eucaryote que lors
+  des transferts de gène procaryotes \cite{redfield_bacteria_2001}.
+}
+\end{quote}
+#+END_LaTeX
 
-C'est un processus de brassage génétique clé. Chez les eucaryotes, la méiose
-implique une étape de recombinaison, sous contrôle génétique strict
-\cite{webster_direct_2012}. Chez les procaryotes, c'est le moteur des transferts
-horizontaux de gènes \cite{didelot_impact_2010}.
+\newthought{La méiose eucaryote} implique la formation de DSB sous contrôle
+génétique rigoureux, qui sont réparés par recombinaison homologue
+\cite{chapman_playing_2012}. Les crossovers induits permettent la bonne conduite
+de la disjonction des chromosomes. Ces crossovers entraînent le brassage des
+allèles, un processus bénéfique sur le plan évolutif\cite{webster_direct_2012}.
+En effet, il casse les liaisons entre allèles : la sélection élimine alors plus
+efficacement les variants délétères et promeut les variants bénéfiques
+\cite{otto_resolving_2002}. C'est l'une des hypothèses permettant d'expliquer
+l'évolution de la reproduction sexuée\cite{otto_why_2006}.
 
-\newthought{La séléction} naturelle est rendue plus efficace par la
-recombinaison. En l'absence de recombinaison, les locus sous sélection
-interfèrent entre eux. Ce sont les interférences de Hill et Robertson
-\cite{hill_effect_1966}.
+\newthought{Chez les procaryotes}, la recombinaison est un processus plus rare.
+Cependant, étant donné la taille des populations bactériennes et les temps
+évolutifs en jeu, elle a également un impact majeur sur l'évolution
+procaryote\cite{didelot_impact_2010}. C'est le moteur des transferts de gène.
+Ceux-ci sont médiés, soit par des vecteurs, les plasmides ou les phages, soit
+par un état de compétence naturelle.
 
-** TODO La conversion génique
+\newthouhgt{En l'absence} de recombinaison, des interférences existent entre les
+régions sous sélection \cite{hill_effect_1966}. La sélection naturelle est plus
+efficace sur les régions recombinantes : les combinaisons d'allèles les plus
+avantageuses ne peuvent être obtenues que dans les régions recombinantes
+\cite{hurst_genetics_2009}.
+
+** TODO Conversion génique
 ** TODO La conversion génique biaisée vers GC
 * TODO Comment ça marche ?
 * TODO Quelles en sont les conséquences ?

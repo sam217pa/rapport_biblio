@@ -40,20 +40,14 @@
 %% typographie
 %%
 \providecommand\newthought[1]{%
-   \addvspace{1.0\baselineskip plus 0.3ex minus 0.1ex}%
-   \noindent\textsc{#1} % small caps text out
+   \addvspace{0.5\baselineskip plus 0.3ex minus 0.1ex}%
+   \noindent\bsc{#1} % small caps text out
 }
+\usepackage[]{lipsum}
 
 %% 
 %% color
 %% 
-% \usepackage[usenames, dvipsnames]{xcolor}
-% \setkomafont{section}{
-%   \normalfont\huge\sffamily\bfseries\color{Cerulean}
-%   {\llap{\colorbox{Cerulean}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
-% }
-% \setkomafont{subsection}{\normalfont\large\itshape\sffamily\bfseries\color{TealBlue}}
-
 \usepackage[]{titlesec}
 %% section format
 \titleformat{\section}%
@@ -70,3 +64,41 @@
   {2em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
+  
+%%
+%% lang
+%%
+\usepackage[frenchb]{babel}
+\frenchbsetup{ThinColonSpace = true}
+
+
+%%
+%% figures
+%%
+%% pour avoir le texte à droite et les figures à gauche
+%% voir http://www.latex-community.org/forum/viewtopic.php?f=47&p=50022
+% \usepackage{semioneside}
+\usepackage{afterpage}
+
+\makeatletter
+\newcommand\@addfig{\relax}
+\newcommand\addfig[1]{\global\long\def\@addfig{#1}}
+\newcommand\@putfig{\@addfig\addfig{\relax}}
+\newcommand\blankpage{%
+\null
+\vfill
+\@putfig%
+\vfill
+\thispagestyle{empty}% BEWARE, if you want the header and footer, you should put
+                     % the correct style here
+\clearpage%
+\addtocounter{page}{-1}% BEWARE, if you want the left pages to be numbered,
+                       % don't put this line, this is intended to have picture
+                       % page with the same number as the facing text page
+\afterpage{\blankpage}}
+\makeatother
+
+%% permet d'utiliser caption en dehors des floats
+\makeatletter
+\def\@captype{figure}
+\makeatother
