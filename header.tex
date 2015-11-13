@@ -4,14 +4,14 @@
 \usepackage{csquotes}
 \usepackage[super]{natbib}
 \bibliographystyle{asm}
-
+\usepackage[]{multicol}
 %% todo
 \usepackage[french]{todonotes}
 
 %%
 %% acronymes
 %%
-\usepackage[french]{acro}
+\usepackage[]{acro}
 % probably a good idea for the nomenclature entries:
 \acsetup{first-style=short}
 
@@ -32,4 +32,41 @@
 %%
 \setcounter{tocdepth}{2}
 %% pas de titre
-\deftocheading{toc}{}%
+\deftocheading{toc}{\section*{Sommaire}}%
+% \renewcommand{\contentsname}{Sommaire}
+
+
+%%
+%% typographie
+%%
+\providecommand\newthought[1]{%
+   \addvspace{1.0\baselineskip plus 0.3ex minus 0.1ex}%
+   \noindent\textsc{#1} % small caps text out
+}
+
+%% 
+%% color
+%% 
+% \usepackage[usenames, dvipsnames]{xcolor}
+% \setkomafont{section}{
+%   \normalfont\huge\sffamily\bfseries\color{Cerulean}
+%   {\llap{\colorbox{Cerulean}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
+% }
+% \setkomafont{subsection}{\normalfont\large\itshape\sffamily\bfseries\color{TealBlue}}
+
+\usepackage[]{titlesec}
+%% section format
+\titleformat{\section}%
+  {\normalfont\huge\color{Cerulean}}% format applied to label+text
+  {\llap{\colorbox{Cerulean}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+% subsection format
+\titleformat{\subsection}%
+  {\normalfont\large\itshape\color{TealBlue}}% format applied to label+text
+  {\llap{\colorbox{TealBlue}{\parbox{1.5cm}{\hfill\color{white}\thesubsection}}}}% label
+  {2em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
