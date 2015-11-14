@@ -1,8 +1,8 @@
 %%
 %% fonts
 %%
-\usepackage{mathpazo}
-\usepackage[]{eulervm}
+\usepackage[osf, sc]{mathpazo}
+\usepackage[euler-digits, small]{eulervm}
 \usepackage[scaled]{helvet}
 \usepackage{hyperref}
 %% sans font as default
@@ -56,6 +56,11 @@
   long  = Double strand break : cassures doubles brins ,
   class = abbrev
 }
+\DeclareAcronym{mmr}{
+  short = MMR ,
+  long  = Mismatch repair : machinerie de réparation des mésappariements ,
+  class = abbrev
+}
 
 %%
 %% table of content
@@ -102,6 +107,8 @@
   {}% before the title body
   []% after the title body
   
+\renewcommand\thefootnote{\textcolor{gray}{\arabic{footnote}}}
+
 %%
 %% lang
 %%
