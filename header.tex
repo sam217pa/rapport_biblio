@@ -1,4 +1,29 @@
 %%
+%% fonts
+%%
+\usepackage{mathpazo}
+\usepackage[]{eulervm}
+\usepackage[scaled]{helvet}
+\usepackage{hyperref}
+%% sans font as default
+\renewcommand\familydefault{\sfdefault}
+
+%% 
+%% margin
+%%
+\usepackage[a4paper]{geometry}
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=25mm,
+  bottom=25mm
+}
+
+%% line space
+\linespread{1.5}
+
+%%
 %% references
 %%
 \usepackage{csquotes}
@@ -16,6 +41,11 @@
 \acsetup{first-style=short}
 
 % class `abbrev': abbreviations:
+\DeclareAcronym{gc}{
+  short = GC\% ,
+  long  = Contenu en GC ,
+  class = abbrev
+}
 \DeclareAcronym{gbgc}{
   short = gBGC ,
   long  = GC--biased gene conversion : conversion génique biaisée vers GC ,
@@ -41,7 +71,7 @@
 %%
 \providecommand\newthought[1]{%
    \addvspace{0.5\baselineskip plus 0.3ex minus 0.1ex}%
-   \noindent\bsc{#1} % small caps text out
+   \noindent\textrm{\bsc{#1}} % small caps text out
 }
 \usepackage[]{lipsum}
 
@@ -51,17 +81,24 @@
 \usepackage[]{titlesec}
 %% section format
 \titleformat{\section}%
-  {\normalfont\huge\color{Cerulean}}% format applied to label+text
+  {\normalfont\huge\rmfamily\bfseries\color{Cerulean}}% format applied to label+text
   {\llap{\colorbox{Cerulean}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
-  {1em}% horizontal separation between label and title body
+  {0.5em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
 
 % subsection format
 \titleformat{\subsection}%
-  {\normalfont\large\itshape\color{TealBlue}}% format applied to label+text
-  {\llap{\colorbox{TealBlue}{\parbox{1.5cm}{\hfill\color{white}\thesubsection}}}}% label
-  {2em}% horizontal separation between label and title body
+  {\normalfont\Large\rmfamily\color{TealBlue}}% format applied to label+text
+  {\llap{\colorbox{TealBlue}{\parbox{0.7cm}{\hfill\color{white}\thesubsection}}}}% label
+  {0.5em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\subsubsection}%
+  {\normalfont\rmfamily\itshape\large}% format applied to label+text
+  {}% label
+  {}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
   

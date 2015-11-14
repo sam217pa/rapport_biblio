@@ -1,19 +1,5 @@
-% Created 2015-11-13 Fri 19:21
+% Created 2015-11-14 Sat 11:42
 \documentclass[11pt, oneside]{scrartcl}
-\usepackage[scaled]{helvet}
-\usepackage{hyperref}
-\renewcommand\familydefault{\sfdefault}
-\usepackage[a4paper]{geometry}
-\geometry{
-  a4paper,
-  left=25mm,
-  right=25mm,
-  top=25mm,
-  bottom=25mm
-}
-
-\linespread{1.5}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
@@ -48,51 +34,56 @@
 
 \input{frontmatter.tex}
 
-\section{Introduction}
+\section*{Introduction}
 \label{sec:orgheadline1}
-
 La recombinaison homologue est un processus majeur d'évolution des génomes.
-C'est un processus très conservé, des procaryotes aux eucaryotes. C'est le
+C'est un processus très conservé, des procaryotes aux eucaryotes\cite{cromie_recombination_2001}. C'est le
 processus clé de réparation des lésions de l'ADN. Elles sont réparées sur la
 base d'une matrice d'ADN homologue, donnant lieu à la formation transitoire d'un
 \emph{hétéroduplex}. Un hétéroduplex est un appariement entre deux brins homologues,
 qui ne sont pas nécessairement rigoureusement complémentaires. Chez les
 eucaryotes, la matrice est typiquement la région homologue correspondante, sur
 le chromosome sœur. Les crossing-over méiotiques sont générés sous contrôle
-génétique et impliquent une étape obligatoire de recombinaison. Chez les
+génétique et impliquent une étape obligatoire de recombinaison\cite{mancera_high-resolution_2008}. Chez les
 procaryotes, cette matrice peut être acquise par transfert horizontal. La
-recombinaison est le moyen principal de transfert de gène entre les bactéries.
+recombinaison est le moyen principal de transfert de gène entre les bactéries\cite{vos_rates_2015}.
 
 \newthought{Au voisinage} de la région lésée --- puis réparée --- , des échanges
-d'information génétique de petite échelle existent. Ils sont dûs à la correction
-des erreurs d'appariement dans l'hétéroduplex. Ce sont des événements de
-\emph{conversion génique}. Ils donnent lieu à des transmissions non-mendéliennes
-d'allèles : l'information génétique est transmise d'un brin vers l'autre, de
-façon unidirectionnelle. Cette conversion est \emph{biaisée} dès lors que l'un des
-allèles a une plus forte probabilité de transmission, à l'échelle de la
-population. Chez les eucaryotes, de nombreuses observations existent, qui
-montrent que la conversion est biaisée \emph{vers G ou C}. Les allèles G ou C sont
-plus souvent transmis que les allèles A ou T. Ce biais de conversion génique en
-faveur de GC --- \ac{gbgc} --- a un impact fort sur l'évolution des génomes : il
-conditionne la \emph{structuration} en contenu GC des génomes ; il peut \emph{interférer}
-avec la sélection naturelle ; et, d'un point de vue pratique, il peut \emph{brouiller
-les tests} de sélection naturelle.
+d'information génétique de petite échelle existent\cite{duret_biased_2009}. Ils
+sont dûs à la correction des erreurs d'appariement dans l'hétéroduplex. Ce sont
+des événements de \emph{conversion génique}. Ils donnent lieu à des transmissions
+non-mendéliennes d'allèles : l'information génétique est transmise d'un brin
+vers l'autre, de façon unidirectionnelle. Cette conversion est \emph{biaisée} dès
+lors que l'un des allèles a une plus forte probabilité de transmission, à
+l'échelle de la population. Chez les eucaryotes, de nombreuses observations
+existent, qui montrent que la conversion est biaisée \emph{vers G ou
+C}\cite{pessia_evidence_2012, mancera_high-resolution_2008}. Les allèles G ou C
+sont plus souvent transmis que les allèles A ou T. Ce biais de conversion
+génique en faveur de GC --- \ac{gbgc} --- a un impact fort sur l'évolution des
+génomes : il conditionne la \emph{structuration} en contenu GC des génomes ; il peut
+\emph{interférer} avec la sélection naturelle ; et, d'un point de vue pratique, il
+peut \emph{brouiller les tests} de sélection naturelle\cite{duret_biased_2009}.
 
 Dans les régions fortement recombinantes, le contenu en GC est anormalement
-élevé, lorsque le biais est observé. Il existe un débat dans la communauté
-scientifique entre les partisans des hypothèses adaptatives, et ceux des
-hypothèses neutres. Les premiers pensent que le contenu en GC est un trait
-sélectionné : il contribue en soi à la valeur adaptative de l'individu. Les
-seconds avancent que le contenu en GC est déterminé par des processus neutres de
-dérive génétique et de mutation.
+élevé, lorsque le biais est observé\cite{duret_impact_2008}. Ce mécanisme permet
+d'expliquer partiellement les variations en \ac{gc}, au sein d'un génome et
+entre génomes. Il existe un débat dans la communauté scientifique entre les
+partisans des hypothèses adaptatives, et ceux des hypothèses neutres. Les
+hypothèses \emph{adaptatives} veulent que le contenu en GC soit un trait
+sélectionné : il contribue en soi à la valeur adaptative de
+l'individu\cite{hildebrand_evidence_2010}. Les hypothèses \emph{neutres} avancent
+qu'il est également déterminé par des processus de dérive génétique et de
+mutation. Le \ac{gbgc} est un autre processus neutre contribuant à déterminer le
+\ac{gc}. En fait, c'est la contribution \emph{relative} des trois processus à la
+détermination du \ac{gc} qui fait débat.
 
-Le biais peut également permettre de fixer des mutations délétères, si celles-ci sont
-portées par les allèles G ou C du gène. Il contrecarre l'action de la sélection
-naturelle. 
+Le biais peut également permettre de fixer des mutations délétères, si celles-ci
+sont portées par les allèles G ou C du gène. Il contrecarre l'action de la
+sélection naturelle\cite{galtier_gc-biased_2009, galtier_adaptation_2007}.
 
 Enfin, l'action du biais laisse des traces génomiques équivalentes à celles de
 la sélection naturelle : les tests classiques de détection confondent l'action
-de la sélection avec celle du \ac{gbgc}.
+de la sélection avec celle du \ac{gbgc}\cite{ratnakumar_detecting_2010}.
 
 \addfig{%
   \centering
@@ -108,12 +99,12 @@ hypothèse aux procaryotes représente une avancée majeure : elle pourrait
 permettre d'expliquer l'évolution du contenu en GC des populations bactériennes.
 
 Nous verrons donc, dans une première partie, ce qu'est la conversion génique
-biaisée ; dans une deuxième, les mécanismes qui la sous-tendent ; dans une
-troisième, ses conséquences évolutives ; et dans une dernière, les hypothèses
-permettant d'expliquer son existence.
+biaisée et les mécanismes qui la sous-tendent ; dans une deuxième, ses
+conséquences évolutives ; et dans une dernière, les hypothèses permettant
+d'expliquer son existence.
 
 \section{Qu'est-ce que la conversion génique ?}
-\label{sec:orgheadline5}
+\label{sec:orgheadline8}
 
 La conversion génique est un mécanisme qui intervient au cours de la réparation
 de l'ADN. Lors d'une cassure double brin --- \ac{dsb} --- , la lésion est réparée par
@@ -121,7 +112,7 @@ recombinaison homologue. Les mésappariemments induits peuvent être corrigés,
 donnant lieu à une transmission d'allèle non-mendélienne \cite{chen_mechanism_2008}. 
 
 \subsection{Recombinaison homologue}
-\label{sec:orgheadline2}
+\label{sec:orgheadline6}
 
 La réplication de l'ADN est une étape clé du cycle cellulaire. Elle implique la
 formation de fourches de réplications. Les lésions subies par l'ADN en cours de
@@ -135,17 +126,34 @@ Compte tenu de son importance dans le cycle cellulaire, les mécanismes qui la
 sous-tendent sont ubiquitaires et extrêmement conservés, des phages aux
 mammifères \cite{cromie_recombination_2001}.
 
+\subsubsection{Mécanismes de recombinaison homologue}
+\label{sec:orgheadline3}
+
 La recombinaison se déroule en plusieurs étapes. Après la formation des
 \ac{dsb}, les extrémités \(5'\) de la lésion subissent une \emph{résection}, délétion
-locale d'une section d'ADN. Les brins aux extrémités \(3'\) \emph{envahissent} les
-brins complémentaires de la molécule intacte, et forment un hétéroduplex. Des
-mésappariemments peuvent exister entre les brins de l'hétéroduplex : deux brins
-homologues ne sont pas systématiquement complémentaires. L'intégrité de
+locale d'une section d'ADN. 
+
+Les brins aux extrémités \(3'\) \emph{envahissent} les brins complémentaires de la
+molécule intacte. Ces extrémités recherchent activement les zones d'homologie.
+Lorsqu'une zone est déterminée, les brins sont échangés. L'ensemble de ce
+processus est catalysé par la nucléo-protéine RecA\cite{chen_mechanism_2008}.
+C'est l'acteur moléculaire clé de la recombinaison homologue.
+
+L'échange des brins entraîne la formation d'un un hétéroduplex. L'intégrité de
 l'hétéroduplex est maintenue par deux structures appelées \emph{jonctions de
-Holliday}. Ces structures mobiles permettent de rechercher la région
-complémentaire présentant une homologie suffisante pour déclencher l'échange de
-brins. Cet échange est catalysé par les nucléo-protéines de type
-RecA \cite{lusetti_bacterial_2002}. 
+Holliday}. Des mésappariemments peuvent exister entre les brins de
+l'hétéroduplex : deux brins homologues ne sont pas systématiquement
+complémentaires. Une fois résolus, ces mésappariemments peuvent être le lieu
+d'une conversion génique, dont je reparlerai au paragraphe \ref{sec:orgheadline2}.
+
+La zone de résection est ensuite comblée par la \emph{synthèse} d'ADN en utilisant le
+brin homologue comme matrice.
+
+Enfin, les intermédiaires de recombinaisons sont \emph{résolus}, par le clivage
+aléatoire des jonctions de Holliday. Ce clivage est catalysée par des
+résolvases, telles que RuvC\cite{gorecka_crystal_2013}. La résolution peut
+donner des produits dits crossovers ou non-crossover, entraînant respectivement
+l'échange des brins ou leur dissolution\cite{mancera_high-resolution_2008}.
 
 \begin{quote}
 {\em 
@@ -156,7 +164,10 @@ RecA \cite{lusetti_bacterial_2002}.
 }
 \end{quote}
 
-\newthought{La méiose eucaryote} implique la formation de DSB sous contrôle
+\subsubsection{La recombinaison : étape clé de la méiose eucaryote}
+\label{sec:orgheadline4}
+
+La méiose eucaryote implique la formation de DSB sous contrôle
 génétique rigoureux, qui sont réparés par recombinaison homologue
 \cite{chapman_playing_2012}. Les crossovers induits permettent la bonne conduite
 de la disjonction des chromosomes. Ces crossovers entraînent le brassage des
@@ -166,31 +177,35 @@ efficacement les variants délétères et promeut les variants bénéfiques
 \cite{otto_resolving_2002}. C'est l'une des hypothèses permettant d'expliquer
 l'évolution de la reproduction sexuée\cite{otto_why_2006}.
 
-\newthought{Chez les procaryotes}, la recombinaison est un processus plus rare.
+\subsubsection{La recombinaison comme moteur des transferts horizontaux de gènes}
+\label{sec:orgheadline5}
+Chez les procaryotes, la recombinaison est un processus plus rare.
 Cependant, étant donné la taille des populations bactériennes et les temps
 évolutifs en jeu, elle a également un impact majeur sur l'évolution
 procaryote\cite{didelot_impact_2010}. C'est le moteur des transferts de gène.
 Ceux-ci sont médiés, soit par des vecteurs, les plasmides ou les phages, soit
 par un état de compétence naturelle.
 
-\newthouhgt{En l'absence} de recombinaison, des interférences existent entre les
-régions sous sélection \cite{hill_effect_1966}. La sélection naturelle est plus
-efficace sur les régions recombinantes : les combinaisons d'allèles les plus
-avantageuses ne peuvent être obtenues que dans les régions recombinantes
-\cite{hurst_genetics_2009}.
-
 \subsection{Conversion génique}
-\label{sec:orgheadline3}
-\subsection{La conversion génique biaisée vers GC}
-\label{sec:orgheadline4}
-\section{Comment ça marche ?}
-\label{sec:orgheadline6}
-\section{Quelles en sont les conséquences ?}
-\label{sec:orgheadline7}
-\section{Quelles hypothèses pour l'expliquer ?}
-\label{sec:orgheadline8}
-\section{Conclusion}
-\label{sec:orgheadline9}
+\label{sec:orgheadline2}
 
+\subsection{La conversion génique biaisée vers GC}
+\label{sec:orgheadline7}
+\section{Quelles en sont les conséquences ?}
+\label{sec:orgheadline12}
+\subsection{Structure le contenu en GC}
+\label{sec:orgheadline9}
+\subsection{Interfère avec la sélection}
+\label{sec:orgheadline10}
+\subsection{Brouille les tests de sélection}
+\label{sec:orgheadline11}
+\section{Quelles hypothèses pour l'expliquer ?}
+\label{sec:orgheadline15}
+\subsection{Des propriétés inhérentes à la machinerie de réparation ?}
+\label{sec:orgheadline13}
+\subsection{Un processus sélectionné pour compenser la mutation ?}
+\label{sec:orgheadline14}
+\section*{Conclusion}
+\label{sec:orgheadline16}
 \input{endmatter.tex}
 \end{document}
