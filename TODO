@@ -1,0 +1,489 @@
+# -*- org -*-
+#+title: Liste des papiers à lire
+#+TODO: TODO(t) | DONE(d)
+#+TODO: LIRE(l) ->>- | -LU-(u)
+* ordre de lecture [26/45]
+:PROPERTIES:
+:ORDERED:  t
+:END:
+** -LU- [#A] DeVries, 2001                                                     :acineto:
+CLOSED: [2015-09-25 Fri 14:35]
+
+/Integration of foreign DNA during natural transformation of Acinetobacter sp.
+by homology-facilitated illegitimate recombination/
+
+Deux moyens pour intégrer de l'ADN non-homologue dans le génome d'une bactérie :
+les enzymes de type cognate[fn:1] comme les transposases et les intégrases.
+
+Le niveau d'intégration de l'ADN exogène est dépendant de la phase de
+croissance, 
+
+[fn:1] En biochimie, les cognates font références aux molécules qui
+intéragissent, typiquement un récepteur et son ligand.
+** -LU- [#A] Hulter, 2008                                                      :acineto:
+CLOSED: [2015-09-25 Fri 15:35]
+
+Deux moyens d'intégration d'ADN exogène par recombination : la DIR[fn:2], et la
+HFDIR[fn:3]. L'HFDIR étant 440 fois plus présentes que la DIR. 
+
+[fn:2] double illegitimate recombination
+
+[fn:3] homology facilitated double illegitimate recombination
+** -LU- [#A] Lassalle, 2015                                                    :prok:gc3:bgc:
+
+L'identification de gènes et autres éléments fonctionnels dans les génomes
+repose essentiellement sur la détection de trace de la sélection naturelle, par
+opposition avec un modèle neutre d'évolution. Il faut donc définir un modèle
+neutre le plus fidèle possible à la réalité de l'évolution de ces génomes. 
+
+La composition en GC dans les séquences génomiques varient très fortement : on
+peut avoir de 13 à 75% en GC, avec beaucoup d'hétérogénéité intra-génomiques. 
+
+#+BEGIN_QUOTE
+Déterminer les causes sous-jacentes--sélectives ou neutres--de la variation du
+contenu en GC est très important. Si elle résulte de la sélection, alors le
+contenu en GC en soi est un trait qui contribue à la fitness des organismes. Si
+par contre ce contenu est essentiellement modelé par des processus
+non-adaptatifs, alors caractériser ces processus est essentiel pour la détection
+de traces de sélection. 
+#+END_QUOTE
+
+Le processus de biais de conversion n'est pas lié à la sélection à priori, mais
+il peut contribuer à la fixation d'allèles dans une proportion similaire à la
+sélection! Il peut également conduire à confondre des processus de sélection
+avec des processus de bGC. 
+
+La trace des signatures de gBGC dans les génomes est que les régions qui
+montrent de forts taux de recombinaison vont avoir tendance à acquérir un plus
+haut taux de GC. 
+
+- FopGC  : frequency of optimal GC-ending codons
+- FopAU  : frequency of optimal AU-ending codons
+- FnopGC : frequency of non-optimal GC-ending codons
+- FnopAU : frequency of non-optimal AU-ending codons
+  
+Les résultats montre que la recombinaison semble bien affecter le contenu en GC
+dans la plupart des taxons bactériens. 
+
+On peut exclure un biais en faveur du haut GC% par la sélection en faveur des
+amino-acides induits. Ça peut pas être ça, parce qu'il faudrait que les
+positions synonymes soient plus affectées que les positions non-synonymes. Or ça
+n'est pas le cas. 
+
+\[
+B = 2 N_e \dot r \dot L \dot b_0
+\]
+
+Avec $L$ la longueur de la conversion tract, et $b_0$ l'intensité du biais
+initial. Ces deux paramètres varient beaucoup d'une espèce à l'autre, ce qui
+pourrait expliquer les variations de biais observées. 
+
+** -LU- [#A] Duret & Galtier, 2009                                             :bgc:revue:
+[[file+sys:2009_DuretGaltier.pdf][file+sys:./2009_DuretGaltier.pdf]]
+Un événement de conversion de gène méiotique conduit à la ségrégation non
+mendélienne de gamètes dérivés des cellules germinatrices dont ils découlent. 
+
+La conversion peut être /allélique/, si l'un des allèles du gène en remplace
+un autre, ou /ectopique/ si c'est une séquence d'ADN paralogue qui sert de
+donneuse dans l'événement de conversion. 
+
+Le BGC[fn:4] agit sur les sites fonctionnels et sur les sites neutres[fn:5].  
+
+#+BEGIN_QUOTE
+Recombination hotspots might constitute the Achilles' heel of mammalian genomes. 
+#+END_QUOTE
+
+Le brin contenant une entaille est dégradé et resynthétisé en utilisant le brin
+intact pour modèle. 
+
+La recombinaison homologue n'est pas restreinte aux cellules méiotiques. 
+
+Les /isochores/ sont des régions discrètes d'une composition en bases GC
+relativement homogène, dont la mosaïque constituerait les génomes des
+mammifères. La densité en gène est généralement beaucoup plus élevée dans les
+isochores riches en GC que dans les isochores pauvres en GC, non seulement parce
+que les intergènes sont moins nombreux et plus courts, et parce que les introns
+dans les séquences codantes sont beaucoup plus petits. 
+
+[fn:4] Biased Gene Conversion
+
+[fn:5] régions non codantes, etc.
+** -LU- [#A] Hildebrand, 2010                                                  :selection:bacterie:adaptation:
+CLOSED: [2015-09-30 Wed 18:38]
+
+Ils adoptent le postulat adaptationniste selon lequel le contenu en GC est un
+caractère sélectif. Sueoka et Freese indépendamment disent que la variation en
+GC% est un processus neutre en 1961. Il y a peu de preuves pour contredire ces
+vues. 
+
+Ils définissent le terme d'espèce de population génétique, dans le sens des
+souches qui subissent le même destin phylogénétique : ils subissent la même
+dérive et les mêmes contraintes sélectives.
+
+#+BEGIN_QUOTE
+/p4b§1/ 
+This therefore suggests that selection, or some other force, is maintaining high
+GC4 in many bacteria.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+/p6a§2/ It is likely that many gene or gene fragments transferred by hHGT will
+be less extreme in GC-content than the genome they integrate into if the genome
+is GC-rich. The introduced sequence may therefore generate a series of GCRAT
+SNPs. This situation will be temporary because either the new sequence will be
+lost, or it will become fixed. If it becomes fixed, it will then evolve to the
+GC-content of its new host, in the process generating an excess of ATRGC SNPs
+under the mutation bias hypothesis
+#+END_QUOTE
+
+
+
+*** QUEST page 2b§3 : 
+CLOSED: [2015-09-30 Wed 16:48]
+Les erreurs de séquençages ou une erreur de violation de l'hypothèse de site
+infini pourraient expliquer l'excès de GC$\mapsto$AT dans les GC-rich species, et
+l'excès de AT$\mapsto$GC dans les AT-rich species. 
+
+*** voir 2005_Mitchell pour l'excès de mutation GC->AT
+Il serait possible que la perte de gènes codant pour les réparations de l'ADN
+soit en cause dans cet excès de mutation. Possibilité d'expérimentation.
+*** voir les références 2-4 pour la corrélation GC% ~ GC4
+*** voir 2008_Ma pour l'hypothèse des sites infinis
+*** voir 2005_Sharp
+La sélection qui agit sur l'usage du code dans les bactéries pour augmenter
+l'efficacité de traduction. 
+*** voir la référence 32 33
+Le BGC peut agir, au niveau génétique des populations, de la même façon que la
+sélection. 
+*** voir la référence 34 : le four gamete test. 
+*** voir la référence 35 pour le test de Vos et Didelot
+Une quantité liée au taux de recombinaison : la probabilité qu'un nucléotide
+change sous l'impact de la recombinaison par rapport à la probabilité qu'il
+change par mutation : $\frac{r}{m}$. 
+*** voir la référence 9 
+Une hypothèse sélectionniste d'un biais vers AT dans les génomes des symbiotes.
+*** voir la référence 11
+Corrélation est faite entre l'environnement des bactéries et le GC%. 
+** -LU- [#A] Pessia, 2012                                                      :bgc:impact:
+Un papier dans lequel des génomes entièrement séquencés de l'ensemble des grands
+règnes eucaryotes sont étudiés pour vérifier des traces de gBGC. L'équivalent du
+papier de 2015 Lassalle mais chez les eucaryotes. 
+
+Encore une fois, la signature du biais de conversion génique est qu'il entraîne
+sur le long terme, un plus fort taux de GC local dans les régions très
+recombinantes.
+
+Ils utilisent la taille des chromosomes comme un proxy du taux de recombinaison,
+comme démontré dans 1999 Kaback. En fait, plus le chromosome est grand, plus le
+nombre de crossing-over est faible.
+
+/L'interférence chromosomique/ se définit comme le fait qu'un premier
+crossing-over sur un chromosome au moment de la ségrégation méiotique diminue la
+probabilité qu'un second ait lieu.
+** -LU- [#A] Ratnamukar, 2010                                                  :bgc:detection:
+CLOSED: [2015-10-08 Thu 18:14]
+Detecting positive selection within genome, the problem of biased gene
+conversion
+
+L'effet du gBGC sur le \nicefrac{dN}{dS} est dû au fait que les positions de
+codons ont généralement un GC% plus faible que les positions synonymes. Il y a
+donc plus d'opportunités de conversions non-synonymes vers Strong S que dans les
+positions synonymes. Donc dN augmente par rapport à dS. 
+
+Détection de gBGC par rapport à la selection :
+1. mutation W vers S sans à priori favorisée
+2. la sélection affecte uniquement les régions codantes, le gBGC affecte
+   également les régions non-codantes, comme les introns, les flanquantes etc…
+3. le BGC est associé aux zones de fortes recombinaison, notamment chez les
+   mâles.
+
+Les gènes avec la vitesse d'évolution la plus élevée montrent des patrons
+compatibles avec le gBGC, chez les chimpanzé et chez l'Homme. 
+
+Les gènes sélectionnés comme potentiellement sous sélection positive dans le
+génome humain sont ceux qui montrent le plus de trace de conversion génique
+biaisée. 
+** -LU- [#A] Galtier, 2009                                                     :bgc:deletere:
+CLOSED: [2015-10-08 Thu 19:12]
+GC-biased gene conversion promotes the fixation of deleterious amino-acid
+changes in primate. 
+
+L'un des marqueurs de l'activité du BGC est que le biais affecte toute les
+positions, synonymes comme non-synonymes, délétères comme neutre. 
+** -LU- [#A] Galtier & Duret, 2007                                             :bgc:detection:
+CLOSED: [2015-10-08 Thu 19:59]
+Adaptation or biased gene conversion ? Extending the null hypothesis of
+molecular evolution. 
+
+Comment détecter le gBGC par rapport à la sélection ?
+- pas de raisons à priori que les bases G et C soient les allèles favorisés d'un
+  SNP sous l'hypothèse de sélection.
+- le BGC est souvent associé à de hauts niveaux de recombinaisons. C'est donc
+  attendu que les régions (à différentes échelles) du génomes très recombinantes
+  soient les plus affectées. 
+- la sélection directionnelle ou positive n'accélère la vitesse d'évolution que
+  dans les séquences fonctionnelles, alors que le BGC affecte également les
+  régions voisines.
+- alors que la sélection affecte le polymorphisme des sites neutres liés, la
+  portée en terme de fenêtre génomique affectée peut être très large, alors que
+  le BGC n'affecte que la longueur d'une trace de conversion, quelques centaines
+  de paires de bases. 
+
+La région accélérée humaine-spécifique HAR1 est une région codante impliquée
+dans les fonctions nerveuses, et pourrait expliquer les différences entre hommes
+et chimp. Notre intelligence pourrait être due à une BGC…
+
+Si dans un ARN régulateur, le BGC entraîne la fixation d'une base T\mapsto C,
+l'ARN transcrit présente un mésappariemment dans sa structure 3D. On pourrait
+alors avoir une mutation compensatoire dans la base interactante A\mapsto G,
+pour que la structure de l'ARN soit conservée. 
+** -LU- [#A] Mancera, 2008                                                     :bgc:levure:
+L'analyse des conversions tracts, en génotypant l'ensemble des spores haploïdes
+d'un grand nombre de souches de levure. Permet l'analyse fine de la résolution
+des intermédiaires de recombinaison. 
+
+- CO :: échange réciproque accompagnée d'un bout pouvant mener à une conversion
+     de gène.
+- NCO :: échange /non/ réciproque pouvant ainsi mener à un évènement de
+     conversion. 
+** -LU- [#A] Pollard, 2006, Nature                                             :har1:
+CLOSED: [2015-10-11 Sun 10:13]
+
+L'étude de la région HAR1 du génome humain, qui touche les régions corticales du
+cerveau. 
+** -LU- [#A] Lesescque, 2013, MBE                                              :bgc:levure:
+CLOSED: [2015-10-11 Sun 10:25]
+La conversion de gène est un processus associé à la recombinaison, qui résulte
+d'un échange non-réciproque d'information génétique entre deux séquences. 
+
+Ce processus est dit biaisé si l'un des deux allèles a une plus forte
+probabilité de transmission, d'être le donneur que son homologue. 
+
+Il explique que Mancera et al ont démontré que dans toutes les conversions
+tracts, il n'y a toujours qu'un brin donneur. Il n'y a pas de variation de
+donneur sur l'ensemble du brin. C'est toujours le même brin qui donne. C'est
+clair ?
+
+Le BGC est spécifiquement associé aux recombinaisons avec cross-over. On ne
+retrouve jamais de biais lors des évènements NCO. 
+** -LU- [#A] Duret et Arndt, 2008                                              :bgc:impact:
+CLOSED: [2015-10-11 Sun 11:36]
+The impact of recombination on nucleotide substitutions in the human genome. 
+
+On cherche des hypothèses pour expliquer la présence des isochores dans le
+génome humain. Les isochores sont des fenêtres génomiques, de l'ordre du Mb, qui
+varient localement en GC%, en densité d'intron, etc…
+
+Chez les mammifères et la droso, le ratio crossover / non-crossover diminue
+quand la distance au télomère augmente. Autrement dit, il y a plus de crossover
+dans les régions centromériques que dans les régions télomériques. 
+
+Pas tout compris, le niveau de modélo derrière tout ça est vachement élevé. À
+relire avec un peu plus de recul. 
+** -LU- [#A] Hurst, 2009                                                       :evol:
+CLOSED: [2015-10-12 Mon 13:23]
+/Genetics and the understanding of evolution/
+
+La box3 est très bien faite pour la diapo d'introduction de l'oral : comment on
+définit un modèle d'évolution des séquences, comment on définit qu'une séquence
+est sous sélection, qu'un élément est fonctionnel, etc… C'est le principe du
+dN/dS qui est expliqué. C'est bien fait. 
+
+Les trois types de sélection sont également expliqués dans la box2. 
+
+La box1 est très importante et bien expliquée, elle définit le concept
+d'héritage non-Mendélien. Toutes les transmissions ne sont pas mendéliennes. 
+
+#+BEGIN_QUOTE
+Sous des conditions mendéliennes, seule la fitness de l'individu est importante,
+alors que sous des conditions non-mendéliennes, le taux de transmission /et/ la
+fitness de l'individu déterminent le destin de l'allèle. 
+#+END_QUOTE
+
+Elle explique le concept de déséquilibre de liaison : un allèle délétère peut
+envahir une population s'il est souvent associé à des allèles sous sélection
+positive. C'est le concept de hitchhiking, ou auto-stop. 
+
+#+BEGIN_QUOTE
+Si la transmission est mendélienne, cette transmission n'est possible que si
+l'effet délétère du gène est moins important que l'effet positif du gène lié. 
+#+END_QUOTE
+
+Elle parle ensuite des éléments génétiques égoïstes, et notamment du méiotic
+drive : c'est le phénomène qui veut qu'un allèle soit transmis à plus de la
+moitié de la descendance d'un parent hétérozygote. Il peut permettre à un allèle
+très délétère d'envahir une population. 
+
+Un bloc haplotype est une région chromosomique dans laquelle un groupe d'allèle
+à des loci génétiques différents sont hérités ensembles, plus souvent que ne le
+serait prévu par le hasard. 
+** -LU- [#A] Nielsen, 2005                                                     :bgc:detection:
+CLOSED: [2015-10-17 Sat 19:19]
+Molecular Signatures of natural selection
+** -LU- [#B] Escobar, 2011                                                     :bgc:impact:
+CLOSED: [2015-10-17 Sat 20:24]
+
+/GC-Biased Gene Conversion Impacts Ribosomal DNA Evolution in Vertebrates,
+Angiosperms, and Other Eukaryotes/
+
+Le gBGC influence la composition en base des séquences des sous unités 18S du
+rDNA chez les eucaryotes, avec des biais d'environ 60% pour GC. 
+** -LU- [#C] Chen, 2007                                                        :conversion:
+CLOSED: [2015-10-17 Sat 23:23]
+
+Une revue des mécanismes de conversion de gènes. Ils ont des impacts forts, sur
+la mort des hotspots, la génération de maladies génétiques, etc…
+** -LU- [#B] Duret, 2006                                                       :bgc:impact:
+CLOSED: [2015-10-18 Sun 00:10]
+/A new perspective on isochores evolution/
+
+Les bras courts des chromosomes ont montré qu'ils étaient généralement plus
+riches en GC que les bras longs, ce qui est en accord avec le gBGC. En effet,
+chaque étape de méiose implique que les deux bras fasse des crossing-over. Donc
+proportionnellement, c'est plus logique que le bras court soit plus riche en GC,
+il s'enrichit statistiquement plus en GC à chaque recombinaison. 
+
+** -LU- [#A] Duret, 2009                                                       :bgc:mecanismes:
+CLOSED: [2015-10-18 Sun 00:47]
+/Mutations Pattern in the Human Genome : More variable than expected./
+
+** -LU- [#B] Marais, 2003                                                      :bgc:impact:mecanismes:
+CLOSED: [2015-10-18 Sun 16:01]
+/Biased gene conversion, implications for genome and sex evolution/
+
+Un excellent papier d'introduction, une bonne revue très large des différents
+enjeux. Si je devais donner un papier à lire pour comprendre les différents
+enjeux autour du gBGC, ce serait celui-là. 
+** -LU- [#B] Redfield, 2001, Nat Rev Genet                                     :hgt:prok:
+CLOSED: [2015-10-18 Sun 16:55]
+Do bacteria have sex ?
+
+Ce qui est dit ici, en gros, c'est que la machinerie de recombinaison homologue
+chez les bactéries n'est en fait pas "destinée" à faire de la RH pour les
+échanges génétiques, mais à réparer l'ADN lorsqu'il y a des mésappariemments. 
+
+Bien sûr, toutes les traces de gènes horizontalement transmis dans les génomes
+bactériens et qui sont détectés ont un avantage adaptatifs, sinon ils n'auraient
+pas été sélectionnés. Cependant, la très grande majorité des TGH a dû être
+effacée par la sélection purificatrice. 
+
+En fait, l'avantage de pouvoir intégrer de l'ADN étranger pour les bactéries
+compétentes à la transformation serait un avantage nutritif plutôt qu'un
+avantage de sélection en faveur  de la sexualité. 
+** -LU- [#B] Daubin, Perrière, 2003, Genom Biol                                :hgt:prok:
+CLOSED: [2015-10-18 Sun 17:31]
+/The source of laterally transferred gene in bacterial genomes./ 
+
+/E.coli/ et /H.pylori/ ont tous les deux des enzymes de restriction qui ont pour
+cible des séquences à 73% et 60% GC respectivement. Ça pourrait expliquer
+pourquoi la séquence des LGT est plus riche en AT que le génome d'accueil. 
+
+Ça pourrait aussi être un biais dans les analyses, chez /Acinetobacter/.
+** -LU- [#C] Daubin, 2003, Mol Biol evol                                       :prok:gc3:bgc:
+CLOSED: [2015-10-18 Sun 17:59]
+GC3 Structuring along the genome, a common feature in prokaryotes…
+** -LU- [#B] Szolloski, Daubin, 2013                                           :hgt:prok:
+CLOSED: [2015-10-18 Sun 18:05]
+Lateral gene transfer from the dead
+
+Pas vraiment d'intérêt pour le sujet, c'est sur la reconstruction d'arbres en
+inférant les séquences ancestrales d'espèces aujourd'hui éteintes, par les
+traces qu'elles ont laissées sous la forme de LGT dans les génomes déjà
+échantillonnés. C'est fait sur des cyanobactéries. 
+** -LU- [#A] Gogarten, 2005, Nat Rev Genet                                     :evol:prok:hgt:
+CLOSED: [2015-10-18 Sun 20:40]
+Horizontal Gene Transfer, Genome Innovation and Evolution 
+
+Une bonne revue des différentes implications des HGT chez les bactéries, et de
+la difficulté de définir un bon concept d'espèce chez les bactéries, ou de
+génétique des populations bactériennes. 
+** LIRE [#B] Lawrence, 2002                                                    :evol:prok:hgt:
+/Gene transfer in bacteria: speciation without species ?/
+
+#+BEGIN_QUOTE
+This article outlines a fuzzy prokaryotic species concept that incorporates HGT.
+#+END_QUOTE
+** LIRE [#B] Cohan, 2002, Genetica                                             :evol:prok:hgt:
+/Sexual isolation and speciation in bacteria/
+** LIRE [#C] Cohan, 2002, An Rev Microbiol                                     :evol:prok:hgt:
+/What are bacterial species ?/
+
+#+BEGIN_QUOTE
+Outlines a species concept defined by selective sweeps. 
+#+END_QUOTE
+
+Une très grosse revue de 30p qui sera sûrement très intéressante à lire,
+notamment pour les partiels de cette fin d'année… 
+** -LU- [#C] Gillespie, 2000                                                   :evol:drift:
+CLOSED: [2015-10-18 Sun 20:51]
+Genetic Drift in an Infinite Population: The Pseudohitchhiking Model
+
+Une modélisation mathématique des effets de la liaison entre deux locus très
+fortement lié sur leur fixation. Assez lourd à comprendre. Pas les moyens en
+tout cas. Hors suj. 
+** LIRE [#B] Duret, 2002, curr opin genet dev                                  :codon:usage:
+Evolution of synonymous codon usage in metazoans
+** LIRE [#B] Marais, 2001, PNAS                                                :codon:usage:
+Does recombination improve selection on codon usage ? Lessons from nematode and
+fly complete genome. 
+** LIRE [#C] Kimchi-Sarfaty, 2007                                              :codon:usage:
+Des codons synomymes pas si synonymes que ça : la sélection traductionnelle. 
+** LIRE [#C] Sauna, 2007                                                       :codon:usage:
+The sounds of silence: synonymous mutations affect function
+** LIRE [#B] Berglund Pollard Webster, Plos Biol                               :recomb:human:
+Hotspots of biased nucleotide substitutions in Human  
+** LIRE [#A] Martini, 2011, Plos Genet                                         :bgc:levure:
+Genome wide analysis of heteroduplex DNA in yeast 
+** LIRE [#B] Otto, 1997                                                        :evol:recomb:
+The Evolution of Recombination, removing the limits of natural selection
+** LIRE [#B] Green, 2003                                                       :bgc:mecanismes:
+Transcription-associated mutational asymmetry in mammalian evolution
+
+** LIRE [#C] Pollard, 2006, PloS One                                           :har1:
+** LIRE [#C] Franchini, 2015,                                                  :har1:
+Can a few non coding mutations make a human brain ?
+** LIRE [#C] Prabhakar, 2006
+** LIRE [#C] Meunier & Duret, 2004
+** LIRE [#C] Wienand, 2015
+** LIRE [#C] Duret, 2006, Mol Evol
+** LIRE [#C] Spencer, 2006
+* Rédiger Mécanismes
+** Mécanismes de RH [1/2]
+*** -LU- Chen, 2008
+CLOSED: [2015-11-09 Mon 11:41]
+/RecA/
+*** TODO écrire partie SDSA et double end capture
+** Mécanismes de gBGC
+*** -LU- Marais, 2003
+CLOSED: [2015-11-21 Sat 18:45]
+*** -LU- Lesecque, 2013
+CLOSED: [2015-11-21 Sat 18:45]
+* Rédiger Causes
+** Hypothèses expliquant gBGC
+** propriétés inhérentes recombinaison
+** compensation biais mutationnel vers AT
+*** À lire [0/2]
+**** LIRE Birdsell, 2001, 
+ Birdsell,J.A.Integratinggenomics,bioinformatics,andclassicalgeneticstostudy
+the effects of recombination on genome evolution. Mol. Biol. Evol. 19, 1181–1197
+(2002).
+**** LIRE Lynch, 2010
+Lynch M. 2010. Rate, molecular spectrum, and consequences of human mutation.
+Proc Natl Acad Sci U S A. 107:961–968.
+
+* Rédiger Conséquences
+** Conséquences évolutives gBGC
+** isochores et structures GC
+** brouille traces de sélection
+** interfère avec sélection
+
+* Mise En Page [0%]
+** TODO Ajouter légende figure 1 recombinaison homologue
+** TODO Clarifier figure 1 [0/2]
+- [ ] supprimer légendes inutiles
+- [ ] dimensionner 
+** TODO Ajouter figure 2 correction des mésappariements [0/3]
+- [ ] la découper dans le Watson et al
+- [ ] garder l'utile
+- [ ] la sauvegarder.
+** TODO Légender figure 2

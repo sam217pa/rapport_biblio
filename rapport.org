@@ -13,16 +13,18 @@
 :END:
 
 La recombinaison homologue est un processus majeur d'évolution des génomes.
-C'est un processus très conservé, des procaryotes aux eucaryotes\cite{cromie_recombination_2001}. C'est le
-processus clé de réparation des lésions de l'ADN. Elles sont réparées sur la
-base d'une matrice d'ADN homologue, donnant lieu à la formation transitoire d'un
-/hétéroduplex/. Un hétéroduplex est un appariement entre deux brins homologues,
-qui ne sont pas nécessairement rigoureusement complémentaires. Chez les
-eucaryotes, la matrice est typiquement la région homologue correspondante, sur
-la chromatide sœur. Les crossing-over méiotiques sont générés sous contrôle
-génétique et impliquent une étape obligatoire de recombinaison\cite{mancera_high-resolution_2008}. Chez les
+C'est un processus très conservé, des procaryotes aux
+eucaryotes\cite{cromie_recombination_2001}. C'est le processus clé de réparation
+des lésions de l'ADN. Elles sont réparées sur la base d'une matrice d'ADN
+homologue, donnant lieu à la formation transitoire d'un /hétéroduplex/. Un
+hétéroduplex est un appariement entre deux brins homologues, qui ne sont pas
+nécessairement rigoureusement complémentaires. Chez les eucaryotes, la matrice
+est typiquement la région homologue correspondante, sur la chromatide sœur. Les
+crossover méiotiques sont générés sous contrôle génétique et impliquent une
+étape obligatoire de recombinaison\cite{mancera_high-resolution_2008}. Chez les
 procaryotes, cette matrice peut être acquise par transfert horizontal. La
-recombinaison est le moyen principal de transfert de gène entre les bactéries\cite{vos_rates_2015}.
+recombinaison est le moyen principal de transfert de gène entre procaryotes
+\cite{vos_rates_2015}.
 
 \newthought{Au voisinage} de la région lésée --- puis réparée --- , des échanges
 d'information génétique de petite échelle existent\cite{duret_biased_2009}. Ils
@@ -32,26 +34,27 @@ non-mendéliennes d'allèles : l'information génétique est transmise d'un brin
 vers l'autre, de façon unidirectionnelle. Cette conversion est /biaisée/ dès
 lors que l'un des allèles a une plus forte probabilité de transmission, à
 l'échelle de la population. Chez les eucaryotes, de nombreuses observations
-existent, qui montrent que la conversion est biaisée /vers G ou
-C/\cite{pessia_evidence_2012, mancera_high-resolution_2008}. Les allèles G ou C
-sont plus souvent transmis que les allèles A ou T. Ce biais de conversion
-génique en faveur de GC --- \ac{gbgc} --- a un impact fort sur l'évolution des
-génomes : il conditionne la /structuration/ en contenu GC des génomes ; il peut
-/interférer/ avec la sélection naturelle ; et, d'un point de vue pratique, il
-peut /brouiller les tests/ de sélection naturelle\cite{duret_biased_2009}.
+montrent que la conversion est biaisée /vers les bases G ou C/
+\cite{pessia_evidence_2012, mancera_high-resolution_2008, duret_impact_2008}.
+Les allèles G ou C sont plus souvent transmis que les allèles A ou T. Ce biais
+de conversion génique en faveur de GC --- \ac{gbgc} --- a un impact fort sur
+l'évolution des génomes : il conditionne la /structuration/ en contenu GC des
+génomes\cite{duret_impact_2008} ; il /interfère/ avec la sélection
+naturelle\cite{galtier_gc-biased_2009} ; et, d'un point de vue pratique, il
+/brouille les tests/ de sélection naturelle\cite{ratnakumar_detecting_2010}.
 
 Dans les régions fortement recombinantes, le contenu en GC est anormalement
 élevé, lorsque le biais est observé\cite{duret_impact_2008}. Ce mécanisme permet
-d'expliquer partiellement les variations en \ac{gc}, au sein d'un génome et
-entre génomes. Il existe un débat dans la communauté scientifique entre les
-partisans des hypothèses adaptatives, et ceux des hypothèses neutres. Les
-hypothèses /adaptatives/ veulent que le contenu en GC soit un trait
-sélectionné : il contribue en soi à la valeur adaptative de
-l'individu\cite{hildebrand_evidence_2010}. Les hypothèses /neutres/ avancent
-qu'il est également déterminé par des processus de dérive génétique et de
-mutation. Le \ac{gbgc} est un autre processus neutre contribuant à déterminer le
-\ac{gc}. En fait, c'est la contribution /relative/ des trois processus à la
-détermination du \ac{gc} qui fait débat.
+d'expliquer en partie les variations en \ac{gc}, au sein d'un génome et entre
+génomes. L'explication de ces variations suscite un débat entre les partisans
+des hypothèses adaptatives, et ceux des hypothèses neutres. Les hypothèses
+/adaptatives/ veulent que le contenu en GC soit un trait sélectionné : il
+contribue en soi à la valeur adaptative de l'individu
+\cite{hildebrand_evidence_2010}. Les hypothèses /neutres/ avancent qu'il est
+également déterminé par des processus de dérive génétique et de mutation. Le
+\ac{gbgc} est un autre processus neutre contribuant à déterminer le \ac{gc}. En
+fait, c'est la contribution /relative/ des trois processus à la détermination du
+\ac{gc} qui fait débat.
 
 Le biais peut également permettre de fixer des mutations délétères, si celles-ci
 sont portées par les allèles G ou C du gène. Il contrecarre l'action de la
@@ -60,7 +63,6 @@ sélection naturelle\cite{galtier_gc-biased_2009, galtier_adaptation_2007}.
 Enfin, l'action du biais laisse des traces génomiques équivalentes à celles de
 la sélection naturelle : les tests classiques de détection confondent l'action
 de la sélection avec celle du \ac{gbgc}\cite{ratnakumar_detecting_2010}.
-
 
 \newthought{Récemment,} l'hypothèse du biais vers GC s'est étendue aux
 procaryotes\cite{lassalle_gc-content_2015}. Des observations montrent que les
@@ -76,21 +78,21 @@ d'expliquer son existence.
 
 * Qu'est-ce que la conversion génique ? 
 
-#+BEGIN_QUOTE
 La conversion génique est un mécanisme qui intervient au cours de la réparation
 de l'ADN. Lors d'une cassure double brin --- \ac{dsb} --- , la lésion est réparée par
 recombinaison homologue. Les mésappariements induits peuvent être corrigés,
 donnant lieu à une transmission d'allèle non-mendélienne \cite{chen_mechanism_2008}. 
-#+END_QUOTE
 
 #+name: image_1
 #+BEGIN_LaTeX
 \addfig{%
   \centering
-  \missingfigure
-  \caption{\textbf{Succession des étapes de recombinaison homologue}}
-  \label{recomb}
+  \includegraphics[width=\linewidth]{img/conversion.pdf}
+  \caption{\textbf{Recombinaison homologue} 
+  }
+  \label{recombinaison}
 }
+
 #+END_LaTeX
 
 ** Recombinaison homologue
@@ -100,12 +102,12 @@ formation de fourches de réplications. Les lésions subies par l'ADN en cours d
 réplication empêchent le déplacement de ces fourches, et notamment les cassures
 double brins. Ces \ac{dsb} sont extrêmement cytotoxiques : ils causent l'arrêt
 de la réplication, la perte de chromosomes, sont mutagènes et conduisent à la
-mort cellulaire\cite{watson_molecular_2014}. La bonne conduite de la réplication
-nécessite de réparer ces cassures, de façon non-mutagène. La recombinaison
-homologue est le moyen préférentiel de réparation \cite{lusetti_bacterial_2002}.
-Compte tenu de son importance dans le cycle cellulaire, les mécanismes qui la
-sous-tendent sont ubiquitaires et extrêmement conservés, des phages aux
-mammifères \cite{cromie_recombination_2001}.
+mort cellulaire \cite{watson_molecular_2014}. La bonne conduite de la
+réplication nécessite de réparer ces cassures, de façon non-mutagène. La
+recombinaison homologue est le moyen préférentiel de réparation
+\cite{lusetti_bacterial_2002}. Compte tenu de son importance dans le cycle
+cellulaire, les mécanismes qui la sous-tendent sont ubiquitaires et extrêmement
+conservés, des phages aux mammifères \cite{cromie_recombination_2001}.
 
 *** Mécanismes de recombinaison homologue
 
@@ -118,61 +120,52 @@ Après la formation des \ac{dsb}, les extrémités $5'$ de la lésion subissent 
 /résection/, délétion locale d'une section d'ADN. Chez /E.coli/, le complexe
 RecBCD est responsable de cette digestion. Il a une activité d'hélicase : il
 dissocie les deux brins d'ADN ; et de nucléase : il digère localement les brins
-dissociés\cite{dillingham_recbcd_2008}. 
+dissociés \cite{dillingham_recbcd_2008}.
 
-Les brins aux extrémités $3'$ /envahissent/ les brins complémentaires de la
-molécule intacte. Ces extrémités recherchent activement les zones d'homologie.
-Lorsqu'une zone est déterminée, les brins sont échangés. L'ensemble de ce
-processus est catalysé par la nucléo-protéine RecA\cite{chen_mechanism_2008}.
-C'est l'acteur moléculaire clé de la recombinaison homologue. Chez les
-eucaryotes, l'homologue fonctionnel de RecA est le complexe
-Dmc1\cite{bishop_dmc1:_1992}.
+Le brin à l'extrémité $3'$ /envahit/ les brins complémentaires de la molécule
+intacte. Ce brin recherche ensuite activement les zones d'homologie. Lorsqu'une
+zone est déterminée, les brins sont échangés. L'ensemble de ce processus est
+catalysé par la nucléo-protéine RecA \cite{chen_mechanism_2008}. C'est l'acteur
+moléculaire clé de la recombinaison homologue. Chez les eucaryotes, l'homologue
+fonctionnel de RecA est le complexe Dmc1 \cite{bishop_dmc1:_1992}.
 
-L'échange des brins entraîne la formation d'un un hétéroduplex. L'intégrité de
-l'hétéroduplex est maintenue par une structure appelée /jonction de
-Holliday/. Des mésappariements peuvent exister entre les brins de
-l'hétéroduplex : deux brins homologues ne sont pas systématiquement
-complémentaires. Une fois résolus, ces mésappariements peuvent être le lieu
-d'une conversion génique, dont je reparlerai au paragraphe [[#conversion]].
+L'échange des brins entraîne la formation d'un hétéroduplex. L'intégrité de
+l'hétéroduplex est maintenue par une structure appelée /jonction de Holliday/.
+Des mésappariements peuvent exister entre les brins de l'hétéroduplex : deux
+brins homologues ne sont pas systématiquement complémentaires. Une fois résolus,
+ces mésappariements peuvent être le lieu d'une conversion génique (voir
+[[#conversion]]).
 
 La zone de résection est ensuite comblée par la /synthèse/ d'ADN en utilisant le
 brin homologue comme matrice. 
 
-\todo{second-end capture \& SDSA}
-
 Enfin, les intermédiaires de recombinaisons sont /résolus/, par le clivage
 aléatoire des jonctions de Holliday. Ce clivage est catalysée par des
-/résolvases/, telles que RuvC\cite{gorecka_crystal_2013}. La résolution peut
-donner des produits dits crossovers ou non-crossover, entraînant respectivement
-l'échange des brins ou leur dissolution\cite{mancera_high-resolution_2008}.
+/résolvases/, telles que RuvC \cite{gorecka_crystal_2013}. 
 
-#+BEGIN_QUOTE
+La résolution des intermédiaires de recombinaisons peut donner des produits dits
+crossovers ou non-crossovers, entraînant respectivement l'échange des régions
+flanquantes ou non \cite{mancera_high-resolution_2008}.
+
+#+BEGIN_LaTeX
+\begin{transition}
 La réparation des cassures est la fonction principale et \emph{première} de la
 machinerie de recombinaison homologue. Cependant, les mécanismes en jeu sont le
 lieu d'un brassage génétique, aussi bien lors de la méiose eucaryote que lors
 des transferts de gène procaryotes \cite{redfield_bacteria_2001}.
-#+END_QUOTE
-
-#+name: image_2
-#+BEGIN_LaTeX
-\addfig{%
-  \centering
-  \includegraphics[width=\linewidth]{img/conversion.pdf}
-  \caption{\textbf{Illustration de la conversion génique}}
-  \label{conversion}
-}
-
+\end{transition}
 #+END_LaTeX
+
 *** La recombinaison méiotique : étape clé de la méiose
 
 Chez les eucaryotes, la méiose implique la formation de DSB sous contrôle
 génétique rigoureux, qui sont réparés par recombinaison homologue
 \cite{chapman_playing_2012}. Les enzymes Spo11 introduisent aléatoirement des
-DSB. Cependant, la distribution des sites de coupure est variable : il existe
-des /hotspots/ de cassure, et donc de recombinaison. Par opposition, les /coldspots/ 
-sont des régions moins soumises que d'autres aux cassures.
+\ac{dsb}. Cependant, la distribution des sites de coupure est variable : il
+existe des /hotspots/ de cassure, et donc de recombinaison. Par opposition, les
+/coldspots/ sont des régions moins soumises que d'autres aux cassures.
 
-La réparation de ces DSB par recombinaison homologue est requise pour
+La réparation de ces \ac{dsb} par recombinaison homologue est requise pour
 l'appariement et la ségrégation des chromosomes homologues au cours de la
 méiose. Selon le mode de clivage des jonctions de Holliday par les résolvases,
 des crossovers se forment entre les chromosomes parentaux. 
@@ -187,28 +180,39 @@ sexuée\cite{otto_why_2006}.
 *** La recombinaison comme moteur des transferts horizontaux de gènes
 
 Étant donné la taille des populations bactériennes et les temps évolutifs en
-jeu, la recombinaison a un impact majeur sur l'évolution
-procaryote\cite{didelot_impact_2010}. C'est le moteur des transferts de gène.
-Ceux-ci sont médiés, soit par des vecteurs, les plasmides ou les phages, soit
-par un état de compétence naturelle.
+jeu, la recombinaison a un impact majeur sur l'évolution procaryote
+\cite{didelot_impact_2010}. C'est le moteur des transferts de gène. Ceux-ci sont
+médiés soit par des vecteurs, les plasmides ou les phages, soit par un état de
+compétence naturelle, /via/ l'acquisition passive ou active d'ADN exogène. 
 
 La principale fonction de la recombinaison /homologue/ semble être la réparation
-des lésions de l'ADN\cite{fall_horizontal_2007, michod_adaptive_2008}. 
+des lésions de l'ADN \cite{fall_horizontal_2007, michod_adaptive_2008}. 
 
 Il est difficile d'estimer les fréquences de recombinaison procaryotes. Elles
-sont très variables, au sein d'une espèce ou d'un écotype ou entre
-espèces\cite{didelot_impact_2010}.
+sont très variables, au sein d'une espèce, d'un écotype ou entre espèces
+\cite{didelot_impact_2010}.
 
-\todo{Terminer cette partie}
+\todo{Revoir cette partie}
 
-
-#+BEGIN_QUOTE
+#+BEGIN_LaTeX
+\begin{transition}
 Après la résolution des intermédiaires de recombinaison, des mésappariements
 peuvent exister entre les différents brins. Leur correction entraîne une
 conversion génique.
-#+END_QUOTE
+\end{transition}
+#+END_LaTeX
 
-** Conversion génique
+#+name: image_2
+#+BEGIN_LaTeX
+\addfig{%
+  \centering
+  \includegraphics[width=\linewidth]{img/mutslh.pdf}
+  \caption{\textbf{Correction des mésappariements par MutSLH}}
+  \label{mutslh}
+}
+#+END_LaTeX
+
+** TODO Conversion génique
 :PROPERTIES:
 :CUSTOM_ID: conversion
 :END:
@@ -226,33 +230,92 @@ Au cours de la réparation des DSB, la conversion peut subvenir de deux façons.
 i) L'allèle $A$ est proche du site d'initiation de la cassure. Il fait partie de
 la résection, l'allèle $a$ est copié vers le brin réparé. $Aaaa$ est le génotype
 obtenu. ii) L'intermédiaire de recombinaison présente un polymorphisme $Aa$ sur
-l'un des brins. La machinerie de réparation des mésappariements --- \ac{mmr} ---
-les prend en charge. $a$ est alors converti en $A$, ou réciproquement. 
+l'un des hétéroduplex. La machinerie de réparation des mésappariements ---
+\ac{mmr} --- les prend en charge. $a$ est alors converti en $A$, ou
+réciproquement.
 
-\newthought{Le transfert} a lieu --- usuellement --- de la séquence homologue
-intacte vers le brin lésé. Il peut se faire entre chromatides sœurs, chromosomes
-homologues, ou séquences homologues, qu'elles soient sur le même chromosome ou
-sur des chromosomes différents\cite{chen_gene_2007}. La conversion se produit
-avant la résolution des jonctions de Holliday.
+Chez /E.coli/, la détection des mésappariements est effectuée par les dimères
+des enzymes MutS. Les mésappariements sont reconnus par la distorsion qu'ils
+causent à la structure de l'ADN. Les enzymes MutL et MutH sont alors recrutées.
+Une cassure est introduite dans l'un des brins, suivie par une résection souvent
+supérieure à $1$kb à proximité de la cassure. Une ADN polymérase utilise ensuite
+le brin intact pour synthétiser la région complémentaire. Les eucaryotes
+possèdent des protéines aux fonctions homologues, appelées respectivement MSH et
+MLH pour /MutS Homologs/ et /MutL Homologs/. Ce sont des composants de la voie
+\ac{ner}, /Nucleotide Excision Repair/.
 
-\todo{machinerie de correction des mésappariemments, BER etc}
+Au cours de la recombinaison, le système de \ac{mmr} est la voie préférentielle
+de correction des mésappariements dans l'hétéroduplex. Néanmoins, la voie
+\ac{ber}, /Base Excision Repair/, est une alternative à ce système.
 
-#+BEGIN_QUOTE
+Elle entraîne l'excision de l'une des bases du mésappariement, puis son
+remplacement par la base complémentaire à l'autre. Les ADN glycosylases excisent
+les bases avec une spécificité de substrat : chaque base $A$, $T$, $C$ ou $G$ a
+une ADN glycosylase correspondante et spécifique.
+
+Dans tous les cas, le génotype de la région --- ou de la base --- digérée est
+/converti/ par celui du brin intact. Le transfert a lieu entre séquences
+homologues, qu'elles soient sur des chromatides sœurs, sur le même chromosome ou
+sur des chromosomes différents \cite{chen_gene_2007}.
+
+#+BEGIN_LaTeX
+\begin{transition}
+
 En théorie, la conversion $a \mapsto A$ a lieu avec la même fréquence que celle
 de la conversion $A \mapsto a$. Cependant, dès lors qu'un allèle est plus
 souvent converti que l'autre, à l'échelle de la population, la conversion
-génique est /biaisée/. Chez les eucaryotes, de nombreuses observations montrent
+génique est {\em biaisée}. Chez les eucaryotes, de nombreuses observations montrent
 que les mésappariements $GA$, $GT$, $CA$ ou $CT$ sont plus fréquemment corrigés
 en $GC$ qu'en $AT$ \cite{duret_biased_2009}. 
-#+END_QUOTE
+
+\end{transition}
+#+END_LaTeX
+
 ** La conversion génique biaisée vers GC
-* Quelles en sont les conséquences ?
-** Structure le contenu en GC
-** Interfère avec la sélection 
-** Brouille les tests de sélection 
+
+\todo{premiers articles gbgc marais et duret 2003 et 2001 etc}
+
+Mancera /et al/ \cite{mancera_high-resolution_2008} ont génotypé l'ensemble des
+quatre haplotypes --- les tétrades --- résultants des produits de méiose de 46
+levures, à haute résolution. Ils montrent qu'1% du génome de chaque produit de
+méiose est soumis à de la conversion génique. Ces régions montrent une
+transmission biaisée en faveur des allèles G ou C. Ils sont transmis avec une
+probabilité 1.3% plus élevée qu'attendu sous l'hypothèse d'une transmission
+mendélienne \cite{mancera_high-resolution_2008}. 
+
+Chez la levure, le \ac{gbgc} est associé spécifiquement aux produits de
+recombinaisons entraînant des crossovers \cite{lesecque_gc-biased_2013}. Il est
+également associé aux évènements de conversion /simple/ --- par opposition aux
+évènements complexes. Lors d'un évènement de conversion simple, le même brin est
+le donneur de la conversion sur l'ensemble de la région convertie. Lors d'un
+évènement complexe, les deux brins de l'hétéroduplex peuvent être donneur. 
+
+#+BEGIN_LaTeX
+\begin{transition}
+  Les causes moléculaires de l'existence d'un tel mécanisme suscitent beaucoup
+  d'interrogations. Différentes hypothèses ont été avancées : elles font l'objet
+  de la partie suivante. 
+\end{transition}
+#+END_LaTeX
+
 * Quelles hypothèses pour l'expliquer ?
 ** Des propriétés inhérentes à la machinerie de réparation ?
+La machinerie de réparation pourrait dans sa structure présenter un biais en
+faveur de la transmission des allèles G ou C au cours de la conversion génique. 
 ** Un processus sélectionné pour compenser la mutation ?
+La mutation est universellement biaisée vers AT \cite{lynch_TODO_2010}. Le gBGC
+pourrait avoir été sélectionné pour contrecarrer les effets de ce biais
+mutationnel\cite{marais_biased_2003}. Des preuves théoriques et expérimentales
+existent pour soutenir cette hypothèse.
+
+La voie \ac{ber} implique des DNA glycosylases spécifiques. Chez les mammifères,
+il existe des Thymines DNA glycosylases, qui excisent les bases thymines. 
+* Quelles en sont les conséquences ?
+** Structure le contenu en GC
+*** Le contenu en GC, un trait sous sélection ?
+*** La théorie des isochores
+** Interfère avec la sélection 
+** Brouille les tests de sélection 
 * Conclusion
 :PROPERTIES:
 :UNNUMBERED: t

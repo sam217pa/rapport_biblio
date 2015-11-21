@@ -61,6 +61,16 @@
   long  = Mismatch repair : machinerie de réparation des mésappariements ,
   class = abbrev
 }
+\DeclareAcronym{ber}{
+  short = BER ,
+  long  = Base Excision Repair ,
+  class = abbrev
+}
+\DeclareAcronym{ner}{
+  short = NER ,
+  long  = Nucleotid Excision Repair ,
+  class = abbrev
+}
 
 %%
 %% table of content
@@ -79,6 +89,19 @@
    \noindent\textrm{\bsc{#1}} % small caps text out
 }
 \usepackage[]{lipsum}
+
+\KOMAoptions{
+  parskip = half-, 
+  draft = true,
+}
+
+\newenvironment{transition}{% 
+    \begin{minipage}{\linewidth}% 
+      \rule{\linewidth}{0.2pt}%
+    }{%
+      \rule{\linewidth}{0.2pt}% 
+    \end{minipage}%
+}
 
 %% 
 %% color
