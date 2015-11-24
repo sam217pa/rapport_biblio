@@ -32,7 +32,8 @@
 \usepackage[]{multicol}
 %% todo
 \usepackage[french]{todonotes}
-
+% \usepackage[]{cleveref}
+%   \crefname{enumi}{position}{positions}
 %%
 %% acronymes
 %%
@@ -68,7 +69,12 @@
 }
 \DeclareAcronym{ner}{
   short = NER ,
-  long  = Nucleotid Excision Repair ,
+  long  = Nucleotide Excision Repair ,
+  class = abbrev
+}
+\DeclareAcronym{har}{
+  short = HAR ,
+  long  = Human Accelerated Regions : région accélérée spécifique à la lignée humaine ,
   class = abbrev
 }
 

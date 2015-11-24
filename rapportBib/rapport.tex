@@ -1,4 +1,4 @@
-% Created 2015-11-22 Sun 20:30
+% Created 2015-11-24 Tue 16:58
 \documentclass[11pt, oneside]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -68,21 +68,20 @@ naturelle\cite{galtier_gc-biased_2009} ; et, d'un point de vue pratique, il
 
 Dans les régions fortement recombinantes, le contenu en GC est anormalement
 élevé, lorsque le biais est observé\cite{duret_impact_2008}. Ce mécanisme permet
-d'expliquer en partie les variations en \ac{gc}, au sein d'un génome et entre
-génomes. L'explication de ces variations suscite un débat entre les partisans
-des hypothèses adaptatives, et ceux des hypothèses neutres. Les hypothèses
-\emph{adaptatives} veulent que le contenu en GC soit un trait sélectionné : il
-contribue en soi à la valeur adaptative de l'individu
+d'expliquer en partie les variations du contenu en GC, au sein d'un génome et
+entre génomes. L'explication de ces variations suscite un débat entre les
+partisans des hypothèses adaptatives, et ceux des hypothèses neutres. Les
+hypothèses \emph{adaptatives} veulent que le contenu en GC soit un trait
+sélectionné : il contribue en soi à la valeur adaptative de l'individu
 \cite{hildebrand_evidence_2010}. Les hypothèses \emph{neutres} avancent qu'il est
 également déterminé par des processus de dérive génétique et de mutation. Le
-\ac{gbgc} est un autre processus neutre contribuant à déterminer le \ac{gc}. En
-fait, c'est la contribution \emph{relative} des trois processus à la détermination du
-\ac{gc} qui fait débat.
+\ac{gbgc} est un autre processus neutre contribuant à déterminer le taux de GC.
+En fait, c'est la contribution \emph{relative} des trois processus à la détermination
+du taux de GC qui fait débat.
 
 Le biais peut également permettre de fixer des mutations délétères, si celles-ci
 sont portées par les allèles G ou C du gène. Il contrecarre l'action de la
 sélection naturelle\cite{galtier_gc-biased_2009, galtier_adaptation_2007}.
-
 Enfin, l'action du biais laisse des traces génomiques équivalentes à celles de
 la sélection naturelle : les tests classiques de détection confondent l'action
 de la sélection avec celle du \ac{gbgc}\cite{ratnakumar_detecting_2010}.
@@ -94,18 +93,19 @@ régions fortement recombinantes ont un contenu en GC significativement plus
 majeure : elle pourrait permettre d'expliquer l'évolution du contenu en GC des
 populations bactériennes.
 
-Nous verrons donc, dans une première partie, ce qu'est la conversion génique
-biaisée et les mécanismes qui la sous-tendent ; dans une deuxième, ses
-conséquences évolutives ; et dans une dernière, les hypothèses permettant
-d'expliquer son existence.
+Nous verrons donc ce qu'est la conversion génique biaisée et les mécanismes qui
+la sous-tendent, dans une première partie; dans une deuxième, les hypothèses
+permettant d'expliquer son existence ; et dans une dernière, ses conséquences
+évolutives.
 
 \section{Qu'est-ce que la conversion génique ?}
 \label{sec:orgheadline8}
 
 La conversion génique est un mécanisme qui intervient au cours de la réparation
-de l'ADN. Lors d'une cassure double brin --- \ac{dsb} --- , la lésion est réparée par
-recombinaison homologue. Les mésappariements induits peuvent être corrigés,
-donnant lieu à une transmission d'allèle non-mendélienne \cite{chen_mechanism_2008}. 
+de l'ADN. Lors d'une cassure double brin --- \ac{dsb}, Double Strand Break --- ,
+la lésion est réparée par recombinaison homologue. Les mésappariements induits
+peuvent être corrigés, donnant lieu à une transmission d'allèle non-réciproque
+\cite{chen_mechanism_2008}.
 
 \addfig{%
   \centering
@@ -136,9 +136,8 @@ conservés, des phages aux mammifères \cite{cromie_recombination_2001}.
 La recombinaison se déroule en plusieurs étapes. 
 
 Les cassures doubles brins --- \ac{dsb} --- sont générées par des processus
-mutagènes ou sous contrôle génétique, notamment lors de la méiose. 
-
-Après la formation des \ac{dsb}, les extrémités \(5'\) de la lésion subissent une
+mutagènes ou sous contrôle génétique, notamment lors de la méiose. Après la
+formation des \ac{dsb}, les extrémités \(5'\) de la lésion subissent une
 \emph{résection}, délétion locale d'une section d'ADN. Chez \emph{E.coli}, le complexe
 RecBCD est responsable de cette digestion. Il a une activité d'hélicase : il
 dissocie les deux brins d'ADN ; et de nucléase : il digère localement les brins
@@ -147,27 +146,21 @@ dissociés \cite{dillingham_recbcd_2008}.
 Le brin à l'extrémité \(3'\) \emph{envahit} les brins complémentaires de la molécule
 intacte. Ce brin recherche ensuite activement les zones d'homologie. Lorsqu'une
 zone est déterminée, les brins sont échangés. L'ensemble de ce processus est
-catalysé par la nucléo-protéine RecA \cite{chen_mechanism_2008}. C'est l'acteur
-moléculaire clé de la recombinaison homologue. Chez les eucaryotes, l'homologue
-fonctionnel de RecA est le complexe Dmc1 \cite{bishop_dmc1:_1992}.
+catalysé par la nucléo-protéine RecA \cite{chen_mechanism_2008} ou ses
+homologues. C'est l'acteur moléculaire clé de la recombinaison homologue.
 
 L'échange des brins entraîne la formation d'un hétéroduplex. L'intégrité de
 l'hétéroduplex est maintenue par une structure appelée \emph{jonction de Holliday}.
 Des mésappariements peuvent exister entre les brins de l'hétéroduplex : deux
-brins homologues ne sont pas systématiquement complémentaires. Une fois résolus,
-ces mésappariements peuvent être le lieu d'une conversion génique (voir
-\ref{sec:orgheadline2}).
+brins homologues ne sont pas systématiquement complémentaires. Leur correction
+peut donner lieu à une conversion génique (voir \ref{sec:orgheadline2}).
 
 La zone de résection est ensuite comblée par la \emph{synthèse} d'ADN en utilisant le
-brin homologue comme matrice. 
-
-Enfin, les intermédiaires de recombinaisons sont \emph{résolus}, par le clivage
-aléatoire des jonctions de Holliday. Ce clivage est catalysée par des
-\emph{résolvases}, telles que RuvC \cite{gorecka_crystal_2013}. 
-
-La résolution des intermédiaires de recombinaisons peut donner des produits dits
-crossovers ou non-crossovers, entraînant respectivement l'échange des régions
-flanquantes ou non \cite{mancera_high-resolution_2008}.
+brin homologue comme matrice. Enfin, les intermédiaires de recombinaisons sont
+\emph{résolus} par des résolvases qui clivent les jonctions de Holliday. La résolution
+des intermédiaires de recombinaisons peut donner des produits dits crossovers ou
+non-crossovers, entraînant respectivement l'échange des régions flanquantes ou
+non \cite{mancera_high-resolution_2008}.
 
 \begin{transition}
 La réparation des cassures est la fonction principale et \emph{première} de la
@@ -318,25 +311,142 @@ faveur de la transmission des allèles G ou C au cours de la conversion génique
 \subsection{Un processus sélectionné pour compenser la mutation ?}
 \label{sec:orgheadline10}
 La mutation est universellement biaisée vers AT
-\cite{lynch_rate_2010,hershberg_evidence_2010}. Le gBGC pourrait avoir été
-sélectionné pour contrecarrer les effets de ce biais
-mutationnel\cite{marais_biased_2003}. Des preuves théoriques et expérimentales
-existent pour soutenir cette hypothèse.
+\cite{lynch_rate_2010,hershberg_evidence_2010}. Le \ac{gbgc} pourrait avoir été
+sélectionné pour contrecarrer les effets de ce biais mutationne
+\cite{marais_biased_2003}. Des preuves théoriques et expérimentales existent
+pour soutenir cette hypothèse.
 
 La voie \ac{ber} implique des DNA glycosylases spécifiques. Chez les mammifères,
-il existe des Thymines DNA glycosylases, qui excisent les bases thymines. 
+il existe des Thymines DNA glycosylases, qui excisent spécifiquement les thymines. 
+
 \section{Quelles en sont les conséquences ?}
 \label{sec:orgheadline17}
+Puisqu'elle augmente la probabilité de fixation des allèles G ou C, la
+conversion biaisée joue un rôle important dans la structuration du contenu en
+GC des génomes. La conversion biaisée n'est pas en soi liée à la sélection
+naturelle. Elle affecte cependant la fixation d'allèles d'une façon similaire
+à la sélection\cite{nagylaki_evolution_1983}. Elle a donc deux conséquences
+directes et indirectes : elle interfère avec la sélection et confond les tests
+de sélection naturelle.
 \subsection{Structure le contenu en GC}
 \label{sec:orgheadline14}
-\subsubsection{Le contenu en GC, un trait sous sélection ?}
+Les bases C et G sont liées par trois liaisons hydrogènes : elles sont plus
+stables que les liaisons doubles entre A et T. Certains pensent qu'en soi, le
+taux de GC est un trait adaptatif : à l'échelle du génome, un contenu en GC
+supérieur en augmenterait la stabilité. Ce modèle rencontre néanmoins de
+nombreuses difficultés, chez les eucaryotes comme les procaryotes. La conversion
+biaisée vers GC a été proposée comme modèle alternatif expliquant les variations
+en taux de GC --- \ac{gc} --- , au sein d'un génome et entre génomes.
+
+\subsubsection{Le contenu GC des génomes mammifères et la théorie des isochores}
 \label{sec:orgheadline12}
-\subsubsection{La théorie des isochores}
+Les mammifères montrent des variations intragénomiques de grande échelle en taux
+de GC\cite{eyre-walker_evolution_2001} ( \(>\) 100kb ). Ces régions relativement
+homogènes en taux de GC ont été baptisées \emph{isochores}. Leur origine fait débat :
+est-ce un trait sélectionné ou une conséquence évolutive des patrons de
+mutations ?
+
+Le modèle sélectionniste se heurte au fait que les variations du GC affectent
+les sites fonctionnels comme neutres. En fait, l'évolution des isochores résulte
+de l'accumulation de mutations. Il faudrait donc un avantage sélectif
+significatif à l'acquisition d'une mutation ponctuelle vers G ou C, dans un
+isochore de plus de 100kb.
+
+Le \ac{gbgc} a été proposé pour expliquer l'apparition et le maintien des isochores
+riches en GC\cite{duret_new_2006}. Un argument fort de l'hypothèse \ac{gbgc} est que
+les zones fortement recombinantes ont un \ac{gc} supérieur. C'est le cas chez
+l'Homme\cite{duret_impact_2008, berglund_hotspots_2009}. L'apparition et la
+disparition successive de points chauds de recombinaison explique la succession
+des épisodes de \ac{gbgc} : il conditionne le contenu en GC local, permettant
+d'expliquer la structuration des isochores riches en GC. 
+
+La taille des chromosomes a un impact fort sur le \ac{gc} : le taux de
+recombinaison à l'échelle de la Mb est fortement corrélé à la taille du
+chromosome, chez le poulet et l'Homme\cite{kaback_chromosome_1999}. Autrement
+dit, les grands chromosomes recombinent peu, les petits beaucoup. Comme attendu
+sous l'hypothèse \ac{gbgc}, chez l'opossum, les petits chromosomes ont un taux
+de GC plus élevé que les grands.
+
+\begin{transition}
+  Ainsi, chez les mammifères, le contenu en GC est déterminé par la
+  recombinaison : elle augmente la probabilité de fixation des mutations vers
+  GC. Elle a pour impact de structurer localemnt le \ac{gc} au gré des épisodes
+  de points chauds de recombinaisons. De nombreuses preuves indirectes attestent
+  de l'existence du \ac{gbgc} chez les eucaryotes. Qu'en est-il chez les
+  procaryotes ?
+\end{transition}
+
+\subsubsection{Un \ac{gbgc} procaryote ?}
 \label{sec:orgheadline13}
+Le taux moyen de GC --- \ac{gc} --- chez les procaryotes est extrêmement
+diversifié : il varie de 14 à 75\% selon les
+espèces\cite{mccutcheon_functional_2010}. Certains y voient une adaptation aux
+conditions environnementales. En effet, la température de croissance optimale
+est corrélée avec le taux de GC par exemple. Cependant, ces effets
+environnementaux sont faibles, et les pressions de sélection associées
+mystérieuses. Le modèle classique considère que le \ac{gc} est essentiellement
+déterminé par la mutation, qui est biaisée vers
+AT\cite{hershberg_evidence_2010,sueoka_directional_1988}.
+
+Récemment, il a été démontré que les gènes recombinants ont un taux de GC
+supérieur aux non-recombinants\cite{lassalle_gc-content_2015}, chez 21 espèces
+bactériennes. La troisième position des codons est d'autant plus affectée
+qu'elle est moins soumise à la sélection. Le code génétique étant redondant, une fs
+mutation en troisième position ne change pas nécessairement l'acide aminé : la
+mutation est synonyme. L'excès de substitutions AT \(\rightarrow\) GC peut être dû
+à la pression de sélection sur les autres positions, qui tend à conserver la
+fonction de la protéine. Les régions intergéniques flanquantes des gènes
+recombinants ont également un \ac{gc} supérieur à celles des régions flanquantes
+des gènes non-recombinants. C'est un patron attendu sous l'hypothèse \ac{gbgc}.
+Cette corrélation entre taux de recombinaison et contenu en GC est similaire
+quantitativement à celle observée chez l'Humain\cite{lassalle_gc-content_2015}.
+
+\begin{transition}
+  Le \ac{gbgc} explique donc en partie la structuration en GC des génomes
+  mammifères, eucaryotes et probablement procaryote. Il augmente la probabilité
+  de fixation des allèles G ou C : il peut même s'opposer à la sélection
+  naturelle si cette fixation est faiblement délétère.  
+\end{transition}
+
+\addfig{%
+  \centering
+  \missingfigure
+  \caption{\textbf{Pollard figure har1} 
+  }
+  \label{pollard}
+}
+
 \subsection{Interfère avec la sélection}
 \label{sec:orgheadline15}
+La conversion génique affecte la probabilité de fixation d'un allèle de façon
+similaire à la sélection \cite{nagylaki_evolution_1983}.
+
+Si un allèle faiblement délétère est porté par une substitution AT \(\rightarrow\)
+GC, le \ac{gbgc} peut entraîner sa fixation dans la population. À l'inverse, il
+peut empêcher la fixation d'une mutation GC \(\rightarrow\) AT. Il contrecarre les
+effets de la sélection naturelle.
+
+Galtier et collaborateurs ont analysé la séquence des protéines de primates qui
+montrent un taux d'évolution plus rapide depuis la divergence avec les macaques
+\cite{galtier_gc-biased_2009}. Cette accélération de la vitesse de substitution
+dans les séquences codantes peut \emph{a priori} être due à un changement de fonction
+\emph{adaptatif}. Cependant, les séquences analysées montrent un excès significatif
+de mutations AT \(\rightarrow\) GC. De plus, ces mutations sont significativement
+plus souvent non-synonymes : elles changent l'acide aminé.
+
+En clair, des régions auparavant conservées ont subie un ou plusieurs épisodes
+de gBGC, qui a entraîné deux choses : i) le \ac{gc} local a augmenté, et ii) la
+fonction des régions a changé.\footnote{Voir également figure \ref{pollard}.}
+
+Pollard et collaborateurs ont également analysé les régions non-codantes
+accélérées uniquement dans la lignée humaine : les \ac{har}, Human Accelerated
+Regions.
+
 \subsection{Brouille les tests de sélection}
 \label{sec:orgheadline16}
+Les tests de sélection reposent classiquement sur deux principes généraux
+\cite{hurst_genetics_2009} : ce qui évolue lentement est fonctionnel, ce qui
+évolue vite est adaptatif. 
 \section*{Conclusion}
 \label{sec:orgheadline18}
 \input{endmatter.tex}

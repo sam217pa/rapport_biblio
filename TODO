@@ -4,7 +4,7 @@
 #+TODO: LIRE(l) ->>- | -LU-(u)
 #+TAGS: { RAPPORT(r) MANIP(m) ANALYSES(a) } ORDI(o) LABO(l) LIRE(r) BREAK(b) 
 
-* RAPPORT [0/0]
+* RAPPORT [0/4]
 :PROPERTIES:
 :CATEGORY: stage:rapport
 :END:
@@ -322,7 +322,8 @@ très délétère d'envahir une population.
 
 Un bloc haplotype est une région chromosomique dans laquelle un groupe d'allèle
 à des loci génétiques différents sont hérités ensembles, plus souvent que ne le
-serait prévu par le hasard. 
+serait prévu par le hasard. Autrement appelé bloc de LD, ou bloc de déséquilibre
+de liaison. 
 *** -LU- [#A] Nielsen, 2005                                                   :bgc:detection:
 CLOSED: [2015-10-17 Sat 19:19]
 Molecular Signatures of natural selection
@@ -453,7 +454,7 @@ Can a few non coding mutations make a human brain ?
 *** LIRE [#C] Wienand, 2015
 *** LIRE [#C] Duret, 2006, Mol Evol
 *** LIRE [#C] Spencer, 2006
-** Rédiger Mécanismes
+** TODO Rédiger Mécanismes
 *** Mécanismes de RH [1/2]
 **** -LU- Chen, 2008
 CLOSED: [2015-11-09 Mon 11:41]
@@ -464,7 +465,7 @@ CLOSED: [2015-11-09 Mon 11:41]
 CLOSED: [2015-11-21 Sat 18:45]
 **** -LU- Lesecque, 2013
 CLOSED: [2015-11-21 Sat 18:45]
-** Rédiger Causes
+** TODO Rédiger Causes
 *** Hypothèses expliquant gBGC
 *** propriétés inhérentes recombinaison
 *** compensation biais mutationnel vers AT
@@ -477,14 +478,14 @@ the effects of recombination on genome evolution. Mol. Biol. Evol. 19, 1181–11
 Lynch M. 2010. Rate, molecular spectrum, and consequences of human mutation.
 Proc Natl Acad Sci U S A. 107:961–968.
 
-** Rédiger Conséquences
+** TODO Rédiger Conséquences
 *** TODO Figure Pessia universel diapo laurent
 *** Conséquences évolutives gBGC
 *** isochores et structures GC
 *** brouille traces de sélection
 *** interfère avec sélection
 
-** Mise En Page [0%]
+** TODO Mise En Page [0%]
 *** TODO Ajouter légende figure 1 recombinaison homologue
 *** TODO Clarifier figure 1 [0/2]
 - [ ] supprimer légendes inutiles
