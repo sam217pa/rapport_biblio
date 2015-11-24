@@ -1,0 +1,18 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Qu'est-ce que la conversion g\IeC {\'e}nique ?}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Recombinaison homologue}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}M\IeC {\'e}canismes de recombinaison homologue}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}La recombinaison m\IeC {\'e}iotique : \IeC {\'e}tape cl\IeC {\'e} de la m\IeC {\'e}iose}{3}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}La recombinaison comme moteur des transferts horizontaux de g\IeC {\`e}nes}{4}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}Conversion g\IeC {\'e}nique}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}La conversion g\IeC {\'e}nique biais\IeC {\'e}e vers GC}{6}{subsection.1.3}
+\contentsline {section}{\numberline {2}Quelles hypoth\IeC {\`e}ses pour l'expliquer ?}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Des propri\IeC {\'e}t\IeC {\'e}s inh\IeC {\'e}rentes \IeC {\`a} la machinerie de r\IeC {\'e}paration ?}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Un processus s\IeC {\'e}lectionn\IeC {\'e} pour compenser la mutation ?}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}Quelles en sont les cons\IeC {\'e}quences ?}{7}{section.3}
+\contentsline {section}{Quelles en sont les cons\IeC {\'e}quences ?}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Structure le contenu en GC}{7}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Le contenu en GC, un trait sous s\IeC {\'e}lection ?}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}La th\IeC {\'e}orie des isochores}{7}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Interf\IeC {\`e}re avec la s\IeC {\'e}lection}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Brouille les tests de s\IeC {\'e}lection}{7}{subsection.3.3}
