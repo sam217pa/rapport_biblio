@@ -1,4 +1,4 @@
-% Created 2015-11-25 Wed 07:34
+% Created 2015-11-25 Wed 10:31
 \documentclass[11pt, oneside]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -35,9 +35,25 @@
 
 \section*{Introduction}
 \label{sec:orgheadline1}
+\addfig{%
+  \centering
+  \includegraphics[width=\linewidth]{img/holliday.png}
+  \caption{\textbf{Le modèle classique de formation d'un hétéroduplex par
+      invasion de brin.} \rmfamily%
+    \setstretch{1.1} %
+    Après la formation d'une cassure double brin en \texttt{a}, les extrémités
+    $3'$ sont exposées par résection, en \texttt{b}. Le premier brin
+    \crule[LightGray]{0.5cm}{0.15cm} porteur de l'allèle B envahit le brin
+    \crule[Cyan]{0.5cm}{0.15cm} porteur de l'allèle b, formant une jonction de Holliday, en \texttt{c}.
+    Localement, l'hétéroduplex ainsi formé montre des mésappariements, en
+    \texttt{d}. \\
+    {\em Adapté de Molecular Biology Of The Gene, Watson, 2012. } }
+  \label{holliday}
+}
+
 La recombinaison homologue est un processus majeur d'évolution des génomes.
 C'est un processus très conservé, des procaryotes aux
-eucaryotes\cite{cromie_recombination_2001}. C'est le processus clé de réparation
+eucaryotes\cite{cromie_recombination_2001}. C'est le mécanisme clé de réparation
 des lésions de l'ADN. Elles sont réparées sur la base d'une matrice d'ADN
 homologue, donnant lieu à la formation transitoire d'un \emph{hétéroduplex}. Un
 hétéroduplex est un appariement entre deux brins homologues, qui ne sont pas
@@ -70,13 +86,12 @@ Dans les régions fortement recombinantes, le contenu en GC est anormalement
 d'expliquer en partie les variations du contenu en GC, au sein d'un génome et
 entre génomes. L'explication de ces variations suscite un débat entre les
 partisans des hypothèses adaptatives, et ceux des hypothèses neutres. Les
-hypothèses \emph{adaptatives} veulent que le contenu en GC soit un trait
-sélectionné : il contribue en soi à la valeur adaptative de l'individu
-\cite{hildebrand_evidence_2010}. Les hypothèses \emph{neutres} avancent qu'il est
-également déterminé par des processus de dérive génétique et de mutation. Le
-\ac{gbgc} est un autre processus neutre contribuant à déterminer le taux de GC.
-En fait, c'est la contribution \emph{relative} des trois processus à la détermination
-du taux de GC qui fait débat.
+premiers veulent que le contenu en GC soit un trait sélectionné : il contribue
+en soi à la valeur adaptative de l'individu \cite{hildebrand_evidence_2010}. Les
+seconds avancent qu'il est également déterminé par des processus de dérive
+génétique et de mutation. Le \ac{gbgc} est un autre processus neutre contribuant
+à déterminer le taux de GC --- \ac{gc}. En fait, c'est la contribution
+\emph{relative} des trois processus à la détermination du taux de GC qui fait débat.
 
 Le biais peut également permettre de fixer des mutations délétères, si celles-ci
 sont portées par les allèles G ou C du gène. Il contrecarre l'action de la
@@ -120,15 +135,15 @@ peuvent être corrigés, donnant lieu à une transmission d'allèle non-récipro
     par différentes voies. En \texttt{b}, le brin réparé doit être apparié à la
     l'extrémité du brin originel : c'est la {\em second-end capture.} Selon le
     mode de clivage des résolvases, le produit obtenu est non-crossover ou
-    crossover (\texttt{d}). Chez les eucaryotes, la {\em dissolution} est une autre
-    voie de résolutions des doubles jonctions de Hollidays (\texttt{e}). En \texttt{
-      c}, la voie \ac{sdsa}, Synthesis-Dependent Strand-Annealing, implique une étape
-    de dénaturation, puis de ré-appariement du brin envahisseur avec l'autre
-    extrémité $3'$ de la cassure. La synthèse se poursuit et est suivie d'une
-    étape de ligation. 
-    Dans tous les cas, des hétéroduplex sont formés, dès lors que les séquences
-    appariées ne sont pas 100\% identiques. 
- }
+    crossover (\texttt{d}). Chez les eucaryotes, la {\em dissolution} est une
+    autre voie de résolutions des doubles jonctions de Hollidays (\texttt{e}).
+    En \texttt{c}, la voie \ac{sdsa}, Synthesis-Dependent Strand-Annealing,
+    implique une étape de dénaturation, puis de ré-appariement du brin
+    envahisseur avec l'autre extrémité $3'$ de la cassure. La synthèse se
+    poursuit et est suivie d'une étape de ligation. Dans tous les cas, des
+    hétéroduplex sont formés, dès lors que les séquences
+    appariées ne sont pas rigoureusement identiques. \\
+    {\em Tiré de Chen {\em et al.}, 2007\cite{chen_gene_2007}.} }
   \label{recombinaison}
 }
 
@@ -163,11 +178,12 @@ zone est déterminée, les brins sont échangés. L'ensemble de ce processus est
 catalysé par la nucléo-protéine RecA \cite{chen_mechanism_2008} ou ses
 homologues. C'est l'acteur moléculaire clé de la recombinaison homologue.
 
-L'échange des brins entraîne la formation d'un hétéroduplex. L'intégrité de
-l'hétéroduplex est maintenue par une structure appelée \emph{jonction de Holliday}.
-Des mésappariements peuvent exister entre les brins de l'hétéroduplex : deux
-brins homologues ne sont pas systématiquement complémentaires. Leur correction
-peut donner lieu à une conversion génique (voir \ref{sec:orgheadline2}).
+L'échange des brins entraîne la formation d'un hétéroduplex\footnote{Voir figure
+\ref{holliday}}. L'intégrité de l'hétéroduplex est maintenue par une structure
+appelée \emph{jonction de Holliday}. Des mésappariements peuvent exister entre les
+brins de l'hétéroduplex : deux brins homologues ne sont pas systématiquement
+complémentaires. Leur correction peut donner lieu à une conversion génique (voir
+\ref{sec:orgheadline2}).
 
 La zone de résection est ensuite comblée par la \emph{synthèse} d'ADN en utilisant le
 brin homologue comme matrice. Enfin, les intermédiaires de recombinaisons sont
@@ -228,9 +244,17 @@ conversion génique.
 \end{transition}
 
 \addfig{%
-  
-  \includegraphics[width=\linewidth]{img/mutslh.pdf}
-  \caption{\textbf{Correction des mésappariements par MutSLH}}
+  \centering
+  \includegraphics[scale = 1.2]{img/mutslh.png}
+  \caption{\textbf{Correction des mésappariements par le complexe MutSLH} \rmfamily%
+    \setstretch{1.1}%
+    Le dimère de MutS reconnaît l'anomalie structurelle de l'ADN causé par un
+    mésappariement. Il recrute alors l'enzyme MutL, qui à son tour recrute
+    l'endonucléase MutH. Celle-ci introduit une cassure sur l'un des brins. Elle
+    est suivie d'une résection par une exonucléase, puis par la synthèse
+    \emph{via} une ADN polymérase, sur la base du brin intact.\\
+    {\em Adapté de Molecular Biology of The Gene, Watson, 2012.}
+  }
   \label{mutslh}
 }
 
@@ -338,11 +362,16 @@ il existe des Thymines DNA glycosylases, qui excisent spécifiquement les thymin
    % \missingfigure
   \includegraphics[width=\linewidth]{img/pessia.pdf}
   \caption{\textbf{Un gBGC universel ? Corrélation entre le taux de
-     recombinaison et le contenu en GC chez les eucaryotes } \rmfamily%
-     \setstretch{1.1}%
-     j'écris ici \\
-     Tiré de Pessia {\em et al.}, 2012.
- }
+      recombinaison et le contenu en GC chez les eucaryotes. } \rmfamily%
+    \setstretch{1.1}%
+    Parmi 36 espèces tirées des groupes eucaryotes majeurs, les
+    \tikzcircle[PineGreen, fill=PineGreen]{3pt} et \tikzcircle[PineGreen,
+    fill=White]{3pt} indiquent une corrélation positive entre le taux de GC et
+    le taux de recombinaison local. Les deux \tikzcircle[Red, fill=Red]{3pt}
+    indiquent les corrélations négatives non-compatibles avec l'hypothèses gBGC.
+    Cette étude semble montrer
+    que le gBGC est un mécanisme universel chez les eucaryotes. \\
+    {\em Tiré de Pessia {\em et al.}, 2012\cite{pessia_evidence_2012}.} }
    \label{pessia}
 }
 Puisqu'elle augmente la probabilité de fixation des allèles G ou C, la
@@ -365,14 +394,21 @@ en taux de GC --- \ac{gc} --- , au sein d'un génome et entre génomes.
 
 
 \addfig{%
-  \missingfigure
-  \caption{\textbf{Le gBGC chez les procaryotes } 
-    \rmfamily%
+  \centering
+  \includegraphics[scale=1.3]{img/lassalle.png}
+  \caption{\textbf{Le gBGC chez les procaryotes ? Effet de la recombinaison sur
+      le contenu en GC du \emph{core genome.}} \rmfamily%
     \setstretch{1.1} %
-    \lipsum[1]
-    Tiré de Lassalle {\em et al.}, 2015 %\cite{lassalle_gc-content_2015}
-    \label{lassalle}
- }
+    La différence entre le contenu en GC des gènes recombinants et des gènes
+    non-recombinants est mesurée sur l'ensemble de la séquence codante
+    ( \lassalleFonce ) et sur la troisième position de codon uniquement
+    ( \lassalleClair ). La troisième position est moins soumise à la sélection :
+    les mutations peuvent être synonymes. Le taux de GC des gènes recombinants
+    est significativement supérieur à celui des non-recombinants, \emph{a fortiori}
+    lorsqu'on considère les positions les moins contraintes par la sélection. \\
+    {\em Tiré de Lassalle {\em et al.}, 2015 \cite{lassalle_gc-content_2015}.}
+  }
+  \label{lassalle}
 }
 
 \subsubsection{Le contenu GC des génomes mammifères et la théorie des isochores}
@@ -449,23 +485,28 @@ quantitativement à celle observée chez l'Humain\cite{lassalle_gc-content_2015}
 \end{transition}
 
 \addfig{%
-  \missingfigure
-  \caption{\textbf{Pollard figure har1} \\
-    Pollard et collaborateurs ont également analysé les régions non-codantes
-    accélérées uniquement dans la lignée humaine : les \ac{har}, Human
-    Accelerated Regions. }
+  \includegraphics[width=\linewidth]{img/pollard.png}
+  \caption{\textbf{Pollard figure har1} \rmfamily%
+    \setstretch{1.1}
+    Pollard et collaborateurs ont analysé les régions non-codantes dont la
+    vitesse d'évolution a augmenté uniquement dans la lignée humaine : les
+    \ac{har}, Human Accelerated Regions. Parmi ces régions, la région HAR1 est
+    particulièrement interéssante : elle code pour un ARN régulateur impliqué
+    dans le développement des régions corticales. 
+    \\ {\em Tiré de Pollard {\em et al.}, 2006 \cite{pollard_rna_2006}.}
+    
+  }
   \label{pollard}
 }
 
 \subsection{Interfère avec la sélection}
 \label{sec:orgheadline15}
 La conversion génique affecte la probabilité de fixation d'un allèle de façon
-similaire à la sélection \cite{nagylaki_evolution_1983}.
-
-Si un allèle faiblement délétère est porté par une substitution AT \(\rightarrow\)
-GC, le \ac{gbgc} peut entraîner sa fixation dans la population. À l'inverse, il
-peut empêcher la fixation d'une mutation GC \(\rightarrow\) AT. Il contrecarre les
-effets de la sélection naturelle.
+similaire à la sélection \cite{nagylaki_evolution_1983}. Si un allèle faiblement
+délétère est porté par une substitution AT \(\rightarrow\) GC, le \ac{gbgc} peut
+entraîner sa fixation dans la population. À l'inverse, il peut empêcher la
+fixation d'une mutation GC \(\rightarrow\) AT. Il contrecarre les effets de la
+sélection naturelle.
 
 Galtier et collaborateurs ont analysé la séquence des protéines de primates qui
 montrent un taux d'évolution plus rapide depuis la divergence avec les macaques
@@ -477,7 +518,7 @@ plus souvent non-synonymes : elles changent l'acide aminé.
 
 En clair, des régions auparavant conservées ont subie un ou plusieurs épisodes
 de gBGC, qui a entraîné deux choses : i) le \ac{gc} local a augmenté, et ii) la
-fonction des régions a changé. \footnote{Voir également figure \ref{pollard}.}
+fonction des régions a changé\footnote{Voir également figure \ref{pollard}.}.
 
 \subsection{Confond les tests de sélection}
 \label{sec:orgheadline16}
