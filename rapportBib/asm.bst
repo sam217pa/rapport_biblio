@@ -1,1 +1,1 @@
-/Users/samuelbarreto/Dropbox/Cours/TODO/asm.bst
+/Users/samuelbarreto/dotfile/bibliographie/asm.bst

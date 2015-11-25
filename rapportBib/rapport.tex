@@ -1,4 +1,4 @@
-% Created 2015-11-24 Tue 16:58
+% Created 2015-11-25 Wed 07:34
 \documentclass[11pt, oneside]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -46,8 +46,7 @@ est typiquement la région homologue correspondante, sur la chromatide sœur. Le
 crossover méiotiques sont générés sous contrôle génétique et impliquent une
 étape obligatoire de recombinaison\cite{mancera_high-resolution_2008}. Chez les
 procaryotes, cette matrice peut être acquise par transfert horizontal. La
-recombinaison est le moyen principal de transfert de gène entre procaryotes
-\cite{vos_rates_2015}.
+recombinaison est le moyen principal de transfert de gène entre procaryotes.
 
 \newthought{Au voisinage} de la région lésée --- puis réparée --- , des échanges
 d'information génétique de petite échelle existent\cite{duret_biased_2009}. Ils
@@ -109,9 +108,27 @@ peuvent être corrigés, donnant lieu à une transmission d'allèle non-récipro
 
 \addfig{%
   \centering
-  \includegraphics[width=\linewidth]{img/conversion.pdf}
-  \caption{\textbf{Recombinaison homologue} 
-  }
+  \includegraphics[scale=0.6]{img/conversion.png}
+  \caption{\textbf{Le modèle classique de réparation des cassures doubles brins
+      par recombinaison homologue} \rmfamily%
+    \setstretch{1.1} %
+    Les cassures doubles brins sont suivies d'une résection dans le sens $5'
+    \rightarrow 3'$. L'un des brins ainsi exposé cherche ensuite activement une
+    séquence homologue. Au cours de l'invasion de brin, une boucle D se forme,
+    ainsi qu'une jonction de Holliday. La synthèse d'ADN a lieu en utilisant la
+    séquence intacte comme matrice. La résolution de ces structures peut passer
+    par différentes voies. En \texttt{b}, le brin réparé doit être apparié à la
+    l'extrémité du brin originel : c'est la {\em second-end capture.} Selon le
+    mode de clivage des résolvases, le produit obtenu est non-crossover ou
+    crossover (\texttt{d}). Chez les eucaryotes, la {\em dissolution} est une autre
+    voie de résolutions des doubles jonctions de Hollidays (\texttt{e}). En \texttt{
+      c}, la voie \ac{sdsa}, Synthesis-Dependent Strand-Annealing, implique une étape
+    de dénaturation, puis de ré-appariement du brin envahisseur avec l'autre
+    extrémité $3'$ de la cassure. La synthèse se poursuit et est suivie d'une
+    étape de ligation. 
+    Dans tous les cas, des hétéroduplex sont formés, dès lors que les séquences
+    appariées ne sont pas 100\% identiques. 
+ }
   \label{recombinaison}
 }
 
@@ -123,17 +140,14 @@ formation de fourches de réplications. Les lésions subies par l'ADN en cours d
 réplication empêchent le déplacement de ces fourches, et notamment les cassures
 double brins. Ces \ac{dsb} sont extrêmement cytotoxiques : ils causent l'arrêt
 de la réplication, la perte de chromosomes, sont mutagènes et conduisent à la
-mort cellulaire \cite{watson_molecular_2014}. La bonne conduite de la
-réplication nécessite de réparer ces cassures, de façon non-mutagène. La
-recombinaison homologue est le moyen préférentiel de réparation
-\cite{lusetti_bacterial_2002}. Compte tenu de son importance dans le cycle
+mort cellulaire. La bonne conduite de la réplication nécessite de réparer ces
+cassures, de façon non-mutagène. La recombinaison homologue est le moyen
+préférentiel de réparation. Compte tenu de son importance dans le cycle
 cellulaire, les mécanismes qui la sous-tendent sont ubiquitaires et extrêmement
 conservés, des phages aux mammifères \cite{cromie_recombination_2001}.
 
 \subsubsection{Mécanismes de recombinaison homologue}
 \label{sec:orgheadline3}
-
-La recombinaison se déroule en plusieurs étapes. 
 
 Les cassures doubles brins --- \ac{dsb} --- sont générées par des processus
 mutagènes ou sous contrôle génétique, notamment lors de la méiose. Après la
@@ -187,9 +201,7 @@ des crossovers se forment entre les chromosomes parentaux.
 Ces crossovers entraînent le brassage des allèles, un processus bénéfique sur le
 plan évolutif\cite{webster_direct_2012}. En effet, il casse les liaisons entre
 allèles : la sélection élimine alors plus efficacement les variants délétères et
-promeut les variants bénéfiques \cite{otto_resolving_2002}. C'est l'une des
-hypothèses permettant d'expliquer l'évolution de la reproduction
-sexuée\cite{otto_why_2006}.
+promeut les variants bénéfiques \cite{otto_resolving_2002}. 
 
 \subsubsection{La recombinaison comme moteur des transferts horizontaux de gènes}
 \label{sec:orgheadline5}
@@ -201,7 +213,7 @@ médiés soit par des vecteurs, les plasmides ou les phages, soit par un état d
 compétence naturelle, \emph{via} l'acquisition passive ou active d'ADN exogène. 
 
 La principale fonction de la recombinaison \emph{homologue} semble être la réparation
-des lésions de l'ADN \cite{fall_horizontal_2007, michod_adaptive_2008}. 
+des lésions de l'ADN \cite{fall_horizontal_2007}. 
 
 Il est difficile d'estimer les fréquences de recombinaison procaryotes. Elles
 sont très variables, au sein d'une espèce, d'un écotype ou entre espèces
@@ -216,7 +228,7 @@ conversion génique.
 \end{transition}
 
 \addfig{%
-  \centering
+  
   \includegraphics[width=\linewidth]{img/mutslh.pdf}
   \caption{\textbf{Correction des mésappariements par MutSLH}}
   \label{mutslh}
@@ -321,6 +333,18 @@ il existe des Thymines DNA glycosylases, qui excisent spécifiquement les thymin
 
 \section{Quelles en sont les conséquences ?}
 \label{sec:orgheadline17}
+
+ \addfig{%
+   % \missingfigure
+  \includegraphics[width=\linewidth]{img/pessia.pdf}
+  \caption{\textbf{Un gBGC universel ? Corrélation entre le taux de
+     recombinaison et le contenu en GC chez les eucaryotes } \rmfamily%
+     \setstretch{1.1}%
+     j'écris ici \\
+     Tiré de Pessia {\em et al.}, 2012.
+ }
+   \label{pessia}
+}
 Puisqu'elle augmente la probabilité de fixation des allèles G ou C, la
 conversion biaisée joue un rôle important dans la structuration du contenu en
 GC des génomes. La conversion biaisée n'est pas en soi liée à la sélection
@@ -328,6 +352,7 @@ naturelle. Elle affecte cependant la fixation d'allèles d'une façon similaire
 à la sélection\cite{nagylaki_evolution_1983}. Elle a donc deux conséquences
 directes et indirectes : elle interfère avec la sélection et confond les tests
 de sélection naturelle.
+
 \subsection{Structure le contenu en GC}
 \label{sec:orgheadline14}
 Les bases C et G sont liées par trois liaisons hydrogènes : elles sont plus
@@ -337,6 +362,18 @@ supérieur en augmenterait la stabilité. Ce modèle rencontre néanmoins de
 nombreuses difficultés, chez les eucaryotes comme les procaryotes. La conversion
 biaisée vers GC a été proposée comme modèle alternatif expliquant les variations
 en taux de GC --- \ac{gc} --- , au sein d'un génome et entre génomes.
+
+
+\addfig{%
+  \missingfigure
+  \caption{\textbf{Le gBGC chez les procaryotes } 
+    \rmfamily%
+    \setstretch{1.1} %
+    \lipsum[1]
+    Tiré de Lassalle {\em et al.}, 2015 %\cite{lassalle_gc-content_2015}
+    \label{lassalle}
+ }
+}
 
 \subsubsection{Le contenu GC des génomes mammifères et la théorie des isochores}
 \label{sec:orgheadline12}
@@ -367,6 +404,10 @@ dit, les grands chromosomes recombinent peu, les petits beaucoup. Comme attendu
 sous l'hypothèse \ac{gbgc}, chez l'opossum, les petits chromosomes ont un taux
 de GC plus élevé que les grands.
 
+Cette corrélation entre le taux de recombinaison et le contenu en GC local a
+également été observée dans la plupart des taxons eucaryotes (voir figure
+\ref{pessia}). 
+
 \begin{transition}
   Ainsi, chez les mammifères, le contenu en GC est déterminé par la
   recombinaison : elle augmente la probabilité de fixation des mutations vers
@@ -379,11 +420,10 @@ de GC plus élevé que les grands.
 \subsubsection{Un \ac{gbgc} procaryote ?}
 \label{sec:orgheadline13}
 Le taux moyen de GC --- \ac{gc} --- chez les procaryotes est extrêmement
-diversifié : il varie de 14 à 75\% selon les
-espèces\cite{mccutcheon_functional_2010}. Certains y voient une adaptation aux
-conditions environnementales. En effet, la température de croissance optimale
-est corrélée avec le taux de GC par exemple. Cependant, ces effets
-environnementaux sont faibles, et les pressions de sélection associées
+diversifié : il varie de 14 à 75\% selon les espèces. Certains y voient une
+adaptation aux conditions environnementales. En effet, la température de
+croissance optimale est corrélée avec le taux de GC par exemple. Cependant, ces
+effets environnementaux sont faibles, et les pressions de sélection associées
 mystérieuses. Le modèle classique considère que le \ac{gc} est essentiellement
 déterminé par la mutation, qui est biaisée vers
 AT\cite{hershberg_evidence_2010,sueoka_directional_1988}.
@@ -409,10 +449,11 @@ quantitativement à celle observée chez l'Humain\cite{lassalle_gc-content_2015}
 \end{transition}
 
 \addfig{%
-  \centering
   \missingfigure
-  \caption{\textbf{Pollard figure har1} 
-  }
+  \caption{\textbf{Pollard figure har1} \\
+    Pollard et collaborateurs ont également analysé les régions non-codantes
+    accélérées uniquement dans la lignée humaine : les \ac{har}, Human
+    Accelerated Regions. }
   \label{pollard}
 }
 
@@ -436,17 +477,28 @@ plus souvent non-synonymes : elles changent l'acide aminé.
 
 En clair, des régions auparavant conservées ont subie un ou plusieurs épisodes
 de gBGC, qui a entraîné deux choses : i) le \ac{gc} local a augmenté, et ii) la
-fonction des régions a changé.\footnote{Voir également figure \ref{pollard}.}
+fonction des régions a changé. \footnote{Voir également figure \ref{pollard}.}
 
-Pollard et collaborateurs ont également analysé les régions non-codantes
-accélérées uniquement dans la lignée humaine : les \ac{har}, Human Accelerated
-Regions.
-
-\subsection{Brouille les tests de sélection}
+\subsection{Confond les tests de sélection}
 \label{sec:orgheadline16}
 Les tests de sélection reposent classiquement sur deux principes généraux
 \cite{hurst_genetics_2009} : ce qui évolue lentement est fonctionnel, ce qui
-évolue vite est adaptatif. 
+évolue vite est adaptatif. L'approche privilégiée pour détecter les régions
+influencées par la sélection est de comparer les génomes, puis d'identifier les
+régions qui évoluent rapidement, sur une branche particulière de l'arbre
+phylogénétique obtenu\cite{ratnakumar_detecting_2010}.
+
+Le gBGC a cependant une empreinte sur les séquences similaire à celle de la
+sélection dirigée : il peut brouiller les tests de sélection. L'action de la
+sélection naturelle est alors confondue avec celle d'un processus neutre voir
+mal-adaptatif. Typiquement, le ratio \(\nicefrac{d_N}{d_S}\), qui résume le
+rapport entre le taux de mutations non-synonymes \(d_N\) et synonymes \(d_S\), est
+supérieur à 1 lorsque la protéine est sous sélection positive, en faveur du
+changement de fonction. Ratnakumar et collaborateurs ont estimé qu'environ 20\%
+des régions avec un ratio \(\nicefrac{d_N}{d_S}\) élevé pourraient avoir été sous
+l'influence du gBGC. 
+
+Le gBGC brouille les traces de la sélection naturelle.  
 \section*{Conclusion}
 \label{sec:orgheadline18}
 \input{endmatter.tex}

@@ -30,6 +30,7 @@
 \usepackage[super]{natbib}
 \bibliographystyle{asm}
 \usepackage[]{multicol}
+\usepackage[para, perpage, symbol*]{footmisc}
 %% todo
 \usepackage[french]{todonotes}
 % \usepackage[]{cleveref}
@@ -77,6 +78,11 @@
   long  = Human Accelerated Regions : région accélérée spécifique à la lignée humaine ,
   class = abbrev
 }
+\DeclareAcronym{sdsa}{
+  short = SDSA ,
+  long  = Synthesis-Dependent Strand-Annealing ,
+  class = abbrev
+}
 
 %%
 %% table of content
@@ -95,6 +101,7 @@
    \noindent\textrm{\bsc{#1}} % small caps text out
 }
 \usepackage[]{lipsum}
+\usepackage[]{setspace}
 
 \KOMAoptions{
   parskip = half-, 
@@ -108,7 +115,7 @@
       \rule{\linewidth}{0.2pt}% 
     \end{minipage}%
 }
-
+\usepackage[]{nicefrac}
 %% 
 %% color
 %% 
