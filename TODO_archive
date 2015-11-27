@@ -30,3 +30,151 @@ CLOSED: [2015-11-09 Mon 11:36]
 *** LIRE Chen, 2007
 ** Conversion Génique Biaisée
 ** Conversion Génique Biaisée vers GC
+
+* DONE Ajouter légende figure 1 recombinaison homologue
+CLOSED: [2015-11-26 Thu 15:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Mise En Page
+:ARCHIVE_CATEGORY: stage:rapport
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Clarifier figure 1 [0/2]
+CLOSED: [2015-11-26 Thu 15:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Mise En Page
+:ARCHIVE_CATEGORY: stage:rapport
+:ARCHIVE_TODO: DONE
+:END:
+- [ ] supprimer légendes inutiles
+- [ ] dimensionner 
+
+* DONE Ajouter figure 2 correction des mésappariements [0/3]
+CLOSED: [2015-11-26 Thu 15:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Mise En Page
+:ARCHIVE_CATEGORY: stage:rapport
+:ARCHIVE_TODO: DONE
+:END:
+- [ ] la découper dans le Watson et al
+- [ ] garder l'utile
+- [ ] la sauvegarder.
+
+* DONE Légender figure 2
+CLOSED: [2015-11-26 Thu 15:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Mise En Page
+:ARCHIVE_CATEGORY: stage:rapport
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Figure Pessia universel diapo laurent
+CLOSED: [2015-11-26 Thu 15:00]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Conséquences
+:ARCHIVE_CATEGORY: stage:rapport
+:ARCHIVE_TODO: DONE
+:END:
+
+* Conséquences évolutives gBGC
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Conséquences
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+* isochores et structures GC
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Conséquences
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+* brouille traces de sélection
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Conséquences
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+* interfère avec sélection
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Conséquences
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+
+* Hypothèses expliquant gBGC
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Causes
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+* propriétés inhérentes recombinaison
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Causes
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+
+* compensation biais mutationnel vers AT
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Causes
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+** À lire [2/2]
+*** DONE Birdsell, 2001, 
+CLOSED: [2015-11-26 Thu 15:00]
+ Birdsell,J.A.Integratinggenomics,bioinformatics,andclassicalgeneticstostudy
+the effects of recombination on genome evolution. Mol. Biol. Evol. 19, 1181–1197
+(2002).
+*** DONE Lynch, 2010
+CLOSED: [2015-11-26 Thu 15:00]
+Lynch M. 2010. Rate, molecular spectrum, and consequences of human mutation.
+Proc Natl Acad Sci U S A. 107:961–968.
+
+
+* Mécanismes de RH [2/2]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Mécanismes
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+** -LU- Chen, 2008
+CLOSED: [2015-11-09 Mon 11:41]
+/RecA/
+** DONE écrire partie SDSA et double end capture
+CLOSED: [2015-11-26 Thu 15:00]
+
+* Mécanismes de gBGC
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-11-27 Fri 10:02
+:ARCHIVE_FILE: ~/stage/TODO
+:ARCHIVE_OLPATH: RAPPORT/Rédiger Mécanismes
+:ARCHIVE_CATEGORY: stage:rapport
+:END:
+** -LU- Marais, 2003
+CLOSED: [2015-11-21 Sat 18:45]
+** -LU- Lesecque, 2013
+CLOSED: [2015-11-21 Sat 18:45]
