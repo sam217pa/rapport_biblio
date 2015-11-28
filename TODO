@@ -4,7 +4,7 @@
 #+TODO: LIRE(l) ->>- | -LU-(u)
 #+TAGS: { RAPPORT(r) MANIP(m) ANALYSES(a) } ORDI(o) LABO(l) LIRE(r) BREAK(b) 
 
-* RAPPORT [4/5]
+* RAPPORT [3/5]
 :PROPERTIES:
 :CATEGORY: @rapport
 :END:
@@ -461,8 +461,8 @@ CLOSED: [2015-11-26 Thu 15:00]
 CLOSED: [2015-11-26 Thu 15:00]
 ** DONE Rédiger Conséquences
 CLOSED: [2015-11-26 Thu 15:00]
-** DONE Mise En Page [100%]
-CLOSED: [2015-11-26 Thu 15:00]
+** TODO Mise En Page [0%]
+*** TODO Faire page de titre
 ** TODO [#A] Modifications 
 
 introduction = résumé ... non. amener question. 
@@ -575,7 +575,7 @@ mutation partout, substitution plus souvent en position 3.  ft
 :PROPERTIES:
 :CATEGORY: @analyses
 :END:
-** TODO [#A] analyses de données novembre [4/7]                                :STAGE:ANALYSES:
+** TODO [#A] analyses de données novembre [5/7]                                 :STAGE:ANALYSES:
 :PROPERTIES:
 :category: @seq-novembre 
 :END:
@@ -600,8 +600,8 @@ CLOSED: [2015-11-21 Sat 01:28]
 - [X] Trouver les positions pour lesquelles le nombre de SNP est supérieur à $X$
 *** TODO Refaire les alignements avec les séquences filtrées [0/1]
 - [ ] faire un set site sur les positions qu'on cherche
-*** TODO analyser les mutations spontanées, en dehors de la conversion tract [0/3]
-SCHEDULED: <2015-11-27 Fri 17:00>
+*** DONE analyser les mutations spontanées, en dehors de la conversion tract [0/3]
+CLOSED: [2015-11-28 Sat 14:42] SCHEDULED: <2015-11-27 Fri 17:00>
 - [ ] déterminer par =name= les bornes de la conversion tract. Ça peut se faire
   en créant une colonne qui dirait /in/ si entre le premier et le dernier SNP
   calibré, /out/ sinon.

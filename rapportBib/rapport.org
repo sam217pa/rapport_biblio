@@ -311,7 +311,7 @@ en GC qu'en AT \cite{duret_biased_2009}.
       \label{cytosine}
 }
 #+END_LaTeX
-** La conversion génique biaisée vers GC
+** Conversion génique biaisée vers GC
 
 Mancera /et al/ \cite{mancera_high-resolution_2008} ont génotypé l'ensemble des
 quatre haplotypes --- les tétrades --- résultants des produits de méiose de 46
@@ -338,7 +338,7 @@ le donneur de la conversion sur l'ensemble de la région convertie. Lors d'un
 \end{transition}
 #+END_LaTeX
 
-* Quelles hypothèses pour l'expliquer ?
+* Quelles hypothèses pour expliquer le gBGC ?
 Les mécanismes précis responsables du biais de conversion génique vers GC sont
 encore inconnus à ce jour. Parmi les hypothèses avancées, on distinguera ici les
 mécanismes moléculaires potentiellement responsables d'un tel biais, des raisons
@@ -396,7 +396,7 @@ mécanismes de réparation mitotiques, dont l'action biaisée vers GC est conser
 au cours de la recombinaison homologue\cite{duret_biased_2009}.
 # cite birdsell
 
-* Quelles en sont les conséquences ?
+* Quelles sont les conséquences du gBGC ?
 
 #+name: pessia
 #+BEGIN_LaTeX
@@ -439,7 +439,7 @@ naturelle. Elle affecte cependant la fixation d'allèles d'une façon similaire
 directes et indirectes : elle interfère avec la sélection et confond les tests
 de sélection naturelle.
 
-** Il structure le contenu en GC
+** Le gBGC structure le contenu en GC
 Les bases C et G sont liées par trois liaisons hydrogènes : elles sont plus
 stables que les liaisons doubles entre A et T. Certains pensent qu'en soi, le
 taux de GC est un trait adaptatif : à l'échelle du génome, un contenu en GC
@@ -447,8 +447,6 @@ supérieur en augmenterait la stabilité. Ce modèle rencontre néanmoins de
 nombreuses difficultés, chez les eucaryotes comme les procaryotes. La conversion
 biaisée vers GC a été proposée comme modèle alternatif expliquant les variations
 en taux de GC --- \ac{gc} --- , au sein d'un génome et entre génomes.
-
-
 
 *** Le contenu GC des génomes mammifères et la théorie des isochores
 Les mammifères montrent des variations intragénomiques de grande échelle en taux
@@ -572,7 +570,7 @@ l'Humain\cite{lassalle_gc-content_2015}.
 
 #+END_LaTeX
 
-** Il interfère avec la sélection 
+** Le gBGC interfère avec la sélection 
 La conversion génique affecte la probabilité de fixation d'un allèle de façon
 similaire à la sélection \cite{nagylaki_evolution_1983}. Si un allèle faiblement
 délétère est porté par une substitution AT $\rightarrow$ GC, le \ac{gbgc} peut
@@ -591,7 +589,7 @@ auparavant conservées ont subie un ou plusieurs épisodes de gBGC, qui ont
 entraîné deux choses : i) le \ac{gc} local a augmenté, et ii) la fonction des
 régions a changé (\emph{cf} Figure \ref{pollard}).
 
-** Il confond les tests de sélection 
+** Le gBGC fausse les tests de sélection 
 Les tests de sélection reposent classiquement sur deux principes généraux
 \cite{hurst_genetics_2009} : ce qui évolue lentement est fonctionnel, ce qui
 évolue vite est adaptatif. L'approche privilégiée pour détecter les régions
