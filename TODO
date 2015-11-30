@@ -1,6 +1,6 @@
 # -*- org -*-
 #+title: Stage : TODO
-#+TODO: TODO(t) | DONE(d)
+#+TODO: TODO(t) NEXT(n) | DONE(d)
 #+TODO: LIRE(l) ->>- | -LU-(u)
 #+TAGS: { RAPPORT(r) MANIP(m) ANALYSES(a) } ORDI(o) LABO(l) LIRE(r) BREAK(b) 
 
@@ -463,7 +463,25 @@ CLOSED: [2015-11-26 Thu 15:00]
 CLOSED: [2015-11-26 Thu 15:00]
 ** TODO Mise En Page [0%]
 *** TODO Faire page de titre
-** TODO [#A] Modifications 
+** Modifications [60%]
+*** DONE virer le formattage italique et/où small caps. de partout. 
+CLOSED: [2015-11-28 Sat 17:43]
+*** DONE placer la figure 3 en annexe que j'aimais beaucoup. 
+CLOSED: [2015-11-30 Mon 08:41]
+*** NEXT reformuler introduction générale
+*** NEXT reformuler ou effacer les introductions par partie inutiles. 
+*** DONE enlever les mentions multiples -- GC% --. 
+CLOSED: [2015-11-30 Mon 06:23]
+*** DONE faire le schéma de la ségrégation d'un allèle en cours de conversion. 
+CLOSED: [2015-11-30 Mon 06:22]
+*** DONE modifier les titres pour qu'ils soient autonomes
+CLOSED: [2015-11-30 Mon 06:22]
+*** DONE enlever la mention Levure dans la corrélation avec mitose biaisée vers GC. 
+CLOSED: [2015-11-30 Mon 06:22]
+*** NEXT modifier la partie sur MutH dans le papier Lesecque.
+*** NEXT éventuellement placer en annexe l'explication mathématique 
+de l'interférence sélection et biais.
+*** Notes
 
 introduction = résumé ... non. amener question. 
 

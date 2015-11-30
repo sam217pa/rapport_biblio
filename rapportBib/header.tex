@@ -32,6 +32,7 @@
 \usepackage[]{multicol}
 \usepackage[para, perpage, symbol*]{footmisc}
 \renewcommand\footnotelayout{\Large}
+\usepackage[]{caption}
 
 %% todo
 \usepackage[french]{todonotes}
@@ -114,6 +115,7 @@
 \newenvironment{transition}{% 
     \begin{minipage}{\linewidth}% 
       \rule{\linewidth}{0.2pt}%
+      \flushleft
     }{%
       \rule{\linewidth}{0.2pt}% 
     \end{minipage}%
@@ -146,7 +148,7 @@
   {}% before the title body
   []% after the title body
   
-
+\usepackage[x11names, svgnames]{xcolor}
 %%
 %% lang
 %%
@@ -188,10 +190,15 @@
 \usepackage[]{tikz}
 % \newcommand*{\lassalleClair}{\includegraphics[]{img/lassalleClair.pdf}}
 \newcommand{\crule}[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
-\newcommand{\lassalleClair}{\crule[Tan]{0.3cm}{0.3cm}}
-\newcommand{\lassalleFonce}{\crule[Gray]{0.3cm}{0.3cm}}
+\newcommand{\lassalleClair}{\crule[NavajoWhite3]{0.3cm}{0.3cm}}
+\newcommand{\lassalleFonce}{\crule[NavajoWhite4]{0.3cm}{0.3cm}}
 
 \definecolor{LightGray}{gray}{0.70}
 
 \newcommand{\tikzcircle}[2][Red, fill=Red]{\tikz[baseline = -0.5ex]
   \draw[#1, radius=#2] (0,0) circle; }
+
+%%
+%% title page
+%% 
+\usepackage[]{pdfpages}
