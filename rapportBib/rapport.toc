@@ -2,18 +2,18 @@
 \vfill 
 \contentsline {section}{\numberline {1}Qu'est-ce que la conversion g\IeC {\'e}nique ?}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Recombinaison homologue}{2}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}M\IeC {\'e}canismes de recombinaison homologue}{2}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}La recombinaison m\IeC {\'e}iotique : \IeC {\'e}tape cl\IeC {\'e} de la m\IeC {\'e}iose}{3}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.1}M\IeC {\'e}canismes de recombinaison homologue}{3}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}La recombinaison m\IeC {\'e}iotique : \IeC {\'e}tape cl\IeC {\'e} de la m\IeC {\'e}iose}{4}{subsubsection.1.1.2}
 \contentsline {subsubsection}{\numberline {1.1.3}La recombinaison chez les procaryotes}{4}{subsubsection.1.1.3}
 \contentsline {subsection}{\numberline {1.2}Conversion g\IeC {\'e}nique}{4}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Conversion g\IeC {\'e}nique biais\IeC {\'e}e vers GC}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.3}Conversion g\IeC {\'e}nique biais\IeC {\'e}e vers GC}{6}{subsection.1.3}
 \contentsline {section}{\numberline {2}Quelles hypoth\IeC {\`e}ses pour expliquer le gBGC ?}{6}{section.2}
 \contentsline {subsection}{Des propri\IeC {\'e}t\IeC {\'e}s inh\IeC {\'e}rentes \IeC {\`a} la r\IeC {\'e}paration\IeC {\nobreakspace }?}{6}{section*.1}
 \contentsline {subsection}{Compenser la mutation ?}{7}{section*.1}
 \contentsline {section}{\numberline {3}Quelles sont les cons\IeC {\'e}quences du gBGC ?}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Le gBGC structure le contenu en GC}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Le gBGC structure le contenu en GC}{8}{figure.6}
+\contentsline {subsection}{Le gBGC structure le contenu en GC}{8}{figure.6}
 \contentsline {subsubsection}{\numberline {3.1.1}Le contenu GC des g\IeC {\'e}nomes mammif\IeC {\`e}res et la th\IeC {\'e}orie des isochores}{8}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Un \ac {gbgc} procaryote ?}{8}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2}Un \ac {gbgc} procaryote ?}{9}{figure.7}
 \contentsline {subsection}{\numberline {3.2}Le gBGC interf\IeC {\`e}re avec la s\IeC {\'e}lection}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Le gBGC fausse les tests de s\IeC {\'e}lection}{10}{figure.8}
-\contentsline {subsection}{Le gBGC fausse les tests de s\IeC {\'e}lection}{10}{figure.8}
+\contentsline {subsection}{\numberline {3.3}Le gBGC fausse les tests de s\IeC {\'e}lection}{10}{subsection.3.3}

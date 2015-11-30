@@ -33,26 +33,37 @@
 
 La recombinaison homologue est un processus majeur d'évolution des génomes.
 C'est un processus très conservé, des procaryotes aux
-eucaryotes\cite{cromie_recombination_2001}. C'est le mécanisme clé de réparation
+eucaryotes\cite{cromie_recombination_2001}. C'est un mécanisme clé de réparation
 des lésions de l'ADN. Elles sont réparées sur la base d'une matrice d'ADN
 homologue, donnant lieu à la formation transitoire d'un hétéroduplex. Un
 hétéroduplex est un appariement entre deux brins homologues, qui ne sont pas
 nécessairement rigoureusement complémentaires. Chez les eucaryotes, la matrice
-est typiquement la région homologue correspondante, sur la chromatide sœur. Les
-crossover méiotiques sont générés sous contrôle génétique et impliquent une
-étape obligatoire de recombinaison\cite{mancera_high-resolution_2008}. Chez les
-procaryotes, cette matrice peut être acquise par transfert horizontal. La
-recombinaison est le moyen principal de transfert de gène entre procaryotes.
+est typiquement la région homologue correspondante, sur la chromatide sœur. Au
+cours de la méiose, des lésions sont introduites, qui sont réparées par
+recombinaison homologue. Cette réparation a deux fonctions : elle est requise
+pour la bonne conduite de la séparation des chromosomes, et elle induit un
+brassage des combinaisons d'allèles bénéfique sur le plan
+évolutif\cite{webster_direct_2012}. Chez les procaryotes, cette matrice peut
+être acquise par transfert horizontal de gène, /via/ les prophages, la
+conjugaison ou la transformation naturelle. La recombinaison est le moyen
+principal de transfert de gène entre procaryotes. Elle peut causer l'acquisition
+de matériel génétique exogène, la perte de gène ou le remplacement d'allèles.
+Chez les bactéries symbiotiques, la perte de la machinerie de réparation a causé
+leur dégénérescence\cite{moran_genomics_2008}.  
 
-Au voisinage de la région lésée --- puis réparée --- , des échanges
-d'information génétique de petite échelle existent\cite{duret_biased_2009}. Ils
-sont dûs à la correction des erreurs d'appariement dans l'hétéroduplex. Ce sont
-des événements de conversion génique. Ils donnent lieu à des transmissions
-non-mendéliennes d'allèles : l'information génétique est transmise d'un brin
-vers l'autre, de façon unidirectionnelle. Cette conversion est biaisée dès lors
-que l'un des allèles a une plus forte probabilité de transmission, à l'échelle
-de la population. Chez les eucaryotes, de nombreuses observations montrent que
-la conversion est biaisée vers les bases G ou
+La recombinaison homologue est généralement abordée dans le cadre de ces deux
+aspects positifs : la réparation des lésions, et le brassage génétique qui en
+découle. Elle possède cependant une face cachée : la conversion génique. Au
+cours de la réparation par recombinaison homologue, des échanges d'information
+génétique de courte portée existent \cite{duret_biased_2009}. Ils sont dûs à la
+correction des erreurs d'appariement dans l'hétéroduplex, ou à l'action de la
+machinerie de réparation des lésions. Ils donnent lieu à des transmissions
+non-réciproque d'information génétique entre les deux séquences recombinantes :
+l'information génétique est transmise d'un brin vers l'autre, de façon
+unidirectionnelle. Cette conversion est dite biaisée dès lors que l'un des
+allèles a une plus forte probabilité de transmission, à l'échelle de la
+population. Chez les eucaryotes, de nombreuses observations ont montré que la
+conversion est biaisée vers les bases G ou
 C\cite{pessia_evidence_2012,mancera_high-resolution_2008,duret_impact_2008}. Les
 allèles G ou C sont plus souvent transmis que les allèles A ou T. Ce biais de
 conversion génique en faveur de GC --- \ac{gbgc} --- a un impact fort sur
@@ -226,16 +237,16 @@ conversion génique.
   \input{img/conversion_scheme.tex}
   \caption{\textbf{La conversion génique à ses différentes échelles.} \rmfamily%
     \setstretch{1.1}%
-    À un locus $A$, dont les allèles sont $A$ et $a$, la conversion génique
-    entraîne soit la conversion de $a$ par $A$, à gauche, soit l'inverse, à
+    À un locus \alg, dont les allèles sont \alA et \ala, la conversion génique
+    entraîne soit la conversion de \ala par \alA, à gauche, soit l'inverse, à
     droite. À l'échelle d'un évènement de méiose, les gamètes obtenus sont soit
-    $AAAa$, soit $Aaaa$. À l'échelle de l'{\em ensemble de la gamétogénèse} d'un
-    individu, la conversion n'est biaisée que si $AAAa$ est plus souvent obtenu
-    qu'$Aaaa$.
-    % Les individus 1, 2 et 3 sont biaisés vers $A$ par exemple. 
-    À l'échelle de la {\em population}, la conversion n'est biaisée vers $A$ que
-    si les individus dont la conversion est biaisée vers $A$ sont plus
-    fréquents. }
+    \alA\alA\alA\ala, soit \alA\ala\ala\ala. À l'échelle de l'{\em ensemble de
+      la gamétogénèse} d'un individu, la conversion n'est biaisée que si
+    \alA\alA\alA\ala est plus souvent obtenu qu'\alA\ala\ala\ala. À l'échelle de
+    la {\em population}, la conversion n'est biaisée vers \alA que si les
+    individus dont la conversion est biaisée vers \alA sont plus fréquents. La
+    conversion génique biaisée augmente la fréquence de l'allèle donneur dans le
+    pool de gamète, et donc sa probabilité de fixation dans la population. }
   \label{conversion}
 }
 #+END_LaTeX
