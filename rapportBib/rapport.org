@@ -34,82 +34,72 @@
 La recombinaison homologue est un processus majeur d'évolution des génomes.
 C'est un processus très conservé, des procaryotes aux
 eucaryotes\cite{cromie_recombination_2001}. C'est un mécanisme clé de réparation
-des lésions de l'ADN. Elles sont réparées sur la base d'une matrice d'ADN
-homologue, donnant lieu à la formation transitoire d'un hétéroduplex. Un
-hétéroduplex est un appariement entre deux brins homologues, qui ne sont pas
-nécessairement rigoureusement complémentaires. Chez les eucaryotes, la matrice
-est typiquement la région homologue correspondante, sur la chromatide sœur. Au
-cours de la méiose, des lésions sont introduites, qui sont réparées par
-recombinaison homologue. Cette réparation a deux fonctions : elle est requise
-pour la bonne conduite de la séparation des chromosomes, et elle induit un
-brassage des combinaisons d'allèles bénéfique sur le plan
-évolutif\cite{webster_direct_2012}. Chez les procaryotes, cette matrice peut
-être acquise par transfert horizontal de gène, /via/ les prophages, la
-conjugaison ou la transformation naturelle. La recombinaison est le moyen
-principal de transfert de gène entre procaryotes. Elle peut causer l'acquisition
-de matériel génétique exogène, la perte de gène ou le remplacement d'allèles.
-Chez les bactéries symbiotiques, la perte de la machinerie de réparation a causé
-leur dégénérescence\cite{moran_genomics_2008}.  
+des lésions de l'ADN. Chez les eucaryotes, au cours de la méiose, des lésions
+sont introduites, qui sont réparées par recombinaison homologue. Cette
+réparation a deux fonctions : elle est requise pour la bonne conduite de la
+séparation des chromosomes et induit un brassage des combinaisons d'allèles
+bénéfique sur le plan évolutif\cite{webster_direct_2012}. Chez les procaryotes,
+cette matrice peut être acquise par transfert horizontal de gène, /via/ les
+prophages, la conjugaison ou la transformation naturelle. La recombinaison est
+le moyen principal de transfert de gène entre procaryotes. Elle peut causer
+l'acquisition de matériel génétique exogène, la perte de gènes ou le
+remplacement d'allèles\cite{coupat-goutaland_ralstonia_2011}. Chez les bactéries
+endosymbiotiques, la perte de la machinerie de réparation a causé leur
+dégénérescence\cite{moran_genomics_2008}.
 
 La recombinaison homologue est généralement abordée dans le cadre de ces deux
-aspects positifs : la réparation des lésions, et le brassage génétique qui en
+aspects positifs : la réparation des lésions et le brassage génétique qui en
 découle. Elle possède cependant une face cachée : la conversion génique. Au
-cours de la réparation par recombinaison homologue, des échanges d'information
-génétique de courte portée existent \cite{duret_biased_2009}. Ils sont dûs à la
-correction des erreurs d'appariement dans l'hétéroduplex, ou à l'action de la
+cours de la recombinaison homologue, des échanges d'information génétique de
+courte portée ont lieu\cite{duret_biased_2009}. Ils sont dûs à la correction des
+erreurs d'appariement dans les hétéroduplex formés, ou à l'action de la
 machinerie de réparation des lésions. Ils donnent lieu à des transmissions
-non-réciproque d'information génétique entre les deux séquences recombinantes :
+non-réciproques d'information génétique entre les deux séquences recombinantes :
 l'information génétique est transmise d'un brin vers l'autre, de façon
 unidirectionnelle. Cette conversion est dite biaisée dès lors que l'un des
 allèles a une plus forte probabilité de transmission, à l'échelle de la
 population. Chez les eucaryotes, de nombreuses observations ont montré que la
-conversion est biaisée vers les bases G ou
-C\cite{pessia_evidence_2012,mancera_high-resolution_2008,duret_impact_2008}. Les
-allèles G ou C sont plus souvent transmis que les allèles A ou T. Ce biais de
-conversion génique en faveur de GC --- \ac{gbgc} --- a un impact fort sur
-l'évolution des génomes : il conditionne la structuration en contenu GC des
-génomes\cite{duret_impact_2008} ; il interfère avec la sélection
-naturelle\cite{galtier_gc-biased_2009} ; et, d'un point de vue pratique, il
-brouille les tests de sélection naturelle\cite{ratnakumar_detecting_2010}.
+conversion génique favorise les bases G ou C dans les cas d'hétérozygotie
+AT/GC\cite{pessia_evidence_2012,mancera_high-resolution_2008,duret_impact_2008}.
+Les allèles G ou C sont plus souvent transmis que les allèles A ou T. Il a été
+montré que le biais de conversion génique en faveur de GC, ou \ac{gbgc}, a un
+impact fort sur l'évolution des génomes : chez les mammifères, c'est le
+principal déterminant de la structuration en GC des
+génomes\cite{duret_impact_2008}.
 
-Lorsque le biais est observé, le contenu en GC est anormalement élevé dans les
-régions fortement recombinantes \cite{duret_impact_2008}. Ce mécanisme permet
-d'expliquer en partie les variations du \ac{gc}, au sein d'un génome et entre
-génomes. L'explication de ces variations suscite un débat entre les partisans
-des hypothèses adaptatives, et ceux des hypothèses neutres. Les premiers veulent
-que le contenu en GC soit un trait sélectionné : il contribue en soi à la valeur
-adaptative de l'individu \cite{hildebrand_evidence_2010}. Les seconds avancent
-qu'il est également déterminé par des processus de dérive génétique et de
-mutation. Le \ac{gbgc} est un autre processus neutre contribuant à déterminer le
-\ac{gc}. En fait, c'est la contribution relative des trois processus à la
-détermination du taux de GC qui fait débat.
+Le contenu en GC est anormalement élevé dans les régions fortement
+recombinantes. Ce mécanisme permet d'expliquer en partie les variations du taux
+de GC, ou \ac{gc}, au sein d'un génome et entre génomes. L'explication de ces
+variations suscite un débat entre les partisans des hypothèses adaptatives et
+ceux des hypothèses neutres. Les premiers veulent que le contenu en GC soit un
+trait sélectionné : il contribue en soi à la valeur adaptative de l'individu
+\cite{hildebrand_evidence_2010}. Les seconds avancent qu'il est également
+déterminé par des processus de dérive génétique et de mutation. Le \ac{gbgc} est
+un autre processus neutre contribuant à déterminer le \ac{gc}. En fait, c'est la
+contribution relative des trois processus à la détermination du taux de GC qui
+fait débat.
 
-Le biais peut également permettre de fixer des mutations délétères, si celles-ci
+De plus, le biais peut fixer des mutations faiblement délétères, si celles-ci
 sont portées par les allèles G ou C du gène. Il contrecarre l'action de la
-sélection naturelle\cite{galtier_gc-biased_2009, galtier_adaptation_2007}.
-Enfin, l'action du biais laisse des traces génomiques équivalentes à celles de
-la sélection naturelle : les tests classiques de détection confondent l'action
-de la sélection avec celle du \ac{gbgc}\cite{ratnakumar_detecting_2010}.
+sélection naturelle\cite{galtier_gc-biased_2009, galtier_adaptation_2007}. Son
+action laisse des traces génomiques équivalentes à celles de la sélection
+naturelle : les tests classiques de détection confondent l'action de la
+sélection avec celle du \ac{gbgc}\cite{ratnakumar_detecting_2010}.
 
-Récemment, l'hypothèse du biais vers GC s'est étendue aux
-procaryotes\cite{lassalle_gc-content_2015}. Des observations montrent que les
-régions fortement recombinantes ont un contenu en GC significativement plus
-élevé. L'extension de cette hypothèse aux procaryotes représente une avancée
-majeure : elle pourrait permettre d'expliquer l'évolution du contenu en GC des
-populations bactériennes.
+Des preuves indirectes montrent que le gBGC est probablement à l'œuvre chez la
+plupart des eucaryotes\cite{pessia_evidence_2012}. Récemment, l'hypothèse du
+biais vers GC s'est étendue aux procaryotes\cite{lassalle_gc-content_2015}. Les
+observations montrent que les régions fortement recombinantes ont un contenu en
+GC significativement plus élevé. L'extension de cette hypothèse aux procaryotes
+représente une avancée majeure : elle pourrait permettre d'expliquer l'évolution
+du contenu en GC des populations bactériennes.
 
-Nous verrons donc ce qu'est la conversion génique biaisée et les mécanismes qui
-la sous-tendent, dans une première partie; dans une deuxième, les hypothèses
+Nous verrons donc dans une première partie ce qu'est la conversion génique
+biaisée et les mécanismes qui la sous-tendent; dans une deuxième, les hypothèses
 permettant d'expliquer son existence ; et dans une dernière, ses conséquences
 évolutives.
 
 * Qu'est-ce que la conversion génique ? 
-
-La conversion génique est un mécanisme qui intervient au cours de la réparation
-de l'ADN. Lors d'une cassure double brin --- \ac{dsb}, Double Strand Break --- ,
-la lésion est réparée par recombinaison homologue. Les mésappariements induits
-peuvent être corrigés, donnant lieu à une transmission d'allèle non-réciproque
-\cite{chen_mechanism_2008}.
 
 #+name: recomb
 #+BEGIN_LaTeX
@@ -155,13 +145,13 @@ conservés, des phages aux mammifères \cite{cromie_recombination_2001}.
 
 *** Mécanismes de recombinaison homologue
 
-Les cassures doubles brins, ou \ac{dsb}, sont générées par des agents
-mutagènes ou sous contrôle génétique, notamment lors de la méiose. Après la
-formation des \ac{dsb}, les extrémités $5'$ de la lésion subissent une
-résection, délétion locale d'une section d'ADN. Chez /E.coli/, le complexe
-RecBCD est responsable de cette digestion. Il a une activité d'hélicase : il
-dissocie les deux brins d'ADN ; et de nucléase : il digère localement les brins
-dissociés \cite{dillingham_recbcd_2008}.
+Les cassures doubles brins, ou \ac{dsb}, sont générées par des agents mutagènes
+ou sous contrôle génétique, notamment lors de la méiose. Après la formation des
+\ac{dsb}, les extrémités $5'$ de la lésion subissent une résection, délétion
+locale d'une section d'ADN. Chez /E.coli/, le complexe RecBCD est responsable de
+cette digestion. Il a une activité d'hélicase, qui dissocie les deux brins
+d'ADN, et de nucléase, qui dégrade localement les brins dissociés
+\cite{dillingham_recbcd_2008}.
 
 Le brin à l'extrémité $3'$ envahit les brins complémentaires de la molécule
 intacte. Ce brin recherche ensuite activement les zones d'homologie. Lorsqu'une
@@ -169,7 +159,7 @@ zone est déterminée, les brins sont échangés. L'ensemble de ce processus est
 catalysé par la nucléo-protéine RecA \cite{chen_mechanism_2008} ou ses
 homologues. C'est l'acteur moléculaire clé de la recombinaison homologue.
 
-L'échange des brins entraîne la formation d'un hétéroduplex (voir Figure
+L'échange des brins entraîne la formation d'un hétéroduplex (figure
 \ref{holliday}). L'intégrité de l'hétéroduplex est maintenue par une structure
 appelée jonction de Holliday. Des mésappariements peuvent exister entre les
 brins de l'hétéroduplex : deux brins homologues ne sont pas systématiquement
@@ -180,7 +170,7 @@ brin homologue comme matrice. Enfin, les intermédiaires de recombinaisons sont
 résolus par des résolvases qui clivent les jonctions de Holliday. La résolution
 des intermédiaires de recombinaisons peut donner des produits dits crossovers ou
 non-crossovers, entraînant respectivement l'échange des régions flanquantes ou
-non \cite{mancera_high-resolution_2008}.
+non \cite{mancera_high-resolution_2008} (figure \ref{recombinaison}). 
 
 #+BEGIN_LaTeX
 \begin{transition}
@@ -196,9 +186,9 @@ des transferts de gène procaryotes \cite{redfield_bacteria_2001}.
 Chez les eucaryotes, la méiose implique la formation de DSB, par les enzymes
 Spo11, sous contrôle génétique rigoureux. Ils sont réparés par recombinaison
 homologue \cite{chapman_playing_2012}. Cependant, la distribution des sites de
-coupure est variable : il existe des hotspots de cassure, et donc de
-recombinaison. Par opposition, les coldspots sont des régions moins soumises que
-d'autres aux cassures.
+coupure est variable : il existe des hotspots de cassure, donc de recombinaison.
+Par opposition, les coldspots sont des régions moins soumises que d'autres aux
+cassures.
 
 La réparation des \ac{dsb} par recombinaison homologue est requise pour
 l'appariement et la ségrégation des chromosomes homologues au cours de la
@@ -207,21 +197,22 @@ des crossovers se forment entre les chromosomes parentaux. Ces crossovers
 entraînent le brassage des allèles, un processus bénéfique sur le plan
 évolutif\cite{webster_direct_2012}. En effet, il casse les liaisons entre
 allèles : la sélection élimine alors plus efficacement les variants délétères et
-promeut les variants bénéfiques \cite{otto_resolving_2002}.
+promeut les variants bénéfiques.
 
 *** La recombinaison chez les procaryotes
 
 Étant donné la taille des populations bactériennes et les temps évolutifs en
 jeu, la recombinaison a un impact majeur sur l'évolution procaryote
-\cite{didelot_impact_2010}. C'est le moteur des transferts de gène. Ceux-ci sont
-médiés soit par des vecteurs, les plasmides ou les phages, soit par un état de
-compétence naturelle, /via/ l'acquisition passive ou active d'ADN exogène. La
-principale fonction de la recombinaison homologue semble être la réparation
-des lésions de l'ADN \cite{fall_horizontal_2007}. L'acquisition de matériel
-génétique exogène est un effet secondaire des mécanismes de réparation de l'ADN.
-Cet effet secondaire est bénéfique sur le plan évolutif dès lors que le matériel
-acquis apporte un avantage sélectif à l'individu[fn:2: ou s'il manipule le
-comportement de reproduction de l'hôte en faveur de sa dissémination…].
+\cite{didelot_impact_2010}. C'est l'un des moteurs de transferts de gène.
+Ceux-ci sont médiés soit par des vecteurs, les plasmides ou les phages, soit par
+un état de compétence naturelle, /via/ l'acquisition passive ou active d'ADN
+exogène. La principale fonction de la recombinaison homologue semble être la
+réparation des lésions de l'ADN \cite{fall_horizontal_2007}, l'acquisition de
+matériel génétique exogène est un effet secondaire des mécanismes de réparation
+de l'ADN. Cet effet secondaire est bénéfique sur le plan évolutif dès lors que
+le matériel acquis apporte un avantage sélectif à l'individu, ou s'il manipule
+les caractères de l'hôte en faveur de sa
+dissémination\cite{gogarten_horizontal_2005}.
 
 #+BEGIN_LaTeX
 \begin{transition}
@@ -241,34 +232,34 @@ conversion génique.
     entraîne soit la conversion de \ala par \alA, à gauche, soit l'inverse, à
     droite. À l'échelle d'un évènement de méiose, les gamètes obtenus sont soit
     \alA\alA\alA\ala, soit \alA\ala\ala\ala. À l'échelle de l'{\em ensemble de
-      la gamétogénèse} d'un individu, la conversion n'est biaisée que si
-    \alA\alA\alA\ala est plus souvent obtenu qu'\alA\ala\ala\ala. À l'échelle de
-    la {\em population}, la conversion n'est biaisée vers \alA que si les
-    individus dont la conversion est biaisée vers \alA sont plus fréquents. La
-    conversion génique biaisée augmente la fréquence de l'allèle donneur dans le
-    pool de gamète, et donc sa probabilité de fixation dans la population. }
+      la gamétogénèse} d'un individu (en \texttt{a}), la conversion est biaisée
+    si \alA\alA\alA\ala est plus souvent obtenu qu'\alA\ala\ala\ala. À l'échelle
+    de la {\em population} (en \texttt{b}), la conversion est biaisée vers
+    \alA si les individus dont la conversion est biaisée vers \alA sont plus
+    fréquents. La conversion génique biaisée augmente la fréquence de l'allèle
+    donneur dans le pool de gamète, donc sa probabilité de fixation dans la
+    population. }
   \label{conversion}
 }
 #+END_LaTeX
 
 ** Conversion génique
 
-La conversion génique est l'échange non réciproque d'information génétique.
-C'est une transmission non-mendélienne : l'un des allèles a une plus forte
-probabilité d'être transmis que l'autre\cite{chen_gene_2007}. 
+La conversion génique est l'échange non réciproque d'information
+génétique\cite{chen_gene_2007}.
 
 Considérons le cas de la transmission de l'allèle $A$ et de son homologue $a$,
-au cours de la méiose. Après la méiose, le génotype attendu est $AAaa$. Un
-évènement de conversion de gène peut conduire à des génotypes de type $Aaaa$ ou
-$AAAa$.
+au cours de la méiose. La méiose engendre deux gamètes $A$ et deux gamètes $a$.
+Un évènement de conversion de gène à ce locus engendre soit un gamète $A$ et
+trois $a$, soit un gamète $A$ et trois $a$ (figure \ref{conversion}). 
 
 Au cours de la réparation des DSB, la conversion peut subvenir de deux façons.
 i) L'allèle $A$ est proche du site d'initiation de la cassure. Il fait partie de
-la résection, l'allèle $a$ est copié vers le brin réparé. $Aaaa$ est le génotype
-obtenu. ii) L'intermédiaire de recombinaison présente un polymorphisme $Aa$ sur
-l'un des hétéroduplex. La machinerie de réparation des mésappariements ---
-\ac{mmr} --- les prend en charge. $a$ est alors converti en $A$, ou
-réciproquement.
+la résection, l'allèle $a$ est copié vers le brin réparé. Après la méiose, les
+gamètes obtenus sont de type $Aaaa$. ii) L'intermédiaire de recombinaison
+présente un polymorphisme $Aa$ sur l'un des hétéroduplex. La machinerie de
+réparation des mésappariements --- \ac{mmr} --- les prend en charge. $a$ est
+alors converti en $A$, ou réciproquement.
 
 Chez /E.coli/, la détection des mésappariements est effectuée par les dimères
 des enzymes MutS. Les mésappariements sont reconnus par la distorsion qu'ils
@@ -282,12 +273,11 @@ MLH pour MutS Homologs et MutL Homologs. Ce sont des composants de la voie
 
 Au cours de la recombinaison, le système de \ac{mmr} est la voie préférentielle
 de correction des mésappariements dans l'hétéroduplex. Néanmoins, la voie
-\ac{ber}, Base Excision Repair, est une alternative à ce système.
-
-Elle entraîne l'excision de l'une des bases du mésappariement, puis son
-remplacement par la base complémentaire à l'autre. Les ADN glycosylases excisent
-les bases avec une spécificité de substrat : chaque base A, T, C ou G a une ADN
-glycosylase correspondante et spécifique.
+\ac{ber}, Base Excision Repair, est une alternative à ce système. Elle entraîne
+l'excision de l'une des bases du mésappariement, puis son remplacement par la
+base complémentaire à l'autre. Les ADN glycosylases excisent les bases avec une
+spécificité de substrat : chaque base A, T, C ou G a une ADN glycosylase
+correspondante et spécifique.
 
 Dans tous les cas, le génotype de la région --- ou de la base --- digérée est
 converti par celui du brin intact. Le transfert a lieu entre séquences
@@ -299,7 +289,7 @@ sur des chromosomes différents \cite{chen_gene_2007}.
   En théorie, la conversion $a \mapsto A$ a lieu avec la même fréquence que
   celle de la conversion $A \mapsto a$. Cependant, dès lors qu'un allèle est
   plus souvent converti que l'autre, à l'échelle de la population, la conversion
-  génique est biaisée (voire Figure \ref{conversion}). Chez les eucaryotes, de
+  génique est biaisée (voire figure \ref{conversion}). Chez les eucaryotes, de
   nombreuses observations montrent que les mésappariements GA, GT, CA ou CT sont
   plus fréquemment corrigés en GC qu'en AT \cite{duret_biased_2009}.
 \end{transition}
@@ -328,7 +318,7 @@ quatre haplotypes --- les tétrades --- résultants des produits de méiose de 4
 levures, à haute résolution. Ils montrent qu'1% du génome de chaque produit de
 méiose est soumis à de la conversion génique. Ces régions montrent une
 transmission biaisée en faveur des allèles G ou C. Ils sont transmis avec une
-probabilité 1.3% plus élevée qu'attendu sous l'hypothèse d'une transmission
+probabilité 1,3% plus élevée qu'attendu sous l'hypothèse d'une transmission
 mendélienne \cite{mancera_high-resolution_2008}. Ce biais, bien que faible, peut
 affecter très fortement la probabilité de fixation des allèles GC dès lors que
 la taille de la population est grande\cite{nagylaki_evolution_1983}. 
@@ -349,46 +339,49 @@ le donneur de la conversion sur l'ensemble de la région convertie. Lors d'un
 #+END_LaTeX
 
 * Quelles hypothèses pour expliquer le gBGC ?
-Les mécanismes précis responsables du biais de conversion génique vers GC sont
-encore inconnus à ce jour. Parmi les hypothèses avancées, on distinguera ici les
-mécanismes moléculaires potentiellement responsables d'un tel biais, des raisons
-d'être évolutives de la conversion biaisée.
-
-*** Des propriétés inhérentes à la machinerie de réparation ?
+*** Mécanismes moléculaires 
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
-\addcontentsline{toc}{subsection}{Des propriétés inhérentes à la réparation ?}
+\addcontentsline{toc}{subsection}{Mécanismes moléculaires}
 
-La machinerie de réparation pourrait présenter dans sa structure un biais en
-faveur de la transmission des allèles G ou C, au cours de la conversion génique.
-Chez l'Homme, la réparation des mésappariements dans les cellules en mitose est
-fortement biaisé vers G ou C. Les ADN glycosylases de la voie \ac{ber} ciblent
+Les mécanismes responsables du gBGC, ses causes proximales, n'ont pas encore été
+formellement identifiées à ce jour. Différentes hypothèses ont cependant été
+avancées, l'hypothèse privilégiée étant un biais causé par la machinerie de
+réparation. 
+
+Chez les mammifères, le mécanisme de BER dans les cellules en mitose est
+fortement biaisée vers G ou C. Les ADN glycosylases de cette voie ciblent
 spécifiquement les bases thymines, probablement pour compenser l'hypermutabilité
-des cytosines\cite{brown_specific_1987} (/cf/ Figure \ref{cytosine}). Si la voie
-\ac{ber} est active au cours de la réparation des erreurs d'appariement de la
-recombinaison, le biais observé pourrait être dû à l'activité d'un mécanisme
-spécifiquement destiné à la réplication mitotique.
+des cytosines\cite{brown_specific_1987} (figure \ref{cytosine}). L'intervention
+du BER dans la réparation des mésappariements au cours de la méiose n'a
+cependant jamais été démontré. 
 
-Chez la levure, l'hypothèse de l'intervention du \ac{ber} a été
+De plus, chez la levure, l'hypothèse de l'intervention du \ac{ber} a été
 exclue\cite{lesecque_gc-biased_2013}. En effet, étant donné la courte portée du
-BER, les traces de conversion obtenues devraient être complexes, avec une
-alternance du génotype non-biaisé et biaisé sur de courtes échelles. Pourtant,
-le biais de conversion n'est observé que dans les traces simples : le brin
-donneur est le même sur l'ensemble de la région convertie.
+BER --- une base ---, les traces de conversion obtenues devraient être
+complexes, avec une alternance des génotypes parentaux sur de courtes échelles.
+Pourtant, le biais de conversion n'est observé que dans les traces simples : le
+brin donneur est le même sur l'ensemble de la région convertie.
 
 Deux modèles alternatifs ont été proposés\cite{lesecque_gc-biased_2013} : i) le
 modèle de rejet de brin, et ii) le modèle du \ac{mmr} biaisé. Le modèle de rejet
-de brin intervient au moment de la recherche d'homologie par le complexe
-RecA-ADN simple brin : si un brin riche en AT est moins souvent rejeté que son
-homologue riche en GC, la conversion a plus souvent lieu du brin riche en GC
-vers le brin riche en AT. Ce qui causerait une sur-transmission de GC. 
+de brin intervient au moment de la recherche d'homologie par le complexe RecA :
+si un brin riche en AT est moins souvent rejeté que son homologue riche en GC,
+la conversion a plus souvent lieu du brin riche en GC vers le brin riche en AT.
+Ce qui causerait la sur-transmission de GC.
 
 Le modèle du \ac{mmr} biaisé dépend du choix de brin matrice pour la réparation
-des mésappariements. Sur la Figure \ref{mutslh}, MutH introduit une cassure sur
-le brin porteur de l'allèle G. Si au contraire, la cassure est plus souvent
-introduite sur les brins porteurs des allèles A ou T, G ou C est plus souvent
-transmis. 
+des mésappariements. Chez les eucaryotes, le choix du brin matrice dépend
+usuellement de la présence d'une cassure sur l'un des brins. Lorsqu'un
+mésappariement est détecté par MSH, il recrute MLH. Le complexe ainsi formé
+parcourt la région lésée, jusqu'à rencontrer une cassure. Il y recrute une
+exonucléase responsable de la dégradation du brin contenant la cassure. Si des
+cassures sont présentes sur les deux brins, la machinerie est face à un choix :
+elle peut choisir le brin matrice. Le modèle du \ac{mmr} biaisé avance que le
+choix favoriserait la dégradation du brin porteur d'une cassure proche d'une
+base A ou T. Le brin porteur de G ou C serait alors plus souvent le donneur de
+l'évènement de conversion. 
 
 *** Un processus sélectionné pour compenser la mutation ?
 :PROPERTIES:
@@ -396,14 +389,20 @@ transmis.
 :END:
 \addcontentsline{toc}{subsection}{Compenser la mutation ?} 
 
-L'intérêt évolutif d'un tel mécanisme est de second ordre : la mutation est
-universellement biaisée vers AT \cite{lynch_rate_2010,hershberg_evidence_2010}.
-Le \ac{gbgc} pourrait avoir été sélectionné pour contrecarrer les effets de ce
-biais mutationnel \cite{marais_biased_2003, birdsell_integrating_2002}.
-Autrement dit, le gBGC permettrait de /guérir/ les mutations vers AT par
-recombinaison homologue. Il est également possible que le gBGC soit dû à des
-mécanismes de réparation mitotiques, dont l'action biaisée vers GC est conservée
-au cours de la recombinaison homologue\cite{duret_biased_2009}.
+La raison d'être évolutive du gBGC est encore mystérieuse à ce jour. La mutation
+étant universellement biaisée vers AT
+\cite{lynch_rate_2010,hershberg_evidence_2010}, le \ac{gbgc} pourrait avoir été
+sélectionné pour contrecarrer les effets de ce biais mutationnel
+\cite{marais_biased_2003, birdsell_integrating_2002}. Le gBGC permettrait de
+``guérir'' les mutations vers AT par recombinaison homologue. Il est également
+possible que le gBGC soit dû à des mécanismes de réparation mitotiques, dont
+l'action biaisée vers GC est conservée au cours de la recombinaison homologue
+\cite{duret_biased_2009}.
+
+Il est possible enfin que le biais de conversion ne soit que le ``pendentif'' de
+l'arc de la recombinaison : la sélection agit sur la réparation de l'ADN, de
+façon à en conserver le fonctionnement, quitte à s'accomoder de sa face cachée,
+la conversion génique biaisée (voir annexe \ref{sub:arcs}).
 
 * Quelles sont les conséquences du gBGC ?
 
@@ -440,19 +439,12 @@ au cours de la recombinaison homologue\cite{duret_biased_2009}.
 }
 
 #+END_LaTeX
-Puisqu'elle augmente la probabilité de fixation des allèles G ou C, la
-conversion biaisée joue un rôle important dans la structuration du contenu en
-GC des génomes. La conversion biaisée n'est pas en soi liée à la sélection
-naturelle. Elle affecte cependant la fixation d'allèles d'une façon similaire
-à la sélection \cite{nagylaki_evolution_1983}. Elle a donc deux conséquences
-directes et indirectes : elle interfère avec la sélection et confond les tests
-de sélection naturelle.
 
 ** Le gBGC structure le contenu en GC
 Les bases C et G sont liées par trois liaisons hydrogènes : elles sont plus
-stables que les liaisons doubles entre A et T. Certains pensent qu'en soi, le
-taux de GC est un trait adaptatif : à l'échelle du génome, un contenu en GC
-supérieur en augmenterait la stabilité. Ce modèle rencontre néanmoins de
+stables que les liaisons doubles entre A et T. Certains auteurs pensent qu'en
+soi, le taux de GC est un trait adaptatif : à l'échelle du génome, un contenu en
+GC supérieur en augmenterait la stabilité. Ce modèle rencontre néanmoins de
 nombreuses difficultés, chez les eucaryotes comme les procaryotes. La conversion
 biaisée vers GC a été proposée comme modèle alternatif expliquant les variations
 de \ac{gc}, au sein d'un génome et entre génomes.
@@ -460,9 +452,9 @@ de \ac{gc}, au sein d'un génome et entre génomes.
 *** Le contenu GC des génomes mammifères et la théorie des isochores
 Les mammifères montrent des variations intragénomiques de grande échelle en taux
 de GC\cite{eyre-walker_evolution_2001} ( $>$ 100kb ). Ces régions relativement
-homogènes en taux de GC ont été baptisées isochores [fn:3:Voir Figure
-\ref{isochores}]. Leur origine fait débat : est-ce un trait sélectionné ou une
-conséquence évolutive des patrons de mutations ?
+homogènes en taux de GC ont été baptisées isochores (figure \ref{isochores}).
+Leur origine fait débat : est-ce un trait sélectionné ou une conséquence
+évolutive des patrons de mutations ?
 
 Le modèle sélectionniste se heurte au fait que les variations du GC affectent
 les sites fonctionnels comme neutres. En fait, l'évolution des isochores résulte
@@ -481,13 +473,11 @@ d'expliquer la structuration des isochores riches en GC.
 La taille des chromosomes a un impact fort sur le \ac{gc} : le taux de
 recombinaison à l'échelle de la Mb est fortement corrélé à la taille du
 chromosome, chez le poulet et l'Homme\cite{kaback_chromosome_1999}. Autrement
-dit, les grands chromosomes recombinent peu, les petits beaucoup. Comme attendu
-sous l'hypothèse \ac{gbgc}, chez l'opossum, les petits chromosomes ont un taux
-de GC plus élevé que les grands.
+dit, les grands chromosomes recombinent peu, les petits beaucoup.
 
 Cette corrélation entre le taux de recombinaison et le contenu en GC local a
-également été observée dans la plupart des taxons eucaryotes (voir Figure
-\ref{pessia}). 
+également été observée dans la plupart des taxons
+eucaryotes\cite{pessia_evidence_2012} (figure \ref{pessia}).
 
 #+BEGIN_LaTeX
 \begin{transition}
@@ -524,43 +514,35 @@ Cette corrélation entre le taux de recombinaison et le contenu en GC local a
 
 *** Un \ac{gbgc} procaryote ?
 Le taux moyen de GC chez les procaryotes est extrêmement diversifié : il varie
-de 14 à 75% selon les espèces. Certains y voient une adaptation aux conditions
-environnementales. En effet, la température de croissance optimale est corrélée
-avec le taux de GC par exemple. Cependant, ces effets environnementaux sont
-faibles, et les pressions de sélection associées mystérieuses. Le modèle
-classique considère que le \ac{gc} est essentiellement déterminé par la
+de 14 à 75% selon les espèces. Certains auteurs y voient une adaptation aux
+conditions environnementales\cite{foerstner_environments_2005}. Cependant, les
+pressions de sélection associées restent mystérieuses. Le modèle classique
+considère que les variations de \ac{gc} sont essentiellement déterminées par la
 mutation, qui est biaisée vers
 AT\cite{hershberg_evidence_2010,sueoka_directional_1988}.
 
-Récemment, il a été démontré que les gènes recombinants ont un taux de GC
+Cependant, de récents travaux ont démontré un biais de fixation des allèles G ou
+C\cite{hildebrand_evidence_2010, hershberg_evidence_2010}. Deux hypothèses
+peuvent expliquer ce biais de fixation : i) La sélection favoriserait
+ponctuellement la fixation d'un G ou C --- l'hypothèse étant peu crédible --- ,
+ou ii) le gBGC. Il a été démontré que les gènes recombinants ont un taux de GC
 supérieur aux non-recombinants\cite{lassalle_gc-content_2015}, chez 21 espèces
 bactériennes. La troisième position des codons est d'autant plus affectée
 qu'elle est moins soumise à la sélection. Le code génétique étant redondant, une
 mutation en troisième position ne change pas nécessairement l'acide aminé : la
-mutation est synonyme. L'excès de substitutions AT $\rightarrow$ GC en troisième
-position peut être dû à la pression de sélection sur les autres positions, qui
-tend à conserver la fonction de la protéine. Les régions intergéniques
-flanquantes des gènes recombinants ont également un \ac{gc} supérieur à celles
-des régions flanquantes des gènes non-recombinants. C'est un patron attendu sous
-l'hypothèse \ac{gbgc}. Cette corrélation entre taux de recombinaison et contenu
-en GC est similaire quantitativement à celle observée chez
-l'Humain\cite{lassalle_gc-content_2015}.
+mutation est synonyme. Les régions intergéniques flanquantes des gènes
+recombinants ont également un \ac{gc} supérieur à celles des régions flanquantes
+des gènes non-recombinants. C'est un patron attendu sous l'hypothèse \ac{gbgc}.
+Cette corrélation entre taux de recombinaison et contenu en GC est similaire
+quantitativement à celle observée chez l'Homme\cite{lassalle_gc-content_2015}.
 
 #+BEGIN_LaTeX
-\begin{transition}
-  Le \ac{gbgc} explique donc en partie la structuration en GC des génomes
-  mammifères, eucaryotes et probablement procaryote. Il augmente la probabilité
-  de fixation des allèles G ou C : il peut même s'opposer à la sélection
-  naturelle si cette fixation est faiblement délétère.  
-\end{transition}
-#+END_LaTeX
-  
-#+BEGIN_LaTeX
+%
 \addfig{%
   \includegraphics[width=\linewidth]{img/pollard.pdf}
   \caption{\textbf{Le gBGC a-t-il interféré avec la sélection pour le
       développement des régions corticales humaines ? } \rmfamily%
-    \setstretch{1.1} Pollard et collaborateurs ont analysé les régions
+      \setstretch{1.1} Pollard et collaborateurs ont analysé les régions
     non-codantes dont la vitesse d'évolution a augmenté uniquement dans la
     lignée humaine : les \ac{har}, Human Accelerated Regions. Parmi ces régions,
     la région HAR1 est particulièrement intéressante : elle comprend un gène
@@ -572,17 +554,26 @@ l'Humain\cite{lassalle_gc-content_2015}.
     Autrement dit, le biais vers GC aurait pu influencer la divergence entre
     l'Homme et le Chimpanzé. Un ARN non-codant extrêmement conservé du Poulet au
     Chimpanzé a brutalement accéléré dans la lignée humaine. La sélection et le
-    gBGC ont pu agir de concert pour altérer la structure de cet ARN. \\ {\em
-      Adapté de Pollard {\em et al.}, 2006 \cite{pollard_rna_2006}.} }
+    gBGC ont pu agir de concert pour altérer la structure de cet ARN. \\
+    {\em Adapté de Pollard {\em et al.}, 2006 \cite{pollard_rna_2006}.} }
   \label{pollard}
 }
+%
+#+END_LaTeX
 
+#+BEGIN_LaTeX
+\begin{transition}
+  Le \ac{gbgc} explique donc en partie la structuration en GC des génomes
+  mammifères, eucaryotes et probablement procaryote. Il augmente la probabilité
+  de fixation des allèles G ou C : il peut même s'opposer à la sélection
+  naturelle si cette mutation est faiblement délétère.  
+\end{transition}
 #+END_LaTeX
 
 ** Le gBGC interfère avec la sélection 
 La conversion génique affecte la probabilité de fixation d'un allèle de façon
 similaire à la sélection \cite{nagylaki_evolution_1983}. Si un allèle faiblement
-délétère est porté par une substitution AT $\rightarrow$ GC, le \ac{gbgc} peut
+délétère est porté par une mutation AT $\rightarrow$ GC, le \ac{gbgc} peut
 entraîner sa fixation dans la population. À l'inverse, il peut empêcher la
 fixation d'une mutation GC $\rightarrow$ AT. Il contrecarre les effets de la
 sélection naturelle.
@@ -594,30 +585,30 @@ dans les séquences codantes peut /a priori/ être due à un changement de fonct
 adaptatif. Cependant, les séquences analysées montrent un excès significatif
 de mutations AT $\rightarrow$ GC. De plus, ces mutations sont significativement
 plus souvent non-synonymes : elles changent l'acide aminé. En clair, des régions
-auparavant conservées ont subie un ou plusieurs épisodes de gBGC, qui ont
+auparavant conservées ont subi un ou plusieurs épisodes de gBGC, qui ont
 entraîné deux choses : i) le \ac{gc} local a augmenté, et ii) la fonction des
-régions a changé (\emph{cf} Figure \ref{pollard}).
+régions a changé (figure \ref{pollard}).
+\\
 
 ** Le gBGC fausse les tests de sélection 
 Les tests de sélection reposent classiquement sur deux principes généraux
-\cite{hurst_genetics_2009} : ce qui évolue lentement est fonctionnel, ce qui
-évolue vite est adaptatif, par rapport à la vitesse d'évolution aux sites
-neutres. L'approche privilégiée pour détecter les régions influencées par la
-sélection est de comparer les génomes, puis d'identifier les régions qui
-évoluent rapidement, sur une branche particulière de l'arbre phylogénétique
-obtenu\cite{ratnakumar_detecting_2010}.
+\cite{hurst_genetics_2009} : i) les régions fonctionnelles tendent à être
+conservées : elles évoluent lentement, par rapport à la vitesse d'évolution aux
+sites neutres ; et ii) les régions qui ont évolué rapidement ont subi un
+changement de fonction adaptatif. L'approche privilégiée pour détecter les
+régions influencées par la sélection consiste à comparer les génomes, puis à
+identifier les régions qui évoluent rapidement, sur une branche particulière de
+l'arbre phylogénétique obtenu\cite{ratnakumar_detecting_2010}.
 
 Le gBGC a cependant une empreinte sur les séquences similaire à celle de la
 sélection dirigée : il peut brouiller les tests de sélection. L'action de la
 sélection naturelle est alors confondue avec celle d'un processus neutre voir
 mal-adaptatif. Typiquement, le ratio $\nicefrac{d_N}{d_S}$, qui résume le
-rapport entre le taux de mutations non-synonymes $d_N$ et synonymes $d_S$, est
-supérieur à 1 lorsque la protéine est sous sélection positive, en faveur du
+rapport entre le taux de substitutions non-synonymes $d_N$ et synonymes $d_S$,
+est supérieur à 1 lorsque la protéine est sous sélection positive, en faveur du
 changement de fonction. Ratnakumar et collaborateurs ont estimé qu'environ 20%
 des régions avec un ratio $\nicefrac{d_N}{d_S}$ élevé pourraient avoir été sous
-l'influence du gBGC. 
-
-Le gBGC brouille les traces de la sélection naturelle.  
+l'influence du gBGC : le gBGC brouille les traces de la sélection naturelle.
 * Conclusion
 :PROPERTIES:
 :UNNUMBERED: t
@@ -635,5 +626,4 @@ procaryotes reste à confirmer expérimentalement. Elle constitue néanmoins un
 terrain d'exploration nouveau, qui pourrait permettre d'étudier plus avant la
 machinerie moléculaire responsable d'un phénomène /a priori/ anodin, mais dont
 les conséquences sont nombreuses. 
-
 \input{endmatter.tex}

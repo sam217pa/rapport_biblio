@@ -1,11 +1,15 @@
 \newpage
-\setstretch{1.1}
+\setstretch{1.0}
 \bibliography{references}
+
 \newpage
 \pagenumbering{roman}
 \setcounter{page}{1}
 \setcounter{lof}{1}
-\section*{Annexes}
+
+\setcounter{section}{0}
+\section{Annexes}
+\setcounter{subsection}{1}
 
 % \subsubsection*{Interférences entre biais et sélection}
 
@@ -24,7 +28,7 @@
 % n'est fonction que de $s$ et de $b$, l'intensité du biais. 
 
 % \newpage
-\subsubsection*{Correction des mésappariements : le modèle {\em E.coli}}
+\subsection{Correction des mésappariements : le modèle {\em E.coli}}
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=0.6\linewidth]{img/mutslh.pdf}
@@ -33,12 +37,34 @@
     par un mésappariement. Il recrute alors l’enzyme MutL, qui à son tour
     recrute l’endonucléase MutH. Celle-ci introduit une cassure sur l’un des
     brins. Elle est suivie d’une résection par une exonucléase, puis par la
-    synthèse {\em via} une
-    ADN polymérase, sur la base du brin intact.\\
+    synthèse {\em via} une ADN polymérase, sur la base du brin intact. Chez les
+    eucaryotes, l'homologue de MutH est absent. C'est la présence d'une cassure
+    qui détermine le choix du brin matrice.\\
     {\em Adapté de Molecular Biology of The Gene, Watson, 2012.}}
   \label{mutslh}
 \end{figure*}
 
-\vfill
+\newpage
 
+\subsection{Les arcs et les pendentifs}
+\label{sub:arcs}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/arcs.pdf}
+  
+  \caption*{ {\bf Les dômes de la basilique Saint Marc,} \rmfamily%
+    à Venise, reposent chacun sur quatre arcs. Une telle architecture implique
+    l'apparition de pendentifs, qui ont été exploités par les décorateurs. En
+    1979, Stephen Jay Gould et Richard Lewontin ont utilisé cette image pour
+    prévenir des dérives adaptationnistes\cite{gould_spandrels_1979}. Les
+    pendentifs ne sont que les effets secondaires de l'adoption de
+    l'architecture à quatre arcs. Ce serait une erreur de penser que les
+    pendentifs étaient activement recherchés par les architectes. De même, dans
+    le Vivant, de nombreux caractères ne sont que les résultantes de pressions
+    de sélections qui agissent à d'autres niveaux, sur d'autres caractères. Le
+    brassage génétique induit par la recombinaison homologue est-il le pendentif
+    de la réparation de l'ADN \cite{fall_horizontal_2007}? La conversion génique
+    biaisée est-elle le pendentif de la recombinaison homologue ? }
+  \label{}
+\end{figure}
 

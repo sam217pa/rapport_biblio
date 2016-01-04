@@ -1,652 +1,250 @@
-# -*- org -*-
-#+title: Stage : TODO
-#+TODO: TODO(t) NEXT(n) | DONE(d)
-#+TODO: LIRE(l) ->>- | -LU-(u)
-#+TAGS: { RAPPORT(r) MANIP(m) ANALYSES(a) } ORDI(o) LABO(l) LIRE(r) BREAK(b) 
+# -*- mode: org -*-
 
-* RAPPORT [3/5]
+#+category: STAGE
+
+* MANIP                                                                         :MANIP:LABO:
 :PROPERTIES:
-:CATEGORY: @rapport
-:END:
-** lecture [26/45]
-:PROPERTIES:
-:ORDERED: nil 
-:CATEGORY: @biblio
-:END:
-*** -LU-  DeVries, 2001                                                   :acineto:
-CLOSED: [2015-09-25 Fri 14:35]
 
-/Integration of foreign DNA during natural transformation of Acinetobacter sp.
-by homology-facilitated illegitimate recombination/
-
-Deux moyens pour intégrer de l'ADN non-homologue dans le génome d'une bactérie :
-les enzymes de type cognate[fn:1] comme les transposases et les intégrases.
-
-Le niveau d'intégration de l'ADN exogène est dépendant de la phase de
-croissance, 
-
-[fn:1] En biochimie, les cognates font références aux molécules qui
-intéragissent, typiquement un récepteur et son ligand.
-*** -LU-  Hulter, 2008                                                    :acineto:
-CLOSED: [2015-09-25 Fri 15:35]
-
-Deux moyens d'intégration d'ADN exogène par recombination : la DIR[fn:2], et la
-HFDIR[fn:3]. L'HFDIR étant 440 fois plus présentes que la DIR. 
-
-[fn:2] double illegitimate recombination
-
-[fn:3] homology facilitated double illegitimate recombination
-*** -LU-  Lassalle, 2015                                                  :prok:gc3:bgc:
-
-L'identification de gènes et autres éléments fonctionnels dans les génomes
-repose essentiellement sur la détection de trace de la sélection naturelle, par
-opposition avec un modèle neutre d'évolution. Il faut donc définir un modèle
-neutre le plus fidèle possible à la réalité de l'évolution de ces génomes. 
-
-La composition en GC dans les séquences génomiques varient très fortement : on
-peut avoir de 13 à 75% en GC, avec beaucoup d'hétérogénéité intra-génomiques. 
-
-#+BEGIN_QUOTE
-Déterminer les causes sous-jacentes--sélectives ou neutres--de la variation du
-contenu en GC est très important. Si elle résulte de la sélection, alors le
-contenu en GC en soi est un trait qui contribue à la fitness des organismes. Si
-par contre ce contenu est essentiellement modelé par des processus
-non-adaptatifs, alors caractériser ces processus est essentiel pour la détection
-de traces de sélection. 
-#+END_QUOTE
-
-Le processus de biais de conversion n'est pas lié à la sélection à priori, mais
-il peut contribuer à la fixation d'allèles dans une proportion similaire à la
-sélection! Il peut également conduire à confondre des processus de sélection
-avec des processus de bGC. 
-
-La trace des signatures de gBGC dans les génomes est que les régions qui
-montrent de forts taux de recombinaison vont avoir tendance à acquérir un plus
-haut taux de GC. 
-
-- FopGC  : frequency of optimal GC-ending codons
-- FopAU  : frequency of optimal AU-ending codons
-- FnopGC : frequency of non-optimal GC-ending codons
-- FnopAU : frequency of non-optimal AU-ending codons
-  
-Les résultats montre que la recombinaison semble bien affecter le contenu en GC
-dans la plupart des taxons bactériens. 
-
-On peut exclure un biais en faveur du haut GC% par la sélection en faveur des
-amino-acides induits. Ça peut pas être ça, parce qu'il faudrait que les
-positions synonymes soient plus affectées que les positions non-synonymes. Or ça
-n'est pas le cas. 
-
-\[
-B = 2 N_e \dot r \dot L \dot b_0
-\]
-
-Avec $L$ la longueur de la conversion tract, et $b_0$ l'intensité du biais
-initial. Ces deux paramètres varient beaucoup d'une espèce à l'autre, ce qui
-pourrait expliquer les variations de biais observées. 
-
-*** -LU-  Duret & Galtier, 2009                                           :bgc:revue:
-[[file+sys:2009_DuretGaltier.pdf][file+sys:./2009_DuretGaltier.pdf]]
-Un événement de conversion de gène méiotique conduit à la ségrégation non
-mendélienne de gamètes dérivés des cellules germinatrices dont ils découlent. 
-
-La conversion peut être /allélique/, si l'un des allèles du gène en remplace
-un autre, ou /ectopique/ si c'est une séquence d'ADN paralogue qui sert de
-donneuse dans l'événement de conversion. 
-
-Le BGC[fn:4] agit sur les sites fonctionnels et sur les sites neutres[fn:5].  
-
-#+BEGIN_QUOTE
-Recombination hotspots might constitute the Achilles' heel of mammalian genomes. 
-#+END_QUOTE
-
-Le brin contenant une entaille est dégradé et resynthétisé en utilisant le brin
-intact pour modèle. 
-
-La recombinaison homologue n'est pas restreinte aux cellules méiotiques. 
-
-Les /isochores/ sont des régions discrètes d'une composition en bases GC
-relativement homogène, dont la mosaïque constituerait les génomes des
-mammifères. La densité en gène est généralement beaucoup plus élevée dans les
-isochores riches en GC que dans les isochores pauvres en GC, non seulement parce
-que les intergènes sont moins nombreux et plus courts, et parce que les introns
-dans les séquences codantes sont beaucoup plus petits. 
-
-[fn:4] Biased Gene Conversion
-
-[fn:5] régions non codantes, etc.
-*** -LU-  Hildebrand, 2010                                                :selection:bacterie:adaptation:
-CLOSED: [2015-09-30 Wed 18:38]
-
-Ils adoptent le postulat adaptationniste selon lequel le contenu en GC est un
-caractère sélectif. Sueoka et Freese indépendamment disent que la variation en
-GC% est un processus neutre en 1961. Il y a peu de preuves pour contredire ces
-vues. 
-
-Ils définissent le terme d'espèce de population génétique, dans le sens des
-souches qui subissent le même destin phylogénétique : ils subissent la même
-dérive et les mêmes contraintes sélectives.
-
-#+BEGIN_QUOTE
-/p4b§1/ 
-This therefore suggests that selection, or some other force, is maintaining high
-GC4 in many bacteria.
-#+END_QUOTE
-
-#+BEGIN_QUOTE
-/p6a§2/ It is likely that many gene or gene fragments transferred by hHGT will
-be less extreme in GC-content than the genome they integrate into if the genome
-is GC-rich. The introduced sequence may therefore generate a series of GCRAT
-SNPs. This situation will be temporary because either the new sequence will be
-lost, or it will become fixed. If it becomes fixed, it will then evolve to the
-GC-content of its new host, in the process generating an excess of ATRGC SNPs
-under the mutation bias hypothesis
-#+END_QUOTE
-
-
-
-**** QUEST page 2b§3 : 
-CLOSED: [2015-09-30 Wed 16:48]
-Les erreurs de séquençages ou une erreur de violation de l'hypothèse de site
-infini pourraient expliquer l'excès de GC$\mapsto$AT dans les GC-rich species, et
-l'excès de AT$\mapsto$GC dans les AT-rich species. 
-
-**** voir 2005_Mitchell pour l'excès de mutation GC->AT
-Il serait possible que la perte de gènes codant pour les réparations de l'ADN
-soit en cause dans cet excès de mutation. Possibilité d'expérimentation.
-**** voir les références 2-4 pour la corrélation GC% ~ GC4
-**** voir 2008_Ma pour l'hypothèse des sites infinis
-**** voir 2005_Sharp
-La sélection qui agit sur l'usage du code dans les bactéries pour augmenter
-l'efficacité de traduction. 
-**** voir la référence 32 33
-Le BGC peut agir, au niveau génétique des populations, de la même façon que la
-sélection. 
-**** voir la référence 34 : le four gamete test. 
-**** voir la référence 35 pour le test de Vos et Didelot
-Une quantité liée au taux de recombinaison : la probabilité qu'un nucléotide
-change sous l'impact de la recombinaison par rapport à la probabilité qu'il
-change par mutation : $\frac{r}{m}$. 
-**** voir la référence 9 
-Une hypothèse sélectionniste d'un biais vers AT dans les génomes des symbiotes.
-**** voir la référence 11
-Corrélation est faite entre l'environnement des bactéries et le GC%. 
-*** -LU-  Pessia, 2012                                                    :bgc:impact:
-Un papier dans lequel des génomes entièrement séquencés de l'ensemble des grands
-règnes eucaryotes sont étudiés pour vérifier des traces de gBGC. L'équivalent du
-papier de 2015 Lassalle mais chez les eucaryotes. 
-
-Encore une fois, la signature du biais de conversion génique est qu'il entraîne
-sur le long terme, un plus fort taux de GC local dans les régions très
-recombinantes.
-
-Ils utilisent la taille des chromosomes comme un proxy du taux de recombinaison,
-comme démontré dans 1999 Kaback. En fait, plus le chromosome est grand, plus le
-nombre de crossing-over est faible.
-
-/L'interférence chromosomique/ se définit comme le fait qu'un premier
-crossing-over sur un chromosome au moment de la ségrégation méiotique diminue la
-probabilité qu'un second ait lieu.
-*** -LU-  Ratnamukar, 2010                                                :bgc:detection:
-CLOSED: [2015-10-08 Thu 18:14]
-Detecting positive selection within genome, the problem of biased gene
-conversion
-
-L'effet du gBGC sur le \nicefrac{dN}{dS} est dû au fait que les positions de
-codons ont généralement un GC% plus faible que les positions synonymes. Il y a
-donc plus d'opportunités de conversions non-synonymes vers Strong S que dans les
-positions synonymes. Donc dN augmente par rapport à dS. 
-
-Détection de gBGC par rapport à la selection :
-1. mutation W vers S sans à priori favorisée
-2. la sélection affecte uniquement les régions codantes, le gBGC affecte
-   également les régions non-codantes, comme les introns, les flanquantes etc…
-3. le BGC est associé aux zones de fortes recombinaison, notamment chez les
-   mâles.
-
-Les gènes avec la vitesse d'évolution la plus élevée montrent des patrons
-compatibles avec le gBGC, chez les chimpanzé et chez l'Homme. 
-
-Les gènes sélectionnés comme potentiellement sous sélection positive dans le
-génome humain sont ceux qui montrent le plus de trace de conversion génique
-biaisée. 
-*** -LU-  Galtier, 2009                                                   :bgc:deletere:
-CLOSED: [2015-10-08 Thu 19:12]
-GC-biased gene conversion promotes the fixation of deleterious amino-acid
-changes in primate. 
-
-L'un des marqueurs de l'activité du BGC est que le biais affecte toute les
-positions, synonymes comme non-synonymes, délétères comme neutre. 
-*** -LU-  Galtier & Duret, 2007                                           :bgc:detection:
-CLOSED: [2015-10-08 Thu 19:59]
-Adaptation or biased gene conversion ? Extending the null hypothesis of
-molecular evolution. 
-
-Comment détecter le gBGC par rapport à la sélection ?
-- pas de raisons à priori que les bases G et C soient les allèles favorisés d'un
-  SNP sous l'hypothèse de sélection.
-- le BGC est souvent associé à de hauts niveaux de recombinaisons. C'est donc
-  attendu que les régions (à différentes échelles) du génomes très recombinantes
-  soient les plus affectées. 
-- la sélection directionnelle ou positive n'accélère la vitesse d'évolution que
-  dans les séquences fonctionnelles, alors que le BGC affecte également les
-  régions voisines.
-- alors que la sélection affecte le polymorphisme des sites neutres liés, la
-  portée en terme de fenêtre génomique affectée peut être très large, alors que
-  le BGC n'affecte que la longueur d'une trace de conversion, quelques centaines
-  de paires de bases. 
-
-La région accélérée humaine-spécifique HAR1 est une région codante impliquée
-dans les fonctions nerveuses, et pourrait expliquer les différences entre hommes
-et chimp. Notre intelligence pourrait être due à une BGC…
-
-Si dans un ARN régulateur, le BGC entraîne la fixation d'une base T\mapsto C,
-l'ARN transcrit présente un mésappariemment dans sa structure 3D. On pourrait
-alors avoir une mutation compensatoire dans la base interactante A\mapsto G,
-pour que la structure de l'ARN soit conservée. 
-*** -LU-  Mancera, 2008                                                   :bgc:levure:
-L'analyse des conversions tracts, en génotypant l'ensemble des spores haploïdes
-d'un grand nombre de souches de levure. Permet l'analyse fine de la résolution
-des intermédiaires de recombinaison. 
-
-- CO :: échange réciproque accompagnée d'un bout pouvant mener à une conversion
-     de gène.
-- NCO :: échange /non/ réciproque pouvant ainsi mener à un évènement de
-     conversion. 
-*** -LU-  Pollard, 2006, Nature                                           :har1:
-CLOSED: [2015-10-11 Sun 10:13]
-
-L'étude de la région HAR1 du génome humain, qui touche les régions corticales du
-cerveau. 
-*** -LU-  Lesescque, 2013, MBE                                            :bgc:levure:
-CLOSED: [2015-10-11 Sun 10:25]
-La conversion de gène est un processus associé à la recombinaison, qui résulte
-d'un échange non-réciproque d'information génétique entre deux séquences. 
-
-Ce processus est dit biaisé si l'un des deux allèles a une plus forte
-probabilité de transmission, d'être le donneur que son homologue. 
-
-Il explique que Mancera et al ont démontré que dans toutes les conversions
-tracts, il n'y a toujours qu'un brin donneur. Il n'y a pas de variation de
-donneur sur l'ensemble du brin. C'est toujours le même brin qui donne. C'est
-clair ?
-
-Le BGC est spécifiquement associé aux recombinaisons avec cross-over. On ne
-retrouve jamais de biais lors des évènements NCO. 
-*** -LU-  Duret et Arndt, 2008                                            :bgc:impact:
-CLOSED: [2015-10-11 Sun 11:36]
-The impact of recombination on nucleotide substitutions in the human genome. 
-
-On cherche des hypothèses pour expliquer la présence des isochores dans le
-génome humain. Les isochores sont des fenêtres génomiques, de l'ordre du Mb, qui
-varient localement en GC%, en densité d'intron, etc…
-
-Chez les mammifères et la droso, le ratio crossover / non-crossover diminue
-quand la distance au télomère augmente. Autrement dit, il y a plus de crossover
-dans les régions centromériques que dans les régions télomériques. 
-
-Pas tout compris, le niveau de modélo derrière tout ça est vachement élevé. À
-relire avec un peu plus de recul. 
-*** -LU-  Hurst, 2009                                                     :evol:
-CLOSED: [2015-10-12 Mon 13:23]
-/Genetics and the understanding of evolution/
-
-La box3 est très bien faite pour la diapo d'introduction de l'oral : comment on
-définit un modèle d'évolution des séquences, comment on définit qu'une séquence
-est sous sélection, qu'un élément est fonctionnel, etc… C'est le principe du
-dN/dS qui est expliqué. C'est bien fait. 
-
-Les trois types de sélection sont également expliqués dans la box2. 
-
-La box1 est très importante et bien expliquée, elle définit le concept
-d'héritage non-Mendélien. Toutes les transmissions ne sont pas mendéliennes. 
-
-#+BEGIN_QUOTE
-Sous des conditions mendéliennes, seule la fitness de l'individu est importante,
-alors que sous des conditions non-mendéliennes, le taux de transmission /et/ la
-fitness de l'individu déterminent le destin de l'allèle. 
-#+END_QUOTE
-
-Elle explique le concept de déséquilibre de liaison : un allèle délétère peut
-envahir une population s'il est souvent associé à des allèles sous sélection
-positive. C'est le concept de hitchhiking, ou auto-stop. 
-
-#+BEGIN_QUOTE
-Si la transmission est mendélienne, cette transmission n'est possible que si
-l'effet délétère du gène est moins important que l'effet positif du gène lié. 
-#+END_QUOTE
-
-Elle parle ensuite des éléments génétiques égoïstes, et notamment du méiotic
-drive : c'est le phénomène qui veut qu'un allèle soit transmis à plus de la
-moitié de la descendance d'un parent hétérozygote. Il peut permettre à un allèle
-très délétère d'envahir une population. 
-
-Un bloc haplotype est une région chromosomique dans laquelle un groupe d'allèle
-à des loci génétiques différents sont hérités ensembles, plus souvent que ne le
-serait prévu par le hasard. Autrement appelé bloc de LD, ou bloc de déséquilibre
-de liaison. 
-*** -LU-  Nielsen, 2005                                                   :bgc:detection:
-CLOSED: [2015-10-17 Sat 19:19]
-Molecular Signatures of natural selection
-*** -LU-  Escobar, 2011                                                   :bgc:impact:
-CLOSED: [2015-10-17 Sat 20:24]
-
-/GC-Biased Gene Conversion Impacts Ribosomal DNA Evolution in Vertebrates,
-Angiosperms, and Other Eukaryotes/
-
-Le gBGC influence la composition en base des séquences des sous unités 18S du
-rDNA chez les eucaryotes, avec des biais d'environ 60% pour GC. 
-*** -LU-  Chen, 2007                                                      :conversion:
-CLOSED: [2015-10-17 Sat 23:23]
-
-Une revue des mécanismes de conversion de gènes. Ils ont des impacts forts, sur
-la mort des hotspots, la génération de maladies génétiques, etc…
-*** -LU-  Duret, 2006                                                     :bgc:impact:
-CLOSED: [2015-10-18 Sun 00:10]
-/A new perspective on isochores evolution/
-
-Les bras courts des chromosomes ont montré qu'ils étaient généralement plus
-riches en GC que les bras longs, ce qui est en accord avec le gBGC. En effet,
-chaque étape de méiose implique que les deux bras fasse des crossing-over. Donc
-proportionnellement, c'est plus logique que le bras court soit plus riche en GC,
-il s'enrichit statistiquement plus en GC à chaque recombinaison. 
-
-*** -LU-  Duret, 2009                                                     :bgc:mecanismes:
-CLOSED: [2015-10-18 Sun 00:47]
-/Mutations Pattern in the Human Genome : More variable than expected./
-
-*** -LU-  Marais, 2003                                                    :bgc:impact:mecanismes:
-CLOSED: [2015-10-18 Sun 16:01]
-/Biased gene conversion, implications for genome and sex evolution/
-
-Un excellent papier d'introduction, une bonne revue très large des différents
-enjeux. Si je devais donner un papier à lire pour comprendre les différents
-enjeux autour du gBGC, ce serait celui-là. 
-*** -LU-  Redfield, 2001, Nat Rev Genet                                   :hgt:prok:
-CLOSED: [2015-10-18 Sun 16:55]
-Do bacteria have sex ?
-
-Ce qui est dit ici, en gros, c'est que la machinerie de recombinaison homologue
-chez les bactéries n'est en fait pas "destinée" à faire de la RH pour les
-échanges génétiques, mais à réparer l'ADN lorsqu'il y a des mésappariemments. 
-
-Bien sûr, toutes les traces de gènes horizontalement transmis dans les génomes
-bactériens et qui sont détectés ont un avantage adaptatifs, sinon ils n'auraient
-pas été sélectionnés. Cependant, la très grande majorité des TGH a dû être
-effacée par la sélection purificatrice. 
-
-En fait, l'avantage de pouvoir intégrer de l'ADN étranger pour les bactéries
-compétentes à la transformation serait un avantage nutritif plutôt qu'un
-avantage de sélection en faveur  de la sexualité. 
-*** -LU-  Daubin, Perrière, 2003, Genom Biol                              :hgt:prok:
-CLOSED: [2015-10-18 Sun 17:31]
-/The source of laterally transferred gene in bacterial genomes./ 
-
-/E.coli/ et /H.pylori/ ont tous les deux des enzymes de restriction qui ont pour
-cible des séquences à 73% et 60% GC respectivement. Ça pourrait expliquer
-pourquoi la séquence des LGT est plus riche en AT que le génome d'accueil. 
-
-Ça pourrait aussi être un biais dans les analyses, chez /Acinetobacter/.
-*** -LU-  Daubin, 2003, Mol Biol evol                                     :prok:gc3:bgc:
-CLOSED: [2015-10-18 Sun 17:59]
-GC3 Structuring along the genome, a common feature in prokaryotes…
-*** -LU-  Szolloski, Daubin, 2013                                         :hgt:prok:
-CLOSED: [2015-10-18 Sun 18:05]
-Lateral gene transfer from the dead
-
-Pas vraiment d'intérêt pour le sujet, c'est sur la reconstruction d'arbres en
-inférant les séquences ancestrales d'espèces aujourd'hui éteintes, par les
-traces qu'elles ont laissées sous la forme de LGT dans les génomes déjà
-échantillonnés. C'est fait sur des cyanobactéries. 
-*** -LU-  Gogarten, 2005, Nat Rev Genet                                   :evol:prok:hgt:
-CLOSED: [2015-10-18 Sun 20:40]
-Horizontal Gene Transfer, Genome Innovation and Evolution 
-
-Une bonne revue des différentes implications des HGT chez les bactéries, et de
-la difficulté de définir un bon concept d'espèce chez les bactéries, ou de
-génétique des populations bactériennes. 
-*** LIRE  Lawrence, 2002                                                  :evol:prok:hgt:
-/Gene transfer in bacteria: speciation without species ?/
-
-#+BEGIN_QUOTE
-This article outlines a fuzzy prokaryotic species concept that incorporates HGT.
-#+END_QUOTE
-*** LIRE  Cohan, 2002, Genetica                                           :evol:prok:hgt:
-/Sexual isolation and speciation in bacteria/
-*** LIRE  Cohan, 2002, An Rev Microbiol                                   :evol:prok:hgt:
-/What are bacterial species ?/
-
-#+BEGIN_QUOTE
-Outlines a species concept defined by selective sweeps. 
-#+END_QUOTE
-
-Une très grosse revue de 30p qui sera sûrement très intéressante à lire,
-notamment pour les partiels de cette fin d'année… 
-*** -LU-  Gillespie, 2000                                                 :evol:drift:
-CLOSED: [2015-10-18 Sun 20:51]
-Genetic Drift in an Infinite Population: The Pseudohitchhiking Model
-
-Une modélisation mathématique des effets de la liaison entre deux locus très
-fortement lié sur leur fixation. Assez lourd à comprendre. Pas les moyens en
-tout cas. Hors suj. 
-*** LIRE  Duret, 2002, curr opin genet dev                                :codon:usage:
-Evolution of synonymous codon usage in metazoans
-*** LIRE  Marais, 2001, PNAS                                              :codon:usage:
-Does recombination improve selection on codon usage ? Lessons from nematode and
-fly complete genome. 
-*** LIRE  Kimchi-Sarfaty, 2007                                            :codon:usage:
-Des codons synomymes pas si synonymes que ça : la sélection traductionnelle. 
-*** LIRE  Sauna, 2007                                                     :codon:usage:
-The sounds of silence: synonymous mutations affect function
-*** LIRE  Berglund Pollard Webster, Plos Biol                             :recomb:human:
-Hotspots of biased nucleotide substitutions in Human  
-*** LIRE  Martini, 2011, Plos Genet                                       :bgc:levure:
-Genome wide analysis of heteroduplex DNA in yeast 
-*** LIRE  Otto, 1997                                                      :evol:recomb:
-The Evolution of Recombination, removing the limits of natural selection
-*** LIRE  Green, 2003                                                     :bgc:mecanismes:
-Transcription-associated mutational asymmetry in mammalian evolution
-
-*** LIRE  Pollard, 2006, PloS One                                         :har1:
-*** LIRE  Franchini, 2015,                                                :har1:
-Can a few non coding mutations make a human brain ?
-*** LIRE  Prabhakar, 2006
-*** LIRE  Meunier & Duret, 2004
-*** LIRE  Wienand, 2015
-*** LIRE  Duret, 2006, Mol Evol
-*** LIRE  Spencer, 2006
-** DONE Rédiger Mécanismes
-CLOSED: [2015-11-26 Thu 15:00]
-** DONE Rédiger Causes
-CLOSED: [2015-11-26 Thu 15:00]
-** DONE Rédiger Conséquences
-CLOSED: [2015-11-26 Thu 15:00]
-** TODO Mise En Page [0%]
-*** TODO Faire page de titre
-** Modifications [54%]
-*** DONE virer le formattage italique et/où small caps. de partout. 
-CLOSED: [2015-11-28 Sat 17:43]
-*** DONE placer la figure 3 en annexe que j'aimais beaucoup. 
-CLOSED: [2015-11-30 Mon 08:41]
-*** NEXT reformuler introduction générale
-*** NEXT reformuler ou effacer les introductions par partie inutiles. 
-*** DONE enlever les mentions multiples -- GC% --. 
-CLOSED: [2015-11-30 Mon 06:23]
-*** DONE faire le schéma de la ségrégation d'un allèle en cours de conversion. 
-CLOSED: [2015-11-30 Mon 06:22]
-*** DONE modifier les titres pour qu'ils soient autonomes
-CLOSED: [2015-11-30 Mon 06:22]
-*** DONE enlever la mention Levure dans la corrélation avec mitose biaisée vers GC. 
-CLOSED: [2015-11-30 Mon 06:22]
-*** NEXT modifier la partie sur MutH dans le papier Lesecque.
-*** NEXT éventuellement placer en annexe l'explication mathématique 
-de l'interférence sélection et biais.
-*** NEXT Corriger la bibliographie 
-- depuis zotero ?
-- depuis le .bib ?
-*** Notes
-
-introduction = résumé ... non. amener question. 
-
-recomb : quantitatif ? 
-symbiotes qui dégénère sans recombinaison
-brassage génétique etc…
-
-recombinaison = positif ? pas seulement. bgc = coté obscur. 
-- facettes positives : brassage et réparation
-- face cachée : bgc, peu explorée, impact majeur, interfère etc…
-
-dans ce rapport, je vais vous parler de …
-
-modif intro générale et par partie. 
-
-en tête de partie, nécessaire ? pas forcément
-
-formattage : à virer. citer figure directement
-
-clarifier procaryote / eucaryote 
-faiblement délétère systématique. 
-
-recombinaison = 
-- perte
-- remplacement
-- gain
-
-conversion = pase seulement réparation. intact vers cassé, après 
-la résection.
-
-lorsque le biais est observé, … reformuler phrase
-
-enlever plusieurs GC%
-
-transmission non-mendélienne : vrai uniquement chez les eucaryotes
-production de quatre gamètes : transmission mendélienne = AAaa. 
-non mendélienne : Aaaa. 
-proportion du 
-
-c'est pas une histoire de probabilité. ségrégation non-mondélienne à l'échelle
-d'un individu. sur la population, sans biais: autant de Aaaa que AAAa. donc
-transmission mendélienne dans le pool de gamètes.
-
-d'abord pour une cellule, ensuite pour la population de cellules en méiose. si
-biais, pas 5050 dans le pool de gamète  => cg biaisée. 
-
-figure 3 pose problème parce que pas de MutH chez les eucaryotes. présence de
-cassure qui détermine le brin template. 
-
-modifier les titres pour qu'ils soient autonomes. 
-
-variations GC chez les bactéries ?
-
-# causes
-
-pas deux hypothèses différentes : 
-- causes proximales
-- causes ultimes
-
-Échelles différentes. 
-causes proximales puis raison d'être évolutive
-
-mammifères mais levure ?
-
-plusieurs alternances d'haplotype parentaux. 
-
-lesecque : pas MutH, présence de nick donc modifier en conséquneces. 
-
-réduire les taux de mutation : MBat, donc gBGC pour baisser le taux de mutation
-primaire. conséquence indirecte » machinerie biaiése vers GC : gBGC. conséquence
-secondaire d'une pression de sélection sur le taux de mutation. gbgc = pendentif
-de gould. 
-
-répandu dans l'arbre du vivant : pourquoi ? le gbgc conséquence secondaire 
-
-reste hypothèse de travail, pas de certitude
-
-pas de référence, et pas forcément vrai. variation en fonction des
-environnements : corrélation forte, mais pression de sélection mystérieuse. 
-corrélation sur le 16S, mais pas sur le génome entier. 
-
-# procaryote
-
-Modèle classique
-
-récemment petrov et eyre walker montrent biais de fixation en faveur de GC.
-colle pas avec effet classique de mutation. ce biais de fixation résulte de la
-sélection selon certains auteurs. Ha : gbgc, travaux de florent lassalle. 
-
-biais de fixation = soit sélection, soit gbgc
-
-confond = fausser
-
-vitesse évolution par rapport aux sites neutres. 
-
-mutation = évènement initial qui crée un nouvel allèle dans la population. 
-
-substitution = remplacement d'un allèle par un autre, ancestral par mutant
-
-mutation partout, substitution plus souvent en position 3.  ft
-* MANIP
-:PROPERTIES:
 :CATEGORY: @manip
 :END:
-** TODO [#B] Concevoir les mutants [0/2]                                       :STAGE:MANIP:
+
+** Construire les mutants alternants                                           :STAGE:MANIP:
+*** TODO resuspendre les 5µg de gène synthétique
+*** TODO transformation dans /E.coli/
+*** TODO extraction plasmide depuis /E.coli/
+*** TODO PCR cible => gène synthétique
+*** TODO clonage fragment PCR dans pGEMT-say
+*** TODO PCR triple => construction GS-ATB-ANCRE
+** Séquencer les ancres
+*** TODO savoir si on séquence toutes les ancres
+*** TODO identifier les candidats
+*** TODO étaler les candidats sur kana
+** Séquencer les hétérozygotes
+*** TODO déterminer les candidats
+*** TODO étalement sur boîte plus kana
+*** TODO PCR des gènes synthétiques
+*** TODO séquençage
+** Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
-* ANALYSES [0/1]
+** TODO Installer imprimante labo
+** TODO remplir papiers H&S
+
+* ANALYSES                                                                      :ANALYSES:ORDI:
 :PROPERTIES:
 :CATEGORY: @analyses
 :END:
-** TODO [#A] analyses de données novembre [5/7]                                 :STAGE:ANALYSES:
-:PROPERTIES:
-:category: @seq-novembre 
-:END:
-*** DONE clarifier le workflow [3/3]
-CLOSED: [2015-11-21 Sat 00:52]
-**** DONE clean code 
-CLOSED: [2015-11-20 Fri 23:35]
-**** DONE supprime fichiers inutiles
-CLOSED: [2015-11-21 Sat 00:52]
-**** DONE commenter ce que je fait dans [[~/stage/seq_novembre/README.org]]. 
-CLOSED: [2015-11-20 Fri 23:35]
-*** DONE convertir ab1 en fastq et fasta via =seqret=
-CLOSED: [2015-11-20 Fri 23:36]
-*** DONE convertir bases indéterminées en N
-CLOSED: [2015-11-20 Fri 23:36]
-- [X] voir dans [[~/.zhistory]] la ligne de =seqtk=
-- [X] utiliser seqtk sur le workflow clarifié
-*** DONE déterminer les positions des SNPs calibrés [2/2]
-CLOSED: [2015-11-21 Sat 01:28]
-- [X] déterminer $X$ le nombre de SNP nécessaire pour définir une position comme SNP
-  calibré
-- [X] Trouver les positions pour lesquelles le nombre de SNP est supérieur à $X$
-*** TODO Refaire les alignements avec les séquences filtrées [0/1]
-- [ ] faire un set site sur les positions qu'on cherche
-*** DONE analyser les mutations spontanées, en dehors de la conversion tract [0/3]
-CLOSED: [2015-11-28 Sat 14:42] SCHEDULED: <2015-11-27 Fri 17:00>
-- [ ] déterminer par =name= les bornes de la conversion tract. Ça peut se faire
-  en créant une colonne qui dirait /in/ si entre le premier et le dernier SNP
-  calibré, /out/ sinon.
-- [ ] trouver les mutations qui ne sont *pas* des SNP calibrés
-- [ ] tester les mutations /in/ contre les mutations /out/. Attendu : peu de
-  mutation /out/ contre environ 10 /in/. 
 
-*** TODO écrire le rapport
+** TODO analyses données Ivan Matic
+** WAIT attendre réception message phred
+#+name: message
+#+BEGIN_EXAMPLE
+ACADEMIC USER AGREEMENT
 
-* COMPTE-RENDUS
+Please read the entire agreement, fill in the information in the
+indicated positions (such as "NAME:"), and return the entire document
+to the indicated people.  Please send the document as the message--not
+as an attachment.
+
+Phrap:  A program for assembling DNA sequence data.
+
+Swat:  A program for searching one or more DNA or protein query sequences
+against a sequence database, using (an efficient implementation of) the
+Smith-Waterman-Gotoh algorithm.
+
+Cross_Match:  A general-purpose utility based on Swat for comparing any
+two sets of (long or short) DNA sequences.
+
+Phred:  A program that reads DNA sequencer trace data, calls bases,
+assigns quality values to the bases, and writes the base calls and quality
+values to output files.
+
+Consed:  A program for viewing and editing Phrap assemblies.
+
+To receive any of these programs you will need to agree to the following
+conditions. They should be taken seriously!
+
+1) You agree to read the documentation.  We welcome feedback on any
+inaccuracies.
+
+2) You agree to report any bugs to us.  (To fix bugs, we will need
+from you a dataset and a procedure that reproduces the problem; but do
+not send datasets without first emailing us to describe the nature of
+the bug.)
+
+3) You agree not to make the programs (including source code,
+executables, or any part thereof, in modified or unmodified form)
+available to anyone outside your group, and not to put them where they
+may be accessible to outside individuals without your direct knowledge
+(e.g. on a computer to which people outside your group have login
+privileges).  The documentation however may be freely distributed.
+Refer any requests for the programs to the authors.  If you are
+operating a computer facility which provides access to several
+independent investigators, you agree to set the permissions on the
+executables and source code to allow execute but not read access, so
+that the programs may not be copied. Investigators who want copies of
+the software for their own use must return a separate copy of this
+agreement.
+
+4) You agree not to use the programs for any commercial purpose,
+including but not limited to commercially restricted sequencing
+(defined as sequencing for which a company retains patenting or
+licensing rights regarding the sequence, or the right to restrict or
+delay dissemination of the sequence; with the sole exception that
+sequencing is not considered to be commercially restricted if it is
+federally funded and the investigators adopt the data release policies
+endorsed at the Wellcome Trust-sponsored Bermuda meeting,
+i.e. immediate release of data as it is generated).
+
+[If you wish to obtain the software for commercially restricted
+sequencing or any other commercial purposes, you will need to execute
+a separate licensing agreement with the University of Washington and
+pay a fee. In that case please contact:
+
+Maryn Gerdes
+University of Washington
+Center for Commercialization
+4311 11th Ave NE, Suite 500, Seattle WA 98105-4608
+UW Box 354990
+
+swxfr (at) uw.edu  and cc dgordon (at) uw.edu
+206-616-9212 or 206-543-3970 phone
+206-616-3322 fax
+http://depts.washington.edu/uwc4c/express-licenses/assets/phred-phrap-consed-autofinish/
+
+Do not contact her if the academic license applies.]
+
+
+5) You acknowledge that the software is experimental in nature and is
+supplied "AS IS", without obligation by the authors or the University
+of Washington to provide accompanying services or support.  The entire
+risk as to the quality and performance of the Software is with you.
+UW AND THE AUTHORS EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES
+REGARDING THE SOFTWARE, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES PERTAINING TO MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+6) All members of your group with access to the software agree to the
+same conditions.
+
+
+
+Having read the above, if you are still interested in obtaining the
+programs, please return a copy of this entire message (which MUST be
+included so that it is clear what you are agreeing to) by email
+together with the following information:
+
+NAME: Your name in first name/last name order.
+
+NAME: Samuel Barreto
+
+
+ACKNOWLEDGEMENT: An acknowledgement that you and the members of your
+group agree to these conditions.
+
+ACKNOWLEDGEMENT: I agree to the license.
+
+PROGRAMS: Which programs you want (phrap,cross_match, and swat are
+distributed together). You must cc the message to each appropriate
+individual (Brent Ewing, David Gordon, and/or Phil Green) at the email
+addresses below so that they will know to send you the appropriate
+program.
+
+PROGRAMS: phred
+
+Example:
+PROGRAMS: phred, phrap, consed
+
+INSTITUTION: Your academic or government institution (give full name,
+not abbreviation)
+
+INSTITUTION: Université Claude Bernard Lyon 1
+
+DEPARTMENT: UMR5557, Department of Microbial Ecology
+
+EMAIL: Your email address for all future correspondence. Ideally this
+should be a Unix computer running a generic mail program, since
+several of the programs are sent as uuencoded files which may be
+corrupted by some mail programs.
+  If this address is not at the institution & department listed above,
+please explain the discrepancy.
+
+EMAIL: samuel.barreto@etu.univ-lyon1.fr
+
+OS: (Consed requestors only) Which platform(s) you want Consed for:
+linux (32 bit), linux (64 bit--amd64 or EM64T), macosx-intel,
+macosx-ppc, solaris-sparc (which version?), solaris-intel
+
+OS:
+
+Example:
+OS: hpux
+
+Note: Consed is not available for PC's running Windows, XP, NT, or
+2000.
+
+ID: (Consed requestors only)
+The number displayed when you view page
+http://bozeman.mbt.washington.edu/consed/find_unique_id.html
+on the computer you will use to download consed.
+
+(What is this number and why must you send it to me?  This is a
+unique identifier you transmit to *any* web site you visit--you are not
+giving me any private information.  This allows my web server to know
+that the request to download consed is coming from someone who has a
+license.  Otherwise you will not be able to download consed.  This
+number is often not the same as the real IP--you must use the
+http://bozeman.mbt.washington.edu/consed/find_unique_id.html
+to find this number.  This number *never* starts with "10.")
+
+ID: 89.95.162.63​
+
+If you want Consed/Autofinish, you must include OS and ID (above).
+Consed cannot be obtained without them.
+
+Please return this entire agreement so it is clear what you are
+agreeing to.
+
+Please send all of this, including the agreement, as part of the
+email message--not as an attachment.
+
+Send it to each of the relevant individuals below:
+
+Contacts for obtaining the programs and for questions, bug reports,
+suggestions:
+
+      Phrap/cross_match/swat:  Phil Green, phg (at) u.washington.edu
+      Phred: Brent Ewing, bge (at) u.washington.edu
+      Consed: David Gordon, dgordon (at) u.washington.edu
+
+where the " (at) " is replaced by "@".
+
+It can take up to 2 weeks for a license application to be processed,
+so please be patient.
+#+END_EXAMPLE
+
+* COMPTE-RENDUS                                                                 :RAPPORT:
 :PROPERTIES:
 :category: @CR
 :END:
-** DONE préparer réunion ANR DaSire <2015-11-23 Mon> [4/4]                     :LABO:
-CLOSED: [2015-11-23 Mon 18:46] SCHEDULED: <2015-11-23 Mon 05:30>
-- [X] télécharger matériaux de Laurent
-- [X] concevoir diapositifs [5/5]
-  + [X] protocole expérimental
-  + [X] sélection des recombinaison
-  + [X] construction
-  + [X] gène de résistance
-  + [X] diapo laurent
-- [X] manip pilote
-- [X] préparer le discours
-** DONE aller réunion ANR DaSiRe 
-CLOSED: [2015-11-23 Mon 18:46]
-<2015-11-23 Mon 10:30>--<2015-11-23 Mon 15:15>
+
+* ÉCHÉANCES                                                                     :RDV:
+
+** DONE Réunion information sécurité
+CLOSED: [2016-01-04 Mon 16:45]
+** RDV! Repas d'équipe <2016-01-06 Wed 12:00>
+Salle de réunion du Mendel
+** RDV! Recycler présentation sujet stage <2016-02-04 Thu>
+
+* BIBLIO
+
+
+
+* capture
+** TODO acheter café                                                            :LABO:
+[2016-01-04 Mon 16:44]
+* configuration                                                                 :CONFIG:
+#+title: Stage : TODO
+#+TODO: TODO(t) NEXT(n) RDV!(r) WAIT(w) | DONE(d)
+#+TODO: LIRE(l) ->>- | -LU-(u)
+#+TAGS: { RAPPORT(r) MANIP(m) ANALYSES(a) } ORDI(o) LABO(l) LIRE(r) BREAK(b)
