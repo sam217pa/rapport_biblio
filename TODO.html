@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Stage : TODO</title>
+<!-- 2016-01-09 Sat 19:59 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Org-mode">
+<meta name="author" content="Samuel BARRETO">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|Inconsolata' rel='stylesheet' type='text/css'>
+<style type="text/css">
+  body {
+    font-family: 'PT Sans', sans-serif;
+  }
+  p {
+    font-family: 'PT Serif', serif;
+  }
+  .src {
+    font-family: 'Inconsolata', ;
+  }
+</style>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 16px;
+    margin-bottom: 95px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 16px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title">Stage : TODO</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> MANIP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP">MANIP</span>&#xa0;<span class="LABO">LABO</span></span></h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> (1) Construire les mutants alternants&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP1">MANIP1</span></span></h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> resuspendre les 5µg de gène synthétique</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+Le but est de resuspendre le petit volume de gène synthétique qu'on nous a
+envoyé, afin de le cloner dans E.coli par transformation. On utilise ensuite les
+clones de coli transformés pour les manips.
+</p>
+</div>
+<div id="outline-container-sec-1-1-1-1" class="outline-5">
+<h5 id="sec-1-1-1-1"><span class="section-number-5">1.1.1.1</span> prérequis</h5>
+<div class="outline-text-5" id="text-1-1-1-1">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">volumes</th>
+<th scope="col" class="left">?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">eau pure</td>
+<td class="left">1mL</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">eppendorf</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> transformation dans <i>E.coli</i></h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-05 Tue 08:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> isolement des transformants</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-06 Wed 14:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-4" class="outline-4">
+<h4 id="sec-1-1-4"><span class="section-number-4">1.1.4</span> vérifier isolements</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-07 Thu 09:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-5" class="outline-4">
+<h4 id="sec-1-1-5"><span class="section-number-4">1.1.5</span> conserver clones à -80°C</h4>
+<div class="outline-text-4" id="text-1-1-5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-08 Fri 17:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-6" class="outline-4">
+<h4 id="sec-1-1-6"><span class="section-number-4">1.1.6</span> extraction plasmide depuis <i>E.coli</i></h4>
+<div class="outline-text-4" id="text-1-1-6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-18 Mon&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-1-7" class="outline-4">
+<h4 id="sec-1-1-7"><span class="section-number-4">1.1.7</span> PCR cible =&gt; gène synthétique</h4>
+<div class="outline-text-4" id="text-1-1-7">
+</div>
+<div id="outline-container-sec-1-1-7-1" class="outline-5">
+<h5 id="sec-1-1-7-1"><span class="section-number-5">1.1.7.1</span> trouver les amorces 1073 - 1392</h5>
+<div class="outline-text-5" id="text-1-1-7-1">
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-1-8" class="outline-4">
+<h4 id="sec-1-1-8"><span class="section-number-4">1.1.8</span> clonage fragment PCR dans pGEMT-say</h4>
+</div>
+<div id="outline-container-sec-1-1-9" class="outline-4">
+<h4 id="sec-1-1-9"><span class="section-number-4">1.1.9</span> PCR triple =&gt; construction GS-ATB-ANCRE</h4>
+</div>
+<div id="outline-container-sec-1-1-10" class="outline-4">
+<h4 id="sec-1-1-10"><span class="section-number-4">1.1.10</span> envoyer séquencer le WT dans le même run</h4>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> (2) Séquencer les ancres&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP2">MANIP2</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> savoir si on séquence toutes les ancres</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+</div>
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> identifier les candidats</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+ATTENDU: obtenir un tableau avec l'ensemble des clones présentant des
+néo-mutations. 
+</p>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+</colgroup>
+<tbody>
+<tr>
+<td class="left">pS10-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS24-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS30-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS39-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS5-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS54-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS74-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS82-1073</td>
+</tr>
+
+<tr>
+<td class="left">pS88-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW14-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW19-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW2-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW23-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW35-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW6-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW81-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW87-1073</td>
+</tr>
+
+<tr>
+<td class="left">pW93-1073</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> PCR cible des ancres</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-12 Tue 14:00&gt;</span></span>
+</p>
+</div>
+<div id="outline-container-sec-1-2-3-1" class="outline-5">
+<h5 id="sec-1-2-3-1"><span class="section-number-5">1.2.3.1</span> Retrouver amorces</h5>
+<div class="outline-text-5" id="text-1-2-3-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-08 Fri 13:30&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2-3-2" class="outline-5">
+<h5 id="sec-1-2-3-2"><span class="section-number-5">1.2.3.2</span> Trouver protocole PCR</h5>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> (3) Séquencer les hétérozygotes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP3">MANIP3</span></span></h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> déterminer les candidats</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+Sur la base de l'analyse ayant donné le fichier
+<a href="seq_novembre/analysis/candidats_heterozygotes.pdf">seq_novembre/analysis/candidats_heterozygotes.pdf</a>, on a déterminé les
+clones suivants comme bon candidats :
+</p>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">construction</th>
+<th scope="col" class="left">type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">pS53</td>
+<td class="left">strong</td>
+</tr>
+
+<tr>
+<td class="left">pS67</td>
+<td class="left">strong</td>
+</tr>
+
+<tr>
+<td class="left">pS88</td>
+<td class="left">strong</td>
+</tr>
+
+<tr>
+<td class="left">pW5</td>
+<td class="left">weak</td>
+</tr>
+
+<tr>
+<td class="left">pW22</td>
+<td class="left">weak</td>
+</tr>
+
+<tr>
+<td class="left">pW85</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> couler des boîtes kana</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-06 Wed 09:30&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-3" class="outline-4">
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> numéroter les boîtes par clone</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-06 Wed 14:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-4" class="outline-4">
+<h4 id="sec-1-3-4"><span class="section-number-4">1.3.4</span> sortir les clones du -80°C</h4>
+<div class="outline-text-4" id="text-1-3-4">
+</div>
+</div>
+<div id="outline-container-sec-1-3-5" class="outline-4">
+<h4 id="sec-1-3-5"><span class="section-number-4">1.3.5</span> étalement sur boîte plus kana</h4>
+<div class="outline-text-4" id="text-1-3-5">
+</div>
+</div>
+<div id="outline-container-sec-1-3-6" class="outline-4">
+<h4 id="sec-1-3-6"><span class="section-number-4">1.3.6</span> contrôler isolements manip 3</h4>
+<div class="outline-text-4" id="text-1-3-6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-07 Thu 10:00&gt;</span></span>
+Est-ce que ça pousse ?
+(cond ((oui) (TODO))
+      ((non) (retrouver plaque)
+             (refaire isolement)))
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-7" class="outline-4">
+<h4 id="sec-1-3-7"><span class="section-number-4">1.3.7</span> PCR des gènes synthétiques</h4>
+<div class="outline-text-4" id="text-1-3-7">
+</div>
+</div>
+<div id="outline-container-sec-1-3-8" class="outline-4">
+<h4 id="sec-1-3-8"><span class="section-number-4">1.3.8</span> migration gel</h4>
+<div class="outline-text-4" id="text-1-3-8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-08 Fri 10:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-9" class="outline-4">
+<h4 id="sec-1-3-9"><span class="section-number-4">1.3.9</span> PCR des gènes synthétiques</h4>
+<div class="outline-text-4" id="text-1-3-9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-11 Mon 09:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-10" class="outline-4">
+<h4 id="sec-1-3-10"><span class="section-number-4">1.3.10</span> migration gel</h4>
+<div class="outline-text-4" id="text-1-3-10">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-11 Mon 14:00&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3-11" class="outline-4">
+<h4 id="sec-1-3-11"><span class="section-number-4">1.3.11</span> séquençage</h4>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Construire les &delta;-MMR</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-sec-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> trouver la séquence des orthologues de MutL et MutH sur le génoscope</h4>
+</div>
+<div id="outline-container-sec-1-4-2" class="outline-4">
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> chercher l'existence de BER chez les bactéries</h4>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> remplir cahier de labo</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2016-01-08 Fri 17:31]</span></span>
+</li>
+<li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2016-01-07 Thu 19:00]</span></span>
+</li>
+<li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2016-01-06 Wed 18:31]</span></span>
+</li>
+<li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2016-01-05 Tue 16:55]</span></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> ANALYSES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ANALYSES">ANALYSES</span>&#xa0;<span class="ORDI">ORDI</span></span></h2>
+<div class="outline-text-2" id="text-2">
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> analyses données Ivan Matic</h3>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Staden : comparer séquences avec référence .abi</h3>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Sauvegarder données.</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>State "DONE"       from "WAIT"       <span class="timestamp-wrapper"><span class="timestamp">[2016-01-07 Thu 08:16]</span></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> COMPTE-RENDUS&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RAPPORT">RAPPORT</span></span></h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> remettre rapport stage vincent</h3>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> ÉCHÉANCES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RDV">RDV</span></span></h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Galette des Master <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-18 Mon 16:30&gt;</span></span></h3>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Recycler présentation sujet stage <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-02-04 Thu&gt;</span></span></h3>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> BIBLIO</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> lire les deux papiers polySNP</h3>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> capture</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> ramener café&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABO">LABO</span></span></h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2016-01-04 Mon 16:44]</span></span>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> configuration&#xa0;&#xa0;&#xa0;<span class="tag"><span class="CONFIG">CONFIG</span></span></h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">1. MANIP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP">MANIP</span>&#xa0;<span class="LABO">LABO</span></span></a>
+<ul class="nav">
+<li><a href="#sec-1-1">1.1. (1) Construire les mutants alternants&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP1">MANIP1</span></span></a></li>
+<li><a href="#sec-1-2">1.2. (2) Séquencer les ancres&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP2">MANIP2</span></span></a></li>
+<li><a href="#sec-1-3">1.3. (3) Séquencer les hétérozygotes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="MANIP3">MANIP3</span></span></a></li>
+<li><a href="#sec-1-4">1.4. Construire les &delta;-MMR</a></li>
+<li><a href="#sec-1-5">1.5. remplir cahier de labo</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. ANALYSES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ANALYSES">ANALYSES</span>&#xa0;<span class="ORDI">ORDI</span></span></a>
+<ul class="nav">
+<li><a href="#sec-2-1">2.1. analyses données Ivan Matic</a></li>
+<li><a href="#sec-2-2">2.2. Staden : comparer séquences avec référence .abi</a></li>
+<li><a href="#sec-2-3">2.3. Sauvegarder données.</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. COMPTE-RENDUS&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RAPPORT">RAPPORT</span></span></a>
+<ul class="nav">
+<li><a href="#sec-3-1">3.1. remettre rapport stage vincent</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. ÉCHÉANCES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="RDV">RDV</span></span></a>
+<ul class="nav">
+<li><a href="#sec-4-1">4.1. Galette des Master <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-18 Mon 16:30&gt;</span></span></a></li>
+<li><a href="#sec-4-2">4.2. Recycler présentation sujet stage <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-02-04 Thu&gt;</span></span></a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. BIBLIO</a>
+<ul class="nav">
+<li><a href="#sec-5-1">5.1. lire les deux papiers polySNP</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. capture</a>
+<ul class="nav">
+<li><a href="#sec-6-1">6.1. ramener café&#xa0;&#xa0;&#xa0;<span class="tag"><span class="LABO">LABO</span></span></a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7. configuration&#xa0;&#xa0;&#xa0;<span class="tag"><span class="CONFIG">CONFIG</span></span></a></li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+<div><p class="author">Author: Samuel BARRETO</p>
+<p class="date">Created: 2016-01-09 Sat 19:59</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.2)</p>
+</div>
+</footer>
+</body>
+</html>
