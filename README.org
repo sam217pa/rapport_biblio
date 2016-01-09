@@ -1,0 +1,44 @@
+
+#+CATEGORY: STAGE
+
+* DaSiRe
+Les documents suite à la réunion du projet DaSiRe du [2015-11-23 Mon]. 
+
+* biblio
+Différentes notes de biblio et papiers antérieur à l'archivage automatique par
+Zotero. 
+
+* doc
+La documentation de programmes utilisés, de kits de clonages, les plans de
+plaques et autres données à archiver. 
+
+- AcinetoStrong1.xls :: le plan de plaque de la manip Strong de Florence. 
+- AcinetoWeak1.xls :: idem. 
+- phred.txt :: la documentation du programme phred. 
+- topota_cloning_kits.pdf :: la documentation du kit de clonage dans TOPO-TA. 
+
+* infos
+Des bases de données d'usage courant au labo.
+
+- congel.org :: la liste des solutés conservés au congel.
+- documents.org :: la liste des documents papiers conservés.
+- neomutants.tsv :: la liste des néo-mutants de la manip de Florence choisis
+     pour le séquençage.
+- volumes.org :: une base de donnée recensant les volumes restant dans les tubes
+     de solutés.  
+
+* matic
+Les données envoyée par Ivan Matic suite à la publication de 2008. 
+
+* notes
+Le cahier de labo résumant le déroulement des manips, par ordre logique, pas
+chronologique. 
+
+* protocoles
+Des protocoles divers de manip déjà effectuées. 
+
+* rapportBib
+Rapport bibliographique. 
+
+* seq_novembre
+Mon terrain de jeu. Contient les données issues des manips de Florence. 
