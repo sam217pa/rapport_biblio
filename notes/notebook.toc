@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{\numberline {I}Construction des recombinants \emph {Acinetobacter}}{1}{section.1}
+\contentsline {subsection}{\numberline {I.A}Resuspension des 5\IeC {\textmu }g de g\IeC {\`e}ne synth\IeC {\'e}tique}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {I.B}Transformation dans E.coli}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {I.C}Extractions plasmidiques}{1}{subsection.1.3}
+\contentsline {section}{\numberline {II}S\IeC {\'e}quen\IeC {\c c}age des ancres}{2}{section.2}
+\contentsline {subsection}{\numberline {II.A}S\IeC {\'e}lection des candidats}{2}{subsection.2.1}
+\contentsline {section}{\numberline {III}S\IeC {\'e}quen\IeC {\c c}age des clones avec des positions polymorphes}{2}{section.3}
+\contentsfinish 

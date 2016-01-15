@@ -32,6 +32,12 @@ CLOSED: [2016-01-08 Fri 17:25]
 *** DONE extraction plasmide depuis /E.coli/
 CLOSED: [2016-01-08 Fri 16:06]
 <2016-01-18 Mon>
+*** TODO extraction plasmide depuis E.coli
+<2016-01-15 Fri 09:00>
+*** TODO dépôt sur gel extraction
+<2016-01-15 Fri 14:00>
+*** TODO nano-drop
+<2016-01-15 Fri 15:00>
 *** TODO PCR cible => gène synthétique
 SCHEDULED: <2016-01-18 Mon>
 **** DONE trouver les amorces 1073 - 1392
@@ -66,12 +72,27 @@ néo-mutations.
 | pW81-1073 |
 | pW87-1073 |
 | pW93-1073 |
-
-*** TODO PCR cible des ancres
+*** DONE PCR cible des ancres
+CLOSED: [2016-01-12 Tue 18:09]
 <2016-01-12 Tue 14:00>
-**** TODO Retrouver amorces
+**** DONE Retrouver amorces
+CLOSED: [2016-01-12 Tue 18:09]
 <2016-01-08 Fri 13:30>
-**** TODO Trouver protocole PCR 
+**** DONE Trouver protocole PCR 
+CLOSED: [2016-01-12 Tue 18:09]
+*** DONE faire migrer PCR du mardi
+CLOSED: [2016-01-13 Wed 09:10]
+<2016-01-13 Wed 09:00>
+*** DONE décongeler tranquillou les solutions
+CLOSED: [2016-01-13 Wed 09:10]
+<2016-01-13 Wed 08:45>
+*** DONE chercher tous les candidats sur les tubes 
+CLOSED: [2016-01-13 Wed 15:06]
+*** DONE PCR cible des ancres
+CLOSED: [2016-01-13 Wed 11:10]
+<2016-01-13 Wed 10:00>
+*** TODO envoyer à séquencer
+<2016-01-18 Mon>
 ** (3) Séquencer les hétérozygotes                                              :MANIP3:
 *** DONE déterminer les candidats
 CLOSED: [2016-01-06 Wed 10:22]
@@ -108,23 +129,51 @@ Est-ce que ça pousse ?
              (refaire isolement)))
 *** DONE PCR des gènes synthétiques
 CLOSED: [2016-01-08 Fri 09:12]
+
 *** DONE migration gel
 CLOSED: [2016-01-08 Fri 16:07]
 <2016-01-08 Fri 10:00>
-*** TODO PCR des gènes synthétiques 
+*** DONE PCR des gènes synthétiques 
+CLOSED: [2016-01-11 Mon 14:53]
 <2016-01-11 Mon 09:00>
-*** TODO migration gel
+*** DONE migration gel
+CLOSED: [2016-01-11 Mon 14:53]
 <2016-01-11 Mon 14:00>
+*** DONE refaire PCR pour les trois clones foireux 
+CLOSED: [2016-01-13 Wed 15:06]
+<2016-01-13 Wed 13:00>
+*** DONE migration + migration t+ de la veille. 
+CLOSED: [2016-01-13 Wed 17:17]
+<2016-01-13 Wed 16:00>
+*** DONE décongeler solutés pcr 
+CLOSED: [2016-01-14 Thu 14:48]
+<2016-01-14 Thu 08:45>
+*** DONE resuspendre colonies des trois clones pénibles
+CLOSED: [2016-01-14 Thu 14:48]
+<2016-01-14 Thu 09:00>
+*** DONE PCR sur ces trois suspensions
+CLOSED: [2016-01-14 Thu 14:48]
+<2016-01-14 Thu 09:15>
+*** DONE migration
+CLOSED: [2016-01-14 Thu 14:48]
+<2016-01-14 Thu 11:30>
+*** TODO révéler gel
+<2016-01-14 Thu 15:30>
 *** TODO séquençage
 ** Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-01-11 Mon .+1d>
+SCHEDULED: <2016-01-14 Thu .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-09 Sat 17:31]
+:LAST_REPEAT: [2016-01-13 Wed 18:15]
 :END:
+- State "DONE"       from "TODO"       [2016-01-13 Wed 18:15]
+- State "DONE"       from "TODO"       [2016-01-12 Tue 18:10]
+- State "DONE"       from "TODO"       [2016-01-11 Mon 18:00]
+- State "DONE"       from "TODO"       [2016-01-10 Sun 17:31]
+- State "DONE"       from "TODO"       [2016-01-09 Sat 17:31]
 - State "DONE"       from "TODO"       [2016-01-08 Fri 17:31]
 - State "DONE"       from "TODO"       [2016-01-07 Thu 19:00]
 - State "DONE"       from "TODO"       [2016-01-06 Wed 18:31]
@@ -158,6 +207,9 @@ SCHEDULED: <2016-01-15 Fri 18:00 .+1w>
 * capture
 ** TODO ramener café                                                            :LABO:
 [2016-01-04 Mon 16:44]
+** TODO acheter colle scotch
+** TODO diluer amorces                                                          :CONFIG:
+[2016-01-11 Mon 11:48]
 * configuration                                                                 :CONFIG:
 #+title: Stage : TODO
 #+TODO: TODO(t) NEXT(n) RDV!(r) WAIT(w) | DONE(d)

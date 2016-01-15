@@ -1,0 +1,9 @@
+
+#+CATEGORY: STAGE
+
+# un fichier qui recense les volumes de consommables dont je dispose.
+
+| solution         | initial | actuel | utilisations     |
+|------------------+---------+--------+------------------|
+| solution mère SW |      25 |     23 | [2016-01-05 Tue] |
+| solution mère WS |      25 |     23 | [2016-01-05 Tue] |

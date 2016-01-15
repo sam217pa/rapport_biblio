@@ -1,0 +1,149 @@
+% Created 2016-01-09 Sat 00:58
+\documentclass[a4paper, justified]{tufte-handout}
+\input{/Users/samuelbarreto/.templates/tufte-handout.tex}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage[scaled=0.9]{zi4}
+\usepackage[x11names, dvipsnames]{xcolor}
+\usepackage[protrusion=true, expansion=alltext, tracking=true, kerning=true]{microtype}
+\usepackage{siunitx}
+\usepackage[frenchle, english]{babel}
+\usepackage{booktabs}
+\author{Samuel BARRETO}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Samuel BARRETO},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.2)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+
+\section{Construction des recombinants \emph{Acinetobacter}}
+\label{sec:orgheadline4}
+\subsection{Resuspension des 5µg de gène synthétique}
+\label{sec:orgheadline1}
+
+
+Les gènes synthétiques ont été reçus lyophilisés, à
+\SI{5}{\nano\g\per\milli\liter}\footnote{\textit{[2016-01-05 Tue]}}. Ils sont resuspendus
+dans \SI{25}{\micro\liter}, à la concentration de
+\SI{200}{\nano\g\per\milli\liter}. Les tubes sont aux positions A2 et A3 dans le
+souchier au -20°C.
+
+\subsection{Transformation dans E.coli}
+\label{sec:orgheadline2}
+On utilise le kit TOPO-TA, Invitrogen\footnote{\textit{[2016-01-05 Tue]}}
+(\href{file:///Users/samuelbarreto/stage/doc/topota_cloning_kits.pdf}{voir le \emph{quick reference guide}}).
+Deux tubes de cellules d'E.coli naturellement compétentes sont sorties du -80°C
+et placés dans la glace. Ils sont marqués SW et WS, selon le gène alternant.
+\SI{2}{\micro\liter} d'ADN de la solution de gène synthétique à
+\SI{200}{\nano\gram\per\mol} (soit 0.2ng d'ADN) sont ajoutés, et laissés dans
+la glace \si{30'} puis \si{30''} à 42°C. \si{250\micro\liter} de milieu SOC sont
+ajoutés. La suspension est incubée \si{1\hour} à \si{37\celsius} sous agitation.
+
+\SI{100}{\nano\mole} de chaque suspension sont étalés sur un milieu
+LBA+kanamycine. Les milieux sont incubés \si{24\hour} à \si{37\celsius}. 
+
+
+Les clones transformants sont isolés sur LBA +
+kanamycine\footnote{\textit{[2016-01-06 Wed]}}. Les milieux sont incubés \si{24\hour} à
+\si{37\celsius}.
+
+Une colonie isolée de chaque plasmide SW et WS est suspendue dans
+\si{5\milli\liter} de LB liquide + kanamycine, incubée \si{24\hour} à
+\si{37\celsius}\footnote{\textit{[2016-01-07 Thu]}}.
+
+\si{1\milli\liter} est prélevé pour les extractions
+plasmidiques\footnotemark[4]{}, les 4 autres sont culottés, re-suspendus
+dans \si{1\milli\liter} et placé en cryotubes\footnote{Annotation : WS E.coli TOPO
+08-01 et SW E.coli TOPO 08-01}.
+
+\subsection{Extractions plasmidiques}
+\label{sec:orgheadline3}
+Les extractions plasmidiques sont faites avec le kit \emph{NucleoSpin Plasmid}. 
+
+
+\section{Séquençage des ancres}
+\label{sec:orgheadline6}
+Dans certaines séquences issues des résultats de Florence, on observe un taux de
+mutation anormalement élevé au sein de la tract de conversion. Des mutations à
+des positions de SNP inattendues sont apparues, indépendamment dans chaque
+séquence. Ça n'est donc pas dû à une mutation dans le plasmide : on n'a pas de
+mutation systématique. Pour vérifier que ce phénomène soit bien dû à la
+conversion, on séquence les ancres 100\% homologues. L'hypothèse est que le taux
+de mutation dans la tract de conversion est supérieur à celui dans l'ancre.
+
+Dans le cas où le taux de mutation dans l'ancre ne serait pas significativement
+supérieur à celui dans la tract de conversion (hypothèse nulle), il faudrait
+chercher une autre explication à cette augmentation du taux de mutation due à la
+recombinaison. 
+
+\subsection{Sélection des candidats}
+\label{sec:orgheadline5}
+On sélectionne donc tous les candidats qui présentent des néo-mutations, d'après
+l'analyse des données de SNP calling. 
+
+\begin{margintable}
+  \begin{center}
+    \ttfamily
+    \begin{tabular}{rr}
+      \toprule
+      \textbf{Strong} & \textbf{Weak} \\
+      \midrule
+      pS10 & pW14 \\
+      pS24 & pW19 \\
+      pS30 & pW2 \\
+      pS39 & pW23 \\
+      pS5  & pW35 \\
+      pS54 & pW6 \\
+      pS74 & pW81 \\
+      pS82 & pW87 \\
+      pS88 & pW93 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{margintable}
+
+\section{Séquençage des clones avec des positions polymorphes}
+\label{sec:orgheadline7}
+Certains SNP dans les populations séquencées montrent des positions
+hétérozygotes. Autrement dit, certains individus semblent avoir réparé à cette
+position de SNP par un W, d'autre par un S. On a donc choisi de repiquer la
+génération dont les séquences sont issues. 
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{../seq_novembre/analysis/candidats_heterozygotes.pdf}
+  \caption{Chaque ligne représente les variations de la qualité du base calling
+    aux positions de SNP attendues, en fonction de la position sur le gène. Les
+    clones représentés sont ceux qui montrent des diminutions de la qualité aux
+    positions attendues. Les clones pW5, pW22, pW85 et pS53, pS67, pS88 ont été
+    choisis pour le séquençage.}
+\end{figure}
+
+3 transformants W et 3 transformants S montrant des positions hétérozygotes sont
+choisis et repiqués sur milieu LBA + kanamycine. Dans l'hypothèse où ce serait
+dû à une absence de réparation, 50\% des clones de la génération suivante
+devraient avoir l'allèle W, et 50\% l'allèle S.
+
+La séquence du locus d'intérêt est amplifiée par PCR sur colonie. Pour chaque
+transformant initial, 4 isolats sont amplifiés, pour un total de 24 séquences.  
+\end{document}

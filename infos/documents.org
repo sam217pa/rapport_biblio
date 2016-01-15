@@ -1,0 +1,19 @@
+
+#+CATEGORY: STAGE
+
+# Un listing des différents documents papiers conservés 
+
+* Biblio                                                                        :jaune:
+# notes de biblio 
+
+** Ellez, Matic, 2008
+** Hall, 2007
+* Notes                                                                         :rouge:
+
+** réunions franck [2016-01-04 Mon] 
+Un schéma global avec les différentes étapes pour construire le transformant. 
+
+* Protocoles                                                                    :orange:
+
+** TOPO-TA cloning kit, reference guide
+** NucleoSpin Plasmid / Plasmid miniprep 
