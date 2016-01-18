@@ -32,12 +32,19 @@ CLOSED: [2016-01-08 Fri 17:25]
 *** DONE extraction plasmide depuis /E.coli/
 CLOSED: [2016-01-08 Fri 16:06]
 <2016-01-18 Mon>
-*** TODO extraction plasmide depuis E.coli
+*** DONE extraction plasmide depuis E.coli
+CLOSED: [2016-01-15 Fri 19:02]
 <2016-01-15 Fri 09:00>
-*** TODO dépôt sur gel extraction
+*** DONE dépôt sur gel extraction
+CLOSED: [2016-01-15 Fri 19:02]
 <2016-01-15 Fri 14:00>
-*** TODO nano-drop
+*** DONE nano-drop
+CLOSED: [2016-01-15 Fri 19:02]
 <2016-01-15 Fri 15:00>
+*** TODO ensemencement tubes 5mL LBkan50
+*** TODO extractions plasmidiques
+*** TODO dépôt sur gel
+*** TODO nano-drop
 *** TODO PCR cible => gène synthétique
 SCHEDULED: <2016-01-18 Mon>
 **** DONE trouver les amorces 1073 - 1392
@@ -157,18 +164,20 @@ CLOSED: [2016-01-14 Thu 14:48]
 *** DONE migration
 CLOSED: [2016-01-14 Thu 14:48]
 <2016-01-14 Thu 11:30>
-*** TODO révéler gel
+*** DONE révéler gel
+CLOSED: [2016-01-15 Fri 19:01]
 <2016-01-14 Thu 15:30>
 *** TODO séquençage
 ** Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-01-14 Thu .+1d>
+SCHEDULED: <2016-01-18 Mon .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-13 Wed 18:15]
+:LAST_REPEAT: [2016-01-15 Fri 19:01]
 :END:
+- State "DONE"       from "TODO"       [2016-01-15 Fri 19:01]
 - State "DONE"       from "TODO"       [2016-01-13 Wed 18:15]
 - State "DONE"       from "TODO"       [2016-01-12 Tue 18:10]
 - State "DONE"       from "TODO"       [2016-01-11 Mon 18:00]
