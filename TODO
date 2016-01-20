@@ -41,15 +41,16 @@ CLOSED: [2016-01-15 Fri 19:02]
 *** DONE nano-drop
 CLOSED: [2016-01-15 Fri 19:02]
 <2016-01-15 Fri 15:00>
-*** TODO ensemencement tubes 5mL LBkan50
-*** TODO extractions plasmidiques
-*** TODO dépôt sur gel
-*** TODO nano-drop
 *** TODO PCR cible => gène synthétique
-SCHEDULED: <2016-01-18 Mon>
-**** DONE trouver les amorces 1073 - 1392
-CLOSED: [2016-01-08 Fri 17:27]
-*** TODO clonage fragment PCR dans pGEMT-say
+SCHEDULED: <2016-01-20 Wed 06:30>
+*** TODO migration produit PCR 
+<2016-01-20 Wed 09:00>
+*** TODO purification produit PCR via kit
+<2016-01-20 Wed 09:30>
+*** TODO migration produit purif 
+<2016-01-20 Wed 10:00>
+*** TODO clonage fragment PCR dans pGEM-T
+<2016-01-20 Wed 10:30>
 *** TODO PCR triple => construction GS-ATB-ANCRE
 *** TODO envoyer séquencer le WT dans le même run
 ** (2) Séquencer les ancres                                                     :MANIP2:
@@ -98,8 +99,15 @@ CLOSED: [2016-01-13 Wed 15:06]
 *** DONE PCR cible des ancres
 CLOSED: [2016-01-13 Wed 11:10]
 <2016-01-13 Wed 10:00>
-*** TODO envoyer à séquencer
+*** DONE envoyer à séquencer
+CLOSED: [2016-01-18 Mon 15:59]
 <2016-01-18 Mon>
+**** DONE diluer amorces à 5µM, 40µL
+CLOSED: [2016-01-18 Mon 15:49]
+**** DONE remplir formulaire 
+CLOSED: [2016-01-18 Mon 15:49]
+**** DONE mailto: david
+CLOSED: [2016-01-18 Mon 15:49]
 ** (3) Séquencer les hétérozygotes                                              :MANIP3:
 *** DONE déterminer les candidats
 CLOSED: [2016-01-06 Wed 10:22]
@@ -167,17 +175,23 @@ CLOSED: [2016-01-14 Thu 14:48]
 *** DONE révéler gel
 CLOSED: [2016-01-15 Fri 19:01]
 <2016-01-14 Thu 15:30>
-*** TODO séquençage
+*** DONE séquençage
+CLOSED: [2016-01-18 Mon 15:59]
 ** Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-01-18 Mon .+1d>
+SCHEDULED: <2016-01-20 Wed .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-15 Fri 19:01]
+:LAST_REPEAT: [2016-01-19 Tue 17:32]
 :END:
+- State "DONE"       from "TODO"       [2016-01-19 Tue 17:32]
+- State "DONE"       from "TODO"       [2016-01-18 Mon 18:30]
+- State "DONE"       from "TODO"       [2016-01-17 Sun 18:15]
+- State "DONE"       from "TODO"       [2016-01-16 Sat 18:15]
 - State "DONE"       from "TODO"       [2016-01-15 Fri 19:01]
+- State "DONE"       from "TODO"       [2016-01-14 Thu 18:30]
 - State "DONE"       from "TODO"       [2016-01-13 Wed 18:15]
 - State "DONE"       from "TODO"       [2016-01-12 Tue 18:10]
 - State "DONE"       from "TODO"       [2016-01-11 Mon 18:00]
@@ -187,19 +201,25 @@ SCHEDULED: <2016-01-18 Mon .+1d>
 - State "DONE"       from "TODO"       [2016-01-07 Thu 19:00]
 - State "DONE"       from "TODO"       [2016-01-06 Wed 18:31]
 - State "DONE"       from "TODO"       [2016-01-05 Tue 16:55]
+** TODO faire Xgal solution mère 
 * ANALYSES                                                                      :ANALYSES:ORDI:
 :PROPERTIES:
 :CATEGORY: @analyses
 :END:
-
 ** TODO analyses données Ivan Matic
+** TODO créer makefile reproductible
+** TODO joindre données snp et non-snp via semi_join
+** TODO calculer différence fréquence SNP / ΦSNP par read
+** TODO calculer distribution ratio WT/donneur uniforme ou variable
+** TODO analyser la répartition par read 
 ** TODO Staden : comparer séquences avec référence .abi
 ** TODO Sauvegarder données.
-SCHEDULED: <2016-01-15 Fri 18:00 .+1w>
+SCHEDULED: <2016-01-25 Mon 18:00 .+1w>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-07 Thu 08:16]
+:LAST_REPEAT: [2016-01-18 Mon 18:31]
 :END:
+- State "DONE"       from "TODO"       [2016-01-18 Mon 18:31]
 - State "DONE"       from "WAIT"       [2016-01-07 Thu 08:16]
 * COMPTE-RENDUS                                                                 :RAPPORT:
 :PROPERTIES:
@@ -207,8 +227,14 @@ SCHEDULED: <2016-01-15 Fri 18:00 .+1w>
 :END:
 ** TODO remettre rapport stage vincent
 * ÉCHÉANCES                                                                     :RDV:
-** RDV! Galette des Master <2016-01-18 Mon 16:30>
+** DONE Galette des Master <2016-01-18 Mon 16:30>
+CLOSED: [2016-01-18 Mon 18:31]
 ** RDV! Recycler présentation sujet stage <2016-02-04 Thu>
+** TODO Faire diapo conclave <2016-01-21 Thu>
+** DONE Réunion équipe <2016-01-20 Wed 16:00>
+CLOSED: [2016-01-19 Tue 16:40]
+** RDV! Réunion équipe <2016-01-27 Wed 13:00>
+** RDV! Réunion équipe <2016-02-10 Wed 13:00>
 
 * BIBLIO
 ** TODO lire les deux papiers polySNP
@@ -217,7 +243,8 @@ SCHEDULED: <2016-01-15 Fri 18:00 .+1w>
 ** TODO ramener café                                                            :LABO:
 [2016-01-04 Mon 16:44]
 ** TODO acheter colle scotch
-** TODO diluer amorces                                                          :CONFIG:
+** DONE diluer amorces                                                         :CONFIG:
+CLOSED: [2016-01-18 Mon 18:31]
 [2016-01-11 Mon 11:48]
 * configuration                                                                 :CONFIG:
 #+title: Stage : TODO

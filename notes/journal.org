@@ -6,6 +6,7 @@
 # manip (3) : séquençage des hétérozygotes
 # manip (D) : Divers, maintenance labo
 # manip (A) : analyses 
+
 * 2016-01 Janvier
 ** 2016-01-11 Lundi
 *** (3) PCR cible des gènes synthétiques 
@@ -368,7 +369,6 @@ appelés ~WS~ et ~SW~, [2016-01-15 Fri].
 *** (A) Analyses 
 Avancé sur les alignements polySNP, sur l'extraction des données comme vu avec
 Laurent hier [2016-01-14 Thu]. 
-
 ** 2016-01-18 Lundi
 *** (1) Constructions In-Fusion
 On veut mettre au point une méthode de clonage par PCR qui permettrait d'accoler
@@ -383,15 +383,131 @@ faut absence de site de restriction SpeI dans le GS. Ç'est le cas. Vérifié le
 #+CAPTION: Fragment 1 : le Gene Synthétique. 
 #+CAPTION: Fragment 2 : le gène aphA-3. 
 #+CAPTION: Fragment 2 : le gène ancre. 
-#+ATTR_LATEX: :float t :width 0.5\linewidth 
+#+ATTR_LATEX: :float t :width \linewidth 
 [[/Volumes/HDD/stage/img/20160118_00.png]]
+*** (2) PCR pW2 avant sequençage 
+L'isolât pW2 n'a pas été amplifié, confondu les tubes (voir figure
+[[fig:pcrancre]]). On refait la PCR cible ancre sur cet isolat là. 
 
+**** programme PCR
+| Temps | température | 30 cycles |
+|-------+-------------+-----------|
+| 3'    |          94 |           |
+| 50''  |          94 | x         |
+| 50''  |          55 | x         |
+| 60''  |          72 | x         |
+| 4'    |          72 |           |
 
+**** volumes
+|                | 1-tube | 4-tubes |
+|----------------+--------+---------|
+| ADN            |    0.5 |      2. |
+| Taq            |    0.5 |      2. |
+| amorce 1410    |    2.5 |     10. |
+| amorce 1411    |    2.5 |     10. |
+| MgCl2          |    1.5 |      6. |
+| dNTPs          |    5.0 |     20. |
+| Tampon 10X Taq |    5.0 |     20. |
+|----------------+--------+---------|
+| eau qsp 50µL   |   32.5 |    130. |
+#+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*4
+
+*** (2) Envoi ancres sequençage. 
+Les produits PCR du [2016-01-13 Wed] sont envoyés à séquencer. But : séquencer
+les ancres des clones qui montrent des néomutations. 
+*** (3) Envoi produits PCR sequencage.
+Les produits PCR du [2016-01-12 Tue] sont envoyés à séquencer. But : séquencer
+les gènes synthétiques de certains candidats qui montrent des polymorphismes
+assez marqués. 
+*** (D) Aliquoté amorces
+Aliquoté 3\times 100mL des amorces amorces ~1073 1392 1411 1410~ en diluant au
+10^e.
+** 2016-01-19 Mardi
+*** (1) PCR cible GS 
+But : insérer les gènes synthétiques alternants dans pGEM-T, après une PCR =A=
+sortant. 
+**** Programme PCR :
+| Temps | température | 30 cycles |
+|-------+-------------+-----------|
+| 3'    |          94 |           |
+| 50''  |          94 | x         |
+| 50''  |          58 | x         |
+| 50''  |          72 | x         |
+| 4'    |          72 |           |
+**** Volumes :
+|                | 1-tube | 7-tubes |
+|----------------+--------+---------|
+| ADN            |    0.5 |     3.5 |
+| Taq            |    0.5 |     3.5 |
+| amorce 1392    |    2.5 |    17.5 |
+| amorce 1073    |    2.5 |    17.5 |
+| MgCl2          |    1.5 |    10.5 |
+| dNTPs          |    5.0 |     35. |
+| Tampon 10X Taq |    5.0 |     35. |
+|----------------+--------+---------|
+| eau qsp 50µL   |   32.5 |   227.5 |
+#+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*7
+
+Problème : pas le bon couple d'amorce. 1073 est une amorce spécifique /Acineto/.
+Le couple d'amorce nécessaire est le couple =1392 1393=. La PCR est refaite
+demain <2016-01-20 Wed 07:00>.
+
+**** contrôle
+Comme attendu, pas de bandes. En plus la PCR est un peu sale. Penser à changer
+l'eau. 
+
+*** (1) Couler boîtes Amp75 XGal IPTG
+Ces boîtes servent à sélectionner les transformants qui possèdent le gène
+synthétique dans le site de clonage. La disruption du gène de la β-gal par
+l'insertion donne des colonies blanches résistantes à l'ampicilline.
+
+Couler 10 boîtes de LBm aux concentrations :
+|       | []      | V_0    |
+|-------+---------+--------|
+| Xgal  | 60µg/mL | 115 µL |
+| IPTG  | 40µg/mL | 0.5 mL |
+| Amp75 | 75µg/mL | 0.25mL |
+
+** 2016-01-20 Mercredi
+*** (1) PCR cible GS
+Le but est d'amplifier les fragments synthétiques, dans l'idée de les insérer
+après purification dans le plasmide pGEM-T. La PCR donne des =A= sortants,
+ligaturés dans les =T= sortant du plasmide pGEM-T. 
+
+**** Programme PCR :
+D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120. 
+| Temps | température | 30 cycles |
+|-------+-------------+-----------|
+| 3'    |          94 |           |
+| 50''  |          94 | x         |
+| 50''  |          60 | x         |
+| 45''  |          72 | x         |
+| 4'    |          72 |           |
+**** Volumes :
+|                | 1-tube | 7-tubes |
+|----------------+--------+---------|
+| ADN            |    0.5 |     3.5 |
+| Taq            |    0.5 |     3.5 |
+| amorce 1392    |    2.5 |    17.5 |
+| amorce 1073    |    2.5 |    17.5 |
+| MgCl2          |    1.5 |    10.5 |
+| dNTPs          |    5.0 |     35. |
+| Tampon 10X Taq |    5.0 |     35. |
+|----------------+--------+---------|
+| eau qsp 50µL   |   32.5 |   227.5 |
+#+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*7
+
+Le T+ utilisé est un plasmide pGEM-T porteur de la construction Weak, synthétisé
+par Florence. 
+**** contrôle
+
+*** (1) Purification des fragments PCR amplifiés
+*** (1) Clonage dans pGEM-T
 
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
-# #+options: toc:
+#+options: H:4
 
 Previewing dans terminal :
 NE PAS C-c C-c LÀ ! EMACS PLANTE !
@@ -401,3 +517,5 @@ latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
 
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
+* todos                                                                         :noexport:
+** TODO photos migration du [2016-01-19 Tue]
