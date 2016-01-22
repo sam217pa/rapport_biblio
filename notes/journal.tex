@@ -1,4 +1,4 @@
-% Created 2016-01-18 Mon 18:50
+% Created 2016-01-22 Fri 07:44
 \documentclass[9pt, oneside, twocolumn]{scrartcl}
                 \input{/Users/samuelbarreto/.templates/journal.tex}
                
@@ -29,7 +29,7 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 24.5.1 (Org mode 8.3.2)}, 
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.3)}, 
  pdflang={Frenchb}}
 \begin{document}
 
@@ -37,7 +37,7 @@
 
 
 \part{2016-01 Janvier}
-\label{sec:orgheadline53}
+\label{sec:orgheadline76}
 \section{2016-01-11 Lundi}
 \label{sec:orgheadline6}
 \subsection{(3) PCR cible des gènes synthétiques}
@@ -544,7 +544,6 @@ SW & 6.7\\
 \label{sec:orgheadline43}
 Avancé sur les alignements polySNP, sur l'extraction des données comme vu avec
 Laurent hier \textit{[2016-01-14 Thu]}. 
-
 \section{2016-01-18 Lundi}
 \label{sec:orgheadline52}
 \subsection{(1) Constructions In-Fusion}
@@ -617,4 +616,232 @@ assez marqués.
 \label{sec:orgheadline51}
 Aliquoté 3\texttimes{} 100mL des amorces amorces \texttt{1073 1392 1411 1410} en diluant au
 10\(^{\text{e}}\).
+\section{2016-01-19 Mardi}
+\label{sec:orgheadline58}
+\subsection{(1) PCR cible GS}
+\label{sec:orgheadline56}
+But : insérer les gènes synthétiques alternants dans pGEM-T, après une PCR \texttt{A}
+sortant. 
+\subsubsection{Programme PCR :}
+\label{sec:orgheadline53}
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+Temps & température & 30 cycles\\
+\midrule
+3' & 94 & \\
+50'' & 94 & x\\
+50'' & 58 & x\\
+50'' & 72 & x\\
+4' & 72 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\subsubsection{Volumes :}
+\label{sec:orgheadline54}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+ & 1-tube & 7-tubes\\
+\midrule
+ADN & 0.5 & 3.5\\
+Taq & 0.5 & 3.5\\
+amorce 1392 & 2.5 & 17.5\\
+amorce 1073 & 2.5 & 17.5\\
+MgCl2 & 1.5 & 10.5\\
+dNTPs & 5.0 & 35.\\
+Tampon 10X Taq & 5.0 & 35.\\
+\midrule
+eau qsp 50µL & 32.5 & 227.5\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Problème : pas le bon couple d'amorce. 1073 est une amorce spécifique \emph{Acineto}.
+Le couple d'amorce nécessaire est le couple \texttt{1392 1393}. La PCR est refaite
+demain \textit{<2016-01-20 Wed 07:00>}.
+
+\subsubsection{contrôle}
+\label{sec:orgheadline55}
+Comme attendu, pas de bandes. En plus la PCR est un peu sale. Penser à changer
+l'eau. 
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=3cm]{/Volumes/HDD/stage/img/20160119_00.JPG}
+\caption{ }
+\end{figure}
+
+
+\subsection{(1) Couler boîtes Amp75 XGal IPTG}
+\label{sec:orgheadline57}
+Ces boîtes servent à sélectionner les transformants qui possèdent le gène
+synthétique dans le site de clonage. La disruption du gène de la \(\beta\)-gal par
+l'insertion donne des colonies blanches résistantes à l'ampicilline.
+
+Couler 10 boîtes de LBm aux concentrations :
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+ & [] & V\(_{\text{0}}\)\\
+\midrule
+Xgal & 60µg/mL & 115 µL\\
+IPTG & 40µg/mL & 0.5 mL\\
+Amp75 & 75µg/mL & 0.25mL\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{2016-01-20 Mercredi}
+\label{sec:orgheadline69}
+\subsection{(1) PCR cible GS}
+\label{sec:orgheadline62}
+Le but est d'amplifier les fragments synthétiques, dans l'idée de les insérer
+après purification dans le plasmide pGEM-T. La PCR donne des \texttt{A} sortants,
+ligaturés dans les \texttt{T} sortant du plasmide pGEM-T. 
+
+\subsubsection{Programme PCR :}
+\label{sec:orgheadline59}
+D'après le cahier de Florence, daté du \textit{[2015-05-15 Fri]}, page 120. 
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+Temps & température & 30 cycles\\
+\midrule
+3' & 94 & \\
+50'' & 94 & x\\
+50'' & 60 & x\\
+45'' & 72 & x\\
+4' & 72 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\subsubsection{Volumes :}
+\label{sec:orgheadline60}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+ & 1-tube & 7-tubes\\
+\midrule
+ADN & 0.5 & 3.5\\
+Taq & 0.5 & 3.5\\
+amorce 1392 & 2.5 & 17.5\\
+amorce 1393 & 2.5 & 17.5\\
+MgCl2 & 1.5 & 10.5\\
+dNTPs & 5.0 & 35.\\
+Tampon 10X Taq & 5.0 & 35.\\
+\midrule
+eau qsp 50µL & 32.5 & 227.5\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Le T+ utilisé est un plasmide pGEM-T porteur de la construction Weak, synthétisé
+par Florence. 
+\subsubsection{contrôle}
+\label{sec:orgheadline61}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\linewidth]{/Volumes/HDD/stage/img/20160120_00.JPG}
+\caption{Contrôle de la PCR 1392-1393. Le témoin positif est un pGEM-T de Florence porteur de la construction Weak. }
+\end{figure}
+
+Tout est good. On peut lancer la purification, et éluer dans un bon volume de
+25µL. 
+\subsection{(1) Purification des fragments PCR amplifiés}
+\label{sec:orgheadline64}
+Les fragments PCR sont purifiés par le protocole
+\href{///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/nucleospin_pcr_purif_cleanup.pdf::17}{nucleospin\(_{\text{pcr}}_{\text{purif}}_{\text{cleanup.pdf}}\), p. 17}. 
+
+Les deux produits de PCR SW et WS sont poolés avant d'être mélangé au tampon de
+charge de l'étape 1. L'éthanol à l'étape 4 est laissé à évaporer pendant 5min à
+60°C, colonne ouverte dans le bloc chauffant. L'ADN est élué par un volume de
+25µL par de l'eau UP chauffée préalablement à 60°C.
+
+\subsubsection{Contrôle}
+\label{sec:orgheadline63}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.3\linewidth]{/Volumes/HDD/stage/img/20160120_01.JPG}
+\caption{Contrôle de la purification des produits PCR. Les deux purifications semblent avoir fonctionné comme il faut. 2µL sont chargés. 3µL de ladder ne suffisent pas. Il faut homogénéiser le ladder et charger plus.}
+\end{figure}
+\subsection{(1) Ligature dans pGEM-T}
+\label{sec:orgheadline65}
+Le plasmide pGEM-T de Promega est un plasmide conçu pour avoir des extrémités
+franches porteuses de bases \texttt{T}. Il est maintenu ouvert dans son tampon,
+conservé à -20°C. 
+
+Le but est de ligaturer les fragments PCR obtenus et purifiés avec le pGEM-T,
+puis de transformer des cellules compétentes \emph{E.coli} par choc chaud-froid. 
+
+Le protocole utilisé est le protocole promega pGEM-T (pas pGEM-T easy). Lien
+pour le short-manual : \href{///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/promega_pgem-t_short-manual.pdf::1}{promega\(_{\text{pgem}}\)-t\(_{\text{short}}\)-manual.pdf, p. 1}. Lien pour le
+protocole complet : \href{///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/promega_pgem-t.pdf::5}{promega\(_{\text{pgem}}\)-t.pdf, p. 5}.
+
+\subsection{(1) Transformation dans \emph{E.coli} TOP10}
+\label{sec:orgheadline66}
+Les produits de ligature sont utilisés pour transformer des \emph{E.coli} TOP10
+thermocompétentes à la transformation. Le reste des produits de ligature est
+placé au 4°C sur la nuit, pour favoriser l'apparition de transformants, en cas
+de soucis.
+
+Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
+\texttimes{} 100µL sur les boîtes Amp75 XGal IPTG coulées hier \textit{[2016-01-19 Tue]}.
+
+Les boîtes sont incubées 24H à 37°C. 
+
+\subsection{(2) et (3) envoi au séquençage}
+\label{sec:orgheadline67}
+Les tubes à envoyer à séquencer, contenant les produits PCR cibles des gènes
+synthétiques des clones présentant des polymorphismes et des ancres des clones
+présentant des néomutations ont été envoyés à séquencer par David aujourd'hui
+\textit{[2016-01-21 Thu]}. 
+
+\subsection{(D) coulé boîtes amp-xgal-iptg}
+\label{sec:orgheadline68}
+Coulé 10 boîtes ampicilline 75, Xgal IPTG, placées en chambre froide.
+\section{2016-01-21 Jeudi}
+\label{sec:orgheadline73}
+\subsection{(1) Contrôle des clonages}
+\label{sec:orgheadline70}
+Pas de culture. Aucun clone, ni bleu ni blanc. Thibault pense à un soucis avec
+les cellules. Il pense aussi à la Taq ozyme, qui pourrait ne pas introduire de
+\texttt{A} sortant. Mais dans ce cas, on aurait quand même des cellules bleues. Le
+clonage de Raphaël ne fonctionne pas mieux. Le plus étonnant est qu'il n'y ait
+pas plus de colonies bleues. Même si le clonage n'avait pas fonctionné, on
+aurait quand même des cellules bleues.
+
+\subsection{(1) Relance des clonages}
+\label{sec:orgheadline71}
+Les cellules qu'on avait utilisé hier sont périmées depuis septembre 2011. Ce
+qui est très chiant. On refait donc le clonage avec le restant de produit de
+ligature, conservé au 4°C depuis hier, en utilisant d'autres cellules, qui
+périment en 2017. 
+
+On utilise le kit de clonage TOP10. Voir description des protocoles ici :
+\href{///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/invitrogen_one-shot-top10.pdf::8}{invitrogen\(_{\text{one}}\)-shot-top10.pdf, p. 8}.
+
+Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
+\texttimes{} 100µL sur les boîtes Amp75 XGal IPTG coulées hier \textit{[2016-01-20 Wed]}.
+
+Les boîtes sont incubées 24H à 37°C. 
+
+\subsection{(2) et (3) accusé réception séquençage}
+\label{sec:orgheadline72}
+\href{msgid:001501d1542e$943783b0$bca68b10$@genoscreen.fr}{GENOSCREEN : Réception des échantillons envoyés le 20/01/2016}
+
+Genoscreen a reçu les échantillons. 
+
+\section{2016-01-22 Vendredi}
+\label{sec:orgheadline75}
+\subsection{(1) Contrôle des clonages}
+\label{sec:orgheadline74}
+Ajouté le \textit{[2016-01-22 Fri 07:43] } \\
+Beaucoup de colonies blanches et quelques colonies bleues. Le clonage d'hier
+semble avoir fonctionné. On veut désormais repiquer les colonies blanches,
+potentiellement transformantes, sur une autre boîte LBm Amp75 Xgal IPTG, 1) pour
+confirmer leur phénotype, et 2) pour lancer des PCR de confirmations d'insertion
+du fragment demain \textit{[2016-01-23 Sat]}. 
 \end{document}

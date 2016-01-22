@@ -456,9 +456,17 @@ demain <2016-01-20 Wed 07:00>.
 Comme attendu, pas de bandes. En plus la PCR est un peu sale. Penser à changer
 l'eau. 
 
+
+#+CAPTION: 
+#+CAPTION:
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 3cm 
+[[/Volumes/HDD/stage/img/20160119_00.JPG]]
+
+
 *** (1) Couler boîtes Amp75 XGal IPTG
 Ces boîtes servent à sélectionner les transformants qui possèdent le gène
-synthétique dans le site de clonage. La disruption du gène de la β-gal par
+synthétique dans le site de clonage. La disruption du gène de la \beta-gal par
 l'insertion donne des colonies blanches résistantes à l'ampicilline.
 
 Couler 10 boîtes de LBm aux concentrations :
@@ -489,7 +497,7 @@ D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120.
 | ADN            |    0.5 |     3.5 |
 | Taq            |    0.5 |     3.5 |
 | amorce 1392    |    2.5 |    17.5 |
-| amorce 1073    |    2.5 |    17.5 |
+| amorce 1393    |    2.5 |    17.5 |
 | MgCl2          |    1.5 |    10.5 |
 | dNTPs          |    5.0 |     35. |
 | Tampon 10X Taq |    5.0 |     35. |
@@ -500,10 +508,100 @@ D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120.
 Le T+ utilisé est un plasmide pGEM-T porteur de la construction Weak, synthétisé
 par Florence. 
 **** contrôle
+#+CAPTION: Contrôle de la PCR 1392-1393. Le témoin positif est un pGEM-T de Florence   
+#+CAPTION: porteur de la construction Weak.
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 0.5\linewidth 
+[[/Volumes/HDD/stage/img/20160120_00.JPG]]
 
+Tout est good. On peut lancer la purification, et éluer dans un bon volume de
+25µL. 
 *** (1) Purification des fragments PCR amplifiés
-*** (1) Clonage dans pGEM-T
+Les fragments PCR sont purifiés par le protocole
+[[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/nucleospin_pcr_purif_cleanup.pdf::17][nucleospin_pcr_purif_cleanup.pdf, p. 17]]. 
 
+Les deux produits de PCR SW et WS sont poolés avant d'être mélangé au tampon de
+charge de l'étape 1. L'éthanol à l'étape 4 est laissé à évaporer pendant 5min à
+60°C, colonne ouverte dans le bloc chauffant. L'ADN est élué par un volume de
+25µL par de l'eau UP chauffée préalablement à 60°C.
+
+**** Contrôle
+
+#+CAPTION: Contrôle de la purification des produits PCR.  
+#+CAPTION: Les deux purifications semblent avoir fonctionné comme il faut. 
+#+CAPTION: 2µL sont chargés. 3µL de ladder ne suffisent pas. 
+#+CAPTION: Il faut homogénéiser le ladder et charger plus. 
+#+ATTR_LATEX: :float t :width 0.3\linewidth
+[[/Volumes/HDD/stage/img/20160120_01.JPG]]
+*** (1) Ligature dans pGEM-T
+Le plasmide pGEM-T de Promega est un plasmide conçu pour avoir des extrémités
+franches porteuses de bases =T=. Il est maintenu ouvert dans son tampon,
+conservé à -20°C. 
+
+Le but est de ligaturer les fragments PCR obtenus et purifiés avec le pGEM-T,
+puis de transformer des cellules compétentes /E.coli/ par choc chaud-froid. 
+
+Le protocole utilisé est le protocole promega pGEM-T (pas pGEM-T easy). Lien
+pour le short-manual : [[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/promega_pgem-t_short-manual.pdf::1][promega_pgem-t_short-manual.pdf, p. 1]]. Lien pour le
+protocole complet : [[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/promega_pgem-t.pdf::5][promega_pgem-t.pdf, p. 5]].
+
+*** (1) Transformation dans /E.coli/ TOP10
+Les produits de ligature sont utilisés pour transformer des /E.coli/ TOP10
+thermocompétentes à la transformation. Le reste des produits de ligature est
+placé au 4°C sur la nuit, pour favoriser l'apparition de transformants, en cas
+de soucis.
+
+Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
+\times 100µL sur les boîtes Amp75 XGal IPTG coulées hier [2016-01-19 Tue].
+
+Les boîtes sont incubées 24H à 37°C. 
+
+*** (2) et (3) envoi au séquençage
+Les tubes à envoyer à séquencer, contenant les produits PCR cibles des gènes
+synthétiques des clones présentant des polymorphismes et des ancres des clones
+présentant des néomutations ont été envoyés à séquencer par David aujourd'hui
+[2016-01-21 Thu]. 
+
+*** (D) coulé boîtes amp-xgal-iptg
+Coulé 10 boîtes ampicilline 75, Xgal IPTG, placées en chambre froide.
+** 2016-01-21 Jeudi
+*** (1) Contrôle des clonages
+Pas de culture. Aucun clone, ni bleu ni blanc. Thibault pense à un soucis avec
+les cellules. Il pense aussi à la Taq ozyme, qui pourrait ne pas introduire de
+=A= sortant. Mais dans ce cas, on aurait quand même des cellules bleues. Le
+clonage de Raphaël ne fonctionne pas mieux. Le plus étonnant est qu'il n'y ait
+pas plus de colonies bleues. Même si le clonage n'avait pas fonctionné, on
+aurait quand même des cellules bleues.
+
+*** (1) Relance des clonages
+Les cellules qu'on avait utilisé hier sont périmées depuis septembre 2011. Ce
+qui est très chiant. On refait donc le clonage avec le restant de produit de
+ligature, conservé au 4°C depuis hier, en utilisant d'autres cellules, qui
+périment en 2017. 
+
+On utilise le kit de clonage TOP10. Voir description des protocoles ici :
+[[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/invitrogen_one-shot-top10.pdf::8][invitrogen_one-shot-top10.pdf, p. 8]].
+
+Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
+\times 100µL sur les boîtes Amp75 XGal IPTG coulées hier [2016-01-20 Wed].
+
+Les boîtes sont incubées 24H à 37°C. 
+
+*** (2) et (3) accusé réception séquençage
+[[mu4e:msgid:001501d1542e$943783b0$bca68b10$@genoscreen.fr][GENOSCREEN : Réception des échantillons envoyés le 20/01/2016]]
+
+Genoscreen a reçu les échantillons. 
+
+** 2016-01-22 Vendredi
+*** (1) Contrôle des clonages
+Ajouté le [2016-01-22 Fri 07:43] \\
+Beaucoup de colonies blanches et quelques colonies bleues. Le clonage d'hier
+semble avoir fonctionné. On veut désormais repiquer les colonies blanches,
+potentiellement transformantes, sur une autre boîte LBm Amp75 Xgal IPTG, 1) pour
+confirmer leur phénotype, et 2) pour lancer des PCR de confirmations d'insertion
+du fragment demain [2016-01-23 Sat]. 
+
+# TODO insérer photos des boîtes ?
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
@@ -518,4 +616,6 @@ latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
 * todos                                                                         :noexport:
-** TODO photos migration du [2016-01-19 Tue]
+** DONE photos migration du [2016-01-19 Tue]
+CLOSED: [2016-01-20 Wed 14:30]
+** TODO insérer photos des transformations de coli ? <2016-01-22 Fri>
