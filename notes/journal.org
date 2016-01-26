@@ -611,7 +611,6 @@ Les séquences des tubes envoyés à Genoscreen ont été reçues aujourd'hui
 
 [[mu4e:msgid:008901d15517$8e3c72b0$aab55810$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 1/2)]]
 [[mu4e:msgid:008f01d15517$9b813500$d2839f00$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 2/2)]]
-
 ** 2016-01-23 Samedi
 *** (1) PCR contrôle des clonages
 Le but de cette PCR est de vérifier le sens des insertions des fragments de GS
@@ -635,25 +634,59 @@ Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135.
 **** volumes
 |                | 1-tube | 14-tubes |
 |----------------+--------+----------|
-| ADN            |   0.25 |      3.5 |
-| Taq            |   0.25 |      3.5 |
-| amorce 1393    |   1.25 |     17.5 |
-| amorce M13R    |   1.25 |     17.5 |
-| MgCl2          |   0.75 |     10.5 |
-| dNTPs          |    2.5 |      35. |
-| Tampon 10X Taq |    2.5 |      35. |
+| ADN            |    0.5 |       7. |
+| Taq            |    0.5 |       7. |
+| amorce M13R    |    2.5 |      35. |
+| amorce 1393    |    2.5 |      35. |
+| MgCl2          |    1.5 |      21. |
+| dNTPs          |    5.0 |      70. |
+| Tampon 10X Taq |    5.0 |      70. |
 |----------------+--------+----------|
-| eau qsp 50µL   |  16.25 |    227.5 |
-#+TBLFM: @>$2=25 - vsum(@2..@-1)::$3=$2*14
+| eau qsp 50µL   |   32.5 |     455. |
+#+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*14
 
 **** contrôles
+#+CAPTION: PCR 1
+#+ATTR_LATEX: :float t :width \linewidth
+[[/Volumes/HDD/stage/img/20160123_00.JPG]]
 
-*** (1) Ensemencement des tubes de LBm Amp75
-Deux clones par insert servent à ensemencer deux tubes de LBm Amp75, dans le but
-de 1) faire les extractions plasmidiques demain <2016-01-24 Sun> et 2) culotter
-dans du glycérol, pour mettre au -80°C. 
+#+CAPTION: PCR 2
+#+ATTR_LATEX: :float t :width \linewidth
+[[/Volumes/HDD/stage/img/20160123_01.JPG]]
 
 
+Rien à l'horizon. Pas même dans le témoin positif. J'ai refais la même PCR, en
+passant d'un volume de 25µL à 50µL. Pas plus de chances.
+
+Je n'ai pour l'instant pas d'explications.
+1. les amorces sont nazes ? elles proviennent toutes les deux d'une dilution de
+   la solution mère, diluée ce matin pour la M13R, et mercredi [2016-01-20 Wed]
+   pour la 1393.
+2. la taq est naze ? J'ai essayé avec deux tubes différents.
+3. le témoin positif est naze (l'insert dans ce tube n'est pas dans le bon sens)
+   *et* les 12 clones sont tout aussi naze ? allons allons, les lois de
+   l'échantillonnage ne sont quand même pas à ce point en ma défaveur…
+4. ça n'est pas le bon couple d'amorce ? pourtant avec florence ça paraît pas
+   mal.
+5. le temps d'élongation n'est pas le bon ? c'est pourtant le temps
+   correspondant à la taille attendue…
+
+Dégouté. Comment perdre son samedi en deux PCR. 
+
+** 2016-01-24 Dimanche
+L'idée était de faire les extractions plasmidiques aujourd'hui, ainsi que de
+mettre les souches possédant le plasmide et l'insert dans le glycérol. Vu les
+PCR d'hier, on n'est encore sûr de rien quant aux insertions. 
+
+
+** 2016-01-25 Lundi
+
+# *** (1) Extraction Plasmidiques
+# *** (1) Ensemencements glycérols
+# *** (1) Ensemencement des tubes de LBm Amp75
+# Deux clones par insert servent à ensemencer deux tubes de LBm Amp75, dans le but
+# de 1) faire les extractions plasmidiques demain <2016-01-24 Sun> et 2) culotter
+# dans du glycérol, pour mettre au -80°C. 
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr

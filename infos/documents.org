@@ -15,5 +15,12 @@ Un schéma global avec les différentes étapes pour construire le transformant.
 
 * Protocoles                                                                    :orange:
 
-** TOPO-TA cloning kit, reference guide
+** disques clonages 20 spots
+** NucleoSpin PCR clean-up
 ** NucleoSpin Plasmid / Plasmid miniprep 
+** pGEM-T quick manual
+** protocole inFusion florence
+** protocole clonage fragments WS dans pGEM-T
+** pWKanancre features
+** TOPO-TA cloning kit, reference guide
+** transform chemically competent cells TOP10

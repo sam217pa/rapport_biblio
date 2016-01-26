@@ -1,4 +1,4 @@
-% Created 2016-01-22 Fri 07:44
+% Created 2016-01-23 Sat 17:11
 \documentclass[9pt, oneside, twocolumn]{scrartcl}
                 \input{/Users/samuelbarreto/.templates/journal.tex}
                
@@ -33,11 +33,13 @@
  pdflang={Frenchb}}
 \begin{document}
 
+\setcounter{tocdepth}{2}
 \tableofcontents
 
+\clearpage
 
 \part{2016-01 Janvier}
-\label{sec:orgheadline76}
+\label{sec:orgheadline86}
 \section{2016-01-11 Lundi}
 \label{sec:orgheadline6}
 \subsection{(3) PCR cible des gènes synthétiques}
@@ -835,13 +837,119 @@ Les boîtes sont incubées 24H à 37°C.
 Genoscreen a reçu les échantillons. 
 
 \section{2016-01-22 Vendredi}
-\label{sec:orgheadline75}
+\label{sec:orgheadline76}
 \subsection{(1) Contrôle des clonages}
 \label{sec:orgheadline74}
 Ajouté le \textit{[2016-01-22 Fri 07:43] } \\
 Beaucoup de colonies blanches et quelques colonies bleues. Le clonage d'hier
 semble avoir fonctionné. On veut désormais repiquer les colonies blanches,
 potentiellement transformantes, sur une autre boîte LBm Amp75 Xgal IPTG, 1) pour
-confirmer leur phénotype, et 2) pour lancer des PCR de confirmations d'insertion
+confirmer leur phénotype, et 2) pour lancer des PCR de confirmation d'insertion
 du fragment demain \textit{[2016-01-23 Sat]}. 
+
+\subsection{(2) et (3) Réception des séquences}
+\label{sec:orgheadline75}
+Les séquences des tubes envoyés à Genoscreen ont été reçues aujourd'hui
+\textit{<2016-01-22 Fri>}. 
+
+\href{msgid:008901d15517$8e3c72b0$aab55810$@genoscreen.fr}{GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 1/2)}
+\href{msgid:008f01d15517$9b813500$d2839f00$@genoscreen.fr}{GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 2/2)}
+\section{2016-01-23 Samedi}
+\label{sec:orgheadline81}
+\subsection{(1) PCR contrôle des clonages}
+\label{sec:orgheadline80}
+Le but de cette PCR est de vérifier le sens des insertions des fragments de GS
+dans pGEM-T. Avec le couple d'amorce V2 - M13R (1393 - M13R), on s'attend à
+obtenir une taille d'amplification de 800bp environ, si le fragment est dans le
+bon sens.
+
+On choisit donc 6 clones confirmés \(\beta\)-gal neg par insert WS et SW. Ils sont
+resuspendus dans 50µL d'eau stérile. 
+
+\subsubsection{programme PCR}
+\label{sec:orgheadline77}
+Tiré du cahier de Florence, daté du \textit{[2015-06-16 Tue]}, page 135. 
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+Temps & température & 30 cycles\\
+\midrule
+3' & 94 & \\
+50'' & 94 & x\\
+50'' & 57 & x\\
+50'' & 72 & x\\
+4' & 72 & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{volumes}
+\label{sec:orgheadline78}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+ & 1-tube & 14-tubes\\
+\midrule
+ADN & 0.5 & 7.\\
+Taq & 0.5 & 7.\\
+amorce M13R & 2.5 & 35.\\
+amorce 1393 & 2.5 & 35.\\
+MgCl2 & 1.5 & 21.\\
+dNTPs & 5.0 & 70.\\
+Tampon 10X Taq & 5.0 & 70.\\
+\midrule
+eau qsp 50µL & 32.5 & 455.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{contrôles}
+\label{sec:orgheadline79}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\linewidth]{/Volumes/HDD/stage/img/20160123_00.JPG}
+\caption{PCR 1}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\linewidth]{/Volumes/HDD/stage/img/20160123_01.JPG}
+\caption{PCR 2}
+\end{figure}
+
+
+Rien à l'horizon. Pas même dans le témoin positif. J'ai refais la même PCR, en
+passant d'un volume de 25µL à 50µL. Pas plus de chances.
+
+Je n'ai pour l'instant pas d'explications.
+\begin{enumerate}
+\item les amorces sont nazes ? elles proviennent toutes les deux d'une dilution de
+la solution mère, diluée ce matin pour la M13R, et mercredi \textit{[2016-01-20 Wed]}
+pour la 1393.
+\item la taq est naze ? J'ai essayé avec deux tubes différents.
+\item le témoin positif est naze (l'insert dans ce tube n'est pas dans le bon sens)
+\textbf{et} les 12 clones sont tout aussi naze ? allons allons, les lois de
+l'échantillonnage ne sont quand même pas à ce point en ma défaveur…
+\item ça n'est pas le bon couple d'amorce ? pourtant avec florence ça paraît pas
+mal.
+\item le temps d'élongation n'est pas le bon ? c'est pourtant le temps
+correspondant à la taille attendue…
+\end{enumerate}
+
+Dégouté. Comment perdre son samedi en deux PCR. 
+
+
+\section{2016-01-24 Dimanche}
+\label{sec:orgheadline85}
+\subsection{(1) Extraction Plasmidiques}
+\label{sec:orgheadline82}
+\subsection{(1) Ensemencements glycérols}
+\label{sec:orgheadline83}
+
+
+\subsection{(1) Ensemencement des tubes de LBm Amp75}
+\label{sec:orgheadline84}
+Deux clones par insert servent à ensemencer deux tubes de LBm Amp75, dans le but
+de 1) faire les extractions plasmidiques demain \textit{<2016-01-24 Sun> } et 2) culotter
+dans du glycérol, pour mettre au -80°C. 
 \end{document}

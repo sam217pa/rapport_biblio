@@ -1,77 +1,87 @@
 \select@language {french}
-\contentsline {part}{\numberline {I}2016-01 Janvier}{1}{part.1}
-\contentsline {section}{\numberline {1}2016-01-11 Lundi}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{1}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Programme PCR :}{1}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Volumes :}{1}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Contr\IeC {\^o}le}{1}{subsubsection.1.1.3}
-\contentsline {subsection}{\numberline {1.2}(D) aliquot\IeC {\'e} Taq-ozyme}{1}{subsection.1.2}
-\contentsline {section}{\numberline {2}2016-01-12 Mardi}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Programme PCR :}{2}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Volumes :}{2}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Contr\IeC {\^o}le :}{2}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}(2) PCR cible de l'ancre}{2}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Candidats s\IeC {\'e}lectionn\IeC {\'e}s}{2}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Programme PCR}{2}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Volumes :}{2}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Contr\IeC {\^o}le :}{2}{subsubsection.2.2.4}
-\contentsline {subsection}{\numberline {2.3}(D) dilu\IeC {\'e} amorces}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}(D) coul\IeC {\'e} gel}{3}{subsection.2.4}
-\contentsline {section}{\numberline {3}2016-01-13 Mercredi}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}(2) PCR cible des ancres}{4}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}candidats s\IeC {\'e}lectionn\IeC {\'e}s}{4}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}programme PCR}{4}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}volumes}{4}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}contr\IeC {\^o}le}{4}{subsubsection.3.1.4}
-\contentsline {subsection}{\numberline {3.2}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{4}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}candidats}{4}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}programme PCR}{4}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}volumes}{4}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}contr\IeC {\^o}le}{4}{subsubsection.3.2.4}
-\contentsline {section}{\numberline {4}2016-01-14 Jeudi}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}(3) PCR des trois clones r\IeC {\'e}calcitrants}{5}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}suspension des clones}{5}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}programme PCR}{5}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}volumes}{5}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}contr\IeC {\^o}le}{5}{subsubsection.4.1.4}
-\contentsline {subsection}{\numberline {4.2}(1) Contr\IeC {\^o}le des extractions plasmidiques}{5}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}relance des cultures}{5}{subsubsection.4.2.1}
-\contentsline {subsection}{\numberline {4.3}(D) maintenance}{5}{subsection.4.3}
-\contentsline {section}{\numberline {5}2016-01-15 Vendredi}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}(1) Extractions plasmidiques}{6}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Extractions}{6}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Contr\IeC {\^o}le}{6}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}NanoDrop}{6}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}(A) Analyses}{6}{subsection.5.2}
-\contentsline {section}{\numberline {6}2016-01-18 Lundi}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}(1) Constructions In-Fusion}{7}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}(2) PCR pW2 avant sequen\IeC {\c c}age}{7}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}programme PCR}{7}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}volumes}{7}{subsubsection.6.2.2}
-\contentsline {subsection}{\numberline {6.3}(2) Envoi ancres sequen\IeC {\c c}age.}{7}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}(3) Envoi produits PCR sequencage.}{7}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}(D) Aliquot\IeC {\'e} amorces}{7}{subsection.6.5}
-\contentsline {section}{\numberline {7}2016-01-19 Mardi}{8}{section.7}
-\contentsline {subsection}{\numberline {7.1}(1) PCR cible GS}{8}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Programme PCR :}{8}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Volumes :}{8}{subsubsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.3}contr\IeC {\^o}le}{8}{subsubsection.7.1.3}
-\contentsline {subsection}{\numberline {7.2}(1) Couler bo\IeC {\^\i }tes Amp75 XGal IPTG}{8}{subsection.7.2}
-\contentsline {section}{\numberline {8}2016-01-20 Mercredi}{9}{section.8}
-\contentsline {subsection}{\numberline {8.1}(1) PCR cible GS}{9}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Programme PCR :}{9}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Volumes :}{9}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}contr\IeC {\^o}le}{9}{subsubsection.8.1.3}
-\contentsline {subsection}{\numberline {8.2}(1) Purification des fragments PCR amplifi\IeC {\'e}s}{9}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Contr\IeC {\^o}le}{9}{subsubsection.8.2.1}
-\contentsline {subsection}{\numberline {8.3}(1) Ligature dans pGEM-T}{9}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}(1) Transformation dans \emph {E.coli} TOP10}{9}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}(2) et (3) envoi au s\IeC {\'e}quen\IeC {\c c}age}{9}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}(D) coul\IeC {\'e} bo\IeC {\^\i }tes amp-xgal-iptg}{9}{subsection.8.6}
-\contentsline {section}{\numberline {9}2016-01-21 Jeudi}{10}{section.9}
-\contentsline {subsection}{\numberline {9.1}(1) Contr\IeC {\^o}le des clonages}{10}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}(1) Relance des clonages}{10}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}(2) et (3) accus\IeC {\'e} r\IeC {\'e}ception s\IeC {\'e}quen\IeC {\c c}age}{10}{subsection.9.3}
-\contentsline {section}{\numberline {10}2016-01-22 Vendredi}{11}{section.10}
-\contentsline {subsection}{\numberline {10.1}(1) Contr\IeC {\^o}le des clonages}{11}{subsection.10.1}
+\contentsline {part}{\numberline {I}2016-01 Janvier}{2}{part.1}
+\contentsline {section}{\numberline {1}2016-01-11 Lundi}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Programme PCR :}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Volumes :}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Contr\IeC {\^o}le}{2}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}(D) aliquot\IeC {\'e} Taq-ozyme}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}2016-01-12 Mardi}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Programme PCR :}{3}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Volumes :}{3}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Contr\IeC {\^o}le :}{3}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}(2) PCR cible de l'ancre}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Candidats s\IeC {\'e}lectionn\IeC {\'e}s}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Programme PCR}{3}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Volumes :}{3}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Contr\IeC {\^o}le :}{3}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}(D) dilu\IeC {\'e} amorces}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}(D) coul\IeC {\'e} gel}{4}{subsection.2.4}
+\contentsline {section}{\numberline {3}2016-01-13 Mercredi}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}(2) PCR cible des ancres}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}candidats s\IeC {\'e}lectionn\IeC {\'e}s}{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}programme PCR}{5}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}volumes}{5}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}contr\IeC {\^o}le}{5}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}(3) PCR cible des g\IeC {\`e}nes synth\IeC {\'e}tiques}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}candidats}{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}programme PCR}{5}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}volumes}{5}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}contr\IeC {\^o}le}{5}{subsubsection.3.2.4}
+\contentsline {section}{\numberline {4}2016-01-14 Jeudi}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}(3) PCR des trois clones r\IeC {\'e}calcitrants}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}suspension des clones}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}programme PCR}{6}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}volumes}{6}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}contr\IeC {\^o}le}{6}{subsubsection.4.1.4}
+\contentsline {subsection}{\numberline {4.2}(1) Contr\IeC {\^o}le des extractions plasmidiques}{6}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}relance des cultures}{6}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}(D) maintenance}{6}{subsection.4.3}
+\contentsline {section}{\numberline {5}2016-01-15 Vendredi}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}(1) Extractions plasmidiques}{7}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Extractions}{7}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Contr\IeC {\^o}le}{7}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}NanoDrop}{7}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}(A) Analyses}{7}{subsection.5.2}
+\contentsline {section}{\numberline {6}2016-01-18 Lundi}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}(1) Constructions In-Fusion}{8}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}(2) PCR pW2 avant sequen\IeC {\c c}age}{8}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}programme PCR}{8}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}volumes}{8}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}(2) Envoi ancres sequen\IeC {\c c}age.}{8}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}(3) Envoi produits PCR sequencage.}{8}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}(D) Aliquot\IeC {\'e} amorces}{8}{subsection.6.5}
+\contentsline {section}{\numberline {7}2016-01-19 Mardi}{9}{section.7}
+\contentsline {subsection}{\numberline {7.1}(1) PCR cible GS}{9}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Programme PCR :}{9}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Volumes :}{9}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}contr\IeC {\^o}le}{9}{subsubsection.7.1.3}
+\contentsline {subsection}{\numberline {7.2}(1) Couler bo\IeC {\^\i }tes Amp75 XGal IPTG}{9}{subsection.7.2}
+\contentsline {section}{\numberline {8}2016-01-20 Mercredi}{10}{section.8}
+\contentsline {subsection}{\numberline {8.1}(1) PCR cible GS}{10}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Programme PCR :}{10}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Volumes :}{10}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}contr\IeC {\^o}le}{10}{subsubsection.8.1.3}
+\contentsline {subsection}{\numberline {8.2}(1) Purification des fragments PCR amplifi\IeC {\'e}s}{10}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Contr\IeC {\^o}le}{10}{subsubsection.8.2.1}
+\contentsline {subsection}{\numberline {8.3}(1) Ligature dans pGEM-T}{10}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}(1) Transformation dans \emph {E.coli} TOP10}{10}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}(2) et (3) envoi au s\IeC {\'e}quen\IeC {\c c}age}{10}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}(D) coul\IeC {\'e} bo\IeC {\^\i }tes amp-xgal-iptg}{10}{subsection.8.6}
+\contentsline {section}{\numberline {9}2016-01-21 Jeudi}{11}{section.9}
+\contentsline {subsection}{\numberline {9.1}(1) Contr\IeC {\^o}le des clonages}{11}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}(1) Relance des clonages}{11}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}(2) et (3) accus\IeC {\'e} r\IeC {\'e}ception s\IeC {\'e}quen\IeC {\c c}age}{11}{subsection.9.3}
+\contentsline {section}{\numberline {10}2016-01-22 Vendredi}{12}{section.10}
+\contentsline {subsection}{\numberline {10.1}(1) Contr\IeC {\^o}le des clonages}{12}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}(2) et (3) R\IeC {\'e}ception des s\IeC {\'e}quences}{12}{subsection.10.2}
+\contentsline {section}{\numberline {11}2016-01-23 Samedi}{13}{section.11}
+\contentsline {subsection}{\numberline {11.1}(1) PCR contr\IeC {\^o}le des clonages}{13}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {11.1.1}programme PCR}{13}{subsubsection.11.1.1}
+\contentsline {subsubsection}{\numberline {11.1.2}volumes}{13}{subsubsection.11.1.2}
+\contentsline {subsubsection}{\numberline {11.1.3}contr\IeC {\^o}les}{13}{subsubsection.11.1.3}
+\contentsline {section}{\numberline {12}2016-01-24 Dimanche}{14}{section.12}
+\contentsline {subsection}{\numberline {12.1}(1) Extraction Plasmidiques}{14}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}(1) Ensemencements glyc\IeC {\'e}rols}{14}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}(1) Ensemencement des tubes de LBm Amp75}{14}{subsection.12.3}
