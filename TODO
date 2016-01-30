@@ -61,7 +61,8 @@ CLOSED: [2016-01-22 Fri 11:02]
 *** DONE PCR confirmation insertion fragment dans pGEM-T
 CLOSED: [2016-01-23 Sat 11:37]
 <2016-01-23 Sat 09:00>
-*** TODO migration confirmation taille 
+*** DONE migration confirmation taille 
+CLOSED: [2016-01-27 Wed 15:56]
 <2016-01-23 Sat 12:30>
 *** DONE faire solution stock LB Amp75
 CLOSED: [2016-01-23 Sat 11:37]
@@ -69,9 +70,9 @@ CLOSED: [2016-01-23 Sat 11:37]
 *** TODO suspendre clones confirmés transformants dans LB liquide + Amp75
 <2016-01-23 Sat 11:00>
 *** TODO extractions plasmidiques 
-<2016-01-24 Sun 09:00>
+<2016-01-28 Thu 14:00>
 *** TODO glycérols 
-<2016-01-24 Sun 11:00>
+<2016-01-29 Fri 11:00>
 *** TODO PCR triple => construction GS-ATB-ANCRE
 *** TODO envoyer séquencer le WT dans le même run
 ** (2) Séquencer les ancres                                                     :MANIP2:
@@ -202,11 +203,14 @@ CLOSED: [2016-01-18 Mon 15:59]
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-01-23 Sat .+1d>
+SCHEDULED: <2016-01-28 Thu .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-22 Fri 17:32]
+:LAST_REPEAT: [2016-01-27 Wed 15:56]
 :END:
+- State "DONE"       from "TODO"       [2016-01-27 Wed 15:56]
+- State "DONE"       from "TODO"       [2016-01-24 Sun 18:32]
+- State "DONE"       from "TODO"       [2016-01-23 Sat 18:32]
 - State "DONE"       from "TODO"       [2016-01-22 Fri 18:32]
 - State "DONE"       from "TODO"       [2016-01-21 Thu 18:32]
 - State "DONE"       from "TODO"       [2016-01-20 Wed 18:25]
@@ -238,11 +242,12 @@ SCHEDULED: <2016-01-23 Sat .+1d>
 ** TODO analyser la répartition par read 
 ** TODO Staden : comparer séquences avec référence .abi
 ** TODO Sauvegarder données.
-SCHEDULED: <2016-01-25 Mon 18:00 .+1w>
+SCHEDULED: <2016-02-03 Wed 18:00 .+1w>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-18 Mon 18:31]
+:LAST_REPEAT: [2016-01-27 Wed 15:47]
 :END:
+- State "DONE"       from "WAIT"       [2016-01-27 Wed 15:47]
 - State "DONE"       from "TODO"       [2016-01-18 Mon 18:31]
 - State "DONE"       from "WAIT"       [2016-01-07 Thu 08:16]
 * COMPTE-RENDUS                                                                 :RAPPORT:
@@ -250,6 +255,7 @@ SCHEDULED: <2016-01-25 Mon 18:00 .+1w>
 :category: @CR
 :END:
 ** TODO remettre rapport stage vincent
+** TODO refaire slide présentation sujet
 * ÉCHÉANCES                                                                     :RDV:
 ** DONE Galette des Master <2016-01-18 Mon 16:30>
 CLOSED: [2016-01-18 Mon 18:31]
@@ -271,7 +277,8 @@ CLOSED: [2016-01-18 Mon 18:31]
 CLOSED: [2016-01-22 Fri 07:38]
 ** DONE Réunion équipe <2016-01-19 Tue 16:00>
 CLOSED: [2016-01-19 Tue 16:40]
-** RDV! Réunion équipe <2016-01-27 Wed 13:00>
+** DONE Réunion équipe <2016-01-27 Wed 13:00>
+CLOSED: [2016-01-27 Wed 15:46]
 ** RDV! Réunion équipe <2016-02-10 Wed 13:00>
 ** RDV! réunion projet <2016-02-02 Tue 10:00>
 ** DONE photos équipe <2016-01-22 Fri 16:00>

@@ -415,6 +415,12 @@ L'isolât pW2 n'a pas été amplifié, confondu les tubes (voir figure
 |----------------+--------+---------|
 | eau qsp 50µL   |   32.5 |    130. |
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*4
+**** contrôle 
+
+#+ATTR_LATEX: :float t :width 3cm 
+[[/Volumes/HDD/stage/img/20160118_01.JPG]]
+
+Problème de PCR. Attention en analysant les séquences. 
 
 *** (2) Envoi ancres sequençage. 
 Les produits PCR du [2016-01-13 Wed] sont envoyés à séquencer. But : séquencer
@@ -592,7 +598,7 @@ Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés e
 Les boîtes sont incubées 24H à 37°C. 
 
 *** (2) et (3) accusé réception séquençage
-[[mu4e:msgid:001501d1542e$943783b0$bca68b10$@genoscreen.fr][GENOSCREEN : Réception des échantillons envoyés le 20/01/2016]]
+# [[mu4e:msgid:001501d1542e$943783b0$bca68b10$@genoscreen.fr][GENOSCREEN : Réception des échantillons envoyés le 20/01/2016]]
 
 Genoscreen a reçu les échantillons. 
 
@@ -609,8 +615,8 @@ du fragment demain [2016-01-23 Sat].
 Les séquences des tubes envoyés à Genoscreen ont été reçues aujourd'hui
 <2016-01-22 Fri>. 
 
-[[mu4e:msgid:008901d15517$8e3c72b0$aab55810$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 1/2)]]
-[[mu4e:msgid:008f01d15517$9b813500$d2839f00$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 2/2)]]
+# [[mu4e:msgid:008901d15517$8e3c72b0$aab55810$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 1/2)]]
+# [[mu4e:msgid:008f01d15517$9b813500$d2839f00$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 2/2)]]
 ** 2016-01-23 Samedi
 *** (1) PCR contrôle des clonages
 Le but de cette PCR est de vérifier le sens des insertions des fragments de GS
@@ -673,20 +679,233 @@ Je n'ai pour l'instant pas d'explications.
 
 Dégouté. Comment perdre son samedi en deux PCR. 
 
-** 2016-01-24 Dimanche
+** 2016-01-24 Dimanche -> 2016-01-26 Mardi
+*** Dimanche
 L'idée était de faire les extractions plasmidiques aujourd'hui, ainsi que de
 mettre les souches possédant le plasmide et l'insert dans le glycérol. Vu les
 PCR d'hier, on n'est encore sûr de rien quant aux insertions. 
 
+Donc pas de manip aujourd'hui. 
 
-** 2016-01-25 Lundi
+*** Lundi
 
+Conclave, session plénière. 
 # *** (1) Extraction Plasmidiques
 # *** (1) Ensemencements glycérols
 # *** (1) Ensemencement des tubes de LBm Amp75
 # Deux clones par insert servent à ensemencer deux tubes de LBm Amp75, dans le but
 # de 1) faire les extractions plasmidiques demain <2016-01-24 Sun> et 2) culotter
 # dans du glycérol, pour mettre au -80°C. 
+
+*** Mardi
+
+Conclave, session plénière matin. 
+Préparation powerpoint du mardi [2016-02-02 Tue]. 
+
+** 2016-01-27 Mercredi
+
+*** (1) Mise au point des PCR
+Étant donné que les PCR de Samedi n'ont pas fonctionné, je cherche à optimiser
+les PCR en utilisant d'autres amorces. Je lance deux PCR, l'une avec le couple
+=1393 M13R= et l'autre avec le couple =M13F M13R=. Le premier sert à vérifier le
+sens, le deuxième à vérifier la présence d'un insert. 
+
+**** programme
+Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135. 
+| Temps | température | 30 cycles |
+|-------+-------------+-----------|
+| 3'    |          94 |           |
+| 50''  |          94 | x         |
+| 50''  |          57 | x         |
+| 50''  |          72 | x         |
+| 4'    |          72 |           |
+**** volumes 
+|                | 1-tube | 4-tubes |
+|----------------+--------+---------|
+| ADN            |    0.5 |      1. |
+| Taq            |    0.5 |      1. |
+| amorce M13R    |    2.5 |      5. |
+| amorce 1393    |    2.5 |      5. |
+| Mgcl2          |    1.5 |      3. |
+| dNTPs          |    5.0 |     10. |
+| Tampon 10X Taq |    5.0 |     10. |
+|----------------+--------+---------|
+| eau qsp 25µL   |   32.5 |     65. |
+#+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*4/2
+
+**** contrôles
+
+#+CAPTION: Toujours rien. 
+#+CAPTION:
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 0.5\linewidth 
+[[/Volumes/HDD/stage/img/20160127_00.JPG]]
+
+On pense de plus en plus à un problème de crible. Autrement dit les milieux ne
+seraient pas assez sélectif, des colis sans le plasmide arrivent à pousser. 
+
+Ça n'explique pas l'absence d'amplification dans le témoin positif. On veut
+changer le témoin positif. Thibault va essayer demain, il doit cribler
+certains de ses clones demain. Il utilise un autre fragment lui, donc il ne va
+tester que le couple =M13R M13F=, mais ça permet de voir si on a bien le
+plasmide dans les colis qu'on utilise. 
+
+#+BEGIN_QUOTE
+Personellement je pense que l'ampicilline dans le milieu n'est pas assez
+restrictive. Peut-être que les milieux ont été coulés trop chauds ? Je ne sait
+pas si l'ampicilline est thermo-sensible. À priori d'après ce site
+là : [[http://www.snv.jussieu.fr/bmedia/ATP/transgen.htm][Transgenèse bactérienne]], l'ampicilline est "thermo-labile"…
+#+END_QUOTE
+
+*** (1) Contrôle des clonages
+On veut digérer les plasmides extraits, pour voir la taille des insertions. On
+fait donc des extractions plasmidiques sur 5mL de LB-amp75, avec deux colonies
+blanches, \beta-gal neg, et une colonie bleue, \beta-gal pos.
+
+Je lance donc aujourd'hui trois cultures de 5mL de LBamp75, pour extraire
+demain. 
+
+** 2016-01-28 Jeudi
+*** (1) PCR Thibault
+Thibault a voulu tester mes clones pour voir s'il arrivait à amplifier =M13R
+M13F=. Et donc à priori oui[fn:1:Comment apprendre l'humilité en une PCR. Lol.].
+Il n'utilise pas le même mix PCR que Florence, mais à priori ça marche beaucoup
+mieux. L'une des seules différences est qu'il utilise du DMSO pour augmenter la
+spécificité d'amplification. Selon lui, une PCR sur colonie rajoute beaucoup de
+substances dans la suspension, notamment des inhibiteurs de PCR. Je change donc
+de conditions de PCR, et lance la PCR de criblage des clones, celle que j'avais
+faite samedi [2016-01-23 Sat] mais avec d'autres conditions de PCR.
+ 
+*** (1) PCR encore et toujours. 
+But : vérifier la présence de l'insert dans les clones blancs, sensés être
+porteurs des plasmides. Je lance la PCR en utilisant les conditions du tableau
+consensus de l'équipe 4… Cette fois avec DMSO etc. Le couple d'amorce utilisé
+est le =1393 M13R=.
+
+Ça ne marche pas, pas d'amplification. Nulle part. Explication probable : je ne
+travaille pas avec le bon tampon pour la Taq ozyme. Florence utilisait encore
+l'ancienne Taq. Donc j'avais la nouvelle Taq mais pas le bon tampon.
+
+Pas de photo ici. Le gel a été imprimé par Thibault, pas enregistré sur l'ordi.
+
+*** (1) PCR encore et toujours (bis)
+But : idem. Mais avec le bon tampon. PCR lancée sur la nuit, contrôlée demain
+[2016-01-29 Fri] matin. 
+
+**** contrôle 
+
+#+ATTR_LATEX: :float t :width \linewidth 
+[[/Volumes/HDD/stage/img/20160129_00.JPG]]
+
+Toujours rien à l'horizon. 
+
+*** (1) Contrôle des clonages
+Pas eu le temps de faire les minipreps. Le but était de contrôler les plasmides
+des clones que Thibault a amplifié, de les digérer pour voir si l'insert était
+bien présent. 
+
+Manip à envisager si jamais les PCR du vendredi ne fonctionnent pas. Encore.
+
+*** (A) Analyses des données polySNP
+Avancé sur les analyses polySNP. Il reste toujours un problème de référence. Les
+SCF.position entre le fichier polySNP et le fichier PHRED ne correspondent pas.
+Ça pose problème, puisque les bases déclarées par polySNP ne sont pas les mêmes
+que celles qu'on retrouve dans le fichier POLY.
+
+Enjeu du weekend. 
+** 2016-01-29 Vendredi
+*** (1) Contrôle de la PCR de la veille
+Voir la partie correspondante. 
+*** (1) Contrôle de la présence des fragments
+Je refais la PCR qu'avait réalisé Thibault, avec le couple =M13R M13F=, dans
+l'idée de déterminer si les clones qu'on teste possèdent bien l'insert. Ce qui
+serait déjà un début d'explication quand au fait que rien n'amplifie… Je teste
+aussi les deux clones WS que Thibault avait testé, afin de voir si quelque chose
+ne cloche pas dans le mix que j'utilise. 
+
+**** Résultat :
+#+ATTR_LATEX: :float t :width \linewidth
+[[/Volumes/HDD/stage/img/20160129_01.JPG]]
+
+Rien. Encore et toujours rien. Ça commence à me péter le jonc sérieux. 
+La PCR est bien sale, mais c'est sûrement dû à la température d'hybridation du
+programme de Thibault, qui est plus basse que celle qu'utilise Florence (55
+contre 57°C.)
+
+La seule explication possible serait que le kit que j'utilise ne soit pas le
+même que celui de Thibault. J'ai pourtant tout changé, les dNTP, le tampon, la
+Taq, l'eau, j'ai rajouté du DMSO, rien n'y fait. Pas de solution là…
+*** (1) Contrôle de la qualité du kit
+Étant donné que le kit de PCR que j'utilise ne fonctionne pas alors que celui de
+Thibault marche nickel et bien propre, je refais la PCR qu'il avait fait sur les
+trois clones : un bleu possédant le plasmide à coup sûr, et deux blancs WS qui
+ont bien marché dans sa PCR. 
+
+Toujours dans 25µL, avec les conditions de PCR de Thibault et les volumes de
+Thibault. Gloire à Thibault. 
+
+**** Résultat :
+
+Il n'y en a pas. De résultat. La suite de ce commentaire sera donc censurée pour
+des raisons que nous laisserons au lecteur le plaisir de deviner.
+
+*** (1) Ensemencement LB -> miniprep
+Je lance des cultures dans LBamp75 liquide. Le but est de faire des minipreps
+demain [2016-01-30 Sat] pour extraire les plasmides, tenter les PCR à partir des
+plasmides extraits. 
+
+L'hypothèse qu'on a après avoir discuté avec Thibault et Quentin --- la dernière
+qu'il nous reste --- est qu'il est possible que j'ai prélevé trop de colonie au
+cure-dent. La PCR en aurait donc été inhibée. 
+** 2016-01-30 Samedi
+
+*** (1) Minipreps extraction plasmidiques
+Le but est d'extraire les plasmides de deux colonies SW et WS, pour vérifier
+qu'ils soient bien là, et tenter les PCR de vérification du sens sur eux. 
+
+**** Extractions plasmidiques
+Extractions utilisant le protocole NucleoSpin Plasmid.
+**** Contrôles
+
+#+CAPTION: WS1, WS2, SW1 et SW2. \\
+#+CAPTION: Seuls les WS2 et SW1 ont été extraits en quantité suffisantes. C'est quand même
+#+CAPTION: marrant que des tubes qui subissent exactement le même traitement aient des
+#+CAPTION: têtes aussi différentes les unes des autres…
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160130_00.JPG]]
+
+*** (1) PCR de vérification de présence de l'insert et du sens d'insertion
+Puisque les PCR sur colonies ne fonctionnent pas, on peut essayer d'amplifier à
+partir des plasmides extraits. Le but est toujours de voir si on a bien
+l'insert, avec le couple =M13R M13F=, et de voir dans quel sens il s'est inséré,
+avec le couple =M13R 1393=. 
+
+#+CAPTION: Toujours rien. Les puits à gauche du ladder sont ceux avec le couple =M13R M13F=, 
+#+CAPTION: ceux à droite avec le couple =M13R 1393=. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160130_01.JPG]]
+
+Étant donné qu'on ne voit rien depuis samedi dernier, alors que je n'ai
+strictement rien changé entre samedi et vendredi où les PCR marchaient encore,
+je me suis dit que c'était peut-être un problème de détection ? Le bleu de dépôt
+qui ne fonctionnerait pas ? J'ai donc essayé avec un autre bleu de dépôt, celui
+qu'utilise Raphaël et Thibault. 
+
+#+CAPTION: Pas mieux. On peut cependant noter que ce bleu est plus propre (pas de bandes
+#+CAPTION: au dessus du ladder). Penser à aliquoter du bleu, pour ne pas utiliser tout le
+#+CAPTION: temps le même.
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160130_02.JPG]]
+
+Je commence à arriver à cours de solutions là. Pourtant j'ai vraiment /tout/
+contrôlé, l'eau, le tampon, le MgCl2, les dNTPs, j'ai changé de Taq plusieurs
+fois, rien n'y fait. 
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160130_03.JPG]]
+
+
+
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
