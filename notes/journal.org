@@ -905,6 +905,240 @@ fois, rien n'y fait.
 [[/Volumes/HDD/stage/img/20160130_03.JPG]]
 
 
+\clearpage
+* 2016-02 Février
+** 2016-02-01 Lundi
+*** (1) Digestion des plasmides extraits
+Étant donné qu'on n'a pas beaucoup --- ceci est un doux euphémisme --- de
+résultats en PCR, on veut tenter de digérer nos plasmides par =HindIII= et
+=SpeI=. =HindIII= est présent sur les deux fragments, relativement commun.
+=SpeI= est présent dans le site de restriction du plasmide pGEM-T. 
+
+#+CAPTION: La carte de restriction du fragment weak-strong. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160201_00.png]]
+
+#+CAPTION: La carte de restriction du fragment strong-weak. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160201_01.png]]
+
+Les mélanges sont réalisés en conditions suivantes :
+
+|                  | vol  |
+|------------------+------|
+| eau              | 14µL |
+| 10X buffer Tango | 2µL  |
+| DNA              | 1µL  |
+| Bcu1 (Spe1)      | 1µL  |
+| HindIII          | 2µL  |
+
+Suivant les recommandations présentées là : 
+[[https://www.thermofisher.com/fr/fr/home/brands/thermo-scientific/molecular-biology/thermo-scientific-restriction-modifying-enzymes/restriction-enzymes-thermo-scientific/double-digest-calculator-thermo-scientific.html][Double Digest Calculator—Thermo Scientific | Thermo Fisher Scientific]]
+
+Les deux tubes sont incubés à 37°C sur la nuit. Le but est de les faire migrer
+demain [2016-02-02 Tue 08:00]. 
+** 2016-02-02 Mardi
+*** (D) Réunion projet 
+Réunion projet Laurent Xavier Franck. Présentation des résultats polySNP et
+discussion autour de la suite des manips. 
+*** (D) Présentation sujet master
+*** (1) Migration des digestions plasmidiques de la veille.
+
+Dans la première migration, je n'ai pas fait migré assez de volume. En fait il
+faut faire migrer l'ensemble du volume de la digestion (20µL). 
+
+#+CAPTION: gel: 1%, marqueur: 1kb \\
+#+CAPTION: Pas assez de volume de migration. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160202_00.JPG]]
+
+Je n'avais pas assez mis de volume de plasmide. Il faut au minimum 200ng de
+plasmide pour que ça marche bien, et j'ai mis 1µL à 25ng/µL… Ça ne pouvait pas
+marcher… On voit quand même quelques choses, mais ça reste bien flou. 
+
+#+CAPTION: gel: 1%, marqueur: 1kb \\
+#+CAPTION: Pas assez de masse de plasmide à digérer. Ça ne ressemble pas à grand chose. 
+#+CAPTION: Donc on refait. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160202_01.JPG]]
+
+On relance donc une digestion avec les mêmes enzymes, sur l'ensemble du volume
+restant de plasmide. Étant donné qu'il ne restait plus beaucoup de volume (7µL
+en regardant à la pipette), j'ai choisi de ne pas faire de témoin non digéré,
+pour maximiser les chances de fonctionnement de la PCR. Les migrations sont
+réalisées demain [2016-02-03 Wed]. 
+** 2016-02-03 Mercredi
+*** (1) Migration des digestions plasmidiques de la veille. 
+
+#+CAPTION: gel: 1%, marqueur: 1kb, tps expo: 1''400'''\\
+#+CAPTION: Le puit du bas est le SW, le puits du haut est le WS.
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160203_00.JPG]]
+
+Pour mieux voir le ladder, moins d'exposition :
+
+#+CAPTION: gel: 1%, marqueur: 1kb, tps expo: 1'' \\
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160203_01.JPG]]
+*** (1) Contrôle du produit de purification
+Dans la perspective où on relancerait des clonages, on peut se re-servir du
+produit de purification du [2016-01-20 Wed]. Il faut par contre vérifier que les
+produits sont toujours bien jolis. On les fait migrer sur gel. 
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
+#+CAPTION: Les deux produits sont cleans. On peut les utiliser pour la ligature. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160203_02.JPG]]
+
+*** (1) Démarche de clonage
+Note de Franck concernant la marche à suivre pour les transformations de
+/E.coli/. 
+
+#+BEGIN_EXAMPLE
+- migration purif gel pour validation.
+- refaire ligature pGEM-T SW WS.
+- transformations cellules compétentes
+- faire un témoin cellule compétente + H2O. 
+- étalement sur XGal Amp75 IPTG.
+#+END_EXAMPLE
+
+*** (1) Mise au point des PCR
+Je veux regarder d'où vient le problème des PCR. Les PCR d'Aurélie fonctionnent.
+On suspecte le lot de MgCl2 ou le lot de Taq. 
+
+Je fais donc trois mix PCR : un mix avec mes produits, témoins négatif ; un mix
+avec mes produits mais le MgCl2 d'Aurélie ; un mix avec mes produits mais un
+nouveau lot de Taq. 
+
+Ce sont des PCR sur colonies : les trois colonies testées sont 1 colonie WS
+bleue et 2 colonies WS blanches. Le couple d'amorce est le =M13RF=, pour
+amplifier même ceux qui n'ont pas l'insert dans le bon sens. 
+
+**** Résultat :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''200'''  vol 5µL \\
+#+CAPTION: Il semblerait bien que ce soit le MgCl2 qui nous pose des problèmes. 
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160203_03.JPG]]
+
+*** (1) PCR de la dernière chance
+Il semblerait que le MgCl2 nous pose des problèmes. Je veux donc tenter une
+dernière PCR sur les transformants avant de relancer des ligatures dans pGEM-T.
+J'ai donc utilisé le MgCl2 d'Aurélie, et la Taq Ozyme classique, avec le couple
+d'amorce =1393 M13R=. 
+
+Je n'ai pas la photo du gel, puisque c'est Quentin qui a déposé et prit la
+photo, mais c'est clairement une amplification qui a fonctionné !
+
+On a donc potentiellement deux clones SW, aux positions 2 et 4 sur la boîte, et
+deux clones WS, aux positions 2 et 3, qui auraient l'insert, et dans le bon
+sens. Demain on boit une bière si tout marche ! 
+
+J'ai dans l'idée de faire une migration sympa demain, pour qu'on voit bien les
+bandes bien discriminées. Les colonies sont également resuspendues dans 5mL de
+LBamp100, pour être sûr de ne garder que les cellules qui sont bien résistantes
+à l'Ampicilline. 
+
+*** (D) Préparation cellules compétentes
+On veut préparer des cellules compétentes en suivant le protocole mis au point
+par Aurélie. Le but est d'avoir un backup en cas de problème avec les cellules
+compétentes TOP10. 
+
+Aujourd'hui préparation de CaCl2, stérilisation par filtration. 
+** 2016-02-04 Jeudi
+*** (1) Migration des produits de la PCR de la dernière chance
+Pour faire une jolie photo des produits de la PCR que l'histoire retiendra comme
+la PCR de la dernière chance, je fais migrer tranquillement à 50V. 
+
+#+CAPTION: gel1%  L:5µL-1kb  tps 0''700'''  vol 5µL \\
+#+CAPTION: Il semblerait bien que les clones qu'on a testé sont les bons : 
+#+CAPTION: les clones SW 2 et 4 (sur la boîte, 1 et 3 ici)
+#+CAPTION: et les clones WS 2 et 3. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160204_01.JPG]]
+
+*** (1) Extractions plasmidiques des clones 
+J'utilise 1 mL des quatre cultures de nuit pour extraire les plasmides, dans le
+but de lancer les digestions =SpeI HindIII= sur la nuit.
+
+Le volume d'élution final est de 50µL. 
+**** Nanodrop :
+
+| clone | mesure | concentration |
+|-------+--------+---------------|
+| WS2   |      1 |          23.4 |
+| WS2   |      2 |          24.0 |
+| WS2   |      3 |          24.8 |
+| WS3   |      1 |          24.6 |
+| WS3   |      2 |          24.1 |
+| WS3   |      3 |          24.2 |
+| SW2   |      1 |          16.2 |
+| SW2   |      2 |          15.3 |
+| SW2   |      3 |          15.5 |
+| SW4   |      1 |          19.6 |
+| SW4   |      2 |          19.5 |
+| SW4   |      3 |          20.1 |
+*** (1) Digestions des plasmides HindIII et SpeI
+Je réalise des digestions depuis les plasmides extraits pour vérifier le sens
+d'insertion.
+
+**** Volumes
+| plasmide     | 12 |
+| eau          |  3 |
+| tango buffer |  2 |
+| =HindIII=    |  2 |
+| =SpeI=       |  1 |
+
+Placés une nuit à 37°C. 
+*** (1) Préparations cellules compétentes homemade
+On a préparé des cellules compétentes =JM109= sortie du -80 hier, en suivant le
+protocole d'Aurélie :
+
+#+BEGIN_EXAMPLE
+  Préparation de cellules 
+  compétentes /E.coli/ 17.1 et SM10. 
+  ----------------------------------
+
+  - culture en LB de la souche sous agitation à 37°C 
+    sur la nuit.
+  - préculture en LB sous agitation à partir de la culture 
+    de nuit.
+
+  Toutes les manips se font sur la glace ou au froid, en 
+  évitant au maximum tout choc thermique. 
+
+  - contrôler DO_600 = 0.5 -- 0.6
+  - centrifuge 1.5mL de culture 1 min à 4°C.
+  - jeter le surnageant
+  - resuspendre dans 700mL de CaCl2 50mM froid.
+  - centrifuger 1' à 4°C.
+  - laisser sur glace 10'.
+  - centrifuger 1' à 4°C.
+  - jeter le surnageant.
+  - resuspendre dans 100µL de CaCl2 50mM froid. 
+#+END_EXAMPLE
+
+Elles sont utilisées pour la transformation en utilisant la ligature d'hier. 
+*** (1) Transformations TOP10 et JM109
+On réalise les transformations TOP10 en utilisant les cellules qui avaient
+fonctionnée la dernière fois (référence de lot : )
+
+Emplacement des cellules dans le -80°C :
+#+BEGIN_EXAMPLE
+|---+---+---+---|
+|   |   |   |   |
+|---+---+---+---|
+|   |   |   |   |
+|---+---+---+---|
+| x |   |   |   |
+|---+---+---+---|
+|   |   |   |   |
+#+END_EXAMPLE
+
+*** (D) coulé boîte Xgal amp75 iptg
+*** (D) préparé 4mL de Xgal
 
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
@@ -920,6 +1154,4 @@ latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
 * todos                                                                         :noexport:
-** DONE photos migration du [2016-01-19 Tue]
-CLOSED: [2016-01-20 Wed 14:30]
-** TODO insérer photos des transformations de coli ? <2016-01-22 Fri>
+** TODO migration pcr mercredi 03

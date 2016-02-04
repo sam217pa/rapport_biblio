@@ -22,7 +22,6 @@ ajoutés. La suspension est incubée \si{1\hour} à \si{37\celsius} sous agitati
 \SI{100}{\nano\mole} de chaque suspension sont étalés sur un milieu
 LBA+kanamycine. Les milieux sont incubés \si{24\hour} à \si{37\celsius}. 
 
-
 Les clones transformants sont isolés sur LBA +
 kanamycine[fn:2:[2016-01-06 Wed]]. Les milieux sont incubés \si{24\hour} à
 \si{37\celsius}.
@@ -40,6 +39,45 @@ dans \si{1\milli\liter} et placé en cryotubes[fn:4:Annotation : WS E.coli TOPO
 Les extractions plasmidiques sont faites avec le kit /NucleoSpin Plasmid/. Les
 plasmides ont été élués dans \si{50\micro\liter} de tampon AE, et placés au
 \si{-20\celsius}. 
+
+** Ligature dans pGEM-T
+À ce stade, on a amplifié le gène synthétique avec de la Taq Ozyme (ce qui est
+d'ailleurs surprenant ?), qu'on a ligaturé dans le plasmide pGEM-T. 
+
+** Clonage des pGEM-T dans /E.coli/
+Les plasmides pGEM-T porteurs du gène synthétique qu'on leur insère sont ensuite
+clonés dans des /E.coli/ TOP10 thermocompétentes, ce qui nous a posé un certain
+nombre de problèmes, étant donné que les cellules qu'on utilisait étaient
+périmées depuis longtemps. Les transformations ont été faites dans du milieu SOC
+à \si{37\celsius}. L'ensemble de ce milieu est ensuite étalée sur du milieu
+LBamp75 + XGal + IPTG : les clones porteurs de l'insert sont blancs, à cause de
+la disruption du gène codant la sous-unité \alpha de la \beta-galactosidase,
+les clones porteurs du plasmides sont bleus.
+
+On a finalement obtenu un assez grand nombre de clones. Ces clones ont été
+repiqués sur un même milieu LBamp75 + Xgal + IPTG, dans le but de vérifier si
+les clones qu'on obtenait blancs étaient toujours blancs.  
+
+Il nous reste cependant à vérifier le sens d'insertion des fragments. En effet,
+le clonage dans le pGEM-T repose sur l'adjonction par la Taq de =A= sortant, à
+l'extrémité franche de chaque brin. Mais le brin peut s'insérer dans le plasmide
+dans le sens qui lui chante le plus. On a donc cherché en PCR à amplifier
+spécifiquement le fragment d'insertion avec le couple d'amorce =M13R= et =1393=.
+L'amorce =M13R= est placée en aval du site de clonage, et l'amorce =1393=
+(l'amorce V2) est placée à l'extrémité 3' du gène synthétique. De nombreux
+problèmes de PCR nous ont bien compliqué la vie pendant plus d'une semaine. À
+dater d'aujourd'hui [2016-02-03 Wed], il semblerait que ce soit le lot de Taq ou
+le lot de MgCl2 qui nous cause autant de soucis. 
+
+On a donc cherché à procéder autrement pour vérifier le sens d'insertion : à
+l'ancienne, avec une digestion par des enzymes de restriction. On a donc extrait
+les plasmides d'une culture de nuit de 5mL des gènes WS et SW, qu'on a digéré
+par les enzymes HindIII, présente sur le gène synthétique et SpeI présente en
+amont du site de clonage.   
+
+Je crois personnellement qu'il serait préférable de repartir des clonages,
+d'amplifier le gène synthétique, de refaire les clonages dans le pGEM-T, et de
+screener proprement l'ensemble des clones purifiés en PCR.
  
 * Séquençage des ancres
 Dans certaines séquences issues des résultats de Florence, on observe un taux de
@@ -83,6 +121,20 @@ On sélectionne donc tous les candidats qui présentent des néo-mutations, d'ap
 l'analyse des données de SNP calling. L'ADN de ces candidats est disponible en
 barrette au congélateur dans la mallette noire. Des PCR cible de la séquence des
 ancres sont réalisées.
+
+** Séquençage
+Les produits de PCR ont été envoyés à séquencer à GenoScreen en tube, dans la
+même enveloppe que les produits PCR de la manip (3). Les séquences ont été
+envoyées dans la foulée. On salue la rapidité de GenoScreen, par contre les
+séquences sont proprement dégueulasse, avec une qualité moyenne de 30. 
+
+C'est parfaitement incompréhensible qu'on ait des doubles pics à des positions
+où la séquence ancre est censée être à 100% homologue avec le gène sauvage. 
+
+La suite des manips n'a pas été clairement déterminée, mais je pense réamplifier
+l'ADN des ancres avec une Taq platinum (proofreading, plus haute fidélité), et
+envoyer à séquencer à GATC, pour être dans les mêmes conditions à chaque fois. 
+
 * Séquençage des clones avec des positions polymorphes
 Certains SNP dans les populations séquencées montrent des positions
 hétérozygotes. Autrement dit, certains individus semblent avoir réparé à cette
@@ -108,5 +160,48 @@ devraient avoir l'allèle W, et 50% l'allèle S.
 La séquence du locus d'intérêt est amplifiée par PCR sur colonie. Pour chaque
 transformant initial, 4 isolats sont amplifiés, pour un total de 24 séquences.  
 
+Les séquences reçues sont propres et nettes. 
+
+Par contre, quand on regarde les alignements, les quatre séquences sont
+identiques (on n'a à ce jour [2016-02-03 Wed] pas vérifié si la base appelée
+correspond au pic majoritaire des séquences issues des manips de Florence, mais
+on s'attend quand même à un oui…). Étant donnée l'état des analyses au moment de
+l'envoi des séquences, on ne pouvait pas savoir qu'il nous faudrait en séquencer
+plus. En fait, on s'attendait à ce que ce soit une absence de réparation. Sous
+cette hypothèse, on aurait autant de conversion vers S que vers W. Au vu des
+analyses récentes, il semblerait que le ratio médian entre les pics soit plutôt
+de l'ordre de $0.1$ à $0.2$. La probabilité d'interception d'une séquence avec
+un double pic est clairement faible avec 24 séquences, dont 12 par manip. 
+
+On a donc changé le design. Le but est maintenant de déterminer 1 clone
+particulièrement intéressant, qui semble avoir un ratio médian assez élevé, de
+le sous cloner, d'en séquencer un plus grand nombre. On veut également séquencer
+en parallèle la population initiale, pour voir si on retrouve toujours ces
+doubles pics, ou si ce sont des artéfacts de séquençage. L'hypothèse qu'on a,
+étant donné la fréquence d'association des doubles pics avec nos marqueurs,
+est que les doubles pics ne sont pas dûs à des artéfacts de séquençage, mais
+bien à la présence de deux populations différentes dans le tube. 
+
+#+CAPTION: Le point central représente la médiane des ratios, les barres d'erreur
+#+CAPTION: la mad (la médiane des écarts absolus à la médiane.)
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 1\linewidth :environment figure*
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/notes/img/ratiomad.png]]
+
+On a également décidé de regarder s'il n'y avait pas une association spécifique
+entre le taux d'apparition des doubles pics et la qualité de la séquence dans
+les puits voisins (dans la plaque). Autrement dit, le double pic pourrait être
+dû à des contaminations. Sous cette hypothèse, il y aurait une association entre
+le taux de double pic et la source de la contamination. On veut donc essayer de
+faire une sorte de démineur de l'espace des plaques des contaminations des
+clones des transformants cette phrase est beaucoup trop longue mais on saisit
+l'idée.  
+
+
+
 * configuration                                                                 :noexport:
+# #+latex_class: tufte-handout
+#+LANGUAGE: fr
+#+options: H:4 toc:nil
 #+latex_header: \usepackage{booktabs}
+#+latex_header: \usepackage{svg}
