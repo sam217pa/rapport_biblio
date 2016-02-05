@@ -1139,6 +1139,85 @@ Emplacement des cellules dans le -80°C :
 
 *** (D) coulé boîte Xgal amp75 iptg
 *** (D) préparé 4mL de Xgal
+\clearpage
+
+** 2016-02-05 Vendredi 
+*** (D) préparé 400mL de gel à 1%
+*** (D) coulé 250mL de LBamp75 Xgal
+*** (1) migration des digestions HindIII SpeI
+Les digestions =HindIII= et =SpeI= de la veille migrent sur un gel flambant neuf
+préparé de frais. 
+
+**** Résultat :
+
+#+CAPTION: gel1%  L:5µL-1kb  tps 0''500'''  vol 5µL et 20µL \\
+#+CAPTION: 
+#+CAPTION: 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160205_00.JPG]]
+
+
+Le résultat n'est pas très net. C'est pas super clean. Du coup on profite des
+séquences gratuites offerte par GATC hier pour les envoyer. 
+
+*** (1) Séquençage des inserts dans le plasmide
+Les tubes sont déposés dans la boîte de GATC au 3^e. 
+
+**** Conditionnement :
+Notes de GATC sur le conditionnement des tubes à envoyer à séquencer. 
+
+#+BEGIN_QUOTE
+Purified plasmid DNA or purified PCR framents with primer premixed in tubes
+1. 5µL of template DNA with either o following concentrations (plasmid DNA or
+   PCR product).
+2. add 5µL of primer with following concentration : 5µM. 
+Please send total sample amount of 10µL in 1.5mL tubes. 
+#+END_QUOTE
+
+#+BEGIN_EXAMPLE
+|
+|
+|
+|
+| Colle ici les codes barres 
+|
+|
+|
+|
+#+END_EXAMPLE
+
+*** (1) Repiquage des colonies bleues - blanches
+Les transformations de cellules compétentes par les produits de ligature du
+fragment WS et SW avec le pGEM-T ont --- à peu près --- fonctionné. 
+
+Les transformations des cellules compétentes faites maison sont un joli flop. En
+fait à la fin de l'après-midi on voit quelques colonies. Je les laisse à 37°C
+jusqu'à demain pour les tester en même temps que les repiquâts de TOP10.
+
+Les transformations des cellules compétentes TOP10 n'en sont pas un. Ça a plutôt
+bien fonctionné, on voit assez bien les colonies bleues et blanches. Le but est
+de les repiquer sur un nouveau milieu LBAmp75 Xgal pour confirmation.
+*** (1) PCR pAVA - Ancre
+Le but est d'amplifier séparément les fragments aphA3, présent sur le plasmide
+pAVA, et le fragment ancre, présent sur l'ADN génomique d'/Acinetobacter/.
+L'amplification permettra de les insérer dans les plasmides pWS et pSW avec le
+kit InFusion. La manip est prévue pour [2016-02-08 Mon]. 
+
+Amorces aphA3 : =1408 1409=. 
+Amorces ancre : =1410 1411=. 
+
+Je fais plusieurs tubes de chaque, pour l'instant je ne sais pas de combien de
+matos j'aurai besoin lundi pour le kit InFusion. 
+
+Résultat : rien.
+
+Toujours ces problèmes de PCR qui traînent. La Taq que j'ai utilisée ne semble
+pas marcher. Cette fois le MgCl2 a bien marché, puisque Raphaël a fait une PCR
+avec le même kit que moi, mais avec sa Taq.
+
+J'ai donc relancé la PCR avec la Taq de Raphaël. Ces problèmes de matos daubé
+commencent à me ``courir sur le haricot'', pour employer une expression bien
+fleurie. 
 
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
@@ -1154,4 +1233,8 @@ latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
 * todos                                                                         :noexport:
-** TODO migration pcr mercredi 03
+** DONE migration pcr mercredi 03
+CLOSED: [2016-02-05 Fri 08:49]
+** TODO photo migration digestion
+** TODO photo pcr apha3
+** TODO photo pcr ancre

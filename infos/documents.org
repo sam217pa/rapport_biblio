@@ -24,3 +24,5 @@ Un schéma global avec les différentes étapes pour construire le transformant.
 ** pWKanancre features
 ** TOPO-TA cloning kit, reference guide
 ** transform chemically competent cells TOP10
+** lightrun gatc
+Les deux barcodes gratuits qu'il reste. Ils sont déjà activés chez GATC. 
