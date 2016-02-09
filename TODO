@@ -73,28 +73,41 @@ CLOSED: [2016-01-23 Sat 11:37]
 *** DONE suspendre clones confirmés transformants dans LB liquide + Amp75
 CLOSED: [2016-02-03 Wed 18:40]
 <2016-01-23 Sat 11:00>
-*** TODO faire migrer produit PCR 
+*** DONE faire migrer produit PCR 
+CLOSED: [2016-02-04 Thu 11:36]
 <2016-02-04 Thu 08:30>
-*** TODO préparer milieu LBamp75 Xgal IPTG
+*** DONE préparer milieu LBamp75 Xgal IPTG
+CLOSED: [2016-02-04 Thu 11:36]
 <2016-02-04 Thu 09:00>
-*** TODO suspendre 100µL et 50 µL de culture dans 5mL de LB
+*** DONE suspendre 100µL et 50 µL de culture dans 5mL de LB
+CLOSED: [2016-02-04 Thu 11:37]
 <2016-02-04 Thu 09:30>
-*** TODO extractions plasmidiques 
+*** DONE extractions plasmidiques 
+CLOSED: [2016-02-04 Thu 11:37]
 <2016-02-04 Thu 09:45>
-*** TODO dosage nano-drop
+*** DONE dosage nano-drop
+CLOSED: [2016-02-04 Thu 11:37]
 <2016-02-04 Thu 10:30>
-*** TODO digestion HindIII SpeI 500ng
+*** DONE digestion HindIII SpeI 500ng
+CLOSED: [2016-02-04 Thu 18:40]
 <2016-02-04 Thu 11:00>
-*** TODO suivre protocole préparation aurélie
+*** DONE suivre protocole préparation aurélie
+CLOSED: [2016-02-04 Thu 18:40]
 <2016-02-04 Thu 13:30>
-*** TODO transformation coli TOP10 et homemade
+*** DONE transformation coli TOP10 et homemade
+CLOSED: [2016-02-04 Thu 18:40]
 penser au témoin eau. 
 <2016-02-04 Thu 15:00>
-*** TODO étalements des transfos sur LBAmp75 Xgal IPTG
+*** DONE étalements des transfos sur LBAmp75 Xgal IPTG
+CLOSED: [2016-02-04 Thu 18:41]
 <2016-02-04 Thu 17:00>
-*** TODO glycérols 
+*** DONE glycérols 
+CLOSED: [2016-02-05 Fri 19:18]
 <2016-02-05 Fri 11:00>
-*** TODO PCR triple => construction GS-ATB-ANCRE
+*** TODO purif des PCR apha3 et ancre
+<2016-02-08 Mon 10:00>
+*** TODO digestion plasmide =SpeI=
+*** TODO clonage InFusion
 *** TODO envoyer séquencer le WT dans le même run
 ** (2) Séquencer les ancres                                                     :MANIP2:
 *** DONE savoir si on séquence toutes les ancres
@@ -224,11 +237,14 @@ CLOSED: [2016-01-18 Mon 15:59]
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-02-01 Mon .+1d>
+SCHEDULED: <2016-02-06 Sat .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-01-27 Wed 15:56]
+:LAST_REPEAT: [2016-02-05 Fri 19:18]
 :END:
+- State "DONE"       from "TODO"       [2016-02-05 Fri 19:18]
+- State "DONE"       from "TODO"       [2016-02-04 Thu 18:41]
+- State "DONE"       from "TODO"       [2016-02-03 Wed 18:41]
 - State "DONE"       from "TODO"       [2016-01-30 Sat 15:56]
 - State "DONE"       from "TODO"       [2016-01-29 Fri 15:56]
 - State "DONE"       from "TODO"       [2016-01-28 Thu 15:56]
@@ -284,8 +300,10 @@ SCHEDULED: <2016-02-10 Wed 18:00 .+1w>
 * ÉCHÉANCES                                                                     :RDV:
 ** DONE Galette des Master <2016-01-18 Mon 16:30>
 CLOSED: [2016-01-18 Mon 18:31]
-** RDV! Recycler présentation sujet stage <2016-02-04 Thu>
-** RDV! Présentations sujets masters
+** DONE Recycler présentation sujet stage <2016-02-04 Thu>
+CLOSED: [2016-02-04 Thu 18:41]
+** DONE Présentations sujets masters
+CLOSED: [2016-02-04 Thu 18:41]
 <2016-02-02 Tue> et <2016-02-04 Thu>
 
 | mardi    | jeudi  |
@@ -313,9 +331,12 @@ CLOSED: [2016-01-22 Fri 15:51]
 ** TODO lire les deux papiers polySNP
 
 * capture
-** TODO ramener café                                                            :LABO:
+** TODO faire tableur salle BET
+** DONE ramener café                                                           :LABO:
+CLOSED: [2016-02-08 Mon 12:57]
 [2016-01-04 Mon 16:44]
-** TODO acheter colle scotch
+** DONE acheter colle scotch
+CLOSED: [2016-02-08 Mon 12:57]
 ** DONE diluer amorces                                                         :CONFIG:
 CLOSED: [2016-01-18 Mon 18:31]
 [2016-01-11 Mon 11:48]

@@ -25,3 +25,5 @@ TODO_archive
 /rapportBib/titlepage.pages
 magit/
 *.toc
+*.xmind
+DaSiRe/

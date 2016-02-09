@@ -1140,7 +1140,6 @@ Emplacement des cellules dans le -80°C :
 *** (D) coulé boîte Xgal amp75 iptg
 *** (D) préparé 4mL de Xgal
 \clearpage
-
 ** 2016-02-05 Vendredi 
 *** (D) préparé 400mL de gel à 1%
 *** (D) coulé 250mL de LBamp75 Xgal
@@ -1218,6 +1217,77 @@ avec le même kit que moi, mais avec sa Taq.
 J'ai donc relancé la PCR avec la Taq de Raphaël. Ces problèmes de matos daubé
 commencent à me ``courir sur le haricot'', pour employer une expression bien
 fleurie. 
+
+** 2016-02-08 Lundi
+*** (1) confirmation des colonies bleues - blanches
+Les colonies des transformations de jeudi ont été repiquées sur milieu LBamp75
+pour confirmation du phénotype de résistance et l'aspect blanc de la colonie.
+Elles ont été sorties samedi à 13H. 
+
+*** (1) Migration des PCR aphA3 et ancre
+Les PCR de vendredi destinées à être insérées dans le plasmide pGEM-T SW et WS
+sont contrôlées sur gel.
+
+| amorces     | fragment | taille attendue |
+|-------------+----------+-----------------|
+| =1408 1409= | aphA3    |            1290 |
+| =1410 1411= | ancre    |            1061 |
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.4''  vol 5µL \\
+#+CAPTION: Les trois ADN génomiques fonctionnent. Les trois plasmides pAVA porteurs de aphA3 testés fonctionnent aussi.
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160208_00.JPG]]
+
+Les produits PCR sont donc purifiés avec le kit PCR clean up.
+
+*** (1) Purification des fragments PCR aphA3 et ancre
+Les PCR sont purifiées via le kit PCR clean up. Je choisis deux tubes sur les
+trois amplifiés pour ne pas gaspiller de réactif. Volume d'élution final 25µL.
+Restent 20µL après la migration. 
+**** Résultat :
+
+Voir figure [[fig:purif0208]]. 
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
+#+CAPTION: Les deux fragments PCR par amplification semblent clean. 
+#+CAPTION: Ils sont conservés à 4°C en attendant la fusion InFusion.
+#+LABEL: fig:purif0208
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160208_01.JPG]]
+
+# *** (1) Préparation du kit InFusion
+# *** (1) Digestion des plasmides par =SpeI=
+# On ouvre le plasmide, pour la réaction InFusion. Les amorces sont conçues de
+# façon à ligaturer avec la queue de l'amorce =1408= en 5', et la queue de l'amorce
+# =1411= en 3'.
+*** (D) nettoyage salle BET
+Nettoyé toutes les cuves, changé les bains TBE, mis en place le compteur
+d'utilisation. 
+*** (A) Mise au point simulation contamination 
+J'ai discuté avec Laurent pour la mise au point d'une simulation qui permettrait
+de tester si la répartition des puits présentant des séquences avec des pics
+secondaires pourrait être attendue aléatoirement. 
+*** (D) mise au point Franck
+On a reçu les séquences des inserts dans les plasmides. Elles semblent
+contaminées. Les 250 premières bases correspondent à /Acinetobacter/, mais au
+delà la séquence est clairement bruitée. Ça pose problème. On ne veut pas avoir
+de doutes quant à la qualité du plasmide qu'on insère par le kit InFusion.
+
+Donc l'idée est d'analyser les séquences par blast, de voir si on a bien la
+séquence attendue en alignant avec la séquence des SW et WS. On veut également
+repartir des nouveaux clonages, screener quelques clones pour repartir des ces
+clones là. En dernier recours, on peut transformer /E.coli/ par les extractions
+plasmidiques et re-screener les clones, de façon à purifier les plasmides (1
+transformant = 1 colonie = 1 plasmide).
+
+*** (1) PCR de screening des clones de vendredi
+Je réalise une PCR avec amorces =1393 M13R= pour vérifier la présence de
+l'insert et connaître son sens. Résultat :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.8''  vol 5µL \\
+#+CAPTION: Pas mal de chance cette fois ! L'insert s'est mis dans le bon sens
+#+CAPTION: dans quasiment tous les clones testés. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160209_00.JPG]]
 
 * config                                                                       :noexport:
 #+LATEX_CLASS: journal
