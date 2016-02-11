@@ -6,6 +6,7 @@
 # manip (3) : séquençage des hétérozygotes
 # manip (D) : Divers, maintenance labo
 # manip (A) : analyses 
+# manip (B) : bibliographie
 
 #+TOC: headlines 2
 
@@ -1217,7 +1218,6 @@ avec le même kit que moi, mais avec sa Taq.
 J'ai donc relancé la PCR avec la Taq de Raphaël. Ces problèmes de matos daubé
 commencent à me ``courir sur le haricot'', pour employer une expression bien
 fleurie. 
-
 ** 2016-02-08 Lundi
 *** (1) confirmation des colonies bleues - blanches
 Les colonies des transformations de jeudi ont été repiquées sur milieu LBamp75
@@ -1254,11 +1254,6 @@ Voir figure [[fig:purif0208]].
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160208_01.JPG]]
 
-# *** (1) Préparation du kit InFusion
-# *** (1) Digestion des plasmides par =SpeI=
-# On ouvre le plasmide, pour la réaction InFusion. Les amorces sont conçues de
-# façon à ligaturer avec la queue de l'amorce =1408= en 5', et la queue de l'amorce
-# =1411= en 3'.
 *** (D) nettoyage salle BET
 Nettoyé toutes les cuves, changé les bains TBE, mis en place le compteur
 d'utilisation. 
@@ -1286,10 +1281,233 @@ l'insert et connaître son sens. Résultat :
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.8''  vol 5µL \\
 #+CAPTION: Pas mal de chance cette fois ! L'insert s'est mis dans le bon sens
 #+CAPTION: dans quasiment tous les clones testés. 
+#+LABEL: fig:pcr0208
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160209_00.JPG]]
+** 2016-02-09 Mardi
+*** (D) coulé 300 mL gel 1%
+*** (1) migration des PCR d'hier
+*** (A) terminé matrice de contamination simulée 
+#+BEGIN_QUOTE
+Bonsoir Laurent,
+
+J'ai fais tourner la simulation dont on parlait hier. J'ai généré 10 000 plaques
+avec N puits contaminés (ie avec pics secondaires à des positions de SNP
+marqueurs) répartis aléatoirement sur la plaque, où N est le nombre de puits
+contaminés dans la plaque W ou S. J'ai ensuite compté la moyenne par puit des
+voisins contaminés, que j'ai moyenné sur la plaque entière. J'ai regardé la
+distribution des 10 000 moyennes obtenues, sur laquelle j'ai reporté la valeur
+de notre plaque weak. (N = 35).
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/tmp/simul_weak.png]]
+
+Sous réserve de la pertinence du test, il semblerait bien que
+la répartition de nos puits avec pics secondaire ne soit pas aléatoire (sous la
+loi normale, p=0.0033).
+
+Pour la plaque Strong : 
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/tmp/simul_strong.png]]
+
+N est moins grand (N = 11), la
+distribution n'a pas le même aspect. Ces séquences contaminées semblent
+réparties aléatoirement.
+
+On peut en parler demain matin éventuellement ?
+
+Bonne soirée, Sam
+#+END_QUOTE
+*** (1) Ensemencement LBamp75 clones positifs
+L'idée est d'extraire demain les plasmides, et de les envoyer à GATC dans
+l'après midi pour séquencer et être sûr du sens d'insertion et de la qualité du
+plasmide qu'on utilise pour les clonages. 
+
+Clones relancés : =sw1 sw4 ws1 ws4= (voir figure [[fig:pcr0208]] )
+
+J'ai donc lancé quatre cultures des clones dans LBamp75, pour extraire les
+plasmides demain matin, et envoyer les plasmides à séquencer dans l'après-midi. 
+** 2016-02-10 Mercredi
+*** (1) Extractions des plasmides pGEM-T 
+J'ai extrait les plasmides des quatre cultures de nuit que j'avais lancé hier,
+avec le protocole classique nucleospin plasmid. Le but est de les envoyer à
+séquencer à GATC pour confirmer la présence de l'insert.
+
+Contrôle de l'extraction : 
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
+#+CAPTION: Les plasmides WS4 et SW1 semblent de bon candidats pour le séquençage. 
+#+CAPTION: La migration est dégueulasse : pour une raison que j'ignore, le bleu de charge ``remontait'' dans le puit au lieu de descendre ?
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160210_00.JPG]]
+
+Dosage nanodrop :
+
+| plasmide | mesure |
+|----------+--------|
+| WS1      |   54.6 |
+|          |   54.3 |
+| WS4      |  122.8 |
+|          |  123.6 |
+| SW1      |   58.2 |
+|          |   57.7 |
+| SW4      |   27.3 |
+|          |   26.4 |
+
+*** (1) Digestion pGEM-T par =SpeI=
+On ouvre le plasmide avec l'enzyme =SpeI= pour pouvoir accoler les fragments par
+le kit InFusion. Étant donné les concentrations de plasmide, le mélange
+réactionnel est de la composition suivante :
+
+|              | plasmide WS | plasmide SW |
+|--------------+-------------+-------------|
+| tampon Tango |           2 |           2 |
+| =SpeI=       |           1 |           1 |
+| H2O          |           9 |           0 |
+| ADN          |           8 |          17 |
+|--------------+-------------+-------------|
+| Volume final |          20 |          20 |
+
+*** (A) Réunion Laurent Vincent
+On a discuté avec Laurent et Vincent de ce problème de contamination. Il
+semblerait bien au vu de la simulation d'hier que le patron de répartition des
+séquences ne soit pas aléatoire. L'idée est donc d'étudier manuellement dans les
+séquences voisines, si la contamination n'est pas due dans les puits voisins à
+des tracts dont la longueur des traces de conversion effective correspondrait à
+celle de ce que j'appellerai /pseudo-trace/ de conversion dans les séquences
+contaminées.
+
+On veut aussi regarder la répartition de la fréquence de pic secondaire à une
+position donnée. On pourrait donc voir à nos positions de SNP une hausse de la
+fréquence. Ça permettrait de discrimer le bruit de fond dû à des erreurs de
+séquençage et le signal spécifique à nos SNP. Il n'est en effet pas impossible
+que des pics secondaires soient associées de façon non spécifique à nos SNP. Il
+faut donc représenter en $x$ la position sur le génome, et en $y$ la fréquence
+de pic secondaire à la position $x$.
+
+*** (B) Biblio
+Un peu de biblio ne fait pas de mal. Relu les cinq grands piliers du stage,
+cite:lassalle_gc-content_2015 cite:hildebrand_evidence_2010
+cite:hershberg_evidence_2010 cite:reichenberger_prokaryotic_2015,
+etc…
+
+
+\clearpage
+
+** 2016-02-11 Jeudi
+*** (1) Contrôle des digestions =SpeI=
+On dépose 2µL des produits de digestion sur un gel 0.8% bien propre pour
+contrôler si le plasmide est bien linéarisé. Le but est de déphosphoryler pour
+empêcher que le plasmide se referme et de purifier le produit linéarisé. 
+
+Super surprise du matin, le tube de SW1 --- bien évidemment celui pour lequel on
+a le moins de matériel --- était ouvert … Donc on refait. Super. J'essaye de
+relancer des cultures de SW1 puisqu'on devrait avoir la séquence sous peu. Je
+fais les extractions ce soir si possible. 
+
+Bon en fait au moment de la migration j'ai resuspendu le culot qui semblait un
+peu trouble dans 20µL d'eau, et on voit une bande sur le gel. C'est donc plutôt
+bon signe. Je vais quand même faire les manips avec ce plasmide là, mais
+relancer une culture par précaution. 
+
+#+CAPTION: gel0.8%  L:3µL-1kb  tps 1.2''  vol 2µL \\
+#+CAPTION: Les deux plasmides semblent assez bien ouvert, on n'a pas de plasmides super enroulés ou non linéarisé à priori. On peut lancer la manip de déphoshorylation.
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160211_01.JPG]]
+
+*** (1) Déphosphorylation des plasmides linéarisés
+Je déphosphoryle les plasmides via la phosphatase alcaline en suivant le
+protocole promega CIAP (Calf Intestinal Alkaline Phosphatase). 
+
+Protocole modifié pour $1$ µg de plasmide
+- diluer au 10^e la CIAP : mélanger 0.5µL de CIAP dans 4.5µL de Tampon 10X CIAP
+  (concentration 0.1U/µL)
+- ajouter 18µL de plasmide linéarisé dans eppendorf neuf.
+- ajouter 2.5µL de tampon au mélange réactionnel (concentration 1X).
+- ajouter 4µL d'eau (concentration 10X… ? … nan j'déconne.)
+- ajouter 0.5µL de CIAP 0.1U/µL (0.05U)
+- incuber à 37°C pendant 30 min exactement.
+- préparer les colonnes de purif pendant ce temps.
+- commencer la purif exactement à la fin des 30 min.
+  
+*** (1) Purification des plasmides linéarisés déphosphorylés
+Je purifie les plasmides via le kit PCR nucleospin cleanup, en utilisant les
+astuces de sioux en italique. Autrement dit j'ai laissé dans l'éthanol
+s'évaporer 10min à 60°C, j'ai laissé tremper la colonne dans 12.5µL d'eau,
+laissé 5 min à 70°C, centrifugé 1 min à 11000 rpm, remis 12.5µL d'eau, laissé 5
+min à 70°C, centrifugé 1 min à 11000 rpm et placé à -20°C. 
+
+**** Contrôle de la purif :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.8'' vol 5µL \\
+#+CAPTION: Les deux purifs ont l'air OK, on a un peu moins de matériel avec le SW. Compenser pour les manips futures.
+#+ATTR_LATEX: :float t :width 0.7\linewidth
+[[/Volumes/HDD/stage/img/20160211_02.JPG]]
+
+Les plasmides purifiés sont conservés à -20°C.
+
+*** (3) Relancé les cultures de polymorphe
+Au vu des dernières séquences de clones polymorphes, dans le dossier
+[seq_janvier], on n'a pas intercepté avec les clones qu'on a séquencé de pics
+secondaires. L'idée qu'on a maintenant est qu'il pourrait s'agir de
+contaminations d'une séquence par celle du puits voisin. Pour s'affranchir de ce
+doute, on veut séquencer 30 clones issus de la plaque ``mère'', ainsi que
+reséquencer le produit PCR de base, pour voir si ça ne pourrait pas être la PCR
+qui est contaminée. Je choisis donc 1 clone W et 1 clone S qui montrent de
+``bons'' pics secondaires, et je les étale sur LBKan50. 
+
+**** Candidats sélectionnés :
+
+| pS96 | Strong à beaux pics                       |
+| pW69 | Weak à beaux pics                         |
+| pW48 | Weak à pics secondaires et tract complexe |
+
+**** Matériel :
+- [ ] scalpel pour percer la protection plastifiée de la plaque.
+- [ ] éthanol pour stériliser le scalpel
+- [ ] protection plastifiée pour plaque de PCR (découper des petits carrés pour
+  sceller les puits après ouverture)
+- [ ] boîtes LB Kan50
+- [ ] des ciseaux
+- [ ] une agrapheuse
+- [ ] +du papier ponce+.
+
+**** Démarche :
+Je fais ça sous PSM du p2. 
+
+- sortir les plaques du -80°C.
+- repérer les puits des clones
+- stériliser le scalpel dans l'éthanol flambé
+- ouvrir le puits
+- prendre un café
+- étaler à l'oëse sur LBKan50. Utiliser deux boîtes par clones pour avoir de
+  façon sûre au moins 30 colonies isolées.
+- refermer avec le petit carré prédécoupé
+- reprendre un café. 
+
+
+\clearpage
+* Annexes
+** Protocoles
+#+TOC: local
+
+# protocole de la phosphatase alcaline
+\clearpage
+*** Phosphatase alcaline
+\includepdf[pages=2, offset=2 2]{../doc/promega_phosphatase.pdf}
+# protocole du kit nucleospin PCR purification
+*** Purification de produits PCR
+\includepdf[pages=17-18, nup=2x1, turn=true]{../doc/nucleospin_pcr_purif_cleanup.pdf}
+# protocole du kit nucleospin plasmide extraction
+*** Extractions de plasmides
+\includepdf[pages=18-19, nup=2x1 ]{../doc/nucleospin_plasmid_miniprep.pdf}
+
+\clearpage
+\bibliographystyle{asm}
+\bibliography{/Users/samuelbarreto/Dropbox/bibliography/Biologie}
 
 * config                                                                       :noexport:
+#+latex_header: \usepackage{pdfpages}
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
 #+options: H:4 toc:nil
@@ -1302,9 +1520,12 @@ latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
 
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
-* todos                                                                         :noexport:
+* todos                                                                        :noexport:
 ** DONE migration pcr mercredi 03
 CLOSED: [2016-02-05 Fri 08:49]
-** TODO photo migration digestion
-** TODO photo pcr apha3
-** TODO photo pcr ancre
+** DONE photo migration digestion
+CLOSED: [2016-02-11 Thu 08:29]
+** DONE photo pcr apha3
+CLOSED: [2016-02-11 Thu 08:29]
+** DONE photo pcr ancre
+CLOSED: [2016-02-11 Thu 08:29]

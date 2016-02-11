@@ -104,7 +104,8 @@ CLOSED: [2016-02-04 Thu 18:41]
 *** DONE glycérols 
 CLOSED: [2016-02-05 Fri 19:18]
 <2016-02-05 Fri 11:00>
-*** TODO purif des PCR apha3 et ancre
+*** DONE purif des PCR apha3 et ancre
+CLOSED: [2016-02-09 Tue 09:11]
 <2016-02-08 Mon 10:00>
 *** TODO digestion plasmide =SpeI=
 *** TODO clonage InFusion
@@ -237,11 +238,13 @@ CLOSED: [2016-01-18 Mon 15:59]
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
 ** TODO remplir cahier de labo
-SCHEDULED: <2016-02-06 Sat .+1d>
+SCHEDULED: <2016-02-10 Wed .+1d>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-02-05 Fri 19:18]
+:LAST_REPEAT: [2016-02-09 Tue 09:11]
 :END:
+- State "DONE"       from "TODO"       [2016-02-09 Tue 19:11]
+- State "DONE"       from "TODO"       [2016-02-08 Mon 19:11]
 - State "DONE"       from "TODO"       [2016-02-05 Fri 19:18]
 - State "DONE"       from "TODO"       [2016-02-04 Thu 18:41]
 - State "DONE"       from "TODO"       [2016-02-03 Wed 18:41]
