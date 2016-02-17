@@ -12,6 +12,38 @@
 
 \clearpage
 
+* Annexes
+** Protocoles
+#+TOC: headlines 2 local
+
+# protocole de la phosphatase alcaline
+\clearpage
+*** Extractions de plasmides
+\includepdf[pages=18-19, nup=2x1 ]{../doc/nucleospin_plasmid_miniprep.pdf}
+*** Phosphatase alcaline
+\includepdf[pages=2, offset=2 2]{../doc/promega_phosphatase.pdf}
+# protocole du kit nucleospin PCR purification
+*** Procédure de ligature InFusion et transformation
+\includepdf[pages=9-11, nup =2x2]{../doc/clontech_infusion.pdf}
+
+*** Purification de produits PCR
+\includepdf[pages=17-18, nup=2x1, turn=true]{../doc/nucleospin_pcr_purif_cleanup.pdf}
+# protocole du kit nucleospin plasmide extraction
+*** Transformation de cellules JM109 
+\includepdf[pages=2, nup=2x1]{../doc/promega_JM109.pdf}
+
+*** Transformation de cellules Stelar
+\includepdf[pages=1, nup=2x1]{../doc/clontech_stellar.pdf}
+
+*** Transformation de cellules TOP10
+\includepdf[pages=7-8, nup=2x1]{../doc/invitrogen_one-shot-top10.pdf}
+
+
+\clearpage
+** bibliographie
+\bibliographystyle{asm}
+\bibliography{/Users/samuelbarreto/Dropbox/bibliography/Biologie}
+\clearpage
 * 2016-01 Janvier
 ** 2016-01-11 Lundi
 *** (3) PCR cible des gènes synthétiques 
@@ -1391,9 +1423,6 @@ cite:lassalle_gc-content_2015 cite:hildebrand_evidence_2010
 cite:hershberg_evidence_2010 cite:reichenberger_prokaryotic_2015,
 etc…
 
-
-\clearpage
-
 ** 2016-02-11 Jeudi
 *** (1) Contrôle des digestions =SpeI=
 On dépose 2µL des produits de digestion sur un gel 0.8% bien propre pour
@@ -1424,7 +1453,7 @@ Protocole modifié pour $1$ µg de plasmide
   (concentration 0.1U/µL)
 - ajouter 18µL de plasmide linéarisé dans eppendorf neuf.
 - ajouter 2.5µL de tampon au mélange réactionnel (concentration 1X).
-- ajouter 4µL d'eau (concentration 10X… ? … nan j'déconne.)
+- ajouter 4µL d'eau pure
 - ajouter 0.5µL de CIAP 0.1U/µL (0.05U)
 - incuber à 37°C pendant 30 min exactement.
 - préparer les colonnes de purif pendant ce temps.
@@ -1432,10 +1461,10 @@ Protocole modifié pour $1$ µg de plasmide
   
 *** (1) Purification des plasmides linéarisés déphosphorylés
 Je purifie les plasmides via le kit PCR nucleospin cleanup, en utilisant les
-astuces de sioux en italique. Autrement dit j'ai laissé dans l'éthanol
-s'évaporer 10min à 60°C, j'ai laissé tremper la colonne dans 12.5µL d'eau,
-laissé 5 min à 70°C, centrifugé 1 min à 11000 rpm, remis 12.5µL d'eau, laissé 5
-min à 70°C, centrifugé 1 min à 11000 rpm et placé à -20°C. 
+astuces de sioux en italique. Autrement dit j'ai laissé l'éthanol s'évaporer 10
+min à 60°C, j'ai laissé tremper la colonne dans 12.5µL d'eau, laissé 5 min à
+70°C, centrifugé 1 min à 11000 rpm, remis 12.5µL d'eau, laissé 5 min à 70°C,
+centrifugé 1 min à 11000 rpm et placé à -20°C.
 
 **** Contrôle de la purif :
 
@@ -1448,13 +1477,13 @@ Les plasmides purifiés sont conservés à -20°C.
 
 *** (3) Relancé les cultures de polymorphe
 Au vu des dernières séquences de clones polymorphes, dans le dossier
-[seq_janvier], on n'a pas intercepté avec les clones qu'on a séquencé de pics
-secondaires. L'idée qu'on a maintenant est qu'il pourrait s'agir de
+[[../seq_janvier]], on n'a pas intercepté de pics secondaires avec les clones qu'on
+a séquencé. L'idée qu'on a maintenant est qu'il pourrait s'agir de
 contaminations d'une séquence par celle du puits voisin. Pour s'affranchir de ce
 doute, on veut séquencer 30 clones issus de la plaque ``mère'', ainsi que
 reséquencer le produit PCR de base, pour voir si ça ne pourrait pas être la PCR
 qui est contaminée. Je choisis donc 1 clone W et 1 clone S qui montrent de
-``bons'' pics secondaires, et je les étale sur LBKan50. 
+``bons'' pics secondaires, et je les étale sur LBKan50.
 
 **** Candidats sélectionnés :
 
@@ -1470,7 +1499,7 @@ qui est contaminée. Je choisis donc 1 clone W et 1 clone S qui montrent de
 - [ ] boîtes LB Kan50
 - [ ] des ciseaux
 - [ ] une agrapheuse
-- [ ] +du papier ponce+.
+- [ ] +un taille-haie+.
 
 **** Démarche :
 Je fais ça sous PSM du p2. 
@@ -1483,28 +1512,252 @@ Je fais ça sous PSM du p2.
 - étaler à l'oëse sur LBKan50. Utiliser deux boîtes par clones pour avoir de
   façon sûre au moins 30 colonies isolées.
 - refermer avec le petit carré prédécoupé
-- reprendre un café. 
+- reprendre un café.
 
+On peut espérer obtenir ce profil dans le meilleur des cas :
 
-\clearpage
-* Annexes
-** Protocoles
-#+TOC: local
+#+ATTR_LATEX: :float t :width 0.4\linewidth
+[[/Volumes/HDD/stage/img/20160211_03.JPG]]
 
-# protocole de la phosphatase alcaline
-\clearpage
-*** Phosphatase alcaline
-\includepdf[pages=2, offset=2 2]{../doc/promega_phosphatase.pdf}
-# protocole du kit nucleospin PCR purification
-*** Purification de produits PCR
-\includepdf[pages=17-18, nup=2x1, turn=true]{../doc/nucleospin_pcr_purif_cleanup.pdf}
-# protocole du kit nucleospin plasmide extraction
-*** Extractions de plasmides
-\includepdf[pages=18-19, nup=2x1 ]{../doc/nucleospin_plasmid_miniprep.pdf}
+** 2016-02-12 Vendredi 
+*** (1) Lancement des clonages InFusion 
+On a reçu les séquences des plasmides séquencés. Elles sont nickel, il n'y a pas
+de mutation. En page suivante les alignements. À gauche de la séquence, la
+partie entre l'amorce M13R et l'insert. À droite de la séquence, le reste du
+plasmide après le gène synthétique. Il n'y a pas de mutation. On est donc bon,
+on peut lancer les manips dans InFusion.  
 
-\clearpage
-\bibliographystyle{asm}
-\bibliography{/Users/samuelbarreto/Dropbox/bibliography/Biologie}
+#+ATTR_LATEX: :float multicolumn :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/seq_fevrier/img/align.pdf]]
+*** (3) Repiquage des cultures sur LBKan50 liquide 
+J'ai repiqué 40 clones de =pS96=, 40 clones de =pW69= et 50 clones de =pW48=.
+L'idée est de faire ensuite des PCR sur ces clones pour séquencer les gènes
+synthétiques. 
+
+Ils sont resuspendus à l'oëse dans 200µL de LBKan50, dans 3 microplaques
+séparées de 96 puits. Les plaques sont laissées à incuber 24H à 30°C, elles sont
+sorties par Tania demain samedi [2016-02-13 Sat]. 
+
+#+BEGIN_QUOTE
+Je trouve personellement que les possibilités d'éclaboussure d'un puit à l'autre
+sont multiples. Il serait peut-être possible d'envisager de mettre un film
+plastique comme sur les plaques de PCR pour éviter les contaminations ?
+#+END_QUOTE
+
+*** (B) biblio Glémin Lartillot Duret Arndt
+Une bibliographie très intéressante sur la modélisation des conséquences
+évolutives du gBGC dans les génomes eucaryotes et mammifères
+cite:lartillot_phylogenetic_2013,lartillot_interaction_2013,lesecque_red_2014,glemin_surprising_2011,glemin_quantification_2015,glemin_surprising_2010,escobar_gc-biased_2011, 
+
+** 2016-02-15 Lundi
+*** (D) Coulé des milieux LBamp75Kan50 
+*** (D) Coulé des grands gels 
+*** (3) PCR des clones repiqués 
+L'idée est de faire une PCR de contrôle avec la Taq Ozyme avant de passer avec
+la Taq Platinum qui proofread. On amplifie les fragments synthétiques avec les
+amorces /Acinetobacter/ : =1073 1392=. Le but est de les resequencer derrière. 
+
+On utilise 1µL de suspension pour la PCR. 
+
+**** Résultat :
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
+#+CAPTION: La PCR avec la Taq Ozyme semble marcher. 
+#+CAPTION: On peut donc la lancer avec la Taq platinum.
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160215_00.JPG]]
+
+*** (1) Clonage InFusion I
+J'ai lancé le protocole de clonage InFusion. Le but est de ligaturer les
+produits des PCR spécifiques d'apha3 et de l'ancre avec le pGEM-T porteur du
+gène synthétique WS ou SW. 
+
+Le protocole préconise d'utiliser entre 10 et 100ng des différents produits. On
+dose donc au nanodrop les différents produits. 
+**** Nanodrop
+| produit      |      |      |      |
+|--------------+------+------+------|
+| WS4 plasmide | 20.9 | 22.6 | 23.8 |
+| SW1 plasmide | 17.2 | 17.4 | 18.8 |
+| ancre1       |  6.1 |  6.0 |  6.3 |
+| ancre2       | 12.7 | 10.7 | 10.3 |
+| apha3.1      |  8.5 |  8.3 | 10.7 |
+| apha3.2      |  7.5 |  8.2 |  8.5 |
+
+On utilise donc les produits ancre 2 et apha3.1. 
+**** Volumes 
+|          | vol |
+|----------+-----|
+| plasmide |   4 |
+| ancre2   | 1.5 |
+| pAVA     | 2.5 |
+| tampon   |   2 |
+
+Voir le protocole pour les détails. 
+*** (1) Transformation cellules JM109
+Les cellules stellar n'étaient pas disponibles. On a donc utilisé des cellules
+=JM109= chimiocompétentes. Le choc thermique se fait à 42°C pendant 42''. 
+
+*** (1) Lancé culture WS et SW pour cryotubes
+Lancé des cultures pour culotter et mettre en cryotubes au -80°C. 
+** 2016-02-16 Mardi
+*** (1) Contrôle des transformations InFusion
+Il n'y a rien sur les boîtes. Deux hypothèses :
+1. la transformation n'a pas marché.
+2. la ligature InFusion n'a pas marché.
+
+#+CAPTION: gel1%  L:2µL-1kb  tps 0.7''  vol 2µL \\
+#+CAPTION: On distingue toujours les bandes des inserts. 
+#+CAPTION: Il aurait fallu déposer le plasmide non ligaturé avec. 
+#+CAPTION: On peut cependant voir que la bande du plasmide ne correspond pas à la taille attendue. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160216_00.JPG]]
+
+Après discussion avec Aurélie et Thibault, il faut contrôler le ratio vecteur /
+insert. On utilise 2 insert pour 1 vecteur. Le ratio en question est à calculer
+en pmol d'insert, pour tenir compte de la taille du fragment.
+
+J'utilise l'outil à cette addresse : [[http://www.promega.com/a/apps/biomath/]]. Il
+calcule la concentration en pmol si on lui dit que le fragment est double-brin,
+qu'il fait telle taille, et telle masse par microlitre.
+
+*** (1) Réessai de InFusion 
+**** Concentrations :
+| produit      | dosage 1 |    2 |    3 |  pmol |
+|--------------+----------+------+------+-------|
+| WS4 plasmide |     20.9 | 22.6 | 23.8 |  8.32 |
+| SW1 plasmide |     17.2 | 17.4 | 18.8 |  7.13 |
+| ancre2       |     12.7 | 10.7 | 10.3 | 15.71 |
+| apha3.1      |     8.50 | 8.30 | 10.7 | 11.04 |
+
+**** Volumes :
+Les volumes sont calculés en accord avec la concentration molaire d'ADN dans le
+vecteur et les inserts.
+
+#+BEGIN_LaTeX
+\begin{align}
+  V_i &= V_p \times R \times \frac{n_v}{n_i} \\
+      &= 2 \times 2 \times \frac{8.32}{15.71}
+\end{align}
+#+END_LaTeX
+
+Où $V_i$ est le volume d'insert, $V_p$ le volume de plasmide vecteur, $R$ le
+ratio vecteur / insert, $n_v$ le nombre de mole de vecteur et $n_i$ le nombre de
+mole d'insert. La ligne $(2)$ correspond au calcul du volume de la purification
+des produits PCR des ancres à utiliser. 
+
+|            |   WS |   SW |
+|------------+------+------|
+| plasmide   |    2 |    2 |
+| ancre2     | 2.11 | 1.81 |
+| pAVA       | 3.01 | 2.58 |
+| tampon     |    2 |    2 |
+|------------+------+------|
+| eau qsp 10 | 0.88 | 1.61 |
+#+TBLFM: @>$2=10 - vsum(@2..@-1)::@>$3=10 - vsum(@2..@-1)::
+
+**** Transformation dans JM109 :
+Les cellules transformées sont les cellules JM109. J'ai suivi le protocole, en
+dehors du temps d'exposition. J'ai utilisé 42'' à 42°C, sur les conseils /
+ordres de Sébastien et Aurélie. Après coup je ne suis pas sûr qu'il faille
+respecter ce temps. 
+
+*** (1) Contrôle des insertions InFusion
+J'ai voulu voir par PCR si certaines ligatures avaient fonctionné. L'idée est
+donc d'amplifier les extrémités du fragment par PCR avec des amorces spécifiques
+des extrémités du fragment.
+
+Pour une raison que j'ignore, j'ai utilisé les amorces =M13R 1393=. J'aurais
+plutôt dû utiliser les amorces =1393 1411=, à chaque extrémité du fragment
+d'intérêt. On pourrait comme ça le cloner dans un autre pGEM-T. Il y a cependant
+une chance que ça marche, étant donné que le plasmide ouvert par =SpeI= ne
+devrait pas amplifier =M13R 1393=.
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160216_01.pdf]]
+
+J'ai contrôlé à la fois la ligature d'hier et celle d'aujourd'hui, dans un
+volume de PCR de 50µL.
+
+**** Conditions de PCR :
+| Temps  | température |
+|--------+-------------|
+| 3'     |          94 |
+| 50''   |          94 |
+| 50''   |          55 |
+| 2'30'' |          72 |
+| 4'     |          72 |
+
+*** (1) Cryotubes des /E.coli/ pGEM-T =SW= et =WS= 
+J'ai centrifugé la culture de nuit des /coli/ =SW= et =WS= dans LBamp75 liquide
+10 min à 5500rpm, jeté le surnageant et utilisé le reste de milieu pour
+resuspendre dans les cryotubes + 300µL glycérol stériles du [2016-01-08 Fri]. 
+
+** 2016-02-17 Mercredi
+*** (1) Contrôle des transformation par le produit InFusion
+**** Culture :
+On a transformé des cellules JM109 par le produit de ligature InFusion, et étalé
+une suspension mère et une suspension reconcentrée par centrifugation sur des
+boîtes =LBKan50Amp75=. 
+
+Il n'y a rien qui pousse. C'est assez incommodant[fn:2:Ceci est un euphémisme.]. 
+**** Produit de ligature :
+
+# TODO insérer la photo du gel
+
+*** (1) Contrôle de la PCR sur le produit de ligature InFusion
+J'ai tenté de faire une PCR sur le produit de ligature InFusion. À priori j'ai
+utilisé les mauvaises amorces. Je vais réessayer avec les bonnes amorces. 
+
+On amplifie toujours le fragment =M13R 1393= des pGEM-T non linéarisés. 
+
+# TODO insérer la photo du gel
+
+*** (1) Design InFusion
+
+**** Taille des fragments :
+| fragment | taille |
+|----------+--------|
+| vecteur  |   3800 |
+| ancre    |   1000 |
+| apha3    |   1300 |
+
+**** Calcul des masses optimales :
+J'ai utilisé l'outil à cette
+adresse[fn:3:[[http://bioinfo.clontech.com/infusion/molarRatio.do]]] pour calculer
+la masse d'insert et la masse de vecteur recommandée par InFusion. Je ne
+connaissais pas avant.
+
+#+BEGIN_QUOTE
+1. We recommend using at least 50 ng of a DNA insert in your cloning reactions.
+2. The Molar Ratio Calculator is optimized for use with standard sized vectors
+   and inserts. Typically, In-Fusion reactions work well with 100 ng of a 4-5 kb
+   linearized vector plus 50 ng of a 1 kb PCR product. If your vector and PCR
+   product differ greatly in size (e.g., you are using a 12 kb vector and 60 bp
+   insert), the Molar Ratio Calculator may recommend using less than 50 ng of
+   insert. If this is the case, you will need to adjust the amount of DNA to
+   ensure that a minimum of 50 ng of insert is used. Please refer to In-Fusion
+   User Manual for more detailed recommendations.
+#+END_QUOTE
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160217_01.png]]
+
+Je pense de plus en plus qu'on n'utilise pas assez de matériel. Il faut vraiment
+partir de beaucoup de plasmide. On en perd beaucoup avec les étapes de
+déphosphorylation et surtout avec l'étape de purification. Pour rappel je suis
+passé pour le plasmide WS4 de 120ng/µL à 20ng/µL.
+
+Dans le but de refaire un clonage InFusion, je veux refaire la PCR sur les
+inserts, et pooler les fragments sur la même colonne de purif, pour récupérer
+plus de matériel. 
+
+*** (1) PCR aphA3 Ancre 
+Pour pouvoir refaire le clonage InFusion, on doit repartir de plus de masse
+d'insert. Je refais donc les PCR sur les deux inserts cassette kana et l'ancre.
+Je fais trois tubes de PCR, en utilisant pour matrice l'ADN génomique
+d'/Acineto/ pour l'ancre et le plasmide pAVA porteur d'aphA3 pour la cassette
+Kana. Le but est de purifier les fragments obtenus et de les pooler sur la même
+colonne. 
 
 * config                                                                       :noexport:
 #+latex_header: \usepackage{pdfpages}
