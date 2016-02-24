@@ -7,289 +7,38 @@
 :CATEGORY: @manip
 :END:
 ** (1) Construire les mutants alternants                                        :MANIP1:
-*** DONE resuspendre les 5µg de gène synthétique
-CLOSED: [2016-01-05 Tue 16:08]
-Le but est de resuspendre le petit volume de gène synthétique qu'on nous a
-envoyé, afin de le cloner dans E.coli par transformation. On utilise ensuite les
-clones de coli transformés pour les manips.
-**** prérequis
-|           | volumes | ? |
-|-----------+---------+---|
-| eau pure  | 1mL     |   |
-| eppendorf |         |   |
-*** DONE transformation dans /E.coli/
-CLOSED: [2016-01-05 Tue 16:09]
-<2016-01-05 Tue 08:00>
-*** DONE isolement des transformants 
-CLOSED: [2016-01-06 Wed 15:40]
-<2016-01-06 Wed 14:00>
-*** DONE vérifier isolements
-CLOSED: [2016-01-07 Thu 16:02]
-<2016-01-07 Thu 09:00>
-*** DONE conserver clones à -80°C 
-CLOSED: [2016-01-08 Fri 17:25]
-<2016-01-08 Fri 17:00>
-*** DONE extraction plasmide depuis /E.coli/
-CLOSED: [2016-01-08 Fri 16:06]
-<2016-01-18 Mon>
-*** DONE extraction plasmide depuis E.coli
-CLOSED: [2016-01-15 Fri 19:02]
-<2016-01-15 Fri 09:00>
-*** DONE dépôt sur gel extraction
-CLOSED: [2016-01-15 Fri 19:02]
-<2016-01-15 Fri 14:00>
-*** DONE nano-drop
-CLOSED: [2016-01-15 Fri 19:02]
-<2016-01-15 Fri 15:00>
-*** DONE PCR cible => gène synthétique
-CLOSED: [2016-01-20 Wed 09:33] SCHEDULED: <2016-01-20 Wed 06:30>
-*** DONE migration produit PCR 
-CLOSED: [2016-01-20 Wed 15:06]
-<2016-01-20 Wed 09:00>
-*** DONE purification produit PCR via kit
-CLOSED: [2016-01-20 Wed 15:06]
-<2016-01-20 Wed 09:30>
-*** DONE migration produit purif 
-CLOSED: [2016-01-20 Wed 15:06]
-<2016-01-20 Wed 10:00>
-*** DONE clonage fragment PCR dans pGEM-T
-CLOSED: [2016-01-20 Wed 15:06]
-<2016-01-20 Wed 10:30>
-*** DONE repiquer clones blancs sur même boîte Amp-Xgal-IPTG
-CLOSED: [2016-01-22 Fri 11:02]
-<2016-01-22 Fri 08:00>
-*** DONE PCR confirmation insertion fragment dans pGEM-T
-CLOSED: [2016-01-23 Sat 11:37]
-<2016-01-23 Sat 09:00>
-*** DONE migration confirmation taille 
-CLOSED: [2016-01-27 Wed 15:56]
-<2016-01-23 Sat 12:30>
-*** DONE extractions plasmidiques 
-CLOSED: [2016-01-30 Sat 14:47]
-<2016-01-28 Thu 14:00>
-*** DONE faire solution stock LB Amp75
-CLOSED: [2016-01-23 Sat 11:37]
-<2016-01-23 Sat 11:00>
-*** DONE suspendre clones confirmés transformants dans LB liquide + Amp75
-CLOSED: [2016-02-03 Wed 18:40]
-<2016-01-23 Sat 11:00>
-*** DONE faire migrer produit PCR 
-CLOSED: [2016-02-04 Thu 11:36]
-<2016-02-04 Thu 08:30>
-*** DONE préparer milieu LBamp75 Xgal IPTG
-CLOSED: [2016-02-04 Thu 11:36]
-<2016-02-04 Thu 09:00>
-*** DONE suspendre 100µL et 50 µL de culture dans 5mL de LB
-CLOSED: [2016-02-04 Thu 11:37]
-<2016-02-04 Thu 09:30>
-*** DONE extractions plasmidiques 
-CLOSED: [2016-02-04 Thu 11:37]
-<2016-02-04 Thu 09:45>
-*** DONE dosage nano-drop
-CLOSED: [2016-02-04 Thu 11:37]
-<2016-02-04 Thu 10:30>
-*** DONE digestion HindIII SpeI 500ng
-CLOSED: [2016-02-04 Thu 18:40]
-<2016-02-04 Thu 11:00>
-*** DONE suivre protocole préparation aurélie
-CLOSED: [2016-02-04 Thu 18:40]
-<2016-02-04 Thu 13:30>
-*** DONE transformation coli TOP10 et homemade
-CLOSED: [2016-02-04 Thu 18:40]
-penser au témoin eau. 
-<2016-02-04 Thu 15:00>
-*** DONE étalements des transfos sur LBAmp75 Xgal IPTG
-CLOSED: [2016-02-04 Thu 18:41]
-<2016-02-04 Thu 17:00>
-*** DONE glycérols 
-CLOSED: [2016-02-05 Fri 19:18]
-<2016-02-05 Fri 11:00>
-*** DONE purif des PCR apha3 et ancre
-CLOSED: [2016-02-09 Tue 09:11]
-<2016-02-08 Mon 10:00>
-*** TODO digestion plasmide =SpeI=
-*** TODO clonage InFusion
+*** TODO purification des fragments aphA3 et ancre 
+<2016-02-23 Tue 09:30>
+*** TODO migration des fragments apha3 et ancre
+<2016-02-23 Tue 10:00>
+*** TODO dosage des fragments apha3 et ancre au nanodrop
+<2016-02-23 Tue 10:10>
+*** TODO ligature InFusion
+<2016-02-23 Tue 10:20>
+*** TODO transformation cellules Stellar
+<2016-02-23 Tue 10:40>
+*** TODO lancer le nettoyage du spiraleur
+<2016-02-25 Thu 09:30>
 *** TODO envoyer séquencer le WT dans le même run
 ** (2) Séquencer les ancres                                                     :MANIP2:
-*** DONE savoir si on séquence toutes les ancres
-CLOSED: [2016-01-05 Tue 17:08]
-*** DONE identifier les candidats
-CLOSED: [2016-01-06 Wed 09:29] SCHEDULED: <2016-01-06 Wed 08:00>
-
-ATTENDU: obtenir un tableau avec l'ensemble des clones présentant des
-néo-mutations. 
-
-| pS10-1073 |
-| pS24-1073 |
-| pS30-1073 |
-| pS39-1073 |
-| pS5-1073  |
-| pS54-1073 |
-| pS74-1073 |
-| pS82-1073 |
-| pS88-1073 |
-| pW14-1073 |
-| pW19-1073 |
-| pW2-1073  |
-| pW23-1073 |
-| pW35-1073 |
-| pW6-1073  |
-| pW81-1073 |
-| pW87-1073 |
-| pW93-1073 |
-*** DONE PCR cible des ancres
-CLOSED: [2016-01-12 Tue 18:09]
-<2016-01-12 Tue 14:00>
-**** DONE Retrouver amorces
-CLOSED: [2016-01-12 Tue 18:09]
-<2016-01-08 Fri 13:30>
-**** DONE Trouver protocole PCR 
-CLOSED: [2016-01-12 Tue 18:09]
-*** DONE faire migrer PCR du mardi
-CLOSED: [2016-01-13 Wed 09:10]
-<2016-01-13 Wed 09:00>
-*** DONE décongeler tranquillou les solutions
-CLOSED: [2016-01-13 Wed 09:10]
-<2016-01-13 Wed 08:45>
-*** DONE chercher tous les candidats sur les tubes 
-CLOSED: [2016-01-13 Wed 15:06]
-*** DONE PCR cible des ancres
-CLOSED: [2016-01-13 Wed 11:10]
-<2016-01-13 Wed 10:00>
-*** DONE envoyer à séquencer
-CLOSED: [2016-01-18 Mon 15:59]
-<2016-01-18 Mon>
-**** DONE diluer amorces à 5µM, 40µL
-CLOSED: [2016-01-18 Mon 15:49]
-**** DONE remplir formulaire 
-CLOSED: [2016-01-18 Mon 15:49]
-**** DONE mailto: david
-CLOSED: [2016-01-18 Mon 15:49]
 ** (3) Séquencer les hétérozygotes                                              :MANIP3:
-*** DONE déterminer les candidats
-CLOSED: [2016-01-06 Wed 10:22]
-
-Sur la base de l'analyse ayant donné le fichier
-[[file:seq_novembre/analysis/candidats_heterozygotes.pdf]], on a déterminé les
-clones suivants comme bon candidats :
-
-| construction | type   |
-|--------------+--------|
-| pS53         | strong |
-| pS67         | strong |
-| pS88         | strong |
-| pW5          | weak   |
-| pW22         | weak   |
-| pW85         |        |
-
-*** DONE couler des boîtes kana
-CLOSED: [2016-01-06 Wed 12:08]
-<2016-01-06 Wed 09:30>
-*** DONE numéroter les boîtes par clone
-CLOSED: [2016-01-06 Wed 15:40]
-<2016-01-06 Wed 14:00>
-*** DONE sortir les clones du -80°C
-CLOSED: [2016-01-06 Wed 15:40]
-*** DONE étalement sur boîte plus kana
-CLOSED: [2016-01-06 Wed 15:41]
-*** DONE contrôler isolements manip 3
-CLOSED: [2016-01-08 Fri 09:12]
-<2016-01-07 Thu 10:00>
-Est-ce que ça pousse ?
-(cond ((oui) (TODO))
-      ((non) (retrouver plaque)
-             (refaire isolement)))
-*** DONE PCR des gènes synthétiques
-CLOSED: [2016-01-08 Fri 09:12]
-
-*** DONE migration gel
-CLOSED: [2016-01-08 Fri 16:07]
-<2016-01-08 Fri 10:00>
-*** DONE PCR des gènes synthétiques 
-CLOSED: [2016-01-11 Mon 14:53]
-<2016-01-11 Mon 09:00>
-*** DONE migration gel
-CLOSED: [2016-01-11 Mon 14:53]
-<2016-01-11 Mon 14:00>
-*** DONE refaire PCR pour les trois clones foireux 
-CLOSED: [2016-01-13 Wed 15:06]
-<2016-01-13 Wed 13:00>
-*** DONE migration + migration t+ de la veille. 
-CLOSED: [2016-01-13 Wed 17:17]
-<2016-01-13 Wed 16:00>
-*** DONE décongeler solutés pcr 
-CLOSED: [2016-01-14 Thu 14:48]
-<2016-01-14 Thu 08:45>
-*** DONE resuspendre colonies des trois clones pénibles
-CLOSED: [2016-01-14 Thu 14:48]
-<2016-01-14 Thu 09:00>
-*** DONE PCR sur ces trois suspensions
-CLOSED: [2016-01-14 Thu 14:48]
-<2016-01-14 Thu 09:15>
-*** DONE migration
-CLOSED: [2016-01-14 Thu 14:48]
-<2016-01-14 Thu 11:30>
-*** DONE révéler gel
-CLOSED: [2016-01-15 Fri 19:01]
-<2016-01-14 Thu 15:30>
-*** DONE séquençage
-CLOSED: [2016-01-18 Mon 15:59]
-** Construire les \delta-MMR
+*** TODO PCR de test de la taq++
+** (4) Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
 *** TODO chercher l'existence de BER chez les bactéries
-** TODO remplir cahier de labo
-SCHEDULED: <2016-02-10 Wed .+1d>
-:PROPERTIES:
-:STYLE:    habit
-:LAST_REPEAT: [2016-02-09 Tue 09:11]
-:END:
-- State "DONE"       from "TODO"       [2016-02-09 Tue 19:11]
-- State "DONE"       from "TODO"       [2016-02-08 Mon 19:11]
-- State "DONE"       from "TODO"       [2016-02-05 Fri 19:18]
-- State "DONE"       from "TODO"       [2016-02-04 Thu 18:41]
-- State "DONE"       from "TODO"       [2016-02-03 Wed 18:41]
-- State "DONE"       from "TODO"       [2016-01-30 Sat 15:56]
-- State "DONE"       from "TODO"       [2016-01-29 Fri 15:56]
-- State "DONE"       from "TODO"       [2016-01-28 Thu 15:56]
-- State "DONE"       from "TODO"       [2016-01-27 Wed 15:56]
-- State "DONE"       from "TODO"       [2016-01-24 Sun 18:32]
-- State "DONE"       from "TODO"       [2016-01-23 Sat 18:32]
-- State "DONE"       from "TODO"       [2016-01-22 Fri 18:32]
-- State "DONE"       from "TODO"       [2016-01-21 Thu 18:32]
-- State "DONE"       from "TODO"       [2016-01-20 Wed 18:25]
-- State "DONE"       from "TODO"       [2016-01-19 Tue 17:32]
-- State "DONE"       from "TODO"       [2016-01-18 Mon 18:30]
-- State "DONE"       from "TODO"       [2016-01-17 Sun 18:15]
-- State "DONE"       from "TODO"       [2016-01-16 Sat 18:15]
-- State "DONE"       from "TODO"       [2016-01-15 Fri 19:01]
-- State "DONE"       from "TODO"       [2016-01-14 Thu 18:30]
-- State "DONE"       from "TODO"       [2016-01-13 Wed 18:15]
-- State "DONE"       from "TODO"       [2016-01-12 Tue 18:10]
-- State "DONE"       from "TODO"       [2016-01-11 Mon 18:00]
-- State "DONE"       from "TODO"       [2016-01-10 Sun 17:31]
-- State "DONE"       from "TODO"       [2016-01-09 Sat 17:31]
-- State "DONE"       from "TODO"       [2016-01-08 Fri 17:31]
-- State "DONE"       from "TODO"       [2016-01-07 Thu 19:00]
-- State "DONE"       from "TODO"       [2016-01-06 Wed 18:31]
-- State "DONE"       from "TODO"       [2016-01-05 Tue 16:55]
-** TODO faire Xgal solution mère 
 * ANALYSES                                                                      :ANALYSES:ORDI:
 :PROPERTIES:
 :CATEGORY: @analyses
 :END:
 ** TODO analyses données Ivan Matic
 ** TODO créer makefile reproductible
-** TODO joindre données snp et non-snp via semi_join
-** TODO calculer différence fréquence SNP / ΦSNP par read
-** TODO calculer distribution ratio WT/donneur uniforme ou variable
-** TODO analyser la répartition par read 
-** TODO Staden : comparer séquences avec référence .abi
 ** TODO Sauvegarder données.
-SCHEDULED: <2016-02-10 Wed 18:00 .+1w>
+SCHEDULED: <2016-03-01 Tue 18:00 .+1w>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-02-03 Wed 18:31]
+:LAST_REPEAT: [2016-02-23 Tue 08:51]
 :END:
+- State "DONE"       from "TODO"       [2016-02-23 Tue 08:51]
 - State "DONE"       from "TODO"       [2016-02-03 Wed 18:31]
 - State "DONE"       from "WAIT"       [2016-01-27 Wed 15:47]
 - State "DONE"       from "TODO"       [2016-01-18 Mon 18:31]
@@ -299,50 +48,11 @@ SCHEDULED: <2016-02-10 Wed 18:00 .+1w>
 :category: @CR
 :END:
 ** TODO remettre rapport stage vincent
-** TODO refaire slide présentation sujet
+** TODO faire diagramme purif modifié avec dot. 
+** TODO faire diagramme protocole cellules compétentes aurélie
 * ÉCHÉANCES                                                                     :RDV:
-** DONE Galette des Master <2016-01-18 Mon 16:30>
-CLOSED: [2016-01-18 Mon 18:31]
-** DONE Recycler présentation sujet stage <2016-02-04 Thu>
-CLOSED: [2016-02-04 Thu 18:41]
-** DONE Présentations sujets masters
-CLOSED: [2016-02-04 Thu 18:41]
-<2016-02-02 Tue> et <2016-02-04 Thu>
-
-| mardi    | jeudi  |
-|----------+--------|
-| corentin | sam    |
-| raph     | solene |
-| morgane  | melody |
-| jordan   | karine |
-| boris    | tania  |
-| xavier   | marion |
-|          | chloe  |
-
-** DONE Faire diapo conclave <2016-01-21 Thu>
-CLOSED: [2016-01-22 Fri 07:38]
-** DONE Réunion équipe <2016-01-19 Tue 16:00>
-CLOSED: [2016-01-19 Tue 16:40]
-** DONE Réunion équipe <2016-01-27 Wed 13:00>
-CLOSED: [2016-01-27 Wed 15:46]
-** RDV! Réunion équipe <2016-02-10 Wed 13:00>
-** RDV! réunion projet <2016-02-02 Tue 10:00>
-** DONE photos équipe <2016-01-22 Fri 16:00>
-CLOSED: [2016-01-22 Fri 15:51]
-
 * BIBLIO
-** TODO lire les deux papiers polySNP
-
 * capture
-** TODO faire tableur salle BET
-** DONE ramener café                                                           :LABO:
-CLOSED: [2016-02-08 Mon 12:57]
-[2016-01-04 Mon 16:44]
-** DONE acheter colle scotch
-CLOSED: [2016-02-08 Mon 12:57]
-** DONE diluer amorces                                                         :CONFIG:
-CLOSED: [2016-01-18 Mon 18:31]
-[2016-01-11 Mon 11:48]
 * configuration                                                                 :CONFIG:
 #+title: Stage : TODO
 #+TODO: TODO(t) NEXT(n) RDV!(r) WAIT(w) | DONE(d)

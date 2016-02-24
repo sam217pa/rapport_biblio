@@ -1,3 +1,4 @@
+# -*- mode: org; eval: (require 'org-ref) -*- 
 
 #+CATEGORY: STAGE
 
@@ -8,12 +9,12 @@
 # manip (A) : analyses 
 # manip (B) : bibliographie
 
-#+TOC: headlines 2
+# #+TOC: headlines 2
 
 \clearpage
 
-* Annexes
-** Protocoles
+* Annexes                                                                      
+** Protocoles                                                                  :noexport:
 #+TOC: headlines 2 local
 
 # protocole de la phosphatase alcaline
@@ -25,10 +26,13 @@
 # protocole du kit nucleospin PCR purification
 *** Procédure de ligature InFusion et transformation
 \includepdf[pages=9-11, nup =2x2]{../doc/clontech_infusion.pdf}
-
 *** Purification de produits PCR
 \includepdf[pages=17-18, nup=2x1, turn=true]{../doc/nucleospin_pcr_purif_cleanup.pdf}
 # protocole du kit nucleospin plasmide extraction
+
+*** Sybr Safe
+\includepdf[pages=, nup = 2x1]{../doc/invitrogen_sybr-safe.pdf}
+
 *** Transformation de cellules JM109 
 \includepdf[pages=2, nup=2x1]{../doc/promega_JM109.pdf}
 
@@ -1691,7 +1695,6 @@ volume de PCR de 50µL.
 J'ai centrifugé la culture de nuit des /coli/ =SW= et =WS= dans LBamp75 liquide
 10 min à 5500rpm, jeté le surnageant et utilisé le reste de milieu pour
 resuspendre dans les cryotubes + 300µL glycérol stériles du [2016-01-08 Fri]. 
-
 ** 2016-02-17 Mercredi
 *** (1) Contrôle des transformation par le produit InFusion
 **** Culture :
@@ -1702,15 +1705,33 @@ boîtes =LBKan50Amp75=.
 Il n'y a rien qui pousse. C'est assez incommodant[fn:2:Ceci est un euphémisme.]. 
 **** Produit de ligature :
 
-# TODO insérer la photo du gel
+#+CAPTION: gel1%  L:2µL-1kb  tps 0.8''  vol 1µL \\
+#+CAPTION: Il faut déposer plus de produit de ligature InFusion. 
+#+CAPTION: On ne voit rien. Cette photo est outrageusement retouchée pour qu'on voit un début de poil de bande. 
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160217_01.JPG]]
 
+#+CAPTION: gel1%  L:2µL-1kb  tps 0.5''  vol 2µL \\
+#+CAPTION: J'ai déposé 2µL du produit de ligature. On ne distingue même plus les deux bandes
+#+CAPTION: plus bas, comme dans l'autre migration. Je ne comprends pas. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160217_02.JPG]]
 *** (1) Contrôle de la PCR sur le produit de ligature InFusion
 J'ai tenté de faire une PCR sur le produit de ligature InFusion. À priori j'ai
 utilisé les mauvaises amorces. Je vais réessayer avec les bonnes amorces. 
 
 On amplifie toujours le fragment =M13R 1393= des pGEM-T non linéarisés. 
 
-# TODO insérer la photo du gel
+**** Migration des produits de PCR :
+
+Voir figure [[fig:pcr0217]]. 
+#+CAPTION: gel1%  L:2µL-1kb  tps 0.5  vol 5µL \\
+#+CAPTION: On n'amplifie pas le bon fragment. On amplifie toujours le fragment dans les pGEM-T non linéarisés. 
+#+CAPTION: On veut donc réessayer avec les amorces aux deux extrémités du fragment. 
+#+CAPTION: Ça ne marchera que si au moins un fragment a fonctionné. 
+#+LABEL: fig:pcr0217
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160217_00.JPG]]
 
 *** (1) Design InFusion
 
@@ -1739,6 +1760,7 @@ connaissais pas avant.
    User Manual for more detailed recommendations.
 #+END_QUOTE
 
+#+CAPTION: capture d'écran du calculateur de volume InFusion
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160217_01.png]]
 
@@ -1757,28 +1779,464 @@ d'insert. Je refais donc les PCR sur les deux inserts cassette kana et l'ancre.
 Je fais trois tubes de PCR, en utilisant pour matrice l'ADN génomique
 d'/Acineto/ pour l'ancre et le plasmide pAVA porteur d'aphA3 pour la cassette
 Kana. Le but est de purifier les fragments obtenus et de les pooler sur la même
-colonne. 
+colonne de purif, pour augmenter la concentration. L'ADN matrice de base est le
+même dans les trois tubes. 
+
+Voir la figure [[fig:pcr02172]] pour la migration sur gel. 
+
+*** (1) PCR sur les produits de ligature InFusion
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.5''  vol 5µL \\
+#+label: fig:pcr02172
+#+CAPTION: À un faible temps d'exposition, on voit des choses. 
+#+CAPTION: Si on expose un peu plus, on voit les bandes à 5kb. 
+#+CAPTION: Mais le problème, c'est qu'on voit surtout les bandes 
+#+CAPTION: à 1kb. Et là, subtilité. Voir le texte. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160217_03.JPG]]
+
+# #+CAPTION: gel1%  L:3µL-1kb  tps 0.8''  vol 5µL \\
+# #+ATTR_LATEX: :float t :width 1\linewidth
+# [[/Volumes/HDD/stage/img/20160217_04.JPG]]
+
+Le truc auquel on n'a pas pensé, c'est que les amorces 1411 s'accrochent sur le
+plasmide pGEM-T (voir figure [[fig:plasmap]]) ! Elles sont concues pour avoir des
+bouts cohésifs avec les extrémités de la digestion =SpeI=. Donc on amplifie
+toujours le fragment WS ou SW tout seul présent sur le pGEM-T. On voit cependant
+certaines bandes à 6kb. Donc certaines ligations ont fonctionnées, mais elles
+sont clairement sous-représentées par rapport aux plasmides sans insert. Ça peut
+expliquer pourquoi les transformations ne fonctionnent pas.
+
+On peut d'ailleurs n'utiliser qu'une sélection sur LBKan50. Les /E.coli/ qui
+n'intègrent pas le bon plasmide (avec les deux inserts) ne sont résistantes qu'à
+l'ampicilline. 
+
+#+LABEL: fig:plasmap
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/pwkanancre.png]]
+*** (1) Purification des fragments apha3 et ancre
+J'ai purifié les fragments des PCR apha3 et ancre, en poolant les trois
+fragments sur la même colonne. L'idée est de reconcentrer le fragment de cette
+façon. 
+
+Le volume d'élution final est de 25µL. 
+*** (1) Extraction des bandes à 3kb
+On voit quand même quelques bandes à 3kb dans la PCR sur le gel dans lequel on a
+fait migrer la PCR sur les produits InFusion. L'idée est de les extraire en
+coupant les bandes et de purifier ces produits là. 
+
+J'utilise donc un gel tout neuf à 0.8%, pour faire migrer l'ensemble du produit
+PCR. Je ne prends pas de photo du gel avant, pour limiter l'exposition aux UV.
+Sur la plaque à UV, les bandes se voient bien. J'ai pu découper nettement les
+deux bandes correspondant à la première ligature, mais j'ai eu plus du mal à
+rester aligné pour les bandes de la deuxième. Je n'ai pas continué avec celles
+là, pour éviter les contaminations SW -> WS. Bien dommage. Espérons que ça
+suffira pour la PCR. 
+
+#+BEGIN_QUOTE
+Leçon du jour : espacer les bandes sur un gel dont on veut couper les bandes
+après coup. Ça rend les choses beaucoup plus simples et évite les contaminations
+entre les puits. 
+#+END_QUOTE
+
+J'ai ensuite purifié les bandes obtenues. Deuxième leçon du jour, répartir les
+gels dans des eppendorfs de 2mL si la masse est trop élevée : il faut ajouter
+200µL de tampon NT1 pour 100mg de masse de gel. J'avais 600mg de masse de gel
+pour le WS. Il est plutôt difficile de dissoudre l'agarose à 0.8% dans un petit
+eppendorf, et on ne peut pas ajouter la masse qu'on veut. Résultat : la colonne
+se bouche, les temps de centrifugations sont bien plus long, l'éthanol s'évapore
+moins etc… Faire attention donc. 
+
+*** (1) PCR sur les produits de ligature InFusion et les purifications des bandes
+L'idée de base en purifiant les bandes était de refaire une PCR =1411 1393=
+dessus, pour amplifier le fragment d'intérêt et le cloner dans le pGEM-T. Étant
+donné le déroulement de la purification des bandes, j'ai également refait la PCR
+sur les produits de ligature, pour pouvoir refaire la manip si jamais la PCR sur
+les bandes purifiées ne marchait pas.
+
+J'ai fait les PCR dans 50µL. 
+
+*** (1) Relance des clones WS4 et SW4
+Le volume de produit de ligature diminuant rapidement, j'ai relancé les souches
+porteuses du plasmide =SW= ou =WS= dans 5mL de =LBamp75=. Le but est d'extraire
+les plasmides et de refaire la ligature InFusion avec les produits de la PCR
+aphA3 et ancre purifié.
+** 2016-02-18 Jeudi
+
+*** (1) Révélation de la PCR =1411 1393=
+Hier, j'ai fait une PCR =1411 1393= sur les produits de ligature InFusion et sur
+la bande à 3kb purifiée sur colonne. Le but était d'amplifier nos grands
+fragments =WS-kanAncre= et =SW-KanAncre=. 
+
+#+CAPTION: gel0.8%  L:3µL-1kb  tps 0.7''  vol 5µL \\
+#+CAPTION: À gauche la PCR sur les produits de ligature InFusion. 
+#+CAPTION: À droite la PCR sur l'extraction des bandes issues de la PCR sur les produits de ligature InFusion. C'est clair ? Non.  
+#+ATTR_LATEX: :float t :width 0.8\linewidth
+[[/Volumes/HDD/stage/img/20160218_00.JPG]]
+
+Étant donné que la purification n'a pas très bien fonctionné, on ne s'attendait
+pas beaucoup à voir les bandes sur le gel. Comme attendu, on ne les voit pas.
+Ceci dit, on les voit toujours sur le produit de ligature. Les PCR étant
+réalisées dans 50µL, il me reste 45µL à faire migrer sur un grand gel pendant
+1H30, pour bien discriminer les bandes.
+
+Après discussion avec Thibault, on peut utiliser à la place du BET le
+SybrSafe[fn:4:[[https://www.thermofisher.com/fr/fr/home/life-science/dna-rna-purification-analysis/nucleic-acid-gel-electrophoresis/dna-stains/sybr-safe.html]]]
+à la place du BET. Ça permet de ne pas exposer aux UVs, donc de limiter le taux
+de mutation. Ça augmente également l'efficacité des clonages après. On dispose
+le gel sur la lampe à lumière bleue, on découpe les grandes bandes etc… 
+
+*** (1) Extraction des bandes =1411 1393= Sybr Safe
+Hier, j'ai relancé des PCR sur les produits de ligatures, dans 50µL pour pouvoir
+extraire les bandes dans de bonnes conditions. J'ai donc utilisé le Sybr Safe
+pour couler un gel 0.8% (1.2g d'agarose dans 150mL et 15µL de Sybr Safe selon
+les recommandations dans le protocole[fn:5:On peut également utiliser un bain]).
+J'ai utilisé un peigne à large puits en réunissant les puits deux à deux par un
+bout de scotch. J'ai laissé migré pendant 1H30 à 100V. Les bandes sont bien
+discriminées. Par contre on ne voyait rien sur la lumière bleue. J'ai donc
+extrait les bandes aux UV (tout ça pour ça). 
+
+#+CAPTION: gel0.8%  L:3µL-1kb  tps 0.5''  vol 45µL \\
+#+CAPTION: L'état du gel après la découpe des bandes. 
+#+CAPTION: On dirait que j'ai chopé les bonnes bandes. 
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160218_01.JPG]]
+
+J'ai purifié les bandes avec le kit standard NucleoSpin. 
+
+J'ai ensuite refait une PCR dessus dans 50µL avec les amorces =1411 1393=. Ça
+n'a pas fonctionné. On n'amplifie rien à la taille attendue. C'est bien pénible
+quand même. Bon du coup on laisse tomber cette manip'.
+
+*** (1) Extraction plasmides WS et SW
+Hier j'avais lancé 3 tubes par souches d'/E.coli/ pGEM-T SW et WS, pour pouvoir
+refaire les ligatures InFusion au cas où ça ne marcherait pas. J'ai extrait les
+plasmides dans 6 tubes séparés, que j'ai dosés au nanodrop.
+
+**** Nanodrop : 
+
+| WS1 |  94.0 |  93.4 |  95.9 |
+| WS2 |  37.9 |  38.4 |  37.8 |
+| WS3 | 107.1 | 113.9 | 107.5 |
+| SW1 |  57.9 |  57.7 |  62.0 |
+| SW2 |  49.8 |  50.7 |  49.9 |
+| SW3 |  54.8 |  54.6 |  54.5 |
+
+*** (1) Digestion SpeI
+J'ai lancé la digestion =SpeI= sur la nuit, dans 5 tubes par plasmide avec les
+volumes suivants :
+
+|              | WS | SW |
+|--------------+----+----|
+| plasmide     | 10 | 17 |
+| buffer Tango |  2 |  2 |
+| SpeI         |  1 |  1 |
+| H2O          |  7 |  0 |
+|--------------+----+----|
+| Volume final | 20 | 20 |
+
+** 2016-02-19 Vendredi 
+*** (1) Bibliographie Lartillot 
+
+*** (1) Workflow polysnp 
+J'ai fait un petit schéma descriptif du workflow de polySNP. 
+#+BEGIN_SRC dot :file img/polysnp-workflow.png :cmdline -Kdot -Tpng :exports none :results silent
+  digraph {
+          graph [fontname = "Courier"];
+          node [fontname = "Courier"];
+          edge [fontname = "Courier"];
+
+          aln -> polySNP
+          aln [label = "aln.fasta", shape = Mrecord]
+
+          spectro -> polySNP
+          spectro [label = "file.ab1", shape = Mrecord]
+
+          polySNP -> SNP
+          polySNP -> POLY
+          polySNP -> PHRED
+
+          SNP -> SNPcsv [label = " +\nheader", fontcolor = "gray"]
+          SNPcsv [label = "SNP.csv", shape = Mrecord]
+          POLY -> POLYcsv [label = " +\nheader", fontcolor = "gray"]
+          POLYcsv [label = "POLY.csv", shape = Mrecord]
+          PHRED -> PHDcsv [label = " +\nheader", fontcolor = "gray"]
+          PHDcsv [label = "PHD.csv", shape = Mrecord]
+
+          SNPcsv  -> filecsv
+          POLYcsv -> filecsv
+          PHDcsv  -> filecsv
+
+          filecsv [label = "file.csv", shape = Mrecord]
+
+          filecsv -> data [label = " csvstack"]
+          data [label = "data.csv", shape = Mrecord]
+  }
+#+END_SRC
+
+#+attr_latex: :float t :width \linewidth 
+[[file:img/polysnp-workflow.png]]
+*** (1) Diagramme workflow clonage 
+J'ai utilisé le language grahpviz pour faire le petit graphique suivant. 
+#+begin_src dot :file img/clonage.png :cmdline -Tpng :exports none :results silent
+  digraph {
+          graph [fontname= "GillSans", fontsize = 12];
+          node [fontname = "GillSans", fontsize = 12];
+          edge [fontname = "GillSans", fontsize = 12];
+
+          A1 [label = "Culture ON\nE.coli pGEM-T\nWS & SW"]
+          A2 [label = "Extraction\nPlasmide"]
+          A3 [label = "Digestion\nSpeI"]
+          A30[label = "Déphosphorylation"]
+          A4 [label = "Purification"]
+          A5 [label = "NanoDrop", shape = Mrecord]
+
+          A1 -> A2
+          A2 -> A3
+          A3 -> A30 
+          A30 -> A4
+          A4 -> A5
+
+          A5 -> C0
+
+          B1 [label = "PCR aphA3\nancre"]
+          B2 [label = "Purification"]
+          B3 [label = "NanoDrop", shape = Mrecord]
+
+          B1 -> B2
+          B2 -> B3
+
+          B3 -> C0
+
+          C0 [label = "InFusion"]
+          C1 [label = "Transformation\ndans\nE.coli"]
+          C2 [label = "Étalement"]
+
+          C0 -> C1
+          C1 -> C2
+
+  }
+#+end_src
+
+#+CAPTION: Un diagramme qui explique le workflow du clonage. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[file:img/clonage.png]]
+
+** 2016-02-22 Lundi 
+*** (1) Déphosphorylation et purification des plasmides linéarisés =SpeI= 
+J'ai utilisé le protocole de déphosphorylation précédemment décrit pour
+déphosphoryler les plasmides linéarisés depuis vendredi, et placés à -20°C entre
+temps. J'ai ensuite purifié en utilisant le kit classique nucleospin, modifié
+pour les fragments de grande taille.
+
+# le diagramme du protocole de déphosphorylation. 
+#+BEGIN_SRC dot :file img/dephospho.png :cmdline -Kdot -Tpng :exports none :results silent
+  digraph{
+            graph [fontname = "Courier"];
+            node [fontname = "Courier"];
+            edge [fontname = "Courier"];
+
+    CIAP1U [label="CIAP\nsolution\nmère"]
+    CIAP01U [label = "CIAP\nsolution\ndiluée"]
+    tp [label = "Tampon CIAP"]
+    plas [label = "plasmide\nouvert"]
+    h2o [label = "eau pure"]
+
+    tp -> CIAP01U [label = "4.5 µL"]
+    CIAP1U -> CIAP01U [label = "0.5 µL"]
+
+    plas -> mix [label = "18 µL"]
+    h2o ->  mix [label = "4 µL"]
+    tp ->   mix [label = "2.5 µL"]
+    CIAP01U -> mix [label = "0.5 µL"]
+
+    mix -> purif [label = "30 min\nà 37°C"]
+    purif [label = "Purif", shape = box]
+
+  }
+#+END_SRC
+
+#+ATTR_LATEX: :float t :width \linewidth
+[[file:img/dephospho.png]]
+**** Contrôle de la purification : 
+
+# TODO insert gel image here
+
+**** Dosages nanodrop :
+| fragment |     1 |     2 |     3 | moyenne (ng) | taille |
+|----------+-------+-------+-------+--------------+--------|
+| =ancre=  |   9.7 |   8.8 |  10.9 |         9.25 |   1061 |
+| =aphA3=  |  14.1 |  11.8 |  12.7 |        12.95 |   1290 |
+| =WS=     | 130.5 | 132.0 | 130.3 |       131.25 |   3726 |
+| =SW=     | 122.3 | 119.5 | 125.3 |        120.9 |   3726 |
+#+TBLFM: $5=vmean($2..$3)
+
+Les masses de plasmides semblent largement suffisantes. 
+Par contre on est assez embêté pour les masses d'insert. Il faut faire les PCR
+dans 50µL pour avoir suffisament de volume. Si on veut au moins 50ng d'insert
+comme préconisé dans le kit, il faudrait 5µL de chaque, mais ça n'est pas
+possible étant donné qu'on fait les réactions de ligature InFusion dans 10µL. 
+
+*** (1) Ligature InFusion 
+**** Calcul des volumes :
+J'utilise l'outil à cette
+adresse[fn:6:[[http://bioinfo.clontech.com/infusion/molarRatio.do]]].
+
+Les masses en ng recommandées sont les suivantes pour 100 ng de plasmide :
+| ancre | aphA3 |
+|-------+-------|
+|    57 |    70 |
+
+J'ai donc reconcentré les fragments de PCR aphA3 et ancre au SpeedVac pour
+utiliser un volume plus faible. Il est préconisé d'utiliser au minimum 50 ng
+d'insert. 
+
+Concentrations après SpeedVac : (j'ai repris le tube d'aphA3 dans 5µL, pour
+l'autre il restait suffisament de volume). 
+
+| fragment |    1 |    2 |    3 | $\bar{x}$ (ng) |
+|----------+------+------+------+----------------|
+| ancre    | 45.2 | 46.3 | 54.8 |          45.75 |
+| aphA3    | 16.4 | 15.2 | 20.6 |           15.8 |
+#+TBLFM: $5=vmean($2..$3)
+
+#+BEGIN_QUOTE
+Utiliser un volume de PCR plus grand la prochaine fois. 
+#+END_QUOTE
+
+Bon du coup j'ai laissé tombé, il n'y avait vraiment pas assez de volume pour
+pouvoir faire la ligature dans de bonnes conditions. Ce qui m'énerve plutôt
+beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos. 
+**** Protocole de ligature InFusion :
+#+begin_src dot :file img/infusion.png :cmdline -Tpng :exports none :results silent
+  digraph {
+  graph [fontname = "Courier"];
+  node  [fontname = "Courier"];
+  edge  [fontname = "Courier"];
+
+       plasmide -> mix [label = "Vp"]
+       ancre -> mix [label = "Vi"]
+       aphA3 -> mix [label = "Vi"]
+       buffer -> mix [label = "2 µL"]
+
+       mix -> transfo [label = "15 min\nà 50°C"]
+       transfo [shape = box]
+
+  }
+#+end_src
+
+#+ATTR_LATEX: :float t :width \linewidth
+[[file:img/infusion.png]]
+*** (1) PCR aphA3 et ancre 
+Je fais les PCR dans 50µL.
+
+**** Migration sur gel :
+
+**** Purification 
+
+*** (A) Analyses des données d'Ivan Matic
+
+J'ai mis au point un script d'extraction des séquences en fasta depuis les
+fichiers bioedit qu'ils nous ont envoyé. Il faut maintenant voir ce qu'il est
+possible d'en faire en relisant leur papier pour essayer de comprendre comment
+ils ont fonctionné. 
+
+
+
+** 2016-02-23 Mardi
+*** (1) Purification des fragments aphA3 et ancre
+Pour la énième fois, je purifie les fragments aphA3 et ancre dans l'idée d'en
+obtenir une concentration assez grande (au moins 50ng) dans un volume
+raisonnablement utilisable avec InFusion. 
+
+Les concentrations brutes étant trop faibles, je les ai reconcentrées au
+SpeedVac. 
+
+*** (1) PCR aphA3 et Ancre
+J'ai refait une PCR aphA3 et ancre, pour pouvoir les purifier demain si jamais
+la ligature ne fonctionnait pas. 
+*** (1) Ligature InFusion
+Je tente la ligature InFusion avec les volumes suivants :
+
+|           | volume |
+|-----------+--------|
+| plasmide  |      1 |
+| insert 1  |    2.5 |
+| insert 2  |    2.5 |
+| eau       |      2 |
+| HD Fusion |      2 |
+
+[[file:img/infusion.png]]
+
+*** (1) Transformation cellules stellar
+
+#+begin_src dot :file img/stellar.png :cmdline -Tpng :exports none :results silent
+digraph {
+graph [fontname = "Courier"];
+node  [fontname = "Courier"];
+edge [fontname = "Courier"];
+
+     eppendorf [shape= box]
+     cellules -> eppendorf [label = "décongélation\n50µL dans eppendorf"]
+     adn -> eppendorf [label = "5ng de ligature"]
+     eppendorf -> glace [label = "30min", shape = box]
+     shock42 [label = "bain\nmarie", shape = box]
+     glace -> shock42 [label = "60 sec\nà 42°C", shape = box ]
+     shock42 -> glace2 [label = "2 min"]
+     soc -> glace2 [label = "450µL"]
+     glace2 -> agit [label = "1H à 37°C"]
+     agit [label = "Agitation"]
+     agit -> étalement [label = "3 * 200 µL"]
+     étalement [label = "Étalement\nsur LBKan50"]
+     
+}
+#+end_src
+
+#+ATTR_LATEX: :float t :width \linewidth
+[[file:img/stellar.png]]
+
+J'ai étalé sur LBKan50. Les seules cellules qui seront capables de pousser
+seront celles qui possèdent le plasmide avec l'insert dedans. 
+*** (1) Relancé cellules stellar
+Avec le restant d'un tube, j'ai lancé des cellules stellar sur la nuit dans 5mL
+de LB. L'idée est d'en faire un glycérol pour préparer des cellules compétentes
+maison.  
+
+** 2016-02-24 Mercredi
+*** (1) Contrôle des transformations cellules Stellar
+À ce jour on ne voit rien sur les boîtes. Je laisse un peu pousser la journée
+pour voir si des colonies n'auraient pas envie de grossir un peu pendant la
+journée mais je n'y crois pas trop. 
+
+*** (1) Purification des produits de PCR aphA3 et ancre 
+La PCR d'hier n'a pas fonctionné, toujours ces soucis de Taq je suppose. Je n'ai
+rien dans aucun des mix. Bien entendu je n'ai pas de témoin positif parce que je
+travaille comme un gros porc. 
+
+Je refais une PCR aphA3 et ancre, il ne me reste plus de produit pour pouvoir
+refaire la ligature. J'utilise la Taq Phusion HF pour la tester et j'espère
+avoir un meilleur rendement de purification. 
+
+**** Volumes utilisés :
+Tirés du cahier de Florence daté du [2015-07-10 Fri], page 193. 
+
+|                      | volumes pour 4 tubes |
+|----------------------+----------------------|
+| buffer phusion HF 5X |                   20 |
+| dNTPs                |                   10 |
+| amorce 1             |                  1.6 |
+| amorce 2             |                  1.6 |
+| polymérase           |                  0.5 |
+|----------------------+----------------------|
+| eau qsp 25 µL        |                   65 |
+
 
 * config                                                                       :noexport:
 #+latex_header: \usepackage{pdfpages}
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
-#+options: H:4 toc:nil
-
-Previewing dans terminal :
-NE PAS C-c C-c LÀ ! EMACS PLANTE !
-#+BEGIN_SRC sh
-latexmk -pdf journal.tex -f -pdflatex="pdflatex -interaction nonstopmode" -pvc
-#+END_SRC
+#+options: H:4 
 
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
 * todos                                                                        :noexport:
-** DONE migration pcr mercredi 03
-CLOSED: [2016-02-05 Fri 08:49]
-** DONE photo migration digestion
-CLOSED: [2016-02-11 Thu 08:29]
-** DONE photo pcr apha3
-CLOSED: [2016-02-11 Thu 08:29]
-** DONE photo pcr ancre
-CLOSED: [2016-02-11 Thu 08:29]
