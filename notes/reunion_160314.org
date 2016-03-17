@@ -1,0 +1,94 @@
+#+title: Réunion projet 14 mars
+
+* Manips
+
+** (1) Transformants SW et WS
+Un aperçu du protocole de clonage :
+
+#+attr_html: :width 400px
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/notes/img/clonage.png]]
+
+J'ai ensuite transformé /Acinetobacter/ par les plasmides extraits,
+que j'ai sélectionné par culture sur milieu riche + kanamycine.
+|            |  UFC | UFC / ml |
+|------------+------+----------|
+| SW         | 60.3 |   6.0e+4 |
+| SW + DNAse | 68.0 |   6.8e+4 |
+| WS         | 59.3 |   5.9e+4 |
+| WS + DNAse | 66.0 |   6.6e+4 |
+
+J'ai isolé 100 colonies de SW et WS transformants que j'ai purifiés à
+nouveau sur milieu riche + kanamycine, et suspendus dans l'eau pure. À
+partir de ces suspensions, j'ai fait des PCR haute fidélité, en
+utilisant une amorce légèrement plus en amont de la zone de conversion
+que l'amorce précédente. 
+
+#+CAPTION: SW
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160310_00.JPG]]
+
+#+CAPTION: WS
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160310_01.JPG]]
+
+Prêt à envoyer à séquencer dans la semaine !
+
+** (2) Séquençage des ancres
+Les taux de mutations sont anormalement élevés dans les traces de
+conversion de certains clones de S et de W. 
+
+On a voulu séquencer les ancres de ces clones là pour déterminer si
+les taux de mutation étaient comparables où spécifiquement dus à la
+conversion.
+
+** (3) Séquençage des clones présentant des pics secondaires 
+Certains clones montrent des pics secondaires. 
+
+Ce qu'on sait déjà :
+
+- les pics secondaires sont fréquemment associés aux positions de SNP
+  qu'on introduit.
+- la répartition des clones présentant ces pics secondaires dans les
+  plaques n'est pas aléatoire. On avait donc supposé qu'il s'agissait
+  de contaminations "inter-puits".
+
+Ce qu'on a fait :
+
+Pour répondre à ça, on a envisagé de séquencer 31 colonies isolées
+depuis la suspension de départ ayant servi aux PCR de Florence, et de
+reséquencer en parallèle la suspension de départ. J'ai donc choisi un
+clone S et un clone W qui montrent de "beaux" pics secondaires. J'ai
+isolé depuis la suspension de départ 31 clones, et j'ai fait des PCR
+haute fidélité sur ces colonies, ainsi que sur la suspension de
+départ. 
+
+J'ai également fait la même chose pour un clone W qui montre une trace
+de conversion complexe (/ie/ une alternance ponctuelle de SNP S et W),
+ainsi que des pics secondaires. 
+
+Où on en est ?
+
+Les PCR sont prêtes et n'attendent plus que d'être mises en plaque
+pour être séquencées.
+
+* Analyses 
+
+** Données Elez-Matic 2007
+Les données sont en cours d'analyse. 
+
+Il faut les nettoyer, elles sont sous un format propriétaire Bioedit.
+
+Objectif :
+[[/Users/samuelbarreto/Pictures/regular_expressions.png]]
+
+* Suite(s) ?
+
+** Modèle /Acinetobacter/ 
+D'autres régions du génome ? 
+
+Refaire une transfo S et W, WS, SW pour augmenter $n$ ?
+
+** Autres modèles ?
+- /E.coli/
+- /Burkholderia/

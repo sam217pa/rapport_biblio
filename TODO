@@ -6,26 +6,34 @@
 :PROPERTIES:
 :CATEGORY: @manip
 :END:
-** (1) Construire les mutants alternants                                        :MANIP1:
-*** TODO purification des fragments aphA3 et ancre 
-<2016-02-23 Tue 09:30>
-*** TODO migration des fragments apha3 et ancre
-<2016-02-23 Tue 10:00>
-*** TODO dosage des fragments apha3 et ancre au nanodrop
-<2016-02-23 Tue 10:10>
-*** TODO ligature InFusion
-<2016-02-23 Tue 10:20>
-*** TODO transformation cellules Stellar
-<2016-02-23 Tue 10:40>
-*** TODO lancer le nettoyage du spiraleur
-<2016-02-25 Thu 09:30>
-*** TODO envoyer séquencer le WT dans le même run
+** (5) Refaire les transformations /Acinetobacter/                              :MANIP5:
+*** TODO couler 400 boîtes LBkan50 <2016-03-17 Thu 13:00>
+*** TODO PCR de contrôle sur les colonies pSkanancre et pWkanancre <2016-03-17 Thu 16:00>
+Les colonies n'ont pas bien poussé ce matin, sortie de glycérol
+difficile. Je vais faire les PCR sur colonies cette après-midi, pour
+lancer des cultures de nuit ce soir et faire les extractions
+plasmidiques demain. 
+** DONE (1) Construire les mutants alternants                                  :MANIP1:
+CLOSED: [2016-03-16 Wed 14:31]
+*** DONE envoyer séquencer le WT dans le même run
+CLOSED: [2016-03-16 Wed 14:29]
+*** DONE refaire les PCR 1073 1392 à 56°C
+CLOSED: [2016-03-16 Wed 14:29]
+*** DONE préparer la plaque à envoyer à séquencer
+CLOSED: [2016-03-16 Wed 14:29]
 ** (2) Séquencer les ancres                                                     :MANIP2:
-** (3) Séquencer les hétérozygotes                                              :MANIP3:
-*** TODO PCR de test de la taq++
+*** TODO aligner les séquences et analyser la présence de mutations
+
+** DONE (3) Séquencer les hétérozygotes                                        :MANIP3:
+CLOSED: [2016-03-16 Wed 14:31]
+*** DONE préparer la plaque à envoyer à séquencer
+CLOSED: [2016-03-16 Wed 14:29]
+<2016-03-14 Mon 15:00>
 ** (4) Construire les \delta-MMR
 *** TODO trouver la séquence des orthologues de MutL et MutH sur le génoscope
-*** TODO chercher l'existence de BER chez les bactéries
+*** DONE chercher l'existence de BER chez les bactéries
+CLOSED: [2016-02-26 Fri 14:11]
+
 * ANALYSES                                                                      :ANALYSES:ORDI:
 :PROPERTIES:
 :CATEGORY: @analyses
@@ -33,11 +41,14 @@
 ** TODO analyses données Ivan Matic
 ** TODO créer makefile reproductible
 ** TODO Sauvegarder données.
-SCHEDULED: <2016-03-01 Tue 18:00 .+1w>
+SCHEDULED: <2016-03-24 Thu 18:00 .+1w>
 :PROPERTIES:
 :STYLE:    habit
-:LAST_REPEAT: [2016-02-23 Tue 08:51]
+:LAST_REPEAT: [2016-03-17 Thu 09:04]
 :END:
+- State "DONE"       from "TODO"       [2016-03-17 Thu 09:04]
+- State "DONE"       from "TODO"       [2016-02-26 Fri 14:16]
+- State "DONE"       from "TODO"       [2016-02-26 Fri 14:11]
 - State "DONE"       from "TODO"       [2016-02-23 Tue 08:51]
 - State "DONE"       from "TODO"       [2016-02-03 Wed 18:31]
 - State "DONE"       from "WAIT"       [2016-01-27 Wed 15:47]
@@ -50,8 +61,19 @@ SCHEDULED: <2016-03-01 Tue 18:00 .+1w>
 ** TODO remettre rapport stage vincent
 ** TODO faire diagramme purif modifié avec dot. 
 ** TODO faire diagramme protocole cellules compétentes aurélie
+** TODO coller codes barre sequençage
+** TODO coller accusé réception amorce 1073 bis. 
+** TODO coller protocole transformation Florence. 
 * ÉCHÉANCES                                                                     :RDV:
+** DONE réunion projet <2016-03-14 Mon 13:30>
+CLOSED: [2016-03-15 Tue 08:20]
+** DONE réunion équipe <2016-03-09 Wed 13:30>
+CLOSED: [2016-03-11 Fri 11:25]
+** RDV! réunion Mr Gène Synthétique <2016-03-17 Thu 14:00>
 * BIBLIO
+** TODO lire les références 37 38 14 et 15 du papier 
+cite:croucher_horizontal_2016
+
 * capture
 * configuration                                                                 :CONFIG:
 #+title: Stage : TODO

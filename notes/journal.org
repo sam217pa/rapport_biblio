@@ -1,5 +1,5 @@
-# -*- mode: org; eval: (require 'org-ref) -*- 
-
+# -*- mode: org -*- 
+ # eval: (require 'org-ref)
 #+CATEGORY: STAGE
 
 # manip (1) : transformations WS et SW
@@ -13,6 +13,15 @@
 
 \clearpage
 
+* config                                                                       :noexport:
+#+latex_header: \usepackage{pdfpages}
+#+LATEX_CLASS: journal
+#+LANGUAGE: fr
+#+options: H:4 
+
+[[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
+
+* todos                                                                        :noexport:
 * Annexes                                                                      
 ** Protocoles                                                                  :noexport:
 #+TOC: headlines 2 local
@@ -1118,6 +1127,7 @@ Le volume d'élution final est de 50µL.
 | SW4   |      2 |          19.5 |
 | SW4   |      3 |          20.1 |
 *** (1) Digestions des plasmides HindIII et SpeI
+
 Je réalise des digestions depuis les plasmides extraits pour vérifier le sens
 d'insertion.
 
@@ -1942,9 +1952,9 @@ volumes suivants :
 J'ai fait un petit schéma descriptif du workflow de polySNP. 
 #+BEGIN_SRC dot :file img/polysnp-workflow.png :cmdline -Kdot -Tpng :exports none :results silent
   digraph {
-          graph [fontname = "Courier"];
-          node [fontname = "Courier"];
-          edge [fontname = "Courier"];
+          graph [fontname = "Gill Sans"];
+          node [fontname = "Gill Sans"];
+          edge [fontname = "Gill Sans"];
 
           aln -> polySNP
           aln [label = "aln.fasta", shape = Mrecord]
@@ -2032,9 +2042,9 @@ pour les fragments de grande taille.
 # le diagramme du protocole de déphosphorylation. 
 #+BEGIN_SRC dot :file img/dephospho.png :cmdline -Kdot -Tpng :exports none :results silent
   digraph{
-            graph [fontname = "Courier"];
-            node [fontname = "Courier"];
-            edge [fontname = "Courier"];
+            graph [fontname = "Gill Sans"];
+            node [fontname = "Gill Sans"];
+            edge [fontname = "Gill Sans"];
 
     CIAP1U [label="CIAP\nsolution\nmère"]
     CIAP01U [label = "CIAP\nsolution\ndiluée"]
@@ -2060,8 +2070,11 @@ pour les fragments de grande taille.
 [[file:img/dephospho.png]]
 **** Contrôle de la purification : 
 
-# TODO insert gel image here
-
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.7  vol 2µL \\
+#+CAPTION: Les deux digestinos ont l'air OK. 
+#+CAPTION: Il ne semble pas y avoir de plasmide non ouvert. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160222_01.JPG]]
 **** Dosages nanodrop :
 | fragment |     1 |     2 |     3 | moyenne (ng) | taille |
 |----------+-------+-------+-------+--------------+--------|
@@ -2110,9 +2123,9 @@ beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos.
 **** Protocole de ligature InFusion :
 #+begin_src dot :file img/infusion.png :cmdline -Tpng :exports none :results silent
   digraph {
-  graph [fontname = "Courier"];
-  node  [fontname = "Courier"];
-  edge  [fontname = "Courier"];
+  graph [fontname = "Gill Sans"];
+  node  [fontname = "Gill Sans"];
+  edge  [fontname = "Gill Sans"];
 
        plasmide -> mix [label = "Vp"]
        ancre -> mix [label = "Vi"]
@@ -2128,11 +2141,8 @@ beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos.
 #+ATTR_LATEX: :float t :width \linewidth
 [[file:img/infusion.png]]
 *** (1) PCR aphA3 et ancre 
-Je fais les PCR dans 50µL.
-
-**** Migration sur gel :
-
-**** Purification 
+Je fais les PCR dans 50µL pour avoir de quoi purifier demain. Il faut
+suffisament de fragment pour pouvoir faire la transformation et la ligation. 
 
 *** (A) Analyses des données d'Ivan Matic
 
@@ -2140,8 +2150,6 @@ J'ai mis au point un script d'extraction des séquences en fasta depuis les
 fichiers bioedit qu'ils nous ont envoyé. Il faut maintenant voir ce qu'il est
 possible d'en faire en relisant leur papier pour essayer de comprendre comment
 ils ont fonctionné. 
-
-
 
 ** 2016-02-23 Mardi
 *** (1) Purification des fragments aphA3 et ancre
@@ -2172,27 +2180,29 @@ Je tente la ligature InFusion avec les volumes suivants :
 
 #+begin_src dot :file img/stellar.png :cmdline -Tpng :exports none :results silent
 digraph {
-graph [fontname = "Courier"];
-node  [fontname = "Courier"];
-edge [fontname = "Courier"];
+graph [fontname = "Gill Sans", dpi = 300];
+node  [fontname = "Gill Sans"];
+edge  [fontname = "Gill Sans"];
+size = "8, 5"
 
      eppendorf [shape= box]
-     cellules -> eppendorf [label = "décongélation\n50µL dans eppendorf"]
-     adn -> eppendorf [label = "5ng de ligature"]
-     eppendorf -> glace [label = "30min", shape = box]
-     shock42 [label = "bain\nmarie", shape = box]
-     glace -> shock42 [label = "60 sec\nà 42°C", shape = box ]
-     shock42 -> glace2 [label = "2 min"]
-     soc -> glace2 [label = "450µL"]
-     glace2 -> agit [label = "1H à 37°C"]
-     agit [label = "Agitation"]
-     agit -> étalement [label = "3 * 200 µL"]
-     étalement [label = "Étalement\nsur LBKan50"]
-     
+     cellules -> eppendorf [label = " décongélation\n50µL dans eppendorf"]
+     adn -> eppendorf [label = " 5ng de ligature"]
+     eppendorf -> glace [label = " 30min", shape = box]
+     shock42 [label = " bain\n marie", shape = box]
+     glace -> shock42 [label = " 60 sec\n à 42°C", shape = box ]
+     shock42 -> glace2 [label = " 2 min"]
+     glace2 [label = " glace"]
+     soc -> glace2 [label = " 450µL"]
+     glace2 -> agit [label = " 1H à 37°C"]
+     agit [label = " Agitation"]
+     agit -> étalement [label = " 3 * 200 µL"]
+     étalement [label = " Étalement\n sur LBKan50"]
 }
 #+end_src
 
-#+ATTR_LATEX: :float t :width \linewidth
+#+CAPTION: Protocole schématisé de transformation des cellules stellar.
+#+ATTR_LATEX: :float t :width 0.7\linewidth
 [[file:img/stellar.png]]
 
 J'ai étalé sur LBKan50. Les seules cellules qui seront capables de pousser
@@ -2205,38 +2215,977 @@ maison.
 ** 2016-02-24 Mercredi
 *** (1) Contrôle des transformations cellules Stellar
 À ce jour on ne voit rien sur les boîtes. Je laisse un peu pousser la journée
-pour voir si des colonies n'auraient pas envie de grossir un peu pendant la
-journée mais je n'y crois pas trop. 
-
+pour voir si des colonies n'auraient pas envie de grossir un peu[fn:7:même si je
+n'y crois pas trop…]. 
 *** (1) Purification des produits de PCR aphA3 et ancre 
 La PCR d'hier n'a pas fonctionné, toujours ces soucis de Taq je suppose. Je n'ai
 rien dans aucun des mix. Bien entendu je n'ai pas de témoin positif parce que je
 travaille comme un gros porc. 
 
 Je refais une PCR aphA3 et ancre, il ne me reste plus de produit pour pouvoir
-refaire la ligature. J'utilise la Taq Phusion HF pour la tester et j'espère
-avoir un meilleur rendement de purification. 
+refaire la ligature. J'utilise la Taq Phusion HF pour la tester et avoir un
+meilleur rendement de purification.
 
 **** Volumes utilisés :
 Tirés du cahier de Florence daté du [2015-07-10 Fri], page 193. 
 
-|                      | volumes pour 4 tubes |
-|----------------------+----------------------|
-| buffer phusion HF 5X |                   20 |
-| dNTPs                |                   10 |
-| amorce 1             |                  1.6 |
-| amorce 2             |                  1.6 |
-| polymérase           |                  0.5 |
-|----------------------+----------------------|
-| eau qsp 25 µL        |                   65 |
+|                      | 4 tubes | 1 tube |
+|----------------------+---------+--------|
+| buffer phusion HF 5X |      20 |      5 |
+| dNTPs                |      10 |    2.5 |
+| amorce 1             |     1.6 |    0.4 |
+| amorce 2             |     1.6 |    0.4 |
+| polymérase           |     0.5 |  0.125 |
+|----------------------+---------+--------|
+| eau qsp 25 µL        |      65 |  16.25 |
+#+TBLFM: @2$3..@>$3=$2 / 4
+
+**** Migration sur gel :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160224_00.JPG]]
+
+Il n'y a pas grand chose dans le fragment aphA3. Ça n'est pas normal : les
+amorces sont fraîchement diluées, le plasmide pAVA est celui que j'utilise le
+plus souvent. Je vais essayer avec un autre plasmide, mais ça reporte le clonage
+du temps de PCR… Une perte de temps de fou. 
+
+Résultat de cette PCR : 
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160224_01.JPG]]
+
+*** (1) Coulé boîte LBKan50 et LBAmp75kan50
+
+*** (1) Purification aphA3 et ancre
+J'ai purifié les fragments AphA3 et ancre issues des PCR Phusion. 
+
+Dosage nanodrop :
+| fragment |      |      |      |   moyenne |
+|----------+------+------+------+-----------|
+| aphA3    | 61.4 | 61.7 | 62.5 | 61.866667 |
+| ancre    | 79.0 | 82.4 | 79.8 |      80.4 |
+#+TBLFM: @2$5..@3$5=vmean($2..$4)
+** 2016-02-25 Jeudi
+*** (3) PCR sur les clones polymorphes
+C'est le jour de la PCR de l'espace. 
+
+J'ai passé aux UVs sous la hotte de PGE les pipettes, l'eau, deux paires de
+gants, des portoirs (dont un avec cache), la plaque de PCR, le cache en
+plastique spécial anti-conta, le cache en alu pour sceller la plaque, une
+barrette témoin, un Mc Chicken. J'ai laissé aux UVs 40min.
+
+|                      | 1 tube 25 | 1 tube 50 | 100 tubes |
+|----------------------+-----------+-----------+-----------|
+| buffer phusion HF 5X |         5 |        10 |      1000 |
+| dNTPs                |       2.5 |        5. |      500. |
+| amorce 1             |       0.4 |       0.8 |       80. |
+| amorce 2             |       0.4 |       0.8 |       80. |
+| polymérase           |     0.125 |      0.25 |       25. |
+|----------------------+-----------+-----------+-----------|
+| eau qsp 25 µL        |    16.575 |     33.15 |     3315. |
+|----------------------+-----------+-----------+-----------|
+| volume final         |       25. |       50. |     5000. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 100::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+
+J'ai mis une hotte du p2 aux UV le temps de faire le mix. 
+J'ai ensuite emmené la Taq dans un portoir à -20°C, avec les amorces et le reste
+du kit. 
+
+J'ai fait le mix dans un falcon de 15mL. Il faut homogénéiser le mix à la p1000
+avant de mettre dans les puits. L'idéal est de placer 200µL de mix dans une
+barrette stérile, et d'utiliser une multicanaux pour mettre de cette barrette
+dans la plaque. Comme je suis con, j'ai oublié de mettre à stériliser une
+multicanaux. J'ai donc fait à la main. 96 pipettages. 
+
+Au p2, j'ai utilisé la multicanaux 1-10µL pour mettre 1µL de culture dans les
+mix. J'ai utilisé la p3 pour prendre 1µL de la suspension de départ de Florence,
+pour contrôle. 
+
+#+attr_latex: :font \scriptsize\ttfamily
+|   |    1 | 2 | 3 | 4 |    5 | 6 | 7 | 8 |    9 | 10 | 11 | 12 |
+|---+------+---+---+---+------+---+---+---+------+----+----+----|
+| A | pW48 |   |   |   | pW69 |   |   |   | pS96 |    |    |    |
+| B |      |   |   |   |      |   |   |   |      |    |    |    |
+| C |      |   |   |   |      |   |   |   |      |    |    |    |
+| D |      |   |   |   |      |   |   |   |      |    |    |    |
+| E |      |   |   |   |      |   |   |   |      |    |    |    |
+| F |      |   |   |   |      |   |   |   |      |    |    |    |
+| G |      |   |   |   |      |   |   |   |      |    |    |    |
+| H |      |   |   | x |      |   |   | x |      |    |    |  x |
+
+Conditions de PCR : température d'hybridation 55°C, nombre de cycle 30, temps
+d'élongation 1min.
+
+Résultat : voir la figure [[fig:pcr2502]]
+
+#+CAPTION: gel1%  L:5µL-1kb  tps 1''  vol 5µL \\
+#+CAPTION: Il y a des bandes quasiment de partout. Les puits de 1 à 8 dans le pW48 sont vides. 
+#+CAPTION: Je veux redéposer pour voir si ça vient du dépôt ou de la PCR. 
+#+CAPTION: Quand on regarde les puits pS96 25 à 32, même topo. 
+#+CAPTION: Ces deux barrettes sont aux deux extrémités de la plaque de PCR. 
+#+CAPTION: Globalement, l'isolat pS96 montre des bandes partout, mais certaines sont beaucoup plus que d'autres. 
+#+CAPTION: J'ai pourtant déposé le même volume dans chaque puit.  \\
+#+CAPTION: Globalement c'est une manip' qui marche ! 
+#+LABEL: fig:pcr2502
+#+ATTR_LATEX: :float multicolumn :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160225_00.JPG]]
+
+*** (1) Clonage InFusion troisième essai 
+Je retente le clonage InFusion. 
+
+Les masses en ng recommandées sont les suivantes pour 100 ng de plasmide :
+| ancre | aphA3 |
+|-------+-------|
+|    57 |    70 |
+
+Les concentrations dont on dispose :
+| fragment | concentration (ng.µL^{-1}) |
+|----------+----------------------------|
+| WS       |                     131.25 |
+| SW       |                      120.9 |
+| aphA3    |                       61.9 |
+| ancre    |                       80.4 |
+
+Les volumes qu'on utilise :
+|           |     SW |    WS |
+|-----------+--------+-------|
+| plasmide  |    .83 |   .76 |
+| apha3     |   1.13 |  1.13 |
+| ancre     |    .71 |   .71 |
+| HD Fusion |      2 |     2 |
+| eau       | 7.6061 | 7.618 |
+#+TBLFM: @>$3=10 - vmean(@2..@6)::@>$2=10 - vmean(@2..@6)
+
+J'ai utilisé 1µL de la ligature pour faire la transformation des cellules
+Stellar. Sur les recommandations de Petar, il faut laisser les cellules plus
+longtemps dans le milieu SOC avant de les étaler sur LBKan50. 
+
+** 2016-02-26 Vendredi
+*** (1) Transformants Stellar WS et SW ?
+Hallelujah ! Des clones. Enfin. 
+
+Il y en a beaucoup, dans les deux. Plus d'une centaine à priori dans les boîtes
+dans laquelle j'ai étalé le culot. Je veux les tester par PCR sur colonie
+demain, j'attends que les colonies soient assez grosses pour pouvoir les
+repiquer sur LBKan50.
+
+*** (1) Repiquage des colonies sur LBKan50
+J'ai repiqué 40 colonies de chaque plaque (SW et WS) sur LBKan50. Le but est de
+faire les PCR sur colonie demain, de lancer des extractions plasmidiques et de
+faire les extractions dimanche matin. Il faut avoir suffisamment de plasmide
+pour pouvoir faire des digestions conséquentes, et transformer /Acinetobacter/
+avec.
+
+*** (3) Contrôle des PCR sur les clones polymorphes
+Je redépose certaines barrettes qui me semblaient suspicieuses. S'il n'y a
+rien, je refais la PCR sur ces barrettes là.
+
+Après avoir redéposé, on voit bien que les puits sont vides. C'est plutôt
+étrange que les puits en bordure du thermocycleur n'aient rien. Ça peut venir
+d'un artéfact de pipetage. 
+
+Dans le cas du clone pS96, on n'a pas grand chose. Je ne m'explique pas
+pourquoi. Les milieux sont plutôt troubles, il devrait y avoir des bactéries.
+Je vais retenter la PCR Phusion avec ces clones là. 
+
+*** (3) PCR sur les clones polymorphes 
+Je dois refaire les PCR sur la première barrette de pW48 et sur les quatre
+barrettes de pS96. 
+
+|                      | 1 tube 25 | 1 tube 50 | 40 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      410 |
+| dNTPs                |       2.5 |        5. |     205. |
+| amorce 1             |       0.4 |       0.8 |     32.8 |
+| amorce 2             |       0.4 |       0.8 |     32.8 |
+| polymérase           |     0.125 |      0.25 |    10.25 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |    16.575 |     33.15 |  1359.15 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |    2050. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 41::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+
+#+CAPTION: gel1%  L:4µL-1kb  tps 1.2''  vol 5µL \\
+#+CAPTION: Un peu trop migré. /Mea culpa/. 
+#+CAPTION: Les clones strong bons sont toujours bons, mais les mauvais sont toujours mauvais. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160226_00.JPG]]
+
+*** (D) Rangement de la salle de manip
+On a déplacé les vieux appareils qui traînaient dans la salle de manip dans les
+étagères du haut. On a décalé la centri, décalé les thermocycleurs et le
+bain-marie pour faire de la place pour les stagiaires. Le spiraleur de l'espace
+est sur une étagère également. Il pèse une tonne. 
+*** (A) Protocole de clonage
+J'ai dessiné un petit schéma décrivant le protocole de clonage depuis le début
+jusqu'à ce point dans les manips. 
+
+#+begin_src dot :file img/clonage.png :cmd dot :cmdline -Tpng :exports none :results silent
+digraph {
+graph [fontname = "Gill Sans", dpi = 300];
+node  [fontname = "Gill Sans", fontsize=10];
+edge  [fontname = "Gill Sans"];
+
+      ws [label = "fragment WS", color = "lightblue3"]
+      sw [label = "fragment SW", color = "forestgreen"]
+      PCR1 [label = "PCR", shape = diamond]
+      PCR2 [label = "PCR\nOrientation ?", shape = diamond, fontsize = 8]
+      pGEMTWS [label = "pGEM-T +\nWS", color = "lightblue3"]
+      pGEMTSW [label = "pGEM-T +\nSW", color = "forestgreen"]
+      seq1 [label = "Séquençage", shape = box]
+      ws -> PCR1 -> pGEMTWS -> PCR2 [color = "lightblue3"]
+      sw -> PCR1 -> pGEMTSW -> PCR2 [color = "forestgreen"]
+      PCR2 -> seq1
+
+      extraction1 [label = "Extraction\nplasmidique", shape = box]
+      infusion [label = "Ligature\nInFusion", shape = box]
+      pGEMTSW -> extraction1 -> infusion [color = "forestgreen"]
+      pGEMTWS -> extraction1 -> infusion [color = "lightblue3"]
+      seq1 -> extraction1 [label = "si oui"]
+
+      pcr4 [label = "PCR", shape = diamond]
+      ancre -> pcr4 -> infusion
+      kana  -> pcr4 -> infusion
+
+      pWSkanancre [label = "pWS\nkanancre", color = "lightblue3"]
+      pSWkanancre [label = "pSW\nkanancre", color = "forestgreen"]
+      pcr3 [label = "PCR", shape = diamond]
+      seq2 [label = "Séquençage", shape = box]
+      infusion -> pWSkanancre -> pcr3 -> seq2 [color = "lightblue3"]
+      infusion -> pSWkanancre -> pcr3 -> seq2 [color = "forestgreen"]
+
+      pWSkanancre -> extraction2 -> transfo [color = "lightblue3"]
+      pSWkanancre -> extraction2 -> transfo [color = "forestgreen"]
+
+      seq2 -> transfo [label = " si oui"]
+      extraction2 [label = "Extraction\nPlasmidique"]
+      transfo [label = "transformation\nAcinetobacter"]
+
+}
+#+end_src
+
+#+ATTR_LATEX: :float multicolumn :width 0.5\linewidth
+#+CAPTION: Le protocole du clonage depuis la réception des fragments à la 
+#+CAPTION: transformation dans /Acinetobacter/. 
+[[file:img/clonage.png]]
+
+** 2016-02-27 Samedi
+*** (D) Notes sur l'utilisation du spiraleur
+J'ai vu avec Rosa comment utiliser le spiraleur. Elle ne le décontamine pas,
+mais il faut le faire avant qu'on commence nos manips. Je préférais voir
+l'appareil fonctionner avant de lancer la décontamination. 
+#+BEGIN_QUOTE
+- Tube ouvert avec bouchon du côté manipulateur.
+- Pétri à laisser tranquille 20min le temps que le liquide sèche couvercle en
+  haut après étalement.
+- premier jet à utiliser en mode manuel, pour pouvoir faire les nettoyages comme
+  il faut.
+- les autres jets peuvent être fait en mode automatique.
+- si plusieurs réplicats à étaler, utiliser le bouton plate du mode manuel pour
+  prévenir le spiraleur que la boîte neuve est en plac.
+- pour remplir le réservoir d'eau, utiliser une bouteille d'eau stérile
+  classique et verser directement dans la bouteille déjà en place. Il faut
+  dévisser le bouchon en tournant la bouteille et pas le bouchon.
+- toujours vérifier que les entrées soient pleines, et la poubelle non-pleine.
+  Si les entrées sont vides, des vides d'air se font dans la pompe, et les
+  étalements sont imprécis. 
+#+END_QUOTE
+*** (A) Recherche de fonctions de correction de l'ADN chez /Acinetobacter/
+Il existe chez coli le gène /vsr/ pour Very Short Patch Repair
+cite:hennecke_vsr_1991. Par blast, j'ai retrouvé ce gène chez /Acinetobacter
+sp/. J'aimerai bien savoir s'il est chez /baylyi/. 
+
+À priori oui, d'après l'annotation du génome d'/Acinetobacter calcoaceticus/
+[[http://www.ncbi.nlm.nih.gov/nuccore/CP002177]]. 
+
+*** (A) Analyse des pathways de réparation de l'ADN chez Acinetobacter
+J'utilise Kegg http://www.genome.jp/kegg/pathway.html pour étudier les voies de
+réparation de l'ADN dont dispose /Acinetobacter/. 
+
+#+CAPTION: Homologous Recombination
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/img/aci_homologousRecombination.png]]
 
 
-* config                                                                       :noexport:
-#+latex_header: \usepackage{pdfpages}
-#+LATEX_CLASS: journal
-#+LANGUAGE: fr
-#+options: H:4 
+#+CAPTION: Mismatch Repair
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/img/aci_mismatchRepair.png]]
 
-[[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
-* todos                                                                        :noexport:
+#+CAPTION: Base Excision Repair
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/img/aci_baseExcisionRepair.png]]
+
+** 2016-02-28 Dimanche
+*** (3) Migration de la PCR sur les isolâts pS96
+Rien n'a amplifié ! Je n'y comprends rien. Il n'y a rien nulle part ? Je ne
+comprends pas que ça soit possible. Dans les mêmes conditions que jeudi, avec
+les mêmes réactifs et les mêmes puits, je n'amplifie rien ? Je n'ai pas fait de
+T+ parce que j'attendais avoir des puits positifs dans les barrettes de pS96,
+puisque j'en avais eu à la précédente PCR. 
+
+Je vois avec Franck demain pour peut-être changer les conditions de PCR.
+Éventuellement je pourrais strier les puits sur des boîtes de LBKan50 et faire
+les PCR sur les colonies obtenues. Les PCR sont peut-être inhibées par le LBKan
+qu'on ajoute ? Je vois pas bien comment ça serait possible étant donné que
+d'autres PCR ont très bien fonctionné jeudi… 
+
+*** (1) PCR de contrôle sur colonie des clones pSWkanancre et pWSkanancre
+Je fais une PCR =1411 1393= sur mes clones résistants à la kanamycine obtenus
+vendredi. J'utilise la Taq ozyme normale. Si les clones sont bons, on peut
+lancer des cultures de nuit pour faire les extractions plasmidiques. Il faudra
+également séquencer le brin qu'on utilise je pense. 
+
+Après dépôt sur gel, rien n'a amplifié. C'est un problème de Taq à coup sûr, je
+crois que la Taq Ozyme qu'on utilise est complètement daubée. En plus le
+fragment est très long, ça peut expliquer que la Taq soit un peu débordée.  
+
+Je lance quand même des cultures de nuit pour gagner un peu de temps au cas où
+les PCR qu'on pourrait faire sur les plasmides montreraient des choses
+positives.
+
+** 2016-02-29 Lundi
+*** (1) PCR sur les clones stellar KanR
+Je refais la PCR d'hier sur les clones résistants à la kanamycine. Au
+lieu de faire d'un coup la PCR $1411 + 1393$ , je fais une PCR $1392 +
+1393$ et une PCR $1411 + 1410$. L'idée est de voir si les deux côtés du
+fragment sont insérés dans les colonies Stellar.
+
+Bim bam boum. 
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+CAPTION: Tous les clones sont bons ! Comme quoi. C'est dans les vieilles Taq 
+#+CAPTION: qu'on fait les meilleures cycles. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160229_00.JPG]]
+
+*** (1) Repiquage des colonies sur LBamp75Kan50
+Je veux également repiquer les colonies résistantes à la kanamycine sur
+un milieu sélectif à l'ampicilline, qui sélectionne les clones porteurs
+du plasmide pGEM-T. Si ça se trouve, les colonies qu'on observe sont
+seulement résistantes à la kanamycine parce qu'elles ont été
+transformées par le fragment aphA3 restant dans le mélange de ligature
+InFusion. Espérons que ça ne soit pas le cas. 
+
+Je ferai ça pour les clones positifs en PCR. 
+
+*** (1) Relancé la souche d'/Acinetobacter baylyi BD413/
+J'ai sorti la souche d'/Acinetobacter/ dans la boîte 6 du -80°C, et étalé sur
+des boîtes de LB. L'idée est de relancer ensuite dans des cultures liquides, de
+repartir des cultures liquides le matin et d'attendre que la DO soit à 0.8 pour
+lancer les transfo. 
+
+*** (1) Extractions plasmidiques des trois souches pWSkanancre et pSWkanancre
+J'ai extrait trois plasmides de trois souches différentes, les souches de 1 à 3
+dans les boîtes. 
+
+**** Résultat de la migration :
+Voir figure [[fig:digest0103]]. 
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
+#+CAPTION: Il reste de l'ADN génomique on dirait. 
+#+CAPTION: À voir pour valider la digestion =ScaI=
+#+LABEL: fig:digest0103
+#+ATTR_LATEX: :float t :width 0.7\linewidth
+[[/Volumes/HDD/stage/img/20160301_00.JPG]]
+
+**** Dosage nanodrop :
+|          |      | mesure |      |           |
+| fragment |    1 |      2 |    3 | $\bar{x}$ |
+|----------+------+--------+------+-----------|
+| WS1      | 47.3 |   44.7 | 49.5 | 47.166667 |
+| WS2      | 28.5 |   28.3 | 27.5 |      28.1 |
+| WS3      |    4 |      4 |    4 |         4 | 
+| SW1      | 50.0 |   49.4 | 47.3 |      48.9 |
+| SW2      | 34.4 |   32.5 | 33.0 |      33.3 |
+| SW3      | 38.1 |   37.9 | 41.9 |      39.3 |
+#+TBLFM: @3$5..@>$5=vmean($2..$4)
+
+*** (3) Relancé les clones pS96
+Pas assez de colonies dans la boîte pS96, j'ai relancé sur LBKan50. L'idée est
+de refaire les suspensions demain et de faire les PCR à partir des suspensions. 
+
+\clearpage
+* 2016-03 Mars
+** 2016-03-01 Mardi
+*** (3) Suspensions des clones pS96
+J'ai resuspendu 32 clones de pS96 dans 50µL d'eau stérile aguettant.
+*** (3) PCR de test via taq pourrie sur les clones suspendus
+J'ai fait une PCR sur les 32 clones resuspendus de pS96 et sur les nouvelles
+suspension de pW48 pour pouvoir compléter la plaque. J'utilise une vieille taq
+pour être sûr que tout marche et le cas échéant de refaire des suspensions dans
+les cas où ça ne marche pas.  
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160301_01.JPG]]
+Apparemment certaines suspensions sont récalcitrantes. Mais globalement tout a
+amplifié. Je peux donc faire le mix Phusion. Je refait les suspensions des trois
+clones qui n'ont pas amplifié avant de les placer dans la plaque de PCR.
+*** (3) PCR Phusion sur les clones pS96
+Je fais la même PCR avec la taq Phusion \phi qui vaut des ronds. 
+
+|                      | 1 tube 25 | 1 tube 50 | 41 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      410 |
+| dNTPs                |       2.5 |        5. |     205. |
+| amorce 1             |       0.4 |       0.8 |     32.8 |
+| amorce 2             |       0.4 |       0.8 |     32.8 |
+| polymérase           |     0.125 |      0.25 |        5 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |    16.575 |     33.15 |  1359.15 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |    2050. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 41::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+*** (1) Lancé des cultures de pSWkanancre et pWSkanancre pour glycérol
+J'ai lancé deux tubes de LBKan50 pour faire des glycérols des souches demain. 
+*** (1) Coulé boîtes LB et LBKan50
+J'ai coulé 20 boîtes de LBKan50 et 10 de LB pour étaler les transformants
+/Acineto/. 
+
+*** (1) Digestion du plasmide par =ScaI=
+On ouvre le plasmide par =ScaI=. 
+
+#+CAPTION: Ouverture du plasmide par ScaI, à 20'. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160216_01.pdf]]
+
+Volumes utilisés pour digérer 1µg de plasmide :
+
+|              | WS 1 | SW 1 |
+|--------------+------+------|
+| plasmide     |   17 |   17 |
+| buffer Tango |    2 |    2 |
+| SpeI         |    1 |    1 |
+| H2O          |    0 |    0 |
+|--------------+------+------|
+| Volume final |   20 |   20 |
+
+** 2016-03-02 Mercredi
+*** (3) Migration de la PCR Phusion sur les clones pS96
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+CAPTION: La PCR est jolie. Tous les clones sont plutôt bons. On peut envoyer à séquencer.  
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160302_01.JPG]]
+
+*** (1) Migration de la digestion =ScaI=
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
+#+CAPTION: Les deux digestions ont l'air plutôt bien. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160302_00.JPG]]
+
+Les plasmides sont tous les deux bien linéarisés. On peut lancer la
+transformation. Il nous faut 200ng pour la transfo. Comme on a 17µL à 50ng/µL
+dans la digestion, j'ai pris 4 µL de la digestion que j'ai resuspendu dans
+l'eau pure. La même eau pure a servi à transformer /Acineto/ comme témoin négatif.
+
+*** (1) Transformation /Acinetobacter/
+J'ai transformé les clones de la façon suivante. 
+
+#+begin_src dot :file img/transfo.png :cmdline -Tpng :exports none :results silent
+digraph{ 
+         graph [fontname = "Gill Sans"];
+         node  [fontname = "Gill Sans"];
+         edge  [fontname = "Gill Sans"];
+
+         congel [label = "-80°C", shape = box, color = "orange"]
+         lbagar1 [label = "LB agar"]
+         congel -> lbagar1 [label = "étalement", color = "orange"]
+
+         lbliquide [label = "5mL\nde LB liquide"]
+         lbagar1 -> lbliquide [label = "suspension", color = "orange"]
+
+         susp110 [label = "Suspension 1/10"]
+         susp15 [label = "Suspension 1/5"]
+         lbliquide -> susp110 [label = "500µL", color = "orange"]
+         lbliquide -> susp15 [label = "1mL", color = "orange"]
+
+         DO [label = "DO = 0.8 ?", shape = diamond, color = "orange"]
+         susp110 -> DO [color = "orange"]
+         susp15 -> DO [color = "orange"]
+         sw [label = "SW"]
+         ws [label = "WS"]
+         ADN [label = "200ng ADN"]
+         DO -> sw [label = "390 µL", color = "orange"]
+         DO -> ws [label = "390 µL", color = "orange"]
+         ADN -> sw [label = "10 µL", color = "blue"]
+         ADN -> ws [label = "10 µL", color = "blue"]
+         digestion -> inactivation [label = " 10 min\n à 70°C", color = "blue"]
+         inactivation -> ADN [label = " 4 µL", color = "blue"]
+         
+         sw -> etal
+         sw -> DNAse [label = "15 min\nà 37°C"]
+         ws -> DNAse
+         ws -> etal
+         DNAse -> etal
+         DNAse -> etal
+         etal [label = "LB Kan"]
+
+}
+#+end_src
+
+[[file:img/transfo.png]]
+*** (1) Étalement des transformations /Acinetobacter/
+Les transformations sont étalées au spiraleur sur LB aux dilutions $10^{-4}$ et
+LBKan50 à la dilution $10^0$. On étale trois fois 50µL pour les souches
+d'intéret. 
+
+*** (1) Annotations des cryotubes 
+On a placé les cryotubes dans les bonnes boîtes au -80°C. 
+
+** 2016-03-03 Jeudi 
+
+*** (1) Repiquage des clones transformants
+On veut repiquer les clones transformants pour les purifier avant de faire les
+PCR dessus.
+
+J'ai donc choisi 100 clones de SW + DNAse et 100 clones de WS + DNAse, que j'ai
+repiqués sur des grandes boîtes carrés de LBKan50.
+
+#+begin_src dot :file img/repiquage.png :cmdline -Tpng :exports none :results silent
+digraph{ 
+graph [fontname = "Gill Sans"];
+node  [fontname = "Gill Sans"];
+edge  [fontname = "Gill Sans"];
+rankdir = LR
+      clone -> comptage
+      comptage -> strie
+      strie -> suspension
+
+}
+#+end_src
+
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[file:img/repiquage.png]]
+
+Je nettoie les oëses dans une plaque 96 puits, de façon à garder une trace de la
+colonie mère avant la purification.
+
+L'idée est de les purifier pour faire les PCR dessus le lendemain. 
+
+C'est une trèèèèèèèèèèèès longue manip. Prévoir musique et café. 
+*** (1) Comptage des clones transformants
+J'ai compté les colonies en utilisant le compteur de colonie InterScience.
+
+#+ATTR_LATEX: :float sideways :width 1\linewidth
+[[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/data/20160303_00_plot.pdf]]
+
+** 2016-03-04 Vendredi à Mercredi 
+*** (1) Vendredi : Purification des souches
+Les souches n'étaient pas purifiées. J'ai donc coulé 200 boîtes de \diameter 6cm
+de LB Kan50. J'ai ensuite purifié 96 souches de SWDnase et 96 souche de WSDnase
+par la méthode des cadrans. 
+
+Je suis venu en vitesse le lendemain pour mettre les boîtes dans les sachets à
+-4°C.
+
+*** (1) Lundi : Définition de l'amorce 1073 bis
+J'ai utilisé primer3 pour définir une nouvelle amorce 1073bis, qui soit un peu
+plus loin du début de la trace de conversion que l'amorce 1073.
+*** Mardi : Flue day
+Stay in bed all day.
+
+*** (1) Mercredi : Dilution de l'amorce 1073bis. 
+J'ai reçu l'amorce de mes rêves. Je la dilue à 100µM. 
+*** (1) Mercredi : Suspensions de l'espace
+J'ai resuspendu à la p200 96 colonies isolées de SW et 96 colonies isolées de WS
+dans deux plaques séparées. 
+
+C'est une très longue manip. Compter 4H environ. 
+
+** 2016-03-10 Jeudi
+*** (1) PCR 1392 1073bis SW
+Je fais les PCR 1392 1073bis (la nouvelle amorce pour amplifier plus loin la
+trace de conversion). 
+
+#+begin_src dot :file img/pcr13921073.png :cmdline -Tpng :exports none :results silent
+digraph{ 
+graph [fontname = "Gill Sans"];
+node  [fontname = "Gill Sans"];
+edge  [fontname = "Gill Sans"];
+rankdir = LR
+
+      cache    -> uv
+      portoir  -> uv
+      eau      -> uv
+      plaque   -> uv
+      bouchons -> uv
+
+      uv [label = "UV\n20min", shape = diamond] 
+      uv -> mix
+      mix [label = "Mix PCR", shape = box]
+
+      dNTP    -> mix
+      tampon  -> mix
+      amorces -> mix
+      Taq     -> mix
+      
+      mix        -> plaque_pcr [label = "Dispatcheuse\n20 x 50µL"]
+      plaque_pcr -> PCR
+      plaque_pcr [label = "Plaque PCR\n96 puits"]
+      PCR [label = "30' à 94°C\n30' à 55°C\n60' à 72°C"]
+      PCR        -> PCR [label = "30x"]
+}
+#+end_src
+
+[[file:img/pcr13921073.png]]
+
+|                      | 1 tube 25 | 1 tube 50 | 100 tubes |
+|----------------------+-----------+-----------+-----------|
+| buffer phusion HF 5X |         5 |        10 |      1000 |
+| dNTPs                |       2.5 |        5. |      500. |
+| amorce 1             |       0.4 |       0.8 |       80. |
+| amorce 2             |       0.4 |       0.8 |       80. |
+| polymérase           |     0.125 |      0.25 |       12. |
+|----------------------+-----------+-----------+-----------|
+| eau qsp 25 µL        |    16.575 |     33.15 |     3315. |
+|----------------------+-----------+-----------+-----------|
+| volume final         |       25. |       50. |     5000. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 100::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.6'  vol 5µL \\
+#+CAPTION: Le gel de SW. C-h-a-m-p-a-g-n-e.
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160310_00.JPG]]
+*** (1) PCR 1392 1073bis WS
+|                      | 1 tube 25 | 1 tube 50 | 100 tubes |
+|----------------------+-----------+-----------+-----------|
+| buffer phusion HF 5X |         5 |        10 |      1000 |
+| dNTPs                |       2.5 |        5. |      500. |
+| amorce 1             |       0.4 |       0.8 |       80. |
+| amorce 2             |       0.4 |       0.8 |       80. |
+| polymérase           |    0.0625 |     0.125 |      12.5 |
+|----------------------+-----------+-----------+-----------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |    3327.5 |
+|----------------------+-----------+-----------+-----------|
+| volume final         |       25. |       50. |     5000. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 100::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.6'  vol 5µL \\
+#+CAPTION: Le gel de WS. C-h-a-m-p-a-g-n-e.
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160310_01.JPG]]
+
+Pour la PCR WS, je vais refaire les suspensions pour les clones suivants : $5,
+12, 13$ et $80$. Pour la PCR SW, je refais la suspension pour le clone $25$.
+
+Pour l'orgueil : $\frac{5}{96 \times 2} = 2.6\%$ d'échec. Pas si mal ?
+** 2016-03-11 Vendredi
+*** (1) PCR 1392 1073bis sur les clones manquants
+Pour la PCR WS, je vais refaire les suspensions pour les clones suivants : $5,
+12, 13$ et $80$. Pour la PCR SW, je refais la suspension pour le clone $25$.
+
+|                      | 1 tube 25 | 1 tube 50 | 6 tubes |
+|----------------------+-----------+-----------+---------|
+| buffer phusion HF 5X |         5 |        10 |      60 |
+| dNTPs                |       2.5 |        5. |     30. |
+| amorce 1             |       0.4 |       0.8 |     4.8 |
+| amorce 2             |       0.4 |       0.8 |     4.8 |
+| polymérase           |    0.0625 |     0.125 |    0.75 |
+|----------------------+-----------+-----------+---------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |  199.65 |
+|----------------------+-----------+-----------+---------|
+| volume final         |       25. |       50. |    300. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 6::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+Je m'épargnerais ici la photo du gel de Raphaël… Il fait des gels avec des
+grumeaux. De toute façon ça n'amplifie pas. Ce serait donc des mutants spontanés ?
+#+CAPTION: gel1%  L:3µL-1kb+  tps 1''  vol 5µL \\
+#+ATTR_LATEX: :float t :width 0.5\linewidth
+[[/Volumes/HDD/stage/img/20160311_00.JPG]]
+
+*** (1) PCR 1392 1073bis sur les clones avec bande secondaire
+En fait quand Franck regarde la PCR SW d'hier, il trouve que les
+bandes qu'on observe en dessous de 100bp posent problème. Il faut du
+coup que je monte la température d'hybridation à 58°C.
+
+Je vais donc refaire la PCR pour les puits où les bandes secondaires
+posent problème :
+
+=1 8 9 10 11 16 17 18 24 25 26 27 31 32 33 34 40 49 50 55 56 60 62 69 71=
+
+Soit 25 clones. 
+|                      | 1 tube 25 | 1 tube 50 | 26 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      260 |
+| dNTPs                |       2.5 |        5. |     130. |
+| amorce 1             |       0.4 |       0.8 |     20.8 |
+| amorce 2             |       0.4 |       0.8 |     20.8 |
+| polymérase           |    0.0625 |     0.125 |     3.25 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |   865.15 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |    1300. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 26::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+#+begin_src dot :file img/pcr0311.png :cmdline -Tpng :exports none :results silent
+digraph{ 
+graph [fontname = "Gill Sans", dpi = 300];
+node  [fontname = "Gill Sans", shape = box];
+edge  [fontname = "Gill Sans"];
+rankdir = LR
+
+      denaturation -> hybridation [label = "hybridation"]
+      hybridation -> elongation [label = "élongation"]
+      elongation -> denaturation [label = "dénaturation"]
+
+      denaturation [label = "30''\n94°C"]
+      hybridation  [label= "30''\n58°C"]
+      elongation   [label = "60''\n72°C"]
+}
+#+end_src
+
+#+attr_latex: :float t :width \linewidth
+[[file:img/pcr0311.png]]
+
+Résultat :
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+CAPTION: Rien n'amplifie à 58°C. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160311_01.JPG]]
+
+** 2016-03-14 Lundi
+*** Réunion projet
+Préparation de la réunion avec Vincent, Xavier, Laurent et Franck, et
+réunion en elle-même. Voir [[./reunion_160314.html]]
+
+*** (1) PCR 1392 1073bis sur les clones avec bande secondaire
+Je veux faire une PCR en gradient pour voir les conditions
+d'hybridation qui éliminent le mieux les bandes parasites. Pour
+l'instant je ne fais que 3 barrettes. Quand les conditions seront
+fixées je ferai toutes les barrettes. 
+
+|                      | 1 tube 25 | 1 tube 50 | 26 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      130 |
+| dNTPs                |       2.5 |        5. |      65. |
+| amorce 1             |       0.4 |       0.8 |     10.4 |
+| amorce 2             |       0.4 |       0.8 |     10.4 |
+| polymérase           |    0.0625 |     0.125 |    1.625 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |  432.575 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |     650. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$2 * 26::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+- Résultat :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
+#+CAPTION: Quelle que soit la température d'hybridation, les PCR semblent bien fonctionner.
+#+CAPTION: Je peux donc utiliser la température 56.5°C. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160315_00.JPG]]
+
+*** (D) Préparation 10mL de kanamycine 50mg/mL
+J'ai préparé 10mL de kanamycine, que j'ai répartis dans des tubes de
+2mL.
+*** (1) Purification des clones 
+Je purifie une dizaine de clones de SW et WS pour pouvoir les
+purifier, refaire les suspensions et les PCR dans la foulée. 
+
+J'ai donc coulé > 20 boîtes pour purifier les clones de base.
+
+** 2016-03-15 Mardi
+*** (3) Préparation plaque séquençage
+J'ai préparé la plaque à séquencer pour les clones polymorphes. J'ai
+récupéré l'ADN des plaques 96 puits du [2016-02-25 Thu] et du
+[2016-03-01 Tue], que j'ai mis en plaque en respectant le plan
+suivant :
+
+#+attr_latex: :font \scriptsize\ttfamily
+|   |    1 | 2 | 3 | 4 |    5 | 6 | 7 | 8 |    9 | 10 | 11 | 12 |
+|---+------+---+---+---+------+---+---+---+------+----+----+----|
+| A | pW48 |   |   |   | pW69 |   |   |   | pS96 |    |    |    |
+| B |      |   |   |   |      |   |   |   |      |    |    |    |
+| C |      |   |   |   |      |   |   |   |      |    |    |    |
+| D |      |   |   |   |      |   |   |   |      |    |    |    |
+| E |      |   |   |   |      |   |   |   |      |    |    |    |
+| F |      |   |   |   |      |   |   |   |      |    |    |    |
+| G |      |   |   |   |      |   |   |   |      |    |    |    |
+| H |      |   |   | x |      |   |   | x |      |    |    |  x |
+
+*** (1) Purifié pSWKanancre et pWSKanancre
+J'ai purifié sur boîte LBKan50 les souches porteuses des plasmides
+constructions SWKanancre et WSKanancre. L'idée est de faire des
+glycérols dans deux jours à partir des souches purifiées, pour limiter
+les mutations.
+
+*** (1) PCR Phusion clones avec bandes secondaires
+Les clones choisis sont les suivants :
+
+=1 8 9 10 11 16 17 18 24 25 26 27 31 32 33 34 40 49 50 55 56 60 62 69 71=
+
+Soit 25 clones. 
+|                      | 1 tube 25 | 1 tube 50 | 26 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      260 |
+| dNTPs                |       2.5 |        5. |     130. |
+| amorce 1             |       0.4 |       0.8 |     20.8 |
+| amorce 2             |       0.4 |       0.8 |     20.8 |
+| polymérase           |    0.0625 |     0.125 |     3.25 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |   865.15 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |    1300. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 26::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+- Résultat :
+
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.6''  vol 5µL \\
+#+CAPTION: Tous les clones sont bons cette fois. Il n'y a pas de bande secondaire. 
+#+CAPTION: On peut envoyer à séquencer. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160315_01.JPG]]
+
+*** (1) PCR Phusion clones manquants WS et SW
+Hier j'ai purifié sur LBKan50 des clones transformants. J'utilise ces
+clones pour combler les vides des plaques de PCR.  
+
+|                      | 1 tube 25 | 1 tube 50 | 17 tubes |
+|----------------------+-----------+-----------+----------|
+| buffer phusion HF 5X |         5 |        10 |      170 |
+| dNTPs                |       2.5 |        5. |      85. |
+| amorce 1             |       0.4 |       0.8 |     13.6 |
+| amorce 2             |       0.4 |       0.8 |     13.6 |
+| polymérase           |    0.0625 |     0.125 |    2.125 |
+|----------------------+-----------+-----------+----------|
+| eau qsp 25 µL        |   16.6375 |    33.275 |  565.675 |
+|----------------------+-----------+-----------+----------|
+| volume final         |       25. |       50. |     850. |
+#+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 17::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
+#                                           ***
+
+- Résultat :
+#+CAPTION: gel1%  L:3µL-1kb  tps 0.6''  vol 5µL \\
+#+CAPTION: Tous les clones sont bons, on peut utiliser ceux qu'on veut 
+#+CAPTION: pour combler les trous. 
+#+ATTR_LATEX: :float t :width 1\linewidth
+[[/Volumes/HDD/stage/img/20160315_02.JPG]]
+** 2016-03-16 Mercredi
+*** (1) préparation des plaques de séquençage
+Pour la plaque de WS, il suffit de rajouter dans les puits où on
+n'avait pas d'amplification l'ADN des PCRs d'hier après midi. 
+
+La plaque aura donc l'aspect suivant :
+
+#+caption: La plaque de WS envoyée à séquencer. 
+#+attr_latex: :font \scriptsize\ttfamily
+|   |    1 |     2 |  3 |  4 |  5 |  6 |  7 |     8 |  9 |    10 | 11 | 12 |
+|---+------+-------+----+----+----+----+----+-------+----+-------+----+----|
+| A |    1 |     9 | 17 | 25 | 33 | 41 | 49 |    57 | 65 |    73 | 81 | 89 |
+| B |    2 |    10 | 18 | 26 | 34 | 42 | 50 |    58 | 66 |    74 | 82 | 90 |
+| C |    3 |    11 | 19 | 27 | 35 | 43 | 51 |    59 | 67 | *102* | 83 | 91 |
+| D |    4 |  *98* | 20 | 28 | 36 | 44 | 52 | *101* | 68 |    76 | 84 | 92 |
+| E | *97* | *100* | 21 | 29 | 37 | 45 | 53 |    61 | 69 |    77 | 85 | 93 |
+| F |    6 |    14 | 22 | 30 | 38 | 46 | 54 |    62 | 70 |    78 | 86 | 94 |
+| G |    7 |    15 | 23 | 31 | 39 | 47 | 55 |    63 | 71 |    79 | 87 | 95 |
+| H |    8 |    16 | 24 | 32 | 40 | 48 | 56 |    64 | 72 | *103* | 88 | 96 |
+
+Les nombres en gras sont les produits qui proviennent de la PCR sur la
+deuxième barrette avec les nouveaux clones purifiés. Les autres
+proviennent de la première PCR. 
+
+#+caption: La plaque de SW envoyée à séquencer. 
+#+attr_latex: :font \scriptsize\ttfamily
+|   |  1 |   2 |   3 | 4   |    5 |  6 |   7 |   8 |   9 | 10 | 11 | 12 |
+|---+----+-----+-----+-----+------+----+-----+-----+-----+----+----+----|
+| A | 1' |  9' | 17' | 25' |  33' | 41 | 49' |  57 |  65 | 73 | 81 | 89 |
+| B |  2 | 10' | 18' | 26' | *97* | 42 | 50' |  58 |  66 | 74 | 82 | 90 |
+| C |  3 | 11' |  19 | 27' |   35 | 43 |  51 |  59 |  67 | 75 | 83 | 91 |
+| D |  4 |  12 |  20 | 28  |   36 | 44 |  52 | 60' |  68 | 76 | 84 | 92 |
+| E |  5 |  13 |  21 | 29  |   37 | 45 |  53 |  61 | 69' | 77 | 85 | 93 |
+| F |  6 |  14 |  22 | 30  |   38 | 46 |  54 | 62' |  70 | 78 | 86 | 94 |
+| G |  7 |  15 |  23 | 31' |   39 | 47 | 55' |  63 | 71' | 79 | 87 | 95 |
+| H | 8' | 16' | 24' | 32' |  40' | 48 | 56' |  64 |  72 | 80 | 88 | 96 |
+
+Tous les nombres suivis par une apostrophe proviennent de la deuxième
+PCR à la température d'hybridation 56.6°C. Le clone 34 ayant moins
+amplifié dans la deuxième PCR que les autres, j'ai utilisé le clone 97
+issu de la PCR sur les nouveaux clones purifiés (en gras). Tous les
+autres proviennent de la première PCR.
+
+ J'ai utilisé une nouvelle plaque pour transférer les produits PCR
+dedans. J'ai utilisé un double cache pour remplir puits par puits la
+nouvelle plaque, sans qu'il n'y ait d'éclaboussures possibles dans les
+autres puits, et donc pas de contaminations possibles.
+
+=1 8 9 10 11 16 17 18 24 25 26 27 31 32 33 34 40 49 50 55 56 60 62 69 71=
+
+*** Envoi au séquençage
+J'ai rempli les différents formulaires qui sont :
+
+- [[file:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/form/20160316_plaque_poly.xls][20160316_plaque_poly.xls]]
+- [[file:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/form/20160316_plaque_sw.xls][20160316_plaque_sw.xls]]
+- [[file:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/form/20160316_plaque_ws.xls][20160316_plaque_ws.xls]]
+
+J'ai ensuite rempli les différentes conditions :
+- plaque à boucher avec des bouchons de plaque spécifiques, sur les
+  conseils de l'assistance téléphonique de GATC. J'ai donc décollé
+  l'alu tranquillement et l'ai remplacé par les bouchons.
+- j'ai dilué les amorces à 10µM comme demandé sur le site
+  [fn:8:[[https://www.gatc-biotech.com/fr/support/support/probenversandprobenabholung.html]].]
+- calé les plaques avec papiers bulles et conditionnement d'emballage.
+- ajouté code barre de la plaque. 
+
+**** Références des échantillons :
+
+#+caption: Références des codes barres
+#+attr_latex: :font \scriptsize\ttfamily
+| plaque   | barcode plaque | barcode amorce |
+|----------+----------------+----------------|
+| WS1603   | IFbeG81        |         583906 |
+| SW1603   | IFbeG82        |         583907 |
+| poly1603 | DJebA37        |         437362 |
+
+*** (5) Coulé boîtes LBKan50 et LB
+J'ai coulé beaucoup de boîtes LBKan50 et LB pour pouvoir faire les
+transfo S et W la semaine prochaine.
+
+*** (5) Relancé les souches porteuses des plasmides
+
+#+attr_latex: :font \scriptsize\ttfamily
+| Souche         | plasmide  | Cryotube |
+|----------------+-----------+----------|
+| E.coli stellar | Skanancre | FB297    |
+| E.coli stellar | Wkanancre | FB298    |
+
+J'ai relancé les souches porteuses des plasmides pSkanancre et
+pWkanancre sur milieu LBKan50. Je purifie les souches à l'oëse. L'idée
+est de lancer des cultures de nuit demain soir pour faire les
+extractions plasmidiques et les contrôles qui vont avec dans la
+foulée. 
+
+#+begin_src dot :file img/transfo_w.png :cmdline -Tpng :exports none :results silent
+digraph{ 
+graph [fontname = "Gill Sans", dpi = 300];
+node  [fontname = "Gill Sans"];
+edge  [fontname = "Gill Sans"];
+rankdir = LR
+
+  cryotubes -> purification [label = "Purif sur\nLBKan"]
+  purification [label = "24H à 37°C"]
+  purification -> pcr [label = "PCR sur colonie"]
+  pcr [label = "contrôle\nprésence\nplasmide", shape = box]
+  pcr -> extraction [label = "24H à 37°C"]
+  extraction [label = "Extraction\nPlasmidiques"]
+
+
+}
+#+end_src
+
+#+attr_latex: :float t :width \linewidth
+[[file:img/transfo_w.png]]
+
+** 2016-03-17 Jeudi
+*** Coulé 400 boîtes \diameter 60 LBKan50
+
+
+
