@@ -1,4 +1,4 @@
-# -*- mode: org -*- 
+# -*- mode: org -*-
  # eval: (require 'org-ref)
 #+CATEGORY: STAGE
 
@@ -6,7 +6,7 @@
 # manip (2) : séquençage des ancres
 # manip (3) : séquençage des hétérozygotes
 # manip (D) : Divers, maintenance labo
-# manip (A) : analyses 
+# manip (A) : analyses
 # manip (B) : bibliographie
 
 # #+TOC: headlines 2
@@ -17,12 +17,12 @@
 #+latex_header: \usepackage{pdfpages}
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
-#+options: H:4 
+#+options: H:4
 
 [[shell:latexmk%20-pdf%20journal.tex%20-f%20-pdflatex="pdflatex%20-interaction%20nonstopmode"][compile-moi !]]
 
 * todos                                                                        :noexport:
-* Annexes                                                                      
+* Annexes
 ** Protocoles                                                                  :noexport:
 #+TOC: headlines 2 local
 
@@ -42,7 +42,7 @@
 *** Sybr Safe
 \includepdf[pages=, nup = 2x1]{../doc/invitrogen_sybr-safe.pdf}
 
-*** Transformation de cellules JM109 
+*** Transformation de cellules JM109
 \includepdf[pages=2, nup=2x1]{../doc/promega_JM109.pdf}
 
 *** Transformation de cellules Stelar
@@ -59,14 +59,14 @@
 \clearpage
 * 2016-01 Janvier
 ** 2016-01-11 Lundi
-*** (3) PCR cible des gènes synthétiques 
+*** (3) PCR cible des gènes synthétiques
 Ajouté le [2016-01-11 Mon 09:50]
 
 La PCR du [2016-01-07 Thu], cible des gènes synthétiques des clones
 transformants hétérozygotes, n'a pas fonctionné, vraisemblablement dû à un
 problème dans le mix PCR (pas d'amplification dans le t+). On refait donc la
 même PCR sur moins de clones transformants, dans l'idée de se faire la main,
-avant de faire des PCR plus conséquentes, avec de plus grands volumes. 
+avant de faire des PCR plus conséquentes, avec de plus grands volumes.
 
 **** Programme PCR :
 | Temps | température | 30 cycles |
@@ -102,11 +102,11 @@ réunion avec Franck non-prévue…
 
 On voit quand même des bandes dans les quatre puits, mais pas dans le témoin
 positif, avec ADN génomique d'/Acinetobacter/. Les bandes sont à la position
-attendue dans le gel (taille : 750bp.) 
+attendue dans le gel (taille : 750bp.)
 
-- voir à changer le témoin positif. 
+- voir à changer le témoin positif.
 
-*** (D) aliquoté Taq-ozyme 
+*** (D) aliquoté Taq-ozyme
 Ajouté le [2016-01-11 Mon 11:47]
 
 Aliquoté 10µL de Taq-ozyme en eppendorf, placé dans le tiroir commun du -20°C.
@@ -114,7 +114,7 @@ Aliquoté 10µL de Taq-ozyme en eppendorf, placé dans le tiroir commun du -20°
 ** 2016-01-12 Mardi
 *** (3) PCR cible des gènes synthétiques
 Ajouté le [2016-01-12 Tue 08:19]
- 
+
 La PCR d'hier ayant fonctionné, le but est de refaire la même PCR sur l'ensemble
 des clones montrant des polymorphismes que j'ai isolé, avant de pouvoir les
 envoyer à séquencer.
@@ -147,17 +147,17 @@ envoyer à séquencer.
 
 **** Contrôle :
 
-#+CAPTION: Ladder un peu chargé. Attention au volume. 
-#+CAPTION: Colonies 3 et 4 de pW5 et 3 de pS53 n'ont pas amplifié. 
-#+CAPTION: Témoin positif migration sur le gel de [2016-01-12 Tue 16:05]. 
-#+ATTR_LATEX: :float t :width 3cm 
+#+CAPTION: Ladder un peu chargé. Attention au volume.
+#+CAPTION: Colonies 3 et 4 de pW5 et 3 de pS53 n'ont pas amplifié.
+#+CAPTION: Témoin positif migration sur le gel de [2016-01-12 Tue 16:05].
+#+ATTR_LATEX: :float t :width 3cm
 [[/Volumes/HDD/stage/img/20160112_00.JPG]]
 
 - [ ] refaire la PCR pour les deux clones pW5 et le clone de pS53 qui n'a pas
   fonctionné.
 - [ ] faire migrer le témoin positif.
 
-*** (2) PCR cible de l'ancre 
+*** (2) PCR cible de l'ancre
 Ajouté le [2016-01-12 Tue 14:15]
 
 Chez les différents clones montrant des néomutations, on veut séquencer l'ancre,
@@ -169,7 +169,7 @@ GC d'après les données dont on dispose pour l'instant.)
 
 Le but est ici de réaliser une PCR simple sur quelques candidats, avant de
 passer aux grands volumes, envoyés à séquencer. Les conditions de PCR sont
-tirées du cahier de Florence, page 146, daté du [2015-06-25 Thu]. 
+tirées du cahier de Florence, page 146, daté du [2015-06-25 Thu].
 
 **** Candidats sélectionnés
 | strong | weak |
@@ -202,33 +202,33 @@ tirées du cahier de Florence, page 146, daté du [2015-06-25 Thu].
 
 **** Contrôle :
 
-#+CAPTION: Le contrôle de la PCR cible de l'ancre 100% homologue. 
-#+CAPTION: Le témoin positif de la PCR d'hier est censé être là également.  
-#+CAPTION: 
+#+CAPTION: Le contrôle de la PCR cible de l'ancre 100% homologue.
+#+CAPTION: Le témoin positif de la PCR d'hier est censé être là également.
+#+CAPTION:
 #+LABEL: fig:pcr2
-#+ATTR_LATEX: :float t :width 4cm 
+#+ATTR_LATEX: :float t :width 4cm
 [[/Volumes/HDD/stage/img/20160113_00.JPG]]
 
-Voir figure [[fig:pcr2]]. 
+Voir figure [[fig:pcr2]].
 
-- [ ] Refaire migrer le témoin positif. 
+- [ ] Refaire migrer le témoin positif.
 
-*** (D) dilué amorces 
+*** (D) dilué amorces
 Ajouté le [2016-01-12 Tue 10:02]
 
 Dilué au 10^e (10 / 90µL eau aguettant) les amorces 1073, 1392, 1410 et 1411.
 
-*** (D) coulé gel 
+*** (D) coulé gel
 Ajouté le [2016-01-12 Tue 16:01]
 
 Coulé deux grands gels 300mL agarose 1% 26 puits.
 ** 2016-01-13 Mercredi
 *** (2) PCR cible des ancres
 Ajouté le [2016-01-13 Wed 09:36]
- 
+
 La PCR d'hier ayant fonctionné, le but est de faire la même PCR dans les mêmes
 conditions pour séquencer toutes les ancres des clones montrant des
-néomutations. 
+néomutations.
 
 **** candidats sélectionnés
 | strong | weak |
@@ -269,13 +269,13 @@ néomutations.
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*19
 
 **** contrôle
-Voir figure [[fig:pcrancre]]. 
+Voir figure [[fig:pcrancre]].
 
-#+CAPTION: La PCR cible des ancres semble avoir fonctionné de partout. 
-#+CAPTION: Dans l'ordre, de pS10 à pS88, puis pW14 à pW93, T- et T+.  
-#+CAPTION: Le T- est clean, le T+ trop fort. Penser à moins déposer pour le T+. 
+#+CAPTION: La PCR cible des ancres semble avoir fonctionné de partout.
+#+CAPTION: Dans l'ordre, de pS10 à pS88, puis pW14 à pW93, T- et T+.
+#+CAPTION: Le T- est clean, le T+ trop fort. Penser à moins déposer pour le T+.
 #+LABEL: fig:pcrancre
-#+ATTR_LATEX: :float t :width \linewidth 
+#+ATTR_LATEX: :float t :width \linewidth
 [[/Volumes/HDD/stage/img/20160113_01.JPG]]
 
 Tout a fonctionné a priori. Les produits de PCR sont conservés au -20°C dans le
@@ -284,10 +284,10 @@ portoir orange à couvercle. Je refais la PCR pour l'isolat pW2.
 *** (3) PCR cible des gènes synthétiques
 Il n'y a pas de bandes dans trois cas d'amplification, l'hypothèse la plus
 parcimonieuse étant que la PCR n'a pas fonctionné… Je la refais donc pour ces
-trois isolats là. lala. 
+trois isolats là. lala.
 
-**** candidats 
- pW5_3 -- pW5_4 -- pS53_3 
+**** candidats
+ pW5_3 -- pW5_4 -- pS53_3
 
 **** programme PCR
 | Temps | température | 30 cycles |
@@ -313,15 +313,15 @@ trois isolats là. lala.
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*6
 
 **** contrôle
-Voir figure [[fig:pcr0113]]. 
+Voir figure [[fig:pcr0113]].
 Absence d'amplification. Repartir des boîtes, resuspendre les colonies, et
-refaire la PCR. 
+refaire la PCR.
 
-#+CAPTION: Rien à l'horizon. 
-#+CAPTION: Ladder tordu, puisque gel qui se tortille dans la cuve… 
-#+CAPTION: Bien fait pour moi. 
+#+CAPTION: Rien à l'horizon.
+#+CAPTION: Ladder tordu, puisque gel qui se tortille dans la cuve…
+#+CAPTION: Bien fait pour moi.
 #+LABEL: fig:pcr0113
-#+ATTR_LATEX: :float t :width 0.3\linewidth 
+#+ATTR_LATEX: :float t :width 0.3\linewidth
 [[/Volumes/HDD/stage/img/20160113_02.JPG]]
 
 ** 2016-01-14 Jeudi
@@ -329,14 +329,14 @@ refaire la PCR.
 La PCR d'hier semble montrer qu'il n'y a pas d'ADN dans le tube. Le témoin
 positif, qui fonctionne bien avec le couple d'amorce 1410--1411 ne fonctionne
 pas avec les amorces 1073--1392, pour une raison que je ne m'explique encore
-pas. 
+pas.
 
 Je veux donc repartir d'une nouvelle suspension, et refaire (encore une fois) la
 PCR sur ces trois colonies. Le but est d'avoir un plan d'expérience équilibré,
 avec quatre colonies isolées par candidat choisi.
 **** suspension des clones
 Les trois colonies sélectionnées, pW5_3 -- pW5_4 -- pS53_3, sont resuspendues
-dans 20µL d'eau pure. 
+dans 20µL d'eau pure.
 **** programme PCR
 | Temps | température | 30 cycles |
 |-------+-------------+-----------|
@@ -360,11 +360,11 @@ dans 20µL d'eau pure.
 | eau qsp 50µL   |   32.5 |    195. |
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*6
 
-**** contrôle 
+**** contrôle
 
-#+CAPTION: Les trois clones ont bien amplifié. 
-#+CAPTION: Le T+ a toujours le même soucis, je suis pourtant parti d'un 
-#+CAPTION: nouvel ADN génomique d'Acineto. 
+#+CAPTION: Les trois clones ont bien amplifié.
+#+CAPTION: Le T+ a toujours le même soucis, je suis pourtant parti d'un
+#+CAPTION: nouvel ADN génomique d'Acineto.
 #+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160114_00.JPG]]
 
@@ -378,7 +378,7 @@ Résultat :
 | WS       | 8.5ng/µL |
 | SW       | 7.2ng/µL |
 
-Il n'y a pratiquement rien. 
+Il n'y a pratiquement rien.
 
 **** relance des cultures
 J'ai sorti les cryotubes du -80°C, resuspendu les cultures dans 5mL de LB+Kan50,
@@ -386,9 +386,9 @@ incubation 24H à 37°C. Le but est de refaire les extractions demain
 [2016-01-15 Fri] avec plus de milieu, en culottant les 5mL de culture, et en
 éluant dans un plus petit volume.
 
-*** (D) maintenance 
+*** (D) maintenance
 - nettoyé paillasse
-- aliquoté 10 \times 1.5mL d'eau UP en eppendorf. 
+- aliquoté 10 \times 1.5mL d'eau UP en eppendorf.
 ** 2016-01-15 Vendredi
 *** (1) Extractions plasmidiques
 **** Extractions
@@ -399,10 +399,10 @@ appelés ~WS~ et ~SW~, [2016-01-15 Fri].
 
 **** Contrôle
 
-#+CAPTION: Le plasmide WS semble bon, il ne smirre pas trop. 
-#+CAPTION: Le plasmide SW est à refaire. 
-#+CAPTION: 
-#+ATTR_LATEX: :float t :width 0.25\linewidth 
+#+CAPTION: Le plasmide WS semble bon, il ne smirre pas trop.
+#+CAPTION: Le plasmide SW est à refaire.
+#+CAPTION:
+#+ATTR_LATEX: :float t :width 0.25\linewidth
 [[/Volumes/HDD/stage/img/20160115_00.JPG]]
 
 **** NanoDrop
@@ -416,9 +416,9 @@ appelés ~WS~ et ~SW~, [2016-01-15 Fri].
 |    |            9.1 |
 |    |            5.0 |
 |    |    nul quoi. 0 |
-*** (A) Analyses 
+*** (A) Analyses
 Avancé sur les alignements polySNP, sur l'extraction des données comme vu avec
-Laurent hier [2016-01-14 Thu]. 
+Laurent hier [2016-01-14 Thu].
 ** 2016-01-18 Lundi
 *** (1) Constructions In-Fusion
 On veut mettre au point une méthode de clonage par PCR qui permettrait d'accoler
@@ -430,14 +430,14 @@ Le vecteur utilisé est le plasmide pGEMT-T. Il est ouvert par digestion SpeI. I
 faut absence de site de restriction SpeI dans le GS. Ç'est le cas. Vérifié le
 <2016-01-18 Mon 08:54>.
 
-#+CAPTION: Fragment 1 : le Gene Synthétique. 
-#+CAPTION: Fragment 2 : le gène aphA-3. 
-#+CAPTION: Fragment 2 : le gène ancre. 
-#+ATTR_LATEX: :float t :width \linewidth 
+#+CAPTION: Fragment 1 : le Gene Synthétique.
+#+CAPTION: Fragment 2 : le gène aphA-3.
+#+CAPTION: Fragment 2 : le gène ancre.
+#+ATTR_LATEX: :float t :width \linewidth
 [[/Volumes/HDD/stage/img/20160118_00.png]]
-*** (2) PCR pW2 avant sequençage 
+*** (2) PCR pW2 avant sequençage
 L'isolât pW2 n'a pas été amplifié, confondu les tubes (voir figure
-[[fig:pcrancre]]). On refait la PCR cible ancre sur cet isolat là. 
+[[fig:pcrancre]]). On refait la PCR cible ancre sur cet isolat là.
 
 **** programme PCR
 | Temps | température | 30 cycles |
@@ -461,27 +461,27 @@ L'isolât pW2 n'a pas été amplifié, confondu les tubes (voir figure
 |----------------+--------+---------|
 | eau qsp 50µL   |   32.5 |    130. |
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*4
-**** contrôle 
+**** contrôle
 
-#+ATTR_LATEX: :float t :width 3cm 
+#+ATTR_LATEX: :float t :width 3cm
 [[/Volumes/HDD/stage/img/20160118_01.JPG]]
 
-Problème de PCR. Attention en analysant les séquences. 
+Problème de PCR. Attention en analysant les séquences.
 
-*** (2) Envoi ancres sequençage. 
+*** (2) Envoi ancres sequençage.
 Les produits PCR du [2016-01-13 Wed] sont envoyés à séquencer. But : séquencer
-les ancres des clones qui montrent des néomutations. 
+les ancres des clones qui montrent des néomutations.
 *** (3) Envoi produits PCR sequencage.
 Les produits PCR du [2016-01-12 Tue] sont envoyés à séquencer. But : séquencer
 les gènes synthétiques de certains candidats qui montrent des polymorphismes
-assez marqués. 
+assez marqués.
 *** (D) Aliquoté amorces
 Aliquoté 3\times 100mL des amorces amorces ~1073 1392 1411 1410~ en diluant au
 10^e.
 ** 2016-01-19 Mardi
-*** (1) PCR cible GS 
+*** (1) PCR cible GS
 But : insérer les gènes synthétiques alternants dans pGEM-T, après une PCR =A=
-sortant. 
+sortant.
 **** Programme PCR :
 | Temps | température | 30 cycles |
 |-------+-------------+-----------|
@@ -510,13 +510,13 @@ demain <2016-01-20 Wed 07:00>.
 
 **** contrôle
 Comme attendu, pas de bandes. En plus la PCR est un peu sale. Penser à changer
-l'eau. 
+l'eau.
 
 
-#+CAPTION: 
 #+CAPTION:
-#+CAPTION: 
-#+ATTR_LATEX: :float t :width 3cm 
+#+CAPTION:
+#+CAPTION:
+#+ATTR_LATEX: :float t :width 3cm
 [[/Volumes/HDD/stage/img/20160119_00.JPG]]
 
 
@@ -536,10 +536,10 @@ Couler 10 boîtes de LBm aux concentrations :
 *** (1) PCR cible GS
 Le but est d'amplifier les fragments synthétiques, dans l'idée de les insérer
 après purification dans le plasmide pGEM-T. La PCR donne des =A= sortants,
-ligaturés dans les =T= sortant du plasmide pGEM-T. 
+ligaturés dans les =T= sortant du plasmide pGEM-T.
 
 **** Programme PCR :
-D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120. 
+D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120.
 | Temps | température | 30 cycles |
 |-------+-------------+-----------|
 | 3'    |          94 |           |
@@ -562,19 +562,19 @@ D'après le cahier de Florence, daté du [2015-05-15 Fri], page 120.
 #+TBLFM: @>$2=50 - vsum(@2..@-1)::$3=$2*7
 
 Le T+ utilisé est un plasmide pGEM-T porteur de la construction Weak, synthétisé
-par Florence. 
+par Florence.
 **** contrôle
-#+CAPTION: Contrôle de la PCR 1392-1393. Le témoin positif est un pGEM-T de Florence   
+#+CAPTION: Contrôle de la PCR 1392-1393. Le témoin positif est un pGEM-T de Florence
 #+CAPTION: porteur de la construction Weak.
-#+CAPTION: 
-#+ATTR_LATEX: :float t :width 0.5\linewidth 
+#+CAPTION:
+#+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160120_00.JPG]]
 
 Tout est good. On peut lancer la purification, et éluer dans un bon volume de
-25µL. 
+25µL.
 *** (1) Purification des fragments PCR amplifiés
 Les fragments PCR sont purifiés par le protocole
-[[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/nucleospin_pcr_purif_cleanup.pdf::17][nucleospin_pcr_purif_cleanup.pdf, p. 17]]. 
+[[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/nucleospin_pcr_purif_cleanup.pdf::17][nucleospin_pcr_purif_cleanup.pdf, p. 17]].
 
 Les deux produits de PCR SW et WS sont poolés avant d'être mélangé au tampon de
 charge de l'étape 1. L'éthanol à l'étape 4 est laissé à évaporer pendant 5min à
@@ -583,19 +583,19 @@ charge de l'étape 1. L'éthanol à l'étape 4 est laissé à évaporer pendant 
 
 **** Contrôle
 
-#+CAPTION: Contrôle de la purification des produits PCR.  
-#+CAPTION: Les deux purifications semblent avoir fonctionné comme il faut. 
-#+CAPTION: 2µL sont chargés. 3µL de ladder ne suffisent pas. 
-#+CAPTION: Il faut homogénéiser le ladder et charger plus. 
+#+CAPTION: Contrôle de la purification des produits PCR.
+#+CAPTION: Les deux purifications semblent avoir fonctionné comme il faut.
+#+CAPTION: 2µL sont chargés. 3µL de ladder ne suffisent pas.
+#+CAPTION: Il faut homogénéiser le ladder et charger plus.
 #+ATTR_LATEX: :float t :width 0.3\linewidth
 [[/Volumes/HDD/stage/img/20160120_01.JPG]]
 *** (1) Ligature dans pGEM-T
 Le plasmide pGEM-T de Promega est un plasmide conçu pour avoir des extrémités
 franches porteuses de bases =T=. Il est maintenu ouvert dans son tampon,
-conservé à -20°C. 
+conservé à -20°C.
 
 Le but est de ligaturer les fragments PCR obtenus et purifiés avec le pGEM-T,
-puis de transformer des cellules compétentes /E.coli/ par choc chaud-froid. 
+puis de transformer des cellules compétentes /E.coli/ par choc chaud-froid.
 
 Le protocole utilisé est le protocole promega pGEM-T (pas pGEM-T easy). Lien
 pour le short-manual : [[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/promega_pgem-t_short-manual.pdf::1][promega_pgem-t_short-manual.pdf, p. 1]]. Lien pour le
@@ -610,13 +610,13 @@ de soucis.
 Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
 \times 100µL sur les boîtes Amp75 XGal IPTG coulées hier [2016-01-19 Tue].
 
-Les boîtes sont incubées 24H à 37°C. 
+Les boîtes sont incubées 24H à 37°C.
 
 *** (2) et (3) envoi au séquençage
 Les tubes à envoyer à séquencer, contenant les produits PCR cibles des gènes
 synthétiques des clones présentant des polymorphismes et des ancres des clones
 présentant des néomutations ont été envoyés à séquencer par David aujourd'hui
-[2016-01-21 Thu]. 
+[2016-01-21 Thu].
 
 *** (D) coulé boîtes amp-xgal-iptg
 Coulé 10 boîtes ampicilline 75, Xgal IPTG, placées en chambre froide.
@@ -633,7 +633,7 @@ aurait quand même des cellules bleues.
 Les cellules qu'on avait utilisé hier sont périmées depuis septembre 2011. Ce
 qui est très chiant. On refait donc le clonage avec le restant de produit de
 ligature, conservé au 4°C depuis hier, en utilisant d'autres cellules, qui
-périment en 2017. 
+périment en 2017.
 
 On utilise le kit de clonage TOP10. Voir description des protocoles ici :
 [[skim:///Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/doc/invitrogen_one-shot-top10.pdf::8][invitrogen_one-shot-top10.pdf, p. 8]].
@@ -641,12 +641,12 @@ On utilise le kit de clonage TOP10. Voir description des protocoles ici :
 Les transformants sont placés dans 300µL de milieu SOC, qui sont en étalés en 3
 \times 100µL sur les boîtes Amp75 XGal IPTG coulées hier [2016-01-20 Wed].
 
-Les boîtes sont incubées 24H à 37°C. 
+Les boîtes sont incubées 24H à 37°C.
 
 *** (2) et (3) accusé réception séquençage
 # [[mu4e:msgid:001501d1542e$943783b0$bca68b10$@genoscreen.fr][GENOSCREEN : Réception des échantillons envoyés le 20/01/2016]]
 
-Genoscreen a reçu les échantillons. 
+Genoscreen a reçu les échantillons.
 
 ** 2016-01-22 Vendredi
 *** (1) Contrôle des clonages
@@ -655,11 +655,11 @@ Beaucoup de colonies blanches et quelques colonies bleues. Le clonage d'hier
 semble avoir fonctionné. On veut désormais repiquer les colonies blanches,
 potentiellement transformantes, sur une autre boîte LBm Amp75 Xgal IPTG, 1) pour
 confirmer leur phénotype, et 2) pour lancer des PCR de confirmation d'insertion
-du fragment demain [2016-01-23 Sat]. 
+du fragment demain [2016-01-23 Sat].
 
-*** (2) et (3) Réception des séquences 
+*** (2) et (3) Réception des séquences
 Les séquences des tubes envoyés à Genoscreen ont été reçues aujourd'hui
-<2016-01-22 Fri>. 
+<2016-01-22 Fri>.
 
 # [[mu4e:msgid:008901d15517$8e3c72b0$aab55810$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 1/2)]]
 # [[mu4e:msgid:008f01d15517$9b813500$d2839f00$@genoscreen.fr][GENOSCREEN : Résultats des séquences du 20/01/2016 + rapport QC ( Mail 2/2)]]
@@ -671,10 +671,10 @@ obtenir une taille d'amplification de 800bp environ, si le fragment est dans le
 bon sens.
 
 On choisit donc 6 clones confirmés \beta-gal neg par insert WS et SW. Ils sont
-resuspendus dans 50µL d'eau stérile. 
+resuspendus dans 50µL d'eau stérile.
 
 **** programme PCR
-Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135. 
+Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135.
 | Temps | température | 30 cycles |
 |-------+-------------+-----------|
 | 3'    |          94 |           |
@@ -723,30 +723,30 @@ Je n'ai pour l'instant pas d'explications.
 5. le temps d'élongation n'est pas le bon ? c'est pourtant le temps
    correspondant à la taille attendue…
 
-Dégouté. Comment perdre son samedi en deux PCR. 
+Dégouté. Comment perdre son samedi en deux PCR.
 
 ** 2016-01-24 Dimanche -> 2016-01-26 Mardi
 *** Dimanche
 L'idée était de faire les extractions plasmidiques aujourd'hui, ainsi que de
 mettre les souches possédant le plasmide et l'insert dans le glycérol. Vu les
-PCR d'hier, on n'est encore sûr de rien quant aux insertions. 
+PCR d'hier, on n'est encore sûr de rien quant aux insertions.
 
-Donc pas de manip aujourd'hui. 
+Donc pas de manip aujourd'hui.
 
 *** Lundi
 
-Conclave, session plénière. 
+Conclave, session plénière.
 # *** (1) Extraction Plasmidiques
 # *** (1) Ensemencements glycérols
 # *** (1) Ensemencement des tubes de LBm Amp75
 # Deux clones par insert servent à ensemencer deux tubes de LBm Amp75, dans le but
 # de 1) faire les extractions plasmidiques demain <2016-01-24 Sun> et 2) culotter
-# dans du glycérol, pour mettre au -80°C. 
+# dans du glycérol, pour mettre au -80°C.
 
 *** Mardi
 
-Conclave, session plénière matin. 
-Préparation powerpoint du mardi [2016-02-02 Tue]. 
+Conclave, session plénière matin.
+Préparation powerpoint du mardi [2016-02-02 Tue].
 
 ** 2016-01-27 Mercredi
 
@@ -754,10 +754,10 @@ Préparation powerpoint du mardi [2016-02-02 Tue].
 Étant donné que les PCR de Samedi n'ont pas fonctionné, je cherche à optimiser
 les PCR en utilisant d'autres amorces. Je lance deux PCR, l'une avec le couple
 =1393 M13R= et l'autre avec le couple =M13F M13R=. Le premier sert à vérifier le
-sens, le deuxième à vérifier la présence d'un insert. 
+sens, le deuxième à vérifier la présence d'un insert.
 
 **** programme
-Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135. 
+Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135.
 | Temps | température | 30 cycles |
 |-------+-------------+-----------|
 | 3'    |          94 |           |
@@ -765,7 +765,7 @@ Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135.
 | 50''  |          57 | x         |
 | 50''  |          72 | x         |
 | 4'    |          72 |           |
-**** volumes 
+**** volumes
 |                | 1-tube | 4-tubes |
 |----------------+--------+---------|
 | ADN            |    0.5 |      1. |
@@ -781,20 +781,20 @@ Tiré du cahier de Florence, daté du [2015-06-16 Tue], page 135.
 
 **** contrôles
 
-#+CAPTION: Toujours rien. 
+#+CAPTION: Toujours rien.
 #+CAPTION:
-#+CAPTION: 
-#+ATTR_LATEX: :float t :width 0.5\linewidth 
+#+CAPTION:
+#+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160127_00.JPG]]
 
 On pense de plus en plus à un problème de crible. Autrement dit les milieux ne
-seraient pas assez sélectif, des colis sans le plasmide arrivent à pousser. 
+seraient pas assez sélectif, des colis sans le plasmide arrivent à pousser.
 
 Ça n'explique pas l'absence d'amplification dans le témoin positif. On veut
 changer le témoin positif. Thibault va essayer demain, il doit cribler
 certains de ses clones demain. Il utilise un autre fragment lui, donc il ne va
 tester que le couple =M13R M13F=, mais ça permet de voir si on a bien le
-plasmide dans les colis qu'on utilise. 
+plasmide dans les colis qu'on utilise.
 
 #+BEGIN_QUOTE
 Personellement je pense que l'ampicilline dans le milieu n'est pas assez
@@ -809,7 +809,7 @@ fait donc des extractions plasmidiques sur 5mL de LB-amp75, avec deux colonies
 blanches, \beta-gal neg, et une colonie bleue, \beta-gal pos.
 
 Je lance donc aujourd'hui trois cultures de 5mL de LBamp75, pour extraire
-demain. 
+demain.
 
 ** 2016-01-28 Jeudi
 *** (1) PCR Thibault
@@ -821,8 +821,8 @@ spécificité d'amplification. Selon lui, une PCR sur colonie rajoute beaucoup d
 substances dans la suspension, notamment des inhibiteurs de PCR. Je change donc
 de conditions de PCR, et lance la PCR de criblage des clones, celle que j'avais
 faite samedi [2016-01-23 Sat] mais avec d'autres conditions de PCR.
- 
-*** (1) PCR encore et toujours. 
+
+*** (1) PCR encore et toujours.
 But : vérifier la présence de l'insert dans les clones blancs, sensés être
 porteurs des plasmides. Je lance la PCR en utilisant les conditions du tableau
 consensus de l'équipe 4… Cette fois avec DMSO etc. Le couple d'amorce utilisé
@@ -836,19 +836,19 @@ Pas de photo ici. Le gel a été imprimé par Thibault, pas enregistré sur l'or
 
 *** (1) PCR encore et toujours (bis)
 But : idem. Mais avec le bon tampon. PCR lancée sur la nuit, contrôlée demain
-[2016-01-29 Fri] matin. 
+[2016-01-29 Fri] matin.
 
-**** contrôle 
+**** contrôle
 
-#+ATTR_LATEX: :float t :width \linewidth 
+#+ATTR_LATEX: :float t :width \linewidth
 [[/Volumes/HDD/stage/img/20160129_00.JPG]]
 
-Toujours rien à l'horizon. 
+Toujours rien à l'horizon.
 
 *** (1) Contrôle des clonages
 Pas eu le temps de faire les minipreps. Le but était de contrôler les plasmides
 des clones que Thibault a amplifié, de les digérer pour voir si l'insert était
-bien présent. 
+bien présent.
 
 Manip à envisager si jamais les PCR du vendredi ne fonctionnent pas. Encore.
 
@@ -858,22 +858,22 @@ SCF.position entre le fichier polySNP et le fichier PHRED ne correspondent pas.
 Ça pose problème, puisque les bases déclarées par polySNP ne sont pas les mêmes
 que celles qu'on retrouve dans le fichier POLY.
 
-Enjeu du weekend. 
+Enjeu du weekend.
 ** 2016-01-29 Vendredi
 *** (1) Contrôle de la PCR de la veille
-Voir la partie correspondante. 
+Voir la partie correspondante.
 *** (1) Contrôle de la présence des fragments
 Je refais la PCR qu'avait réalisé Thibault, avec le couple =M13R M13F=, dans
 l'idée de déterminer si les clones qu'on teste possèdent bien l'insert. Ce qui
 serait déjà un début d'explication quand au fait que rien n'amplifie… Je teste
 aussi les deux clones WS que Thibault avait testé, afin de voir si quelque chose
-ne cloche pas dans le mix que j'utilise. 
+ne cloche pas dans le mix que j'utilise.
 
 **** Résultat :
 #+ATTR_LATEX: :float t :width \linewidth
 [[/Volumes/HDD/stage/img/20160129_01.JPG]]
 
-Rien. Encore et toujours rien. Ça commence à me péter le jonc sérieux. 
+Rien. Encore et toujours rien. Ça commence à me péter le jonc sérieux.
 La PCR est bien sale, mais c'est sûrement dû à la température d'hybridation du
 programme de Thibault, qui est plus basse que celle qu'utilise Florence (55
 contre 57°C.)
@@ -885,10 +885,10 @@ Taq, l'eau, j'ai rajouté du DMSO, rien n'y fait. Pas de solution là…
 Étant donné que le kit de PCR que j'utilise ne fonctionne pas alors que celui de
 Thibault marche nickel et bien propre, je refais la PCR qu'il avait fait sur les
 trois clones : un bleu possédant le plasmide à coup sûr, et deux blancs WS qui
-ont bien marché dans sa PCR. 
+ont bien marché dans sa PCR.
 
 Toujours dans 25µL, avec les conditions de PCR de Thibault et les volumes de
-Thibault. Gloire à Thibault. 
+Thibault. Gloire à Thibault.
 
 **** Résultat :
 
@@ -898,16 +898,16 @@ des raisons que nous laisserons au lecteur le plaisir de deviner.
 *** (1) Ensemencement LB -> miniprep
 Je lance des cultures dans LBamp75 liquide. Le but est de faire des minipreps
 demain [2016-01-30 Sat] pour extraire les plasmides, tenter les PCR à partir des
-plasmides extraits. 
+plasmides extraits.
 
 L'hypothèse qu'on a après avoir discuté avec Thibault et Quentin --- la dernière
 qu'il nous reste --- est qu'il est possible que j'ai prélevé trop de colonie au
-cure-dent. La PCR en aurait donc été inhibée. 
+cure-dent. La PCR en aurait donc été inhibée.
 ** 2016-01-30 Samedi
 
 *** (1) Minipreps extraction plasmidiques
 Le but est d'extraire les plasmides de deux colonies SW et WS, pour vérifier
-qu'ils soient bien là, et tenter les PCR de vérification du sens sur eux. 
+qu'ils soient bien là, et tenter les PCR de vérification du sens sur eux.
 
 **** Extractions plasmidiques
 Extractions utilisant le protocole NucleoSpin Plasmid.
@@ -924,10 +924,10 @@ Extractions utilisant le protocole NucleoSpin Plasmid.
 Puisque les PCR sur colonies ne fonctionnent pas, on peut essayer d'amplifier à
 partir des plasmides extraits. Le but est toujours de voir si on a bien
 l'insert, avec le couple =M13R M13F=, et de voir dans quel sens il s'est inséré,
-avec le couple =M13R 1393=. 
+avec le couple =M13R 1393=.
 
-#+CAPTION: Toujours rien. Les puits à gauche du ladder sont ceux avec le couple =M13R M13F=, 
-#+CAPTION: ceux à droite avec le couple =M13R 1393=. 
+#+CAPTION: Toujours rien. Les puits à gauche du ladder sont ceux avec le couple =M13R M13F=,
+#+CAPTION: ceux à droite avec le couple =M13R 1393=.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160130_01.JPG]]
 
@@ -935,7 +935,7 @@ avec le couple =M13R 1393=.
 strictement rien changé entre samedi et vendredi où les PCR marchaient encore,
 je me suis dit que c'était peut-être un problème de détection ? Le bleu de dépôt
 qui ne fonctionnerait pas ? J'ai donc essayé avec un autre bleu de dépôt, celui
-qu'utilise Raphaël et Thibault. 
+qu'utilise Raphaël et Thibault.
 
 #+CAPTION: Pas mieux. On peut cependant noter que ce bleu est plus propre (pas de bandes
 #+CAPTION: au dessus du ladder). Penser à aliquoter du bleu, pour ne pas utiliser tout le
@@ -945,7 +945,7 @@ qu'utilise Raphaël et Thibault.
 
 Je commence à arriver à cours de solutions là. Pourtant j'ai vraiment /tout/
 contrôlé, l'eau, le tampon, le MgCl2, les dNTPs, j'ai changé de Taq plusieurs
-fois, rien n'y fait. 
+fois, rien n'y fait.
 
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160130_03.JPG]]
@@ -958,13 +958,13 @@ fois, rien n'y fait.
 Étant donné qu'on n'a pas beaucoup --- ceci est un doux euphémisme --- de
 résultats en PCR, on veut tenter de digérer nos plasmides par =HindIII= et
 =SpeI=. =HindIII= est présent sur les deux fragments, relativement commun.
-=SpeI= est présent dans le site de restriction du plasmide pGEM-T. 
+=SpeI= est présent dans le site de restriction du plasmide pGEM-T.
 
-#+CAPTION: La carte de restriction du fragment weak-strong. 
+#+CAPTION: La carte de restriction du fragment weak-strong.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160201_00.png]]
 
-#+CAPTION: La carte de restriction du fragment strong-weak. 
+#+CAPTION: La carte de restriction du fragment strong-weak.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160201_01.png]]
 
@@ -978,33 +978,33 @@ Les mélanges sont réalisés en conditions suivantes :
 | Bcu1 (Spe1)      | 1µL  |
 | HindIII          | 2µL  |
 
-Suivant les recommandations présentées là : 
+Suivant les recommandations présentées là :
 [[https://www.thermofisher.com/fr/fr/home/brands/thermo-scientific/molecular-biology/thermo-scientific-restriction-modifying-enzymes/restriction-enzymes-thermo-scientific/double-digest-calculator-thermo-scientific.html][Double Digest Calculator—Thermo Scientific | Thermo Fisher Scientific]]
 
 Les deux tubes sont incubés à 37°C sur la nuit. Le but est de les faire migrer
-demain [2016-02-02 Tue 08:00]. 
+demain [2016-02-02 Tue 08:00].
 ** 2016-02-02 Mardi
-*** (D) Réunion projet 
+*** (D) Réunion projet
 Réunion projet Laurent Xavier Franck. Présentation des résultats polySNP et
-discussion autour de la suite des manips. 
+discussion autour de la suite des manips.
 *** (D) Présentation sujet master
 *** (1) Migration des digestions plasmidiques de la veille.
 
 Dans la première migration, je n'ai pas fait migré assez de volume. En fait il
-faut faire migrer l'ensemble du volume de la digestion (20µL). 
+faut faire migrer l'ensemble du volume de la digestion (20µL).
 
 #+CAPTION: gel: 1%, marqueur: 1kb \\
-#+CAPTION: Pas assez de volume de migration. 
+#+CAPTION: Pas assez de volume de migration.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160202_00.JPG]]
 
 Je n'avais pas assez mis de volume de plasmide. Il faut au minimum 200ng de
 plasmide pour que ça marche bien, et j'ai mis 1µL à 25ng/µL… Ça ne pouvait pas
-marcher… On voit quand même quelques choses, mais ça reste bien flou. 
+marcher… On voit quand même quelques choses, mais ça reste bien flou.
 
 #+CAPTION: gel: 1%, marqueur: 1kb \\
-#+CAPTION: Pas assez de masse de plasmide à digérer. Ça ne ressemble pas à grand chose. 
-#+CAPTION: Donc on refait. 
+#+CAPTION: Pas assez de masse de plasmide à digérer. Ça ne ressemble pas à grand chose.
+#+CAPTION: Donc on refait.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160202_01.JPG]]
 
@@ -1012,13 +1012,13 @@ On relance donc une digestion avec les mêmes enzymes, sur l'ensemble du volume
 restant de plasmide. Étant donné qu'il ne restait plus beaucoup de volume (7µL
 en regardant à la pipette), j'ai choisi de ne pas faire de témoin non digéré,
 pour maximiser les chances de fonctionnement de la PCR. Les migrations sont
-réalisées demain [2016-02-03 Wed]. 
+réalisées demain [2016-02-03 Wed].
 ** 2016-02-03 Mercredi
-*** (1) Migration des digestions plasmidiques de la veille. 
+*** (1) Migration des digestions plasmidiques de la veille.
 
 #+CAPTION: gel: 1%, marqueur: 1kb, tps expo: 1''400'''\\
 #+CAPTION: Le puit du bas est le SW, le puits du haut est le WS.
-#+CAPTION: 
+#+CAPTION:
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160203_00.JPG]]
 
@@ -1030,42 +1030,42 @@ Pour mieux voir le ladder, moins d'exposition :
 *** (1) Contrôle du produit de purification
 Dans la perspective où on relancerait des clonages, on peut se re-servir du
 produit de purification du [2016-01-20 Wed]. Il faut par contre vérifier que les
-produits sont toujours bien jolis. On les fait migrer sur gel. 
+produits sont toujours bien jolis. On les fait migrer sur gel.
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
-#+CAPTION: Les deux produits sont cleans. On peut les utiliser pour la ligature. 
+#+CAPTION: Les deux produits sont cleans. On peut les utiliser pour la ligature.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160203_02.JPG]]
 
 *** (1) Démarche de clonage
 Note de Franck concernant la marche à suivre pour les transformations de
-/E.coli/. 
+/E.coli/.
 
 #+BEGIN_EXAMPLE
 - migration purif gel pour validation.
 - refaire ligature pGEM-T SW WS.
 - transformations cellules compétentes
-- faire un témoin cellule compétente + H2O. 
+- faire un témoin cellule compétente + H2O.
 - étalement sur XGal Amp75 IPTG.
 #+END_EXAMPLE
 
 *** (1) Mise au point des PCR
 Je veux regarder d'où vient le problème des PCR. Les PCR d'Aurélie fonctionnent.
-On suspecte le lot de MgCl2 ou le lot de Taq. 
+On suspecte le lot de MgCl2 ou le lot de Taq.
 
 Je fais donc trois mix PCR : un mix avec mes produits, témoins négatif ; un mix
 avec mes produits mais le MgCl2 d'Aurélie ; un mix avec mes produits mais un
-nouveau lot de Taq. 
+nouveau lot de Taq.
 
 Ce sont des PCR sur colonies : les trois colonies testées sont 1 colonie WS
 bleue et 2 colonies WS blanches. Le couple d'amorce est le =M13RF=, pour
-amplifier même ceux qui n'ont pas l'insert dans le bon sens. 
+amplifier même ceux qui n'ont pas l'insert dans le bon sens.
 
 **** Résultat :
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''200'''  vol 5µL \\
-#+CAPTION: Il semblerait bien que ce soit le MgCl2 qui nous pose des problèmes. 
-#+CAPTION: 
+#+CAPTION: Il semblerait bien que ce soit le MgCl2 qui nous pose des problèmes.
+#+CAPTION:
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160203_03.JPG]]
 
@@ -1073,43 +1073,43 @@ amplifier même ceux qui n'ont pas l'insert dans le bon sens.
 Il semblerait que le MgCl2 nous pose des problèmes. Je veux donc tenter une
 dernière PCR sur les transformants avant de relancer des ligatures dans pGEM-T.
 J'ai donc utilisé le MgCl2 d'Aurélie, et la Taq Ozyme classique, avec le couple
-d'amorce =1393 M13R=. 
+d'amorce =1393 M13R=.
 
 Je n'ai pas la photo du gel, puisque c'est Quentin qui a déposé et prit la
 photo, mais c'est clairement une amplification qui a fonctionné !
 
 On a donc potentiellement deux clones SW, aux positions 2 et 4 sur la boîte, et
 deux clones WS, aux positions 2 et 3, qui auraient l'insert, et dans le bon
-sens. Demain on boit une bière si tout marche ! 
+sens. Demain on boit une bière si tout marche !
 
 J'ai dans l'idée de faire une migration sympa demain, pour qu'on voit bien les
 bandes bien discriminées. Les colonies sont également resuspendues dans 5mL de
 LBamp100, pour être sûr de ne garder que les cellules qui sont bien résistantes
-à l'Ampicilline. 
+à l'Ampicilline.
 
 *** (D) Préparation cellules compétentes
 On veut préparer des cellules compétentes en suivant le protocole mis au point
 par Aurélie. Le but est d'avoir un backup en cas de problème avec les cellules
-compétentes TOP10. 
+compétentes TOP10.
 
-Aujourd'hui préparation de CaCl2, stérilisation par filtration. 
+Aujourd'hui préparation de CaCl2, stérilisation par filtration.
 ** 2016-02-04 Jeudi
 *** (1) Migration des produits de la PCR de la dernière chance
 Pour faire une jolie photo des produits de la PCR que l'histoire retiendra comme
-la PCR de la dernière chance, je fais migrer tranquillement à 50V. 
+la PCR de la dernière chance, je fais migrer tranquillement à 50V.
 
 #+CAPTION: gel1%  L:5µL-1kb  tps 0''700'''  vol 5µL \\
-#+CAPTION: Il semblerait bien que les clones qu'on a testé sont les bons : 
+#+CAPTION: Il semblerait bien que les clones qu'on a testé sont les bons :
 #+CAPTION: les clones SW 2 et 4 (sur la boîte, 1 et 3 ici)
-#+CAPTION: et les clones WS 2 et 3. 
+#+CAPTION: et les clones WS 2 et 3.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160204_01.JPG]]
 
-*** (1) Extractions plasmidiques des clones 
+*** (1) Extractions plasmidiques des clones
 J'utilise 1 mL des quatre cultures de nuit pour extraire les plasmides, dans le
 but de lancer les digestions =SpeI HindIII= sur la nuit.
 
-Le volume d'élution final est de 50µL. 
+Le volume d'élution final est de 50µL.
 **** Nanodrop :
 
 | clone | mesure | concentration |
@@ -1138,23 +1138,23 @@ d'insertion.
 | =HindIII=    |  2 |
 | =SpeI=       |  1 |
 
-Placés une nuit à 37°C. 
+Placés une nuit à 37°C.
 *** (1) Préparations cellules compétentes homemade
 On a préparé des cellules compétentes =JM109= sortie du -80 hier, en suivant le
 protocole d'Aurélie :
 
 #+BEGIN_EXAMPLE
-  Préparation de cellules 
-  compétentes /E.coli/ 17.1 et SM10. 
+  Préparation de cellules
+  compétentes /E.coli/ 17.1 et SM10.
   ----------------------------------
 
-  - culture en LB de la souche sous agitation à 37°C 
+  - culture en LB de la souche sous agitation à 37°C
     sur la nuit.
-  - préculture en LB sous agitation à partir de la culture 
+  - préculture en LB sous agitation à partir de la culture
     de nuit.
 
-  Toutes les manips se font sur la glace ou au froid, en 
-  évitant au maximum tout choc thermique. 
+  Toutes les manips se font sur la glace ou au froid, en
+  évitant au maximum tout choc thermique.
 
   - contrôler DO_600 = 0.5 -- 0.6
   - centrifuge 1.5mL de culture 1 min à 4°C.
@@ -1164,10 +1164,10 @@ protocole d'Aurélie :
   - laisser sur glace 10'.
   - centrifuger 1' à 4°C.
   - jeter le surnageant.
-  - resuspendre dans 100µL de CaCl2 50mM froid. 
+  - resuspendre dans 100µL de CaCl2 50mM froid.
 #+END_EXAMPLE
 
-Elles sont utilisées pour la transformation en utilisant la ligature d'hier. 
+Elles sont utilisées pour la transformation en utilisant la ligature d'hier.
 *** (1) Transformations TOP10 et JM109
 On réalise les transformations TOP10 en utilisant les cellules qui avaient
 fonctionnée la dernière fois (référence de lot : )
@@ -1187,37 +1187,37 @@ Emplacement des cellules dans le -80°C :
 *** (D) coulé boîte Xgal amp75 iptg
 *** (D) préparé 4mL de Xgal
 \clearpage
-** 2016-02-05 Vendredi 
+** 2016-02-05 Vendredi
 *** (D) préparé 400mL de gel à 1%
 *** (D) coulé 250mL de LBamp75 Xgal
 *** (1) migration des digestions HindIII SpeI
 Les digestions =HindIII= et =SpeI= de la veille migrent sur un gel flambant neuf
-préparé de frais. 
+préparé de frais.
 
 **** Résultat :
 
 #+CAPTION: gel1%  L:5µL-1kb  tps 0''500'''  vol 5µL et 20µL \\
-#+CAPTION: 
-#+CAPTION: 
+#+CAPTION:
+#+CAPTION:
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160205_00.JPG]]
 
 
 Le résultat n'est pas très net. C'est pas super clean. Du coup on profite des
-séquences gratuites offerte par GATC hier pour les envoyer. 
+séquences gratuites offerte par GATC hier pour les envoyer.
 
 *** (1) Séquençage des inserts dans le plasmide
-Les tubes sont déposés dans la boîte de GATC au 3^e. 
+Les tubes sont déposés dans la boîte de GATC au 3^e.
 
 **** Conditionnement :
-Notes de GATC sur le conditionnement des tubes à envoyer à séquencer. 
+Notes de GATC sur le conditionnement des tubes à envoyer à séquencer.
 
 #+BEGIN_QUOTE
 Purified plasmid DNA or purified PCR framents with primer premixed in tubes
 1. 5µL of template DNA with either o following concentrations (plasmid DNA or
    PCR product).
-2. add 5µL of primer with following concentration : 5µM. 
-Please send total sample amount of 10µL in 1.5mL tubes. 
+2. add 5µL of primer with following concentration : 5µM.
+Please send total sample amount of 10µL in 1.5mL tubes.
 #+END_QUOTE
 
 #+BEGIN_EXAMPLE
@@ -1225,7 +1225,7 @@ Please send total sample amount of 10µL in 1.5mL tubes.
 |
 |
 |
-| Colle ici les codes barres 
+| Colle ici les codes barres
 |
 |
 |
@@ -1234,7 +1234,7 @@ Please send total sample amount of 10µL in 1.5mL tubes.
 
 *** (1) Repiquage des colonies bleues - blanches
 Les transformations de cellules compétentes par les produits de ligature du
-fragment WS et SW avec le pGEM-T ont --- à peu près --- fonctionné. 
+fragment WS et SW avec le pGEM-T ont --- à peu près --- fonctionné.
 
 Les transformations des cellules compétentes faites maison sont un joli flop. En
 fait à la fin de l'après-midi on voit quelques colonies. Je les laisse à 37°C
@@ -1247,13 +1247,13 @@ de les repiquer sur un nouveau milieu LBAmp75 Xgal pour confirmation.
 Le but est d'amplifier séparément les fragments aphA3, présent sur le plasmide
 pAVA, et le fragment ancre, présent sur l'ADN génomique d'/Acinetobacter/.
 L'amplification permettra de les insérer dans les plasmides pWS et pSW avec le
-kit InFusion. La manip est prévue pour [2016-02-08 Mon]. 
+kit InFusion. La manip est prévue pour [2016-02-08 Mon].
 
-Amorces aphA3 : =1408 1409=. 
-Amorces ancre : =1410 1411=. 
+Amorces aphA3 : =1408 1409=.
+Amorces ancre : =1410 1411=.
 
 Je fais plusieurs tubes de chaque, pour l'instant je ne sais pas de combien de
-matos j'aurai besoin lundi pour le kit InFusion. 
+matos j'aurai besoin lundi pour le kit InFusion.
 
 Résultat : rien.
 
@@ -1263,12 +1263,12 @@ avec le même kit que moi, mais avec sa Taq.
 
 J'ai donc relancé la PCR avec la Taq de Raphaël. Ces problèmes de matos daubé
 commencent à me ``courir sur le haricot'', pour employer une expression bien
-fleurie. 
+fleurie.
 ** 2016-02-08 Lundi
 *** (1) confirmation des colonies bleues - blanches
 Les colonies des transformations de jeudi ont été repiquées sur milieu LBamp75
 pour confirmation du phénotype de résistance et l'aspect blanc de la colonie.
-Elles ont été sorties samedi à 13H. 
+Elles ont été sorties samedi à 13H.
 
 *** (1) Migration des PCR aphA3 et ancre
 Les PCR de vendredi destinées à être insérées dans le plasmide pGEM-T SW et WS
@@ -1289,12 +1289,12 @@ Les produits PCR sont donc purifiés avec le kit PCR clean up.
 *** (1) Purification des fragments PCR aphA3 et ancre
 Les PCR sont purifiées via le kit PCR clean up. Je choisis deux tubes sur les
 trois amplifiés pour ne pas gaspiller de réactif. Volume d'élution final 25µL.
-Restent 20µL après la migration. 
+Restent 20µL après la migration.
 **** Résultat :
 
-Voir figure [[fig:purif0208]]. 
+Voir figure [[fig:purif0208]].
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
-#+CAPTION: Les deux fragments PCR par amplification semblent clean. 
+#+CAPTION: Les deux fragments PCR par amplification semblent clean.
 #+CAPTION: Ils sont conservés à 4°C en attendant la fusion InFusion.
 #+LABEL: fig:purif0208
 #+ATTR_LATEX: :float t :width 1\linewidth
@@ -1302,11 +1302,11 @@ Voir figure [[fig:purif0208]].
 
 *** (D) nettoyage salle BET
 Nettoyé toutes les cuves, changé les bains TBE, mis en place le compteur
-d'utilisation. 
-*** (A) Mise au point simulation contamination 
+d'utilisation.
+*** (A) Mise au point simulation contamination
 J'ai discuté avec Laurent pour la mise au point d'une simulation qui permettrait
 de tester si la répartition des puits présentant des séquences avec des pics
-secondaires pourrait être attendue aléatoirement. 
+secondaires pourrait être attendue aléatoirement.
 *** (D) mise au point Franck
 On a reçu les séquences des inserts dans les plasmides. Elles semblent
 contaminées. Les 250 premières bases correspondent à /Acinetobacter/, mais au
@@ -1326,14 +1326,14 @@ l'insert et connaître son sens. Résultat :
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.8''  vol 5µL \\
 #+CAPTION: Pas mal de chance cette fois ! L'insert s'est mis dans le bon sens
-#+CAPTION: dans quasiment tous les clones testés. 
+#+CAPTION: dans quasiment tous les clones testés.
 #+LABEL: fig:pcr0208
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160209_00.JPG]]
 ** 2016-02-09 Mardi
 *** (D) coulé 300 mL gel 1%
 *** (1) migration des PCR d'hier
-*** (A) terminé matrice de contamination simulée 
+*** (A) terminé matrice de contamination simulée
 #+BEGIN_QUOTE
 Bonsoir Laurent,
 
@@ -1352,7 +1352,7 @@ Sous réserve de la pertinence du test, il semblerait bien que
 la répartition de nos puits avec pics secondaire ne soit pas aléatoire (sous la
 loi normale, p=0.0033).
 
-Pour la plaque Strong : 
+Pour la plaque Strong :
 
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Users/samuelbarreto/tmp/simul_strong.png]]
@@ -1368,21 +1368,21 @@ Bonne soirée, Sam
 *** (1) Ensemencement LBamp75 clones positifs
 L'idée est d'extraire demain les plasmides, et de les envoyer à GATC dans
 l'après midi pour séquencer et être sûr du sens d'insertion et de la qualité du
-plasmide qu'on utilise pour les clonages. 
+plasmide qu'on utilise pour les clonages.
 
 Clones relancés : =sw1 sw4 ws1 ws4= (voir figure [[fig:pcr0208]] )
 
 J'ai donc lancé quatre cultures des clones dans LBamp75, pour extraire les
-plasmides demain matin, et envoyer les plasmides à séquencer dans l'après-midi. 
+plasmides demain matin, et envoyer les plasmides à séquencer dans l'après-midi.
 ** 2016-02-10 Mercredi
-*** (1) Extractions des plasmides pGEM-T 
+*** (1) Extractions des plasmides pGEM-T
 J'ai extrait les plasmides des quatre cultures de nuit que j'avais lancé hier,
 avec le protocole classique nucleospin plasmid. Le but est de les envoyer à
 séquencer à GATC pour confirmer la présence de l'insert.
 
-Contrôle de l'extraction : 
+Contrôle de l'extraction :
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
-#+CAPTION: Les plasmides WS4 et SW1 semblent de bon candidats pour le séquençage. 
+#+CAPTION: Les plasmides WS4 et SW1 semblent de bon candidats pour le séquençage.
 #+CAPTION: La migration est dégueulasse : pour une raison que j'ignore, le bleu de charge ``remontait'' dans le puit au lieu de descendre ?
 #+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160210_00.JPG]]
@@ -1441,17 +1441,17 @@ etc…
 *** (1) Contrôle des digestions =SpeI=
 On dépose 2µL des produits de digestion sur un gel 0.8% bien propre pour
 contrôler si le plasmide est bien linéarisé. Le but est de déphosphoryler pour
-empêcher que le plasmide se referme et de purifier le produit linéarisé. 
+empêcher que le plasmide se referme et de purifier le produit linéarisé.
 
 Super surprise du matin, le tube de SW1 --- bien évidemment celui pour lequel on
 a le moins de matériel --- était ouvert … Donc on refait. Super. J'essaye de
 relancer des cultures de SW1 puisqu'on devrait avoir la séquence sous peu. Je
-fais les extractions ce soir si possible. 
+fais les extractions ce soir si possible.
 
 Bon en fait au moment de la migration j'ai resuspendu le culot qui semblait un
 peu trouble dans 20µL d'eau, et on voit une bande sur le gel. C'est donc plutôt
 bon signe. Je vais quand même faire les manips avec ce plasmide là, mais
-relancer une culture par précaution. 
+relancer une culture par précaution.
 
 #+CAPTION: gel0.8%  L:3µL-1kb  tps 1.2''  vol 2µL \\
 #+CAPTION: Les deux plasmides semblent assez bien ouvert, on n'a pas de plasmides super enroulés ou non linéarisé à priori. On peut lancer la manip de déphoshorylation.
@@ -1460,7 +1460,7 @@ relancer une culture par précaution.
 
 *** (1) Déphosphorylation des plasmides linéarisés
 Je déphosphoryle les plasmides via la phosphatase alcaline en suivant le
-protocole promega CIAP (Calf Intestinal Alkaline Phosphatase). 
+protocole promega CIAP (Calf Intestinal Alkaline Phosphatase).
 
 Protocole modifié pour $1$ µg de plasmide
 - diluer au 10^e la CIAP : mélanger 0.5µL de CIAP dans 4.5µL de Tampon 10X CIAP
@@ -1472,7 +1472,7 @@ Protocole modifié pour $1$ µg de plasmide
 - incuber à 37°C pendant 30 min exactement.
 - préparer les colonnes de purif pendant ce temps.
 - commencer la purif exactement à la fin des 30 min.
-  
+
 *** (1) Purification des plasmides linéarisés déphosphorylés
 Je purifie les plasmides via le kit PCR nucleospin cleanup, en utilisant les
 astuces de sioux en italique. Autrement dit j'ai laissé l'éthanol s'évaporer 10
@@ -1516,7 +1516,7 @@ qui est contaminée. Je choisis donc 1 clone W et 1 clone S qui montrent de
 - [ ] +un taille-haie+.
 
 **** Démarche :
-Je fais ça sous PSM du p2. 
+Je fais ça sous PSM du p2.
 
 - sortir les plaques du -80°C.
 - repérer les puits des clones
@@ -1533,24 +1533,24 @@ On peut espérer obtenir ce profil dans le meilleur des cas :
 #+ATTR_LATEX: :float t :width 0.4\linewidth
 [[/Volumes/HDD/stage/img/20160211_03.JPG]]
 
-** 2016-02-12 Vendredi 
-*** (1) Lancement des clonages InFusion 
+** 2016-02-12 Vendredi
+*** (1) Lancement des clonages InFusion
 On a reçu les séquences des plasmides séquencés. Elles sont nickel, il n'y a pas
 de mutation. En page suivante les alignements. À gauche de la séquence, la
 partie entre l'amorce M13R et l'insert. À droite de la séquence, le reste du
 plasmide après le gène synthétique. Il n'y a pas de mutation. On est donc bon,
-on peut lancer les manips dans InFusion.  
+on peut lancer les manips dans InFusion.
 
 #+ATTR_LATEX: :float multicolumn :width 1\linewidth
 [[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/seq_fevrier/img/align.pdf]]
-*** (3) Repiquage des cultures sur LBKan50 liquide 
+*** (3) Repiquage des cultures sur LBKan50 liquide
 J'ai repiqué 40 clones de =pS96=, 40 clones de =pW69= et 50 clones de =pW48=.
 L'idée est de faire ensuite des PCR sur ces clones pour séquencer les gènes
-synthétiques. 
+synthétiques.
 
 Ils sont resuspendus à l'oëse dans 200µL de LBKan50, dans 3 microplaques
 séparées de 96 puits. Les plaques sont laissées à incuber 24H à 30°C, elles sont
-sorties par Tania demain samedi [2016-02-13 Sat]. 
+sorties par Tania demain samedi [2016-02-13 Sat].
 
 #+BEGIN_QUOTE
 Je trouve personellement que les possibilités d'éclaboussure d'un puit à l'autre
@@ -1561,21 +1561,21 @@ plastique comme sur les plaques de PCR pour éviter les contaminations ?
 *** (B) biblio Glémin Lartillot Duret Arndt
 Une bibliographie très intéressante sur la modélisation des conséquences
 évolutives du gBGC dans les génomes eucaryotes et mammifères
-cite:lartillot_phylogenetic_2013,lartillot_interaction_2013,lesecque_red_2014,glemin_surprising_2011,glemin_quantification_2015,glemin_surprising_2010,escobar_gc-biased_2011, 
+cite:lartillot_phylogenetic_2013,lartillot_interaction_2013,lesecque_red_2014,glemin_surprising_2011,glemin_quantification_2015,glemin_surprising_2010,escobar_gc-biased_2011,
 
 ** 2016-02-15 Lundi
-*** (D) Coulé des milieux LBamp75Kan50 
-*** (D) Coulé des grands gels 
-*** (3) PCR des clones repiqués 
+*** (D) Coulé des milieux LBamp75Kan50
+*** (D) Coulé des grands gels
+*** (3) PCR des clones repiqués
 L'idée est de faire une PCR de contrôle avec la Taq Ozyme avant de passer avec
 la Taq Platinum qui proofread. On amplifie les fragments synthétiques avec les
-amorces /Acinetobacter/ : =1073 1392=. Le but est de les resequencer derrière. 
+amorces /Acinetobacter/ : =1073 1392=. Le but est de les resequencer derrière.
 
-On utilise 1µL de suspension pour la PCR. 
+On utilise 1µL de suspension pour la PCR.
 
 **** Résultat :
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.7''  vol 5µL \\
-#+CAPTION: La PCR avec la Taq Ozyme semble marcher. 
+#+CAPTION: La PCR avec la Taq Ozyme semble marcher.
 #+CAPTION: On peut donc la lancer avec la Taq platinum.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160215_00.JPG]]
@@ -1583,10 +1583,10 @@ On utilise 1µL de suspension pour la PCR.
 *** (1) Clonage InFusion I
 J'ai lancé le protocole de clonage InFusion. Le but est de ligaturer les
 produits des PCR spécifiques d'apha3 et de l'ancre avec le pGEM-T porteur du
-gène synthétique WS ou SW. 
+gène synthétique WS ou SW.
 
 Le protocole préconise d'utiliser entre 10 et 100ng des différents produits. On
-dose donc au nanodrop les différents produits. 
+dose donc au nanodrop les différents produits.
 **** Nanodrop
 | produit      |      |      |      |
 |--------------+------+------+------|
@@ -1597,8 +1597,8 @@ dose donc au nanodrop les différents produits.
 | apha3.1      |  8.5 |  8.3 | 10.7 |
 | apha3.2      |  7.5 |  8.2 |  8.5 |
 
-On utilise donc les produits ancre 2 et apha3.1. 
-**** Volumes 
+On utilise donc les produits ancre 2 et apha3.1.
+**** Volumes
 |          | vol |
 |----------+-----|
 | plasmide |   4 |
@@ -1606,13 +1606,13 @@ On utilise donc les produits ancre 2 et apha3.1.
 | pAVA     | 2.5 |
 | tampon   |   2 |
 
-Voir le protocole pour les détails. 
+Voir le protocole pour les détails.
 *** (1) Transformation cellules JM109
 Les cellules stellar n'étaient pas disponibles. On a donc utilisé des cellules
-=JM109= chimiocompétentes. Le choc thermique se fait à 42°C pendant 42''. 
+=JM109= chimiocompétentes. Le choc thermique se fait à 42°C pendant 42''.
 
 *** (1) Lancé culture WS et SW pour cryotubes
-Lancé des cultures pour culotter et mettre en cryotubes au -80°C. 
+Lancé des cultures pour culotter et mettre en cryotubes au -80°C.
 ** 2016-02-16 Mardi
 *** (1) Contrôle des transformations InFusion
 Il n'y a rien sur les boîtes. Deux hypothèses :
@@ -1620,9 +1620,9 @@ Il n'y a rien sur les boîtes. Deux hypothèses :
 2. la ligature InFusion n'a pas marché.
 
 #+CAPTION: gel1%  L:2µL-1kb  tps 0.7''  vol 2µL \\
-#+CAPTION: On distingue toujours les bandes des inserts. 
-#+CAPTION: Il aurait fallu déposer le plasmide non ligaturé avec. 
-#+CAPTION: On peut cependant voir que la bande du plasmide ne correspond pas à la taille attendue. 
+#+CAPTION: On distingue toujours les bandes des inserts.
+#+CAPTION: Il aurait fallu déposer le plasmide non ligaturé avec.
+#+CAPTION: On peut cependant voir que la bande du plasmide ne correspond pas à la taille attendue.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160216_00.JPG]]
 
@@ -1634,7 +1634,7 @@ J'utilise l'outil à cette addresse : [[http://www.promega.com/a/apps/biomath/]]
 calcule la concentration en pmol si on lui dit que le fragment est double-brin,
 qu'il fait telle taille, et telle masse par microlitre.
 
-*** (1) Réessai de InFusion 
+*** (1) Réessai de InFusion
 **** Concentrations :
 | produit      | dosage 1 |    2 |    3 |  pmol |
 |--------------+----------+------+------+-------|
@@ -1657,7 +1657,7 @@ vecteur et les inserts.
 Où $V_i$ est le volume d'insert, $V_p$ le volume de plasmide vecteur, $R$ le
 ratio vecteur / insert, $n_v$ le nombre de mole de vecteur et $n_i$ le nombre de
 mole d'insert. La ligne $(2)$ correspond au calcul du volume de la purification
-des produits PCR des ancres à utiliser. 
+des produits PCR des ancres à utiliser.
 
 |            |   WS |   SW |
 |------------+------+------|
@@ -1673,7 +1673,7 @@ des produits PCR des ancres à utiliser.
 Les cellules transformées sont les cellules JM109. J'ai suivi le protocole, en
 dehors du temps d'exposition. J'ai utilisé 42'' à 42°C, sur les conseils /
 ordres de Sébastien et Aurélie. Après coup je ne suis pas sûr qu'il faille
-respecter ce temps. 
+respecter ce temps.
 
 *** (1) Contrôle des insertions InFusion
 J'ai voulu voir par PCR si certaines ligatures avaient fonctionné. L'idée est
@@ -1701,44 +1701,44 @@ volume de PCR de 50µL.
 | 2'30'' |          72 |
 | 4'     |          72 |
 
-*** (1) Cryotubes des /E.coli/ pGEM-T =SW= et =WS= 
+*** (1) Cryotubes des /E.coli/ pGEM-T =SW= et =WS=
 J'ai centrifugé la culture de nuit des /coli/ =SW= et =WS= dans LBamp75 liquide
 10 min à 5500rpm, jeté le surnageant et utilisé le reste de milieu pour
-resuspendre dans les cryotubes + 300µL glycérol stériles du [2016-01-08 Fri]. 
+resuspendre dans les cryotubes + 300µL glycérol stériles du [2016-01-08 Fri].
 ** 2016-02-17 Mercredi
 *** (1) Contrôle des transformation par le produit InFusion
 **** Culture :
 On a transformé des cellules JM109 par le produit de ligature InFusion, et étalé
 une suspension mère et une suspension reconcentrée par centrifugation sur des
-boîtes =LBKan50Amp75=. 
+boîtes =LBKan50Amp75=.
 
-Il n'y a rien qui pousse. C'est assez incommodant[fn:2:Ceci est un euphémisme.]. 
+Il n'y a rien qui pousse. C'est assez incommodant[fn:2:Ceci est un euphémisme.].
 **** Produit de ligature :
 
 #+CAPTION: gel1%  L:2µL-1kb  tps 0.8''  vol 1µL \\
-#+CAPTION: Il faut déposer plus de produit de ligature InFusion. 
-#+CAPTION: On ne voit rien. Cette photo est outrageusement retouchée pour qu'on voit un début de poil de bande. 
+#+CAPTION: Il faut déposer plus de produit de ligature InFusion.
+#+CAPTION: On ne voit rien. Cette photo est outrageusement retouchée pour qu'on voit un début de poil de bande.
 #+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160217_01.JPG]]
 
 #+CAPTION: gel1%  L:2µL-1kb  tps 0.5''  vol 2µL \\
 #+CAPTION: J'ai déposé 2µL du produit de ligature. On ne distingue même plus les deux bandes
-#+CAPTION: plus bas, comme dans l'autre migration. Je ne comprends pas. 
+#+CAPTION: plus bas, comme dans l'autre migration. Je ne comprends pas.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160217_02.JPG]]
 *** (1) Contrôle de la PCR sur le produit de ligature InFusion
 J'ai tenté de faire une PCR sur le produit de ligature InFusion. À priori j'ai
-utilisé les mauvaises amorces. Je vais réessayer avec les bonnes amorces. 
+utilisé les mauvaises amorces. Je vais réessayer avec les bonnes amorces.
 
-On amplifie toujours le fragment =M13R 1393= des pGEM-T non linéarisés. 
+On amplifie toujours le fragment =M13R 1393= des pGEM-T non linéarisés.
 
 **** Migration des produits de PCR :
 
-Voir figure [[fig:pcr0217]]. 
+Voir figure [[fig:pcr0217]].
 #+CAPTION: gel1%  L:2µL-1kb  tps 0.5  vol 5µL \\
-#+CAPTION: On n'amplifie pas le bon fragment. On amplifie toujours le fragment dans les pGEM-T non linéarisés. 
-#+CAPTION: On veut donc réessayer avec les amorces aux deux extrémités du fragment. 
-#+CAPTION: Ça ne marchera que si au moins un fragment a fonctionné. 
+#+CAPTION: On n'amplifie pas le bon fragment. On amplifie toujours le fragment dans les pGEM-T non linéarisés.
+#+CAPTION: On veut donc réessayer avec les amorces aux deux extrémités du fragment.
+#+CAPTION: Ça ne marchera que si au moins un fragment a fonctionné.
 #+LABEL: fig:pcr0217
 #+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160217_00.JPG]]
@@ -1781,27 +1781,27 @@ passé pour le plasmide WS4 de 120ng/µL à 20ng/µL.
 
 Dans le but de refaire un clonage InFusion, je veux refaire la PCR sur les
 inserts, et pooler les fragments sur la même colonne de purif, pour récupérer
-plus de matériel. 
+plus de matériel.
 
-*** (1) PCR aphA3 Ancre 
+*** (1) PCR aphA3 Ancre
 Pour pouvoir refaire le clonage InFusion, on doit repartir de plus de masse
 d'insert. Je refais donc les PCR sur les deux inserts cassette kana et l'ancre.
 Je fais trois tubes de PCR, en utilisant pour matrice l'ADN génomique
 d'/Acineto/ pour l'ancre et le plasmide pAVA porteur d'aphA3 pour la cassette
 Kana. Le but est de purifier les fragments obtenus et de les pooler sur la même
 colonne de purif, pour augmenter la concentration. L'ADN matrice de base est le
-même dans les trois tubes. 
+même dans les trois tubes.
 
-Voir la figure [[fig:pcr02172]] pour la migration sur gel. 
+Voir la figure [[fig:pcr02172]] pour la migration sur gel.
 
 *** (1) PCR sur les produits de ligature InFusion
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.5''  vol 5µL \\
 #+label: fig:pcr02172
-#+CAPTION: À un faible temps d'exposition, on voit des choses. 
-#+CAPTION: Si on expose un peu plus, on voit les bandes à 5kb. 
-#+CAPTION: Mais le problème, c'est qu'on voit surtout les bandes 
-#+CAPTION: à 1kb. Et là, subtilité. Voir le texte. 
+#+CAPTION: À un faible temps d'exposition, on voit des choses.
+#+CAPTION: Si on expose un peu plus, on voit les bandes à 5kb.
+#+CAPTION: Mais le problème, c'est qu'on voit surtout les bandes
+#+CAPTION: à 1kb. Et là, subtilité. Voir le texte.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160217_03.JPG]]
 
@@ -1819,7 +1819,7 @@ expliquer pourquoi les transformations ne fonctionnent pas.
 
 On peut d'ailleurs n'utiliser qu'une sélection sur LBKan50. Les /E.coli/ qui
 n'intègrent pas le bon plasmide (avec les deux inserts) ne sont résistantes qu'à
-l'ampicilline. 
+l'ampicilline.
 
 #+LABEL: fig:plasmap
 #+ATTR_LATEX: :float t :width 1\linewidth
@@ -1827,13 +1827,13 @@ l'ampicilline.
 *** (1) Purification des fragments apha3 et ancre
 J'ai purifié les fragments des PCR apha3 et ancre, en poolant les trois
 fragments sur la même colonne. L'idée est de reconcentrer le fragment de cette
-façon. 
+façon.
 
-Le volume d'élution final est de 25µL. 
+Le volume d'élution final est de 25µL.
 *** (1) Extraction des bandes à 3kb
 On voit quand même quelques bandes à 3kb dans la PCR sur le gel dans lequel on a
 fait migrer la PCR sur les produits InFusion. L'idée est de les extraire en
-coupant les bandes et de purifier ces produits là. 
+coupant les bandes et de purifier ces produits là.
 
 J'utilise donc un gel tout neuf à 0.8%, pour faire migrer l'ensemble du produit
 PCR. Je ne prends pas de photo du gel avant, pour limiter l'exposition aux UV.
@@ -1841,12 +1841,12 @@ Sur la plaque à UV, les bandes se voient bien. J'ai pu découper nettement les
 deux bandes correspondant à la première ligature, mais j'ai eu plus du mal à
 rester aligné pour les bandes de la deuxième. Je n'ai pas continué avec celles
 là, pour éviter les contaminations SW -> WS. Bien dommage. Espérons que ça
-suffira pour la PCR. 
+suffira pour la PCR.
 
 #+BEGIN_QUOTE
 Leçon du jour : espacer les bandes sur un gel dont on veut couper les bandes
 après coup. Ça rend les choses beaucoup plus simples et évite les contaminations
-entre les puits. 
+entre les puits.
 #+END_QUOTE
 
 J'ai ensuite purifié les bandes obtenues. Deuxième leçon du jour, répartir les
@@ -1855,7 +1855,7 @@ gels dans des eppendorfs de 2mL si la masse est trop élevée : il faut ajouter
 pour le WS. Il est plutôt difficile de dissoudre l'agarose à 0.8% dans un petit
 eppendorf, et on ne peut pas ajouter la masse qu'on veut. Résultat : la colonne
 se bouche, les temps de centrifugations sont bien plus long, l'éthanol s'évapore
-moins etc… Faire attention donc. 
+moins etc… Faire attention donc.
 
 *** (1) PCR sur les produits de ligature InFusion et les purifications des bandes
 L'idée de base en purifiant les bandes était de refaire une PCR =1411 1393=
@@ -1864,7 +1864,7 @@ donné le déroulement de la purification des bandes, j'ai également refait la 
 sur les produits de ligature, pour pouvoir refaire la manip si jamais la PCR sur
 les bandes purifiées ne marchait pas.
 
-J'ai fait les PCR dans 50µL. 
+J'ai fait les PCR dans 50µL.
 
 *** (1) Relance des clones WS4 et SW4
 Le volume de produit de ligature diminuant rapidement, j'ai relancé les souches
@@ -1876,11 +1876,11 @@ aphA3 et ancre purifié.
 *** (1) Révélation de la PCR =1411 1393=
 Hier, j'ai fait une PCR =1411 1393= sur les produits de ligature InFusion et sur
 la bande à 3kb purifiée sur colonne. Le but était d'amplifier nos grands
-fragments =WS-kanAncre= et =SW-KanAncre=. 
+fragments =WS-kanAncre= et =SW-KanAncre=.
 
 #+CAPTION: gel0.8%  L:3µL-1kb  tps 0.7''  vol 5µL \\
-#+CAPTION: À gauche la PCR sur les produits de ligature InFusion. 
-#+CAPTION: À droite la PCR sur l'extraction des bandes issues de la PCR sur les produits de ligature InFusion. C'est clair ? Non.  
+#+CAPTION: À gauche la PCR sur les produits de ligature InFusion.
+#+CAPTION: À droite la PCR sur l'extraction des bandes issues de la PCR sur les produits de ligature InFusion. C'est clair ? Non.
 #+ATTR_LATEX: :float t :width 0.8\linewidth
 [[/Volumes/HDD/stage/img/20160218_00.JPG]]
 
@@ -1894,7 +1894,7 @@ Après discussion avec Thibault, on peut utiliser à la place du BET le
 SybrSafe[fn:4:[[https://www.thermofisher.com/fr/fr/home/life-science/dna-rna-purification-analysis/nucleic-acid-gel-electrophoresis/dna-stains/sybr-safe.html]]]
 à la place du BET. Ça permet de ne pas exposer aux UVs, donc de limiter le taux
 de mutation. Ça augmente également l'efficacité des clonages après. On dispose
-le gel sur la lampe à lumière bleue, on découpe les grandes bandes etc… 
+le gel sur la lampe à lumière bleue, on découpe les grandes bandes etc…
 
 *** (1) Extraction des bandes =1411 1393= Sybr Safe
 Hier, j'ai relancé des PCR sur les produits de ligatures, dans 50µL pour pouvoir
@@ -1904,15 +1904,15 @@ les recommandations dans le protocole[fn:5:On peut également utiliser un bain])
 J'ai utilisé un peigne à large puits en réunissant les puits deux à deux par un
 bout de scotch. J'ai laissé migré pendant 1H30 à 100V. Les bandes sont bien
 discriminées. Par contre on ne voyait rien sur la lumière bleue. J'ai donc
-extrait les bandes aux UV (tout ça pour ça). 
+extrait les bandes aux UV (tout ça pour ça).
 
 #+CAPTION: gel0.8%  L:3µL-1kb  tps 0.5''  vol 45µL \\
-#+CAPTION: L'état du gel après la découpe des bandes. 
-#+CAPTION: On dirait que j'ai chopé les bonnes bandes. 
+#+CAPTION: L'état du gel après la découpe des bandes.
+#+CAPTION: On dirait que j'ai chopé les bonnes bandes.
 #+ATTR_LATEX: :float t :width 0.5\linewidth
 [[/Volumes/HDD/stage/img/20160218_01.JPG]]
 
-J'ai purifié les bandes avec le kit standard NucleoSpin. 
+J'ai purifié les bandes avec le kit standard NucleoSpin.
 
 J'ai ensuite refait une PCR dessus dans 50µL avec les amorces =1411 1393=. Ça
 n'a pas fonctionné. On n'amplifie rien à la taille attendue. C'est bien pénible
@@ -1923,7 +1923,7 @@ Hier j'avais lancé 3 tubes par souches d'/E.coli/ pGEM-T SW et WS, pour pouvoir
 refaire les ligatures InFusion au cas où ça ne marcherait pas. J'ai extrait les
 plasmides dans 6 tubes séparés, que j'ai dosés au nanodrop.
 
-**** Nanodrop : 
+**** Nanodrop :
 
 | WS1 |  94.0 |  93.4 |  95.9 |
 | WS2 |  37.9 |  38.4 |  37.8 |
@@ -1945,11 +1945,11 @@ volumes suivants :
 |--------------+----+----|
 | Volume final | 20 | 20 |
 
-** 2016-02-19 Vendredi 
-*** (1) Bibliographie Lartillot 
+** 2016-02-19 Vendredi
+*** (1) Bibliographie Lartillot
 
-*** (1) Workflow polysnp 
-J'ai fait un petit schéma descriptif du workflow de polySNP. 
+*** (1) Workflow polysnp
+J'ai fait un petit schéma descriptif du workflow de polySNP.
 #+BEGIN_SRC dot :file img/polysnp-workflow.png :cmdline -Kdot -Tpng :exports none :results silent
   digraph {
           graph [fontname = "Gill Sans"];
@@ -1984,10 +1984,10 @@ J'ai fait un petit schéma descriptif du workflow de polySNP.
   }
 #+END_SRC
 
-#+attr_latex: :float t :width \linewidth 
+#+attr_latex: :float t :width \linewidth
 [[file:img/polysnp-workflow.png]]
-*** (1) Diagramme workflow clonage 
-J'ai utilisé le language grahpviz pour faire le petit graphique suivant. 
+*** (1) Diagramme workflow clonage
+J'ai utilisé le language grahpviz pour faire le petit graphique suivant.
 #+begin_src dot :file img/clonage.png :cmdline -Tpng :exports none :results silent
   digraph {
           graph [fontname= "GillSans", fontsize = 12];
@@ -2003,7 +2003,7 @@ J'ai utilisé le language grahpviz pour faire le petit graphique suivant.
 
           A1 -> A2
           A2 -> A3
-          A3 -> A30 
+          A3 -> A30
           A30 -> A4
           A4 -> A5
 
@@ -2028,18 +2028,18 @@ J'ai utilisé le language grahpviz pour faire le petit graphique suivant.
   }
 #+end_src
 
-#+CAPTION: Un diagramme qui explique le workflow du clonage. 
+#+CAPTION: Un diagramme qui explique le workflow du clonage.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[file:img/clonage.png]]
 
-** 2016-02-22 Lundi 
-*** (1) Déphosphorylation et purification des plasmides linéarisés =SpeI= 
+** 2016-02-22 Lundi
+*** (1) Déphosphorylation et purification des plasmides linéarisés =SpeI=
 J'ai utilisé le protocole de déphosphorylation précédemment décrit pour
 déphosphoryler les plasmides linéarisés depuis vendredi, et placés à -20°C entre
 temps. J'ai ensuite purifié en utilisant le kit classique nucleospin, modifié
 pour les fragments de grande taille.
 
-# le diagramme du protocole de déphosphorylation. 
+# le diagramme du protocole de déphosphorylation.
 #+BEGIN_SRC dot :file img/dephospho.png :cmdline -Kdot -Tpng :exports none :results silent
   digraph{
             graph [fontname = "Gill Sans"];
@@ -2068,11 +2068,11 @@ pour les fragments de grande taille.
 
 #+ATTR_LATEX: :float t :width \linewidth
 [[file:img/dephospho.png]]
-**** Contrôle de la purification : 
+**** Contrôle de la purification :
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.7  vol 2µL \\
-#+CAPTION: Les deux digestinos ont l'air OK. 
-#+CAPTION: Il ne semble pas y avoir de plasmide non ouvert. 
+#+CAPTION: Les deux digestinos ont l'air OK.
+#+CAPTION: Il ne semble pas y avoir de plasmide non ouvert.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160222_01.JPG]]
 **** Dosages nanodrop :
@@ -2084,13 +2084,13 @@ pour les fragments de grande taille.
 | =SW=     | 122.3 | 119.5 | 125.3 |        120.9 |   3726 |
 #+TBLFM: $5=vmean($2..$3)
 
-Les masses de plasmides semblent largement suffisantes. 
+Les masses de plasmides semblent largement suffisantes.
 Par contre on est assez embêté pour les masses d'insert. Il faut faire les PCR
 dans 50µL pour avoir suffisament de volume. Si on veut au moins 50ng d'insert
 comme préconisé dans le kit, il faudrait 5µL de chaque, mais ça n'est pas
-possible étant donné qu'on fait les réactions de ligature InFusion dans 10µL. 
+possible étant donné qu'on fait les réactions de ligature InFusion dans 10µL.
 
-*** (1) Ligature InFusion 
+*** (1) Ligature InFusion
 **** Calcul des volumes :
 J'utilise l'outil à cette
 adresse[fn:6:[[http://bioinfo.clontech.com/infusion/molarRatio.do]]].
@@ -2102,10 +2102,10 @@ Les masses en ng recommandées sont les suivantes pour 100 ng de plasmide :
 
 J'ai donc reconcentré les fragments de PCR aphA3 et ancre au SpeedVac pour
 utiliser un volume plus faible. Il est préconisé d'utiliser au minimum 50 ng
-d'insert. 
+d'insert.
 
 Concentrations après SpeedVac : (j'ai repris le tube d'aphA3 dans 5µL, pour
-l'autre il restait suffisament de volume). 
+l'autre il restait suffisament de volume).
 
 | fragment |    1 |    2 |    3 | $\bar{x}$ (ng) |
 |----------+------+------+------+----------------|
@@ -2114,12 +2114,12 @@ l'autre il restait suffisament de volume).
 #+TBLFM: $5=vmean($2..$3)
 
 #+BEGIN_QUOTE
-Utiliser un volume de PCR plus grand la prochaine fois. 
+Utiliser un volume de PCR plus grand la prochaine fois.
 #+END_QUOTE
 
 Bon du coup j'ai laissé tombé, il n'y avait vraiment pas assez de volume pour
 pouvoir faire la ligature dans de bonnes conditions. Ce qui m'énerve plutôt
-beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos. 
+beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos.
 **** Protocole de ligature InFusion :
 #+begin_src dot :file img/infusion.png :cmdline -Tpng :exports none :results silent
   digraph {
@@ -2140,29 +2140,29 @@ beaucoup. Je refait donc une PCR aphA3 et ancre pour avoir plus de matos.
 
 #+ATTR_LATEX: :float t :width \linewidth
 [[file:img/infusion.png]]
-*** (1) PCR aphA3 et ancre 
+*** (1) PCR aphA3 et ancre
 Je fais les PCR dans 50µL pour avoir de quoi purifier demain. Il faut
-suffisament de fragment pour pouvoir faire la transformation et la ligation. 
+suffisament de fragment pour pouvoir faire la transformation et la ligation.
 
 *** (A) Analyses des données d'Ivan Matic
 
 J'ai mis au point un script d'extraction des séquences en fasta depuis les
 fichiers bioedit qu'ils nous ont envoyé. Il faut maintenant voir ce qu'il est
 possible d'en faire en relisant leur papier pour essayer de comprendre comment
-ils ont fonctionné. 
+ils ont fonctionné.
 
 ** 2016-02-23 Mardi
 *** (1) Purification des fragments aphA3 et ancre
 Pour la énième fois, je purifie les fragments aphA3 et ancre dans l'idée d'en
 obtenir une concentration assez grande (au moins 50ng) dans un volume
-raisonnablement utilisable avec InFusion. 
+raisonnablement utilisable avec InFusion.
 
 Les concentrations brutes étant trop faibles, je les ai reconcentrées au
-SpeedVac. 
+SpeedVac.
 
 *** (1) PCR aphA3 et Ancre
 J'ai refait une PCR aphA3 et ancre, pour pouvoir les purifier demain si jamais
-la ligature ne fonctionnait pas. 
+la ligature ne fonctionnait pas.
 *** (1) Ligature InFusion
 Je tente la ligature InFusion avec les volumes suivants :
 
@@ -2206,28 +2206,28 @@ size = "8, 5"
 [[file:img/stellar.png]]
 
 J'ai étalé sur LBKan50. Les seules cellules qui seront capables de pousser
-seront celles qui possèdent le plasmide avec l'insert dedans. 
+seront celles qui possèdent le plasmide avec l'insert dedans.
 *** (1) Relancé cellules stellar
 Avec le restant d'un tube, j'ai lancé des cellules stellar sur la nuit dans 5mL
 de LB. L'idée est d'en faire un glycérol pour préparer des cellules compétentes
-maison.  
+maison.
 
 ** 2016-02-24 Mercredi
 *** (1) Contrôle des transformations cellules Stellar
 À ce jour on ne voit rien sur les boîtes. Je laisse un peu pousser la journée
 pour voir si des colonies n'auraient pas envie de grossir un peu[fn:7:même si je
-n'y crois pas trop…]. 
-*** (1) Purification des produits de PCR aphA3 et ancre 
+n'y crois pas trop…].
+*** (1) Purification des produits de PCR aphA3 et ancre
 La PCR d'hier n'a pas fonctionné, toujours ces soucis de Taq je suppose. Je n'ai
 rien dans aucun des mix. Bien entendu je n'ai pas de témoin positif parce que je
-travaille comme un gros porc. 
+travaille comme un gros porc.
 
 Je refais une PCR aphA3 et ancre, il ne me reste plus de produit pour pouvoir
 refaire la ligature. J'utilise la Taq Phusion HF pour la tester et avoir un
 meilleur rendement de purification.
 
 **** Volumes utilisés :
-Tirés du cahier de Florence daté du [2015-07-10 Fri], page 193. 
+Tirés du cahier de Florence daté du [2015-07-10 Fri], page 193.
 
 |                      | 4 tubes | 1 tube |
 |----------------------+---------+--------|
@@ -2249,9 +2249,9 @@ Tirés du cahier de Florence daté du [2015-07-10 Fri], page 193.
 Il n'y a pas grand chose dans le fragment aphA3. Ça n'est pas normal : les
 amorces sont fraîchement diluées, le plasmide pAVA est celui que j'utilise le
 plus souvent. Je vais essayer avec un autre plasmide, mais ça reporte le clonage
-du temps de PCR… Une perte de temps de fou. 
+du temps de PCR… Une perte de temps de fou.
 
-Résultat de cette PCR : 
+Résultat de cette PCR :
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
 #+ATTR_LATEX: :float t :width 1\linewidth
@@ -2260,7 +2260,7 @@ Résultat de cette PCR :
 *** (1) Coulé boîte LBKan50 et LBAmp75kan50
 
 *** (1) Purification aphA3 et ancre
-J'ai purifié les fragments AphA3 et ancre issues des PCR Phusion. 
+J'ai purifié les fragments AphA3 et ancre issues des PCR Phusion.
 
 Dosage nanodrop :
 | fragment |      |      |      |   moyenne |
@@ -2270,7 +2270,7 @@ Dosage nanodrop :
 #+TBLFM: @2$5..@3$5=vmean($2..$4)
 ** 2016-02-25 Jeudi
 *** (3) PCR sur les clones polymorphes
-C'est le jour de la PCR de l'espace. 
+C'est le jour de la PCR de l'espace.
 
 J'ai passé aux UVs sous la hotte de PGE les pipettes, l'eau, deux paires de
 gants, des portoirs (dont un avec cache), la plaque de PCR, le cache en
@@ -2290,19 +2290,19 @@ barrette témoin, un Mc Chicken. J'ai laissé aux UVs 40min.
 | volume final         |       25. |       50. |     5000. |
 #+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 100::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
 
-J'ai mis une hotte du p2 aux UV le temps de faire le mix. 
+J'ai mis une hotte du p2 aux UV le temps de faire le mix.
 J'ai ensuite emmené la Taq dans un portoir à -20°C, avec les amorces et le reste
-du kit. 
+du kit.
 
 J'ai fait le mix dans un falcon de 15mL. Il faut homogénéiser le mix à la p1000
 avant de mettre dans les puits. L'idéal est de placer 200µL de mix dans une
 barrette stérile, et d'utiliser une multicanaux pour mettre de cette barrette
 dans la plaque. Comme je suis con, j'ai oublié de mettre à stériliser une
-multicanaux. J'ai donc fait à la main. 96 pipettages. 
+multicanaux. J'ai donc fait à la main. 96 pipettages.
 
 Au p2, j'ai utilisé la multicanaux 1-10µL pour mettre 1µL de culture dans les
 mix. J'ai utilisé la p3 pour prendre 1µL de la suspension de départ de Florence,
-pour contrôle. 
+pour contrôle.
 
 #+attr_latex: :font \scriptsize\ttfamily
 |   |    1 | 2 | 3 | 4 |    5 | 6 | 7 | 8 |    9 | 10 | 11 | 12 |
@@ -2322,19 +2322,19 @@ d'élongation 1min.
 Résultat : voir la figure [[fig:pcr2502]]
 
 #+CAPTION: gel1%  L:5µL-1kb  tps 1''  vol 5µL \\
-#+CAPTION: Il y a des bandes quasiment de partout. Les puits de 1 à 8 dans le pW48 sont vides. 
-#+CAPTION: Je veux redéposer pour voir si ça vient du dépôt ou de la PCR. 
-#+CAPTION: Quand on regarde les puits pS96 25 à 32, même topo. 
-#+CAPTION: Ces deux barrettes sont aux deux extrémités de la plaque de PCR. 
-#+CAPTION: Globalement, l'isolat pS96 montre des bandes partout, mais certaines sont beaucoup plus que d'autres. 
+#+CAPTION: Il y a des bandes quasiment de partout. Les puits de 1 à 8 dans le pW48 sont vides.
+#+CAPTION: Je veux redéposer pour voir si ça vient du dépôt ou de la PCR.
+#+CAPTION: Quand on regarde les puits pS96 25 à 32, même topo.
+#+CAPTION: Ces deux barrettes sont aux deux extrémités de la plaque de PCR.
+#+CAPTION: Globalement, l'isolat pS96 montre des bandes partout, mais certaines sont beaucoup plus que d'autres.
 #+CAPTION: J'ai pourtant déposé le même volume dans chaque puit.  \\
-#+CAPTION: Globalement c'est une manip' qui marche ! 
+#+CAPTION: Globalement c'est une manip' qui marche !
 #+LABEL: fig:pcr2502
 #+ATTR_LATEX: :float multicolumn :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160225_00.JPG]]
 
-*** (1) Clonage InFusion troisième essai 
-Je retente le clonage InFusion. 
+*** (1) Clonage InFusion troisième essai
+Je retente le clonage InFusion.
 
 Les masses en ng recommandées sont les suivantes pour 100 ng de plasmide :
 | ancre | aphA3 |
@@ -2361,11 +2361,11 @@ Les volumes qu'on utilise :
 
 J'ai utilisé 1µL de la ligature pour faire la transformation des cellules
 Stellar. Sur les recommandations de Petar, il faut laisser les cellules plus
-longtemps dans le milieu SOC avant de les étaler sur LBKan50. 
+longtemps dans le milieu SOC avant de les étaler sur LBKan50.
 
 ** 2016-02-26 Vendredi
 *** (1) Transformants Stellar WS et SW ?
-Hallelujah ! Des clones. Enfin. 
+Hallelujah ! Des clones. Enfin.
 
 Il y en a beaucoup, dans les deux. Plus d'une centaine à priori dans les boîtes
 dans laquelle j'ai étalé le culot. Je veux les tester par PCR sur colonie
@@ -2385,15 +2385,15 @@ rien, je refais la PCR sur ces barrettes là.
 
 Après avoir redéposé, on voit bien que les puits sont vides. C'est plutôt
 étrange que les puits en bordure du thermocycleur n'aient rien. Ça peut venir
-d'un artéfact de pipetage. 
+d'un artéfact de pipetage.
 
 Dans le cas du clone pS96, on n'a pas grand chose. Je ne m'explique pas
 pourquoi. Les milieux sont plutôt troubles, il devrait y avoir des bactéries.
-Je vais retenter la PCR Phusion avec ces clones là. 
+Je vais retenter la PCR Phusion avec ces clones là.
 
-*** (3) PCR sur les clones polymorphes 
+*** (3) PCR sur les clones polymorphes
 Je dois refaire les PCR sur la première barrette de pW48 et sur les quatre
-barrettes de pS96. 
+barrettes de pS96.
 
 |                      | 1 tube 25 | 1 tube 50 | 40 tubes |
 |----------------------+-----------+-----------+----------|
@@ -2409,8 +2409,8 @@ barrettes de pS96.
 #+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 41::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
 
 #+CAPTION: gel1%  L:4µL-1kb  tps 1.2''  vol 5µL \\
-#+CAPTION: Un peu trop migré. /Mea culpa/. 
-#+CAPTION: Les clones strong bons sont toujours bons, mais les mauvais sont toujours mauvais. 
+#+CAPTION: Un peu trop migré. /Mea culpa/.
+#+CAPTION: Les clones strong bons sont toujours bons, mais les mauvais sont toujours mauvais.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160226_00.JPG]]
 
@@ -2418,10 +2418,10 @@ barrettes de pS96.
 On a déplacé les vieux appareils qui traînaient dans la salle de manip dans les
 étagères du haut. On a décalé la centri, décalé les thermocycleurs et le
 bain-marie pour faire de la place pour les stagiaires. Le spiraleur de l'espace
-est sur une étagère également. Il pèse une tonne. 
+est sur une étagère également. Il pèse une tonne.
 *** (A) Protocole de clonage
 J'ai dessiné un petit schéma décrivant le protocole de clonage depuis le début
-jusqu'à ce point dans les manips. 
+jusqu'à ce point dans les manips.
 
 #+begin_src dot :file img/clonage.png :cmd dot :cmdline -Tpng :exports none :results silent
 digraph {
@@ -2468,15 +2468,15 @@ edge  [fontname = "Gill Sans"];
 #+end_src
 
 #+ATTR_LATEX: :float multicolumn :width 0.5\linewidth
-#+CAPTION: Le protocole du clonage depuis la réception des fragments à la 
-#+CAPTION: transformation dans /Acinetobacter/. 
+#+CAPTION: Le protocole du clonage depuis la réception des fragments à la
+#+CAPTION: transformation dans /Acinetobacter/.
 [[file:img/clonage.png]]
 
 ** 2016-02-27 Samedi
 *** (D) Notes sur l'utilisation du spiraleur
 J'ai vu avec Rosa comment utiliser le spiraleur. Elle ne le décontamine pas,
 mais il faut le faire avant qu'on commence nos manips. Je préférais voir
-l'appareil fonctionner avant de lancer la décontamination. 
+l'appareil fonctionner avant de lancer la décontamination.
 #+BEGIN_QUOTE
 - Tube ouvert avec bouchon du côté manipulateur.
 - Pétri à laisser tranquille 20min le temps que le liquide sèche couvercle en
@@ -2491,19 +2491,19 @@ l'appareil fonctionner avant de lancer la décontamination.
   dévisser le bouchon en tournant la bouteille et pas le bouchon.
 - toujours vérifier que les entrées soient pleines, et la poubelle non-pleine.
   Si les entrées sont vides, des vides d'air se font dans la pompe, et les
-  étalements sont imprécis. 
+  étalements sont imprécis.
 #+END_QUOTE
 *** (A) Recherche de fonctions de correction de l'ADN chez /Acinetobacter/
 Il existe chez coli le gène /vsr/ pour Very Short Patch Repair
 cite:hennecke_vsr_1991. Par blast, j'ai retrouvé ce gène chez /Acinetobacter
-sp/. J'aimerai bien savoir s'il est chez /baylyi/. 
+sp/. J'aimerai bien savoir s'il est chez /baylyi/.
 
 À priori oui, d'après l'annotation du génome d'/Acinetobacter calcoaceticus/
-[[http://www.ncbi.nlm.nih.gov/nuccore/CP002177]]. 
+[[http://www.ncbi.nlm.nih.gov/nuccore/CP002177]].
 
 *** (A) Analyse des pathways de réparation de l'ADN chez Acinetobacter
 J'utilise Kegg http://www.genome.jp/kegg/pathway.html pour étudier les voies de
-réparation de l'ADN dont dispose /Acinetobacter/. 
+réparation de l'ADN dont dispose /Acinetobacter/.
 
 #+CAPTION: Homologous Recombination
 #+ATTR_LATEX: :float t :width 1\linewidth
@@ -2525,23 +2525,23 @@ Rien n'a amplifié ! Je n'y comprends rien. Il n'y a rien nulle part ? Je ne
 comprends pas que ça soit possible. Dans les mêmes conditions que jeudi, avec
 les mêmes réactifs et les mêmes puits, je n'amplifie rien ? Je n'ai pas fait de
 T+ parce que j'attendais avoir des puits positifs dans les barrettes de pS96,
-puisque j'en avais eu à la précédente PCR. 
+puisque j'en avais eu à la précédente PCR.
 
 Je vois avec Franck demain pour peut-être changer les conditions de PCR.
 Éventuellement je pourrais strier les puits sur des boîtes de LBKan50 et faire
 les PCR sur les colonies obtenues. Les PCR sont peut-être inhibées par le LBKan
 qu'on ajoute ? Je vois pas bien comment ça serait possible étant donné que
-d'autres PCR ont très bien fonctionné jeudi… 
+d'autres PCR ont très bien fonctionné jeudi…
 
 *** (1) PCR de contrôle sur colonie des clones pSWkanancre et pWSkanancre
 Je fais une PCR =1411 1393= sur mes clones résistants à la kanamycine obtenus
 vendredi. J'utilise la Taq ozyme normale. Si les clones sont bons, on peut
 lancer des cultures de nuit pour faire les extractions plasmidiques. Il faudra
-également séquencer le brin qu'on utilise je pense. 
+également séquencer le brin qu'on utilise je pense.
 
 Après dépôt sur gel, rien n'a amplifié. C'est un problème de Taq à coup sûr, je
 crois que la Taq Ozyme qu'on utilise est complètement daubée. En plus le
-fragment est très long, ça peut expliquer que la Taq soit un peu débordée.  
+fragment est très long, ça peut expliquer que la Taq soit un peu débordée.
 
 Je lance quand même des cultures de nuit pour gagner un peu de temps au cas où
 les PCR qu'on pourrait faire sur les plasmides montreraient des choses
@@ -2554,11 +2554,11 @@ lieu de faire d'un coup la PCR $1411 + 1393$ , je fais une PCR $1392 +
 1393$ et une PCR $1411 + 1410$. L'idée est de voir si les deux côtés du
 fragment sont insérés dans les colonies Stellar.
 
-Bim bam boum. 
+Bim bam boum.
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
-#+CAPTION: Tous les clones sont bons ! Comme quoi. C'est dans les vieilles Taq 
-#+CAPTION: qu'on fait les meilleures cycles. 
+#+CAPTION: Tous les clones sont bons ! Comme quoi. C'est dans les vieilles Taq
+#+CAPTION: qu'on fait les meilleures cycles.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160229_00.JPG]]
 
@@ -2568,24 +2568,24 @@ un milieu sélectif à l'ampicilline, qui sélectionne les clones porteurs
 du plasmide pGEM-T. Si ça se trouve, les colonies qu'on observe sont
 seulement résistantes à la kanamycine parce qu'elles ont été
 transformées par le fragment aphA3 restant dans le mélange de ligature
-InFusion. Espérons que ça ne soit pas le cas. 
+InFusion. Espérons que ça ne soit pas le cas.
 
-Je ferai ça pour les clones positifs en PCR. 
+Je ferai ça pour les clones positifs en PCR.
 
 *** (1) Relancé la souche d'/Acinetobacter baylyi BD413/
 J'ai sorti la souche d'/Acinetobacter/ dans la boîte 6 du -80°C, et étalé sur
 des boîtes de LB. L'idée est de relancer ensuite dans des cultures liquides, de
 repartir des cultures liquides le matin et d'attendre que la DO soit à 0.8 pour
-lancer les transfo. 
+lancer les transfo.
 
 *** (1) Extractions plasmidiques des trois souches pWSkanancre et pSWkanancre
 J'ai extrait trois plasmides de trois souches différentes, les souches de 1 à 3
-dans les boîtes. 
+dans les boîtes.
 
 **** Résultat de la migration :
-Voir figure [[fig:digest0103]]. 
+Voir figure [[fig:digest0103]].
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
-#+CAPTION: Il reste de l'ADN génomique on dirait. 
+#+CAPTION: Il reste de l'ADN génomique on dirait.
 #+CAPTION: À voir pour valider la digestion =ScaI=
 #+LABEL: fig:digest0103
 #+ATTR_LATEX: :float t :width 0.7\linewidth
@@ -2597,7 +2597,7 @@ Voir figure [[fig:digest0103]].
 |----------+------+--------+------+-----------|
 | WS1      | 47.3 |   44.7 | 49.5 | 47.166667 |
 | WS2      | 28.5 |   28.3 | 27.5 |      28.1 |
-| WS3      |    4 |      4 |    4 |         4 | 
+| WS3      |    4 |      4 |    4 |         4 |
 | SW1      | 50.0 |   49.4 | 47.3 |      48.9 |
 | SW2      | 34.4 |   32.5 | 33.0 |      33.3 |
 | SW3      | 38.1 |   37.9 | 41.9 |      39.3 |
@@ -2605,7 +2605,7 @@ Voir figure [[fig:digest0103]].
 
 *** (3) Relancé les clones pS96
 Pas assez de colonies dans la boîte pS96, j'ai relancé sur LBKan50. L'idée est
-de refaire les suspensions demain et de faire les PCR à partir des suspensions. 
+de refaire les suspensions demain et de faire les PCR à partir des suspensions.
 
 \clearpage
 * 2016-03 Mars
@@ -2616,7 +2616,7 @@ J'ai resuspendu 32 clones de pS96 dans 50µL d'eau stérile aguettant.
 J'ai fait une PCR sur les 32 clones resuspendus de pS96 et sur les nouvelles
 suspension de pW48 pour pouvoir compléter la plaque. J'utilise une vieille taq
 pour être sûr que tout marche et le cas échéant de refaire des suspensions dans
-les cas où ça ne marche pas.  
+les cas où ça ne marche pas.
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
 #+ATTR_LATEX: :float t :width 1\linewidth
@@ -2625,7 +2625,7 @@ Apparemment certaines suspensions sont récalcitrantes. Mais globalement tout a
 amplifié. Je peux donc faire le mix Phusion. Je refait les suspensions des trois
 clones qui n'ont pas amplifié avant de les placer dans la plaque de PCR.
 *** (3) PCR Phusion sur les clones pS96
-Je fais la même PCR avec la taq Phusion \phi qui vaut des ronds. 
+Je fais la même PCR avec la taq Phusion \phi qui vaut des ronds.
 
 |                      | 1 tube 25 | 1 tube 50 | 41 tubes |
 |----------------------+-----------+-----------+----------|
@@ -2640,15 +2640,15 @@ Je fais la même PCR avec la taq Phusion \phi qui vaut des ronds.
 | volume final         |       25. |       50. |    2050. |
 #+TBLFM: @2$3..@>$3=$2 * 2::@2$4..@>$4=$3 * 41::@7$2=25 - vsum(@2..@6)::@8$2=vsum(@2..@7)
 *** (1) Lancé des cultures de pSWkanancre et pWSkanancre pour glycérol
-J'ai lancé deux tubes de LBKan50 pour faire des glycérols des souches demain. 
+J'ai lancé deux tubes de LBKan50 pour faire des glycérols des souches demain.
 *** (1) Coulé boîtes LB et LBKan50
 J'ai coulé 20 boîtes de LBKan50 et 10 de LB pour étaler les transformants
-/Acineto/. 
+/Acineto/.
 
 *** (1) Digestion du plasmide par =ScaI=
-On ouvre le plasmide par =ScaI=. 
+On ouvre le plasmide par =ScaI=.
 
-#+CAPTION: Ouverture du plasmide par ScaI, à 20'. 
+#+CAPTION: Ouverture du plasmide par ScaI, à 20'.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160216_01.pdf]]
 
@@ -2666,13 +2666,13 @@ Volumes utilisés pour digérer 1µg de plasmide :
 ** 2016-03-02 Mercredi
 *** (3) Migration de la PCR Phusion sur les clones pS96
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
-#+CAPTION: La PCR est jolie. Tous les clones sont plutôt bons. On peut envoyer à séquencer.  
+#+CAPTION: La PCR est jolie. Tous les clones sont plutôt bons. On peut envoyer à séquencer.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160302_01.JPG]]
 
 *** (1) Migration de la digestion =ScaI=
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 2µL \\
-#+CAPTION: Les deux digestions ont l'air plutôt bien. 
+#+CAPTION: Les deux digestions ont l'air plutôt bien.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160302_00.JPG]]
 
@@ -2682,10 +2682,10 @@ dans la digestion, j'ai pris 4 µL de la digestion que j'ai resuspendu dans
 l'eau pure. La même eau pure a servi à transformer /Acineto/ comme témoin négatif.
 
 *** (1) Transformation /Acinetobacter/
-J'ai transformé les clones de la façon suivante. 
+J'ai transformé les clones de la façon suivante.
 
 #+begin_src dot :file img/transfo.png :cmdline -Tpng :exports none :results silent
-digraph{ 
+digraph{
          graph [fontname = "Gill Sans"];
          node  [fontname = "Gill Sans"];
          edge  [fontname = "Gill Sans"];
@@ -2714,7 +2714,7 @@ digraph{
          ADN -> ws [label = "10 µL", color = "blue"]
          digestion -> inactivation [label = " 10 min\n à 70°C", color = "blue"]
          inactivation -> ADN [label = " 4 µL", color = "blue"]
-         
+
          sw -> etal
          sw -> DNAse [label = "15 min\nà 37°C"]
          ws -> DNAse
@@ -2730,12 +2730,12 @@ digraph{
 *** (1) Étalement des transformations /Acinetobacter/
 Les transformations sont étalées au spiraleur sur LB aux dilutions $10^{-4}$ et
 LBKan50 à la dilution $10^0$. On étale trois fois 50µL pour les souches
-d'intéret. 
+d'intéret.
 
-*** (1) Annotations des cryotubes 
-On a placé les cryotubes dans les bonnes boîtes au -80°C. 
+*** (1) Annotations des cryotubes
+On a placé les cryotubes dans les bonnes boîtes au -80°C.
 
-** 2016-03-03 Jeudi 
+** 2016-03-03 Jeudi
 
 *** (1) Repiquage des clones transformants
 On veut repiquer les clones transformants pour les purifier avant de faire les
@@ -2745,7 +2745,7 @@ J'ai donc choisi 100 clones de SW + DNAse et 100 clones de WS + DNAse, que j'ai
 repiqués sur des grandes boîtes carrés de LBKan50.
 
 #+begin_src dot :file img/repiquage.png :cmdline -Tpng :exports none :results silent
-digraph{ 
+digraph{
 graph [fontname = "Gill Sans"];
 node  [fontname = "Gill Sans"];
 edge  [fontname = "Gill Sans"];
@@ -2763,20 +2763,20 @@ rankdir = LR
 Je nettoie les oëses dans une plaque 96 puits, de façon à garder une trace de la
 colonie mère avant la purification.
 
-L'idée est de les purifier pour faire les PCR dessus le lendemain. 
+L'idée est de les purifier pour faire les PCR dessus le lendemain.
 
-C'est une trèèèèèèèèèèèès longue manip. Prévoir musique et café. 
+C'est une trèèèèèèèèèèèès longue manip. Prévoir musique et café.
 *** (1) Comptage des clones transformants
 J'ai compté les colonies en utilisant le compteur de colonie InterScience.
 
 #+ATTR_LATEX: :float sideways :width 1\linewidth
 [[/Users/samuelbarreto/Dropbox/Cours/Master/Semestre4/StageM2/data/20160303_00_plot.pdf]]
 
-** 2016-03-04 Vendredi à Mercredi 
+** 2016-03-04 Vendredi à Mercredi
 *** (1) Vendredi : Purification des souches
 Les souches n'étaient pas purifiées. J'ai donc coulé 200 boîtes de \diameter 6cm
 de LB Kan50. J'ai ensuite purifié 96 souches de SWDnase et 96 souche de WSDnase
-par la méthode des cadrans. 
+par la méthode des cadrans.
 
 Je suis venu en vitesse le lendemain pour mettre les boîtes dans les sachets à
 -4°C.
@@ -2787,21 +2787,21 @@ plus loin du début de la trace de conversion que l'amorce 1073.
 *** Mardi : Flue day
 Stay in bed all day.
 
-*** (1) Mercredi : Dilution de l'amorce 1073bis. 
-J'ai reçu l'amorce de mes rêves. Je la dilue à 100µM. 
+*** (1) Mercredi : Dilution de l'amorce 1073bis.
+J'ai reçu l'amorce de mes rêves. Je la dilue à 100µM.
 *** (1) Mercredi : Suspensions de l'espace
 J'ai resuspendu à la p200 96 colonies isolées de SW et 96 colonies isolées de WS
-dans deux plaques séparées. 
+dans deux plaques séparées.
 
-C'est une très longue manip. Compter 4H environ. 
+C'est une très longue manip. Compter 4H environ.
 
 ** 2016-03-10 Jeudi
 *** (1) PCR 1392 1073bis SW
 Je fais les PCR 1392 1073bis (la nouvelle amorce pour amplifier plus loin la
-trace de conversion). 
+trace de conversion).
 
 #+begin_src dot :file img/pcr13921073.png :cmdline -Tpng :exports none :results silent
-digraph{ 
+digraph{
 graph [fontname = "Gill Sans"];
 node  [fontname = "Gill Sans"];
 edge  [fontname = "Gill Sans"];
@@ -2813,7 +2813,7 @@ rankdir = LR
       plaque   -> uv
       bouchons -> uv
 
-      uv [label = "UV\n20min", shape = diamond] 
+      uv [label = "UV\n20min", shape = diamond]
       uv -> mix
       mix [label = "Mix PCR", shape = box]
 
@@ -2821,7 +2821,7 @@ rankdir = LR
       tampon  -> mix
       amorces -> mix
       Taq     -> mix
-      
+
       mix        -> plaque_pcr [label = "Dispatcheuse\n20 x 50µL"]
       plaque_pcr -> PCR
       plaque_pcr [label = "Plaque PCR\n96 puits"]
@@ -2909,7 +2909,7 @@ posent problème :
 
 =1 8 9 10 11 16 17 18 24 25 26 27 31 32 33 34 40 49 50 55 56 60 62 69 71=
 
-Soit 25 clones. 
+Soit 25 clones.
 |                      | 1 tube 25 | 1 tube 50 | 26 tubes |
 |----------------------+-----------+-----------+----------|
 | buffer phusion HF 5X |         5 |        10 |      260 |
@@ -2925,7 +2925,7 @@ Soit 25 clones.
 #                                           ***
 
 #+begin_src dot :file img/pcr0311.png :cmdline -Tpng :exports none :results silent
-digraph{ 
+digraph{
 graph [fontname = "Gill Sans", dpi = 300];
 node  [fontname = "Gill Sans", shape = box];
 edge  [fontname = "Gill Sans"];
@@ -2946,7 +2946,7 @@ rankdir = LR
 
 Résultat :
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
-#+CAPTION: Rien n'amplifie à 58°C. 
+#+CAPTION: Rien n'amplifie à 58°C.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160311_01.JPG]]
 
@@ -2959,7 +2959,7 @@ réunion en elle-même. Voir [[./reunion_160314.html]]
 Je veux faire une PCR en gradient pour voir les conditions
 d'hybridation qui éliminent le mieux les bandes parasites. Pour
 l'instant je ne fais que 3 barrettes. Quand les conditions seront
-fixées je ferai toutes les barrettes. 
+fixées je ferai toutes les barrettes.
 
 |                      | 1 tube 25 | 1 tube 50 | 26 tubes |
 |----------------------+-----------+-----------+----------|
@@ -2979,16 +2979,16 @@ fixées je ferai toutes les barrettes.
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 1''  vol 5µL \\
 #+CAPTION: Quelle que soit la température d'hybridation, les PCR semblent bien fonctionner.
-#+CAPTION: Je peux donc utiliser la température 56.5°C. 
+#+CAPTION: Je peux donc utiliser la température 56.5°C.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160315_00.JPG]]
 
 *** (D) Préparation 10mL de kanamycine 50mg/mL
 J'ai préparé 10mL de kanamycine, que j'ai répartis dans des tubes de
 2mL.
-*** (1) Purification des clones 
+*** (1) Purification des clones
 Je purifie une dizaine de clones de SW et WS pour pouvoir les
-purifier, refaire les suspensions et les PCR dans la foulée. 
+purifier, refaire les suspensions et les PCR dans la foulée.
 
 J'ai donc coulé > 20 boîtes pour purifier les clones de base.
 
@@ -3022,7 +3022,7 @@ Les clones choisis sont les suivants :
 
 =1 8 9 10 11 16 17 18 24 25 26 27 31 32 33 34 40 49 50 55 56 60 62 69 71=
 
-Soit 25 clones. 
+Soit 25 clones.
 |                      | 1 tube 25 | 1 tube 50 | 26 tubes |
 |----------------------+-----------+-----------+----------|
 | buffer phusion HF 5X |         5 |        10 |      260 |
@@ -3040,14 +3040,14 @@ Soit 25 clones.
 - Résultat :
 
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.6''  vol 5µL \\
-#+CAPTION: Tous les clones sont bons cette fois. Il n'y a pas de bande secondaire. 
-#+CAPTION: On peut envoyer à séquencer. 
+#+CAPTION: Tous les clones sont bons cette fois. Il n'y a pas de bande secondaire.
+#+CAPTION: On peut envoyer à séquencer.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160315_01.JPG]]
 
 *** (1) PCR Phusion clones manquants WS et SW
 Hier j'ai purifié sur LBKan50 des clones transformants. J'utilise ces
-clones pour combler les vides des plaques de PCR.  
+clones pour combler les vides des plaques de PCR.
 
 |                      | 1 tube 25 | 1 tube 50 | 17 tubes |
 |----------------------+-----------+-----------+----------|
@@ -3065,18 +3065,18 @@ clones pour combler les vides des plaques de PCR.
 
 - Résultat :
 #+CAPTION: gel1%  L:3µL-1kb  tps 0.6''  vol 5µL \\
-#+CAPTION: Tous les clones sont bons, on peut utiliser ceux qu'on veut 
-#+CAPTION: pour combler les trous. 
+#+CAPTION: Tous les clones sont bons, on peut utiliser ceux qu'on veut
+#+CAPTION: pour combler les trous.
 #+ATTR_LATEX: :float t :width 1\linewidth
 [[/Volumes/HDD/stage/img/20160315_02.JPG]]
 ** 2016-03-16 Mercredi
 *** (1) préparation des plaques de séquençage
 Pour la plaque de WS, il suffit de rajouter dans les puits où on
-n'avait pas d'amplification l'ADN des PCRs d'hier après midi. 
+n'avait pas d'amplification l'ADN des PCRs d'hier après midi.
 
 La plaque aura donc l'aspect suivant :
 
-#+caption: La plaque de WS envoyée à séquencer. 
+#+caption: La plaque de WS envoyée à séquencer.
 #+attr_latex: :font \scriptsize\ttfamily
 |   |    1 |     2 |  3 |  4 |  5 |  6 |  7 |     8 |  9 |    10 | 11 | 12 |
 |---+------+-------+----+----+----+----+----+-------+----+-------+----+----|
@@ -3091,9 +3091,9 @@ La plaque aura donc l'aspect suivant :
 
 Les nombres en gras sont les produits qui proviennent de la PCR sur la
 deuxième barrette avec les nouveaux clones purifiés. Les autres
-proviennent de la première PCR. 
+proviennent de la première PCR.
 
-#+caption: La plaque de SW envoyée à séquencer. 
+#+caption: La plaque de SW envoyée à séquencer.
 #+attr_latex: :font \scriptsize\ttfamily
 |   |  1 |   2 |   3 | 4   |    5 |  6 |   7 |   8 |   9 | 10 | 11 | 12 |
 |---+----+-----+-----+-----+------+----+-----+-----+-----+----+----+----|
@@ -3133,7 +3133,7 @@ J'ai ensuite rempli les différentes conditions :
 - j'ai dilué les amorces à 10µM comme demandé sur le site
   [fn:8:[[https://www.gatc-biotech.com/fr/support/support/probenversandprobenabholung.html]].]
 - calé les plaques avec papiers bulles et conditionnement d'emballage.
-- ajouté code barre de la plaque. 
+- ajouté code barre de la plaque.
 
 **** Références des échantillons :
 
@@ -3161,10 +3161,10 @@ J'ai relancé les souches porteuses des plasmides pSkanancre et
 pWkanancre sur milieu LBKan50. Je purifie les souches à l'oëse. L'idée
 est de lancer des cultures de nuit demain soir pour faire les
 extractions plasmidiques et les contrôles qui vont avec dans la
-foulée. 
+foulée.
 
 #+begin_src dot :file img/transfo_w.png :cmdline -Tpng :exports none :results silent
-digraph{ 
+digraph{
 graph [fontname = "Gill Sans", dpi = 300];
 node  [fontname = "Gill Sans"];
 edge  [fontname = "Gill Sans"];
@@ -3185,7 +3185,188 @@ rankdir = LR
 [[file:img/transfo_w.png]]
 
 ** 2016-03-17 Jeudi
-*** Coulé 400 boîtes \diameter 60 LBKan50
+*** relancé cultures liquides des clones purifiés S et W
+J'ai relancé dans 5mL de LBKan50 les colonies purifiées de S et W, en
+triplicât. L'idée est d'extraire les plasmides de résistance à la kana
+demain, de faire des PCRs de contrôle dessus et de se servir des
+plasmides extraits pour faire les transfos.
 
+*** Coulé 402 boîtes \diameter 60 LBKan50
+On a coulé 402 boîtes avec Franck sous la hotte fraîchement nettoyée
+et toute neuve. Ces boîtes serviront à repurifier les clones issus des
+transfos S et W lors des transfos.
 
+La manip prend 2H, sans compter le temps de laisser sécher les boîtes,
+de les mettre en paquet etc… Compter 3L à 3.5L pour faire 400 boîtes,
+en ayant la main légère.
 
+*** analysé les séquences des ancres
+Voir les notes prises dans le fichier
+[[file:~/stage/seq_janvier/README.org]] et les résultats de l'alignement
+dans le fichier [[file:~/stage/seq_janvier/anl/ancres_all.pdf]].
+
+** 2016-03-18 Vendredi
+*** Extraction de plasmide
+J'ai extrait les plasmides des 6 falcons de culture, 3 S et 3 W.
+Le but est de les ouvrir par une digestion =ScaI= et d'utiliser ces
+plasmides pour transformer /Acinetobacter/.
+**** Dosages nanodrop
+
+#+attr_latex: :font \scriptsize\ttfamily
+|          |      | mesure |      |           |
+| fragment |    1 |      2 |    3 | $\bar{x}$ |
+|----------+------+--------+------+-----------|
+| S1       | 65.6 |   63.9 | 64.7 |     64.73 |
+| S2       | 86.4 |   87.3 | 88.6 |     87.43 |
+| S3       | 59.1 |   58.9 | 59.3 |      59.1 |
+| W1       | 76.9 |   76.9 | 76.7 |     76.83 |
+| W2       | 64.9 |   67.6 | 67.4 |     66.63 |
+| W3       | 39.9 |   40.3 | 40.4 |      40.2 |
+#+TBLFM: @3$5..@>$5=vmean($2..$4)
+
+*** Réception des séquences WS et SW !
+Les séquences sont déjà reçues, et elles sont belles !
+Les données sont dans le dossier [[../seq_mars/]].
+** 2016-03-20 Dimanche
+*** Digestion plasmides par ScaI
+J'ai digéré 1µg des plasmides S1 et W1 par ScaI, pour le linéariser et
+réaliser les transfo avec demain.
+
+|             |    S1 |    W1 |
+|-------------+-------+-------|
+| plasmide    | 15.45 | 13.15 |
+| buffer ScaI |     2 |     2 |
+| ScaI        |     1 |     1 |
+| H2O         |  1.55 |  3.85 |
+#+TBLFM: @>$2..@>$3=20 - vsum(@2..@4)
+
+*** Relancé souche /A.baylyi/ BD413
+J'ai relancé la souche type d'/Acinetobacter/ depuis le cryotube
+$311$, comme vu dans le souchier du cahier de Florence. J'ai relancé
+deux tubes de culture liquide de LB sous agitation sur la nuit à 28°C.
+** 2016-03-21 Lundi
+*** Migration de la digestion ScaI des plasmides
+J'ai fait migré 2µL de la digestion des plasmides sur gel, à côté du
+plasmide non digéré. Les digestions sont belles, on a cependant une
+double bande dans la digestion W ? J'ignore comment elle a pu
+apparaître mais je l'ai utilisé quand même pour la transfo. Demain
+nous dira si c'était une bonne idée…
+*** Remise en culture des /Acineto/
+J'ai remis dans 4.5mL et 4mL de LB frais 0.5 et 1mL de culture de
+nuit, et attendu 2H que la DO_{600} soit à 0.8. J'ai utilisé 390µL des
+cette culture à 0.8 pour la transfo W et S. J'ai fait les transfo en
+duplicât pour pouvoir faire les manips de screening par PCR.
+*** Inactivation de ScaI
+J'ai inactivé l'enzyme de digestion en placant les tubes 10min à
+70°C.
+*** Traitement des transfos par la DNAse
+J'ai traité les transfos par 10µL de DNAse pour 0.2mg finaux, comme vu
+l'autre fois. Il faut incuber 15min à 37°C après avoir homogénéiser.
+*** Étalement des transfos
+J'ai étalé 50µL en 4 fois pour les tubes de transfos par W et S sur
+LBKan50 aux dilutions 10^0. J'ai étalé en deux fois les dilutions
+10^{-4} sur LB.
+
+| transfo | replicats | dilution | milieu  |
+|---------+-----------+----------+---------|
+| S1      |         4 |        0 | LBkan50 |
+| W1      |         4 |        0 | LBkan50 |
+| S2      |         2 |        0 | LBkan50 |
+| W2      |         2 |        0 | LBkan50 |
+| p800    |         1 |        0 | LBkan50 |
+| eau     |         1 |        0 | LBkan50 |
+| S1      |         2 |       -4 | LB      |
+| W1      |         2 |       -4 | LB      |
+| S2      |         1 |       -3 | LB      |
+| W2      |         1 |       -3 | LB      |
+| p800    |         1 |       -4 | LB      |
+| eau     |         1 |       -4 | LB      |
+*** Capture de transformants par PCR
+Ceci est une manip pilote. L'idée est de capturer l'ADN des
+transformants dans le pool de culture, simplement par PCR 1392
+(virale, sur le gène synthétique) et 1073bis. Ça nous permettrait de
+voir les clones qui ont intégré le gène, par séquençage d'amplicon. La
+taille du fragment en jeu n'est pas directement séquençable par
+Illumina, mais on pourrait imaginer une manip où on aurait une
+étiquette dans un gène plus court qui permettrait de discriminer les
+chimères de PCR et de séquençage, et d'individualiser les événements
+d'intégration dans le plasmide.
+
+J'ai donc réalisé les mélanges suivants :
+
+|             |   A |  B |  C |  D |   E |
+|-------------+-----+----+----+----+-----|
+| solution S0 |   0 | 25 | 50 | 75 | 100 |
+| solution S1 | 100 | 75 | 50 | 25 |   0 |
+
+** 2016-03-22 Mardi
+*** Comptage des colonies
+La transformation n'a pas fonctionné pour le plasmide W. C'est bien
+malheureux. Ça vient certainement de la digestion qui a donné deux
+fragments. Je vais retenter aujourd'hui la transfo, avec des plasmides
+digérés et non-digérés.
+
+Les résultats sont dans le fichier .csv là
+# TODO insérer lien pour le csv.
+
+La transfo a bien marché par contre pour le plasmide S. Je ne sais pas
+d'où vient la différence entre les deux, mais j'imagine que la
+différence vient de la digestion =ScaI=.
+
+*** PCR de vérification des plasmides
+J'ai fait en parallèle deux PCR avec les amorces =1411 / 1410= et
+=1392 1393= pour vérifier que les constructions sont toujours les
+bonnes, sur les différents plasmides.
+
+- Résultat : rien. Il n'y a pas de résultat, /ie/ rien n'a
+  amplifié. Autrement dit, à la sortie de l'étape de transformation,
+  soit les recombinants sont en trop petit effectif pour pouvoir
+  amplifier, soit l'intégration ne s'est pas encore faite. Ça pourrait
+  être intéressant de réaliser une cinétique d'intégration, /ie/ à
+  partir de quand on commence à amplifier des clones résistants à la
+  kanamycine dans notre cas.
+- Conclusion : il est obligatoire de passer par une étape de
+  purification ou en tout cas d'amplification des clones résistants à
+  la kanamycine, donc les constructions doivent nécesairement
+  comporter une cassette de résistance ou quelque chose qui confère un
+  avantage sélectif.
+
+*** Digestion =ScaI=
+J'ai digéré le plasmide S2 et W2 par =ScaI=, pour pouvoir refaire la
+transfo avec.
+
+|             |    S2 |    W2 |
+|-------------+-------+-------|
+| plasmide    | 11.43 | 15.00 |
+| buffer ScaI |     2 |     2 |
+| ScaI        |     1 |     1 |
+| H2O         |  5.57 |    2. |
+#+TBLFM: @>$2..@>$3=20 - vsum(@2..@4)
+
+# TODO faire migrer le plasmide digéré et conserver la photo du gel
+
+*** Repiquage des colonies strong
+J'ai repiqué 100 colonies strong de la transfo d'hier qui a bien
+marché sur LBKan50, et j'ai rincé les oëses dans 50µL d'eau stérile,
+pour garder une trace de la colonie mère. J'ai placé les boîtes dans
+l'incubateur à 30°C sur la nuit.
+
+*** Transfo /Acinetobacter/ bis
+À partir de la suspension de la nuit, j'ai relancé deux tubes de 4.9
+et 4.8mL de LB le matin avec 100µL et 200µL de culture. J'ai attendu
+que la DO soit à 0.8 (entre 4 et 6H). J'ai ensuite transformé 390 µL
+de ces cultures par 200ng d'ADN.
+
+L'ADN en question a été préparé en lançant une digestion =ScaI= le
+matin sur le plasmide S2 et W2. L'enzyme a été inactivée 10 min à
+70°C.
+
+À l'issue de la transformation (1H), j'ai traité les cultures par de
+la DNAse 15 min à 37°C. J'ai ensuite étalé au spiraleur 3 \times 50µL
+de culture sur LBKan50 et 1 \times 50µL à la dilution $10^{-4}$ sur
+LB.
+
+Les contrôles de cette manip sont une transformation par de l'eau et
+une transformation par p800.
+
+J'ai incubé à 30°C sur la nuit, et j'ai croisé les doigts.

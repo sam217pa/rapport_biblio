@@ -12,7 +12,10 @@
 Les colonies n'ont pas bien poussé ce matin, sortie de glycérol
 difficile. Je vais faire les PCR sur colonies cette après-midi, pour
 lancer des cultures de nuit ce soir et faire les extractions
-plasmidiques demain. 
+plasmidiques demain.
+*** TODO récupérer les comptages sur l'ordi winrhizo
+*** TODO récupérer les photos des gels
+*** TODO compter les colonies de la transfo <2016-03-23 Wed 09:00>
 ** DONE (1) Construire les mutants alternants                                  :MANIP1:
 CLOSED: [2016-03-16 Wed 14:31]
 *** DONE envoyer séquencer le WT dans le même run
@@ -59,11 +62,11 @@ SCHEDULED: <2016-03-24 Thu 18:00 .+1w>
 :category: @CR
 :END:
 ** TODO remettre rapport stage vincent
-** TODO faire diagramme purif modifié avec dot. 
+** TODO faire diagramme purif modifié avec dot.
 ** TODO faire diagramme protocole cellules compétentes aurélie
 ** TODO coller codes barre sequençage
-** TODO coller accusé réception amorce 1073 bis. 
-** TODO coller protocole transformation Florence. 
+** TODO coller accusé réception amorce 1073 bis.
+** TODO coller protocole transformation Florence.
 * ÉCHÉANCES                                                                     :RDV:
 ** DONE réunion projet <2016-03-14 Mon 13:30>
 CLOSED: [2016-03-15 Tue 08:20]
@@ -71,7 +74,7 @@ CLOSED: [2016-03-15 Tue 08:20]
 CLOSED: [2016-03-11 Fri 11:25]
 ** RDV! réunion Mr Gène Synthétique <2016-03-17 Thu 14:00>
 * BIBLIO
-** TODO lire les références 37 38 14 et 15 du papier 
+** TODO lire les références 37 38 14 et 15 du papier
 cite:croucher_horizontal_2016
 
 * capture
