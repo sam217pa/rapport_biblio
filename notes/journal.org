@@ -13,7 +13,7 @@
 
 \clearpage
 
-* config                                                                       :noexport:
+* config                                                                        :noexport:
 #+latex_header: \usepackage{pdfpages}
 #+LATEX_CLASS: journal
 #+LANGUAGE: fr
@@ -1432,6 +1432,7 @@ faut donc représenter en $x$ la position sur le génome, et en $y$ la fréquenc
 de pic secondaire à la position $x$.
 
 *** (B) Biblio
+
 Un peu de biblio ne fait pas de mal. Relu les cinq grands piliers du stage,
 cite:lassalle_gc-content_2015 cite:hildebrand_evidence_2010
 cite:hershberg_evidence_2010 cite:reichenberger_prokaryotic_2015,
@@ -2423,11 +2424,12 @@ est sur une étagère également. Il pèse une tonne.
 J'ai dessiné un petit schéma décrivant le protocole de clonage depuis le début
 jusqu'à ce point dans les manips.
 
-#+begin_src dot :file img/clonage.png :cmd dot :cmdline -Tpng :exports none :results silent
+#+begin_src dot :file img/clonage_ls.png :cmd dot :cmdline -Tpng :exports none :results silent
 digraph {
 graph [fontname = "Gill Sans", dpi = 300];
 node  [fontname = "Gill Sans", fontsize=10];
 edge  [fontname = "Gill Sans"];
+rankdir = LR;
 
       ws [label = "fragment WS", color = "lightblue3"]
       sw [label = "fragment SW", color = "forestgreen"]
@@ -3298,7 +3300,6 @@ J'ai donc réalisé les mélanges suivants :
 |-------------+-----+----+----+----+-----|
 | solution S0 |   0 | 25 | 50 | 75 | 100 |
 | solution S1 | 100 | 75 | 50 | 25 |   0 |
-
 ** 2016-03-22 Mardi
 *** Comptage des colonies
 La transformation n'a pas fonctionné pour le plasmide W. C'est bien
@@ -3370,3 +3371,131 @@ Les contrôles de cette manip sont une transformation par de l'eau et
 une transformation par p800.
 
 J'ai incubé à 30°C sur la nuit, et j'ai croisé les doigts.
+
+** 2016-03-23 Mercredi
+*** Comptage des colonies de la transfo /Acineto/
+Toujours pas de clones sur la transfo avec W. J'aurai dû vérifier la
+digestion par migration avant.
+
+Démarche : on repart des glycérols. J'ai purifié la souche sur LBKan50
+solide, je relance des cultures liquides et j'extrait les
+plasmides.
+*** Relancé les souches d'Acineto, pSkanancre et pWkanancre
+J'ai relancé sur milieu adapté, LB et LBampKan les souches glycérolées
+par Florence.
+** 2016-03-24 Jeudi et Vendredi
+*** Lancé cultures liquides
+J'ai relancé à partir d'une colonie isolée une culture liquide sur la
+journée. J'ai attendu un peu pour qu'Acinetobacter soit bien à une DO
+de 0.8 après les extractions plasmidiques.
+*** Extractions plasmidiques
+J'ai extrait les plasmides des cultures de jour. Compter au moins 8H
+de culture.
+
+# TODO insérer résultats nanodrop
+
+*** Digestions =ScaI=
+J'ai ensuite digéré par ScaI pendant une heure à 37°C.
+
+#+attr_latex: :font \scriptsize\ttfamily
+|          | W1 | W2 | S1 | S3 |
+|----------+----+----+----+----|
+| plasmide | 17 | 17 | 17 | 17 |
+| buffer   |  2 |  2 |  2 |  2 |
+| ScaI     |  1 |  1 |  1 | 1  |
+| H2O      |  0 |  0 |  0 |  0 |
+
+*** Transformations Acinetobacter
+J'ai ensuite ajouté 200ng des différents plasmides dans cet ordre :
+=S1 W1 W2 S3=, ordre que j'ai respecté jusqu'à la fin des manips, pour
+compenser un éventuel biais dû au temps de culture.
+
+*** Vendredi 25 :
+J'ai avancé sur l'analyses des séquences des plaques SW et WS.
+Comme les boîtes ont été mises en cultures tard (00H30…), j'ai dû
+attendre l'après midi pour sortir les boîtes de l'incubateur à
+30°C. J'ai placé les boîtes en chambre froide, jusqu'à mardi. (lundi
+férié).
+
+** 2016-03-29 Mardi
+
+*** Comptage des colonies
+J'ai compté les colonies sur l'appareil interscience.
+
+*** Purification
+J'ai ensuite purifié 300 colonies sur les boîtes de LBKan50 coulées
+avec Franck, par la méthode des cadrans. Surtout utiliser la méthode
+des cadrans. I repeat,
+
+#+BEGIN_QUOTE
+DO NOT USE ANYTHING ELSE THAN THE CADRANT METHOD !
+#+END_QUOTE
+
+Le risque est que les colonies soient non purifiées, qu'on soit
+obligée de la repurifier. Il y aurait donc un temps de génération en
+plus, et donc potentiellement un temps de mutation en plus…
+
+Pour chaque clone, après la purification, je trempouillais l'œse dans
+une barrette avec 50µL, de façon à garder une trace des colonies
+mères.
+
+Cette manip est très --- trop --- longue. Compter deux heures pour 100
+colonies.
+
+** 2016-03-30 Mercredi
+J'ai avancé sur l'analyse des séquences. Rendez vous avec Laurent et
+Vincent, Franck et Xavier pour définir les paramètres qu'on veut
+observer.
+
+J'ai placé les boîtes de cultures en chambre froide. Les colonies ont
+l'air bien purifiées.
+
+** 2016-03-31 Jeudi
+Le matin analyses des séquences.
+L'après midi réalisation des suspensions avec Lucas. On a suspendu les
+clones purifiés dans 50µL d'eau pure, pour faire les PCR dessus.
+
+J'ai réalisé les plaques de S3 et W1, Lucas a fait la plaque de W2. Il
+pense avoir cafouillé entre certains puits. On verra bien en PCR ce
+que ça donne.
+
+\clearpage
+
+* Avril
+** 2016-04-01 Vendredi à 2016-04-06 Mercredi
+
+
+*** PCR S1
+Je vais refaire toute la PCR. Il semble y avoir un problème avec les
+suspensions. Je dois donc refaire les suspensions et les PCR qui vont avec.
+
+*** PCR W1
+Il faut donc refaire les PCR pour les clones :
+
+3 5 13 14 15 17 18 19 25 256 27 28 29 31 32 35 37 39 43 49 50 51 52 53 57 59 60
+62 68 72 73 75 76 77 78 79 81 84 86 87 88 89 90 92 94.
+
+Soit 45 clones.
+
+*** PCR S3
+Je vais quand même refaire la PCR pour les clones :
+
+12 17 49 61 68 69
+
+Soit 6 clones.
+
+*** PCR W2
+Je vais refaire pour les clones :
+
+1 4 5 8 11 14 17 18 23 24 32 35 37 40 42 51 61 63 65 69 70 71 72 92 96.
+
+Soit 25 clones.
+
+\clearpage
+
+#+begin_figure
+
+| [[/Volumes/HDD/stage/img/20160401_00.JPG]] | [[/Volumes/HDD/stage/img/20160405_00.JPG]] |
+| [[/Volumes/HDD/stage/img/20160406_00.JPG]] | [[/Volumes/HDD/stage/img/20160406_01.JPG]] |
+
+#+end_figure
